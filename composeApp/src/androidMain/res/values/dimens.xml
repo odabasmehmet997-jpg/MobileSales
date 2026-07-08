@@ -15,4 +15,6 @@
     <dimen name="activity_quad_vertical_margin">4dp</dimen>
     <dimen name="activity_vertical_margin">8dp</dimen>
     <dimen name="margin_main_text">16dp</dimen>
+    <dimen name="bottom_sheet_margin">16dp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
 </resources>

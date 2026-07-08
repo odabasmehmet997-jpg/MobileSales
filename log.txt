@@ -6,6 +6,7 @@ Execution failed for task ':composeApp:processDebugResources'.
      com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:10: error: resource dimen/bottom_sheet_margin (aka com.proje.mobilesales:dimen/bottom_sheet_margin) not found.
      com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:16: error: resource dimen/text_size_medium (aka com.proje.mobilesales:dimen/text_size_medium) not found.
      com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:22: error: resource dimen/bottom_sheet_margin (aka com.proje.mobilesales:dimen/bottom_sheet_margin) not found.
+25 actionable tasks: 25 executed
      com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:22: error: resource dimen/bottom_sheet_margin (aka com.proje.mobilesales:dimen/bottom_sheet_margin) not found.
      com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:27: error: resource dimen/text_size_medium (aka com.proje.mobilesales:dimen/text_size_medium) not found.
      com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:33: error: resource dimen/bottom_sheet_margin (aka com.proje.mobilesales:dimen/bottom_sheet_margin) not found.
@@ -15,7 +16,7 @@ Execution failed for task ':composeApp:processDebugResources'.
      com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:45: error: resource dimen/bottom_sheet_margin (aka com.proje.mobilesales:dimen/bottom_sheet_margin) not found.
      com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:51: error: resource dimen/text_size_medium (aka com.proje.mobilesales:dimen/text_size_medium) not found.
      com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pin_sms.xml:29: error: attribute type (aka com.proje.mobilesales:type) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_product_list.xml:29: error: resource dimen/list_item_spacing (aka com.proje.mobilesales:dimen/list_item_spacing) not found.
+		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
 		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
@@ -45,5 +46,5 @@ Execution failed for task ':composeApp:processDebugResources'.
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
-BUILD FAILED in 1m 33s
+BUILD FAILED in 1m 32s
 Error: Process completed with exit code 1.
