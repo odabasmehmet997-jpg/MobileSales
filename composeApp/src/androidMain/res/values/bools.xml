@@ -7,4 +7,7 @@
     <bool name="enable_system_foreground_service_default">true</bool>
     <bool name="enable_system_job_service_default">true</bool>
     <bool name="workmanager_test_configuration">false</bool>
+    <bool name="enable_battery_charging_proxy">true</bool>
+    <bool name="enable_battery_not_low_proxy">true</bool>
+    <bool name="enable_storage_not_low_proxy">true</bool>
 </resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LogoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="preferenceStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="NoTitleDialogActivity" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>
