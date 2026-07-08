@@ -1,64 +1,13 @@
 * What went wrong:
+32 actionable tasks: 32 executed
 Execution failed for task ':composeApp:processDebugResources'.
 > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
    > Android resource linking failed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:7: error: '0' is incompatible with attribute layout_constraintTop_toTopOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:7: error: '0' is incompatible with attribute layout_constraintLeft_toLeftOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:7: error: '0' is incompatible with attribute layout_constraintRight_toRightOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:13: error: '0' is incompatible with attribute layout_constraintBottom_toBottomOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:13: error: '0' is incompatible with attribute layout_constraintLeft_toLeftOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:13: error: '0' is incompatible with attribute layout_constraintRight_toRightOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:22: error: '0' is incompatible with attribute layout_constraintStart_toStartOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:31: error: '0' is incompatible with attribute layout_constraintEnd_toEndOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:48: error: '0' is incompatible with attribute layout_constraintStart_toStartOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:48: error: resource dimen/list_item_spacing_half (aka com.proje.mobilesales:dimen/list_item_spacing_half) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:48: error: '0' is incompatible with attribute layout_constraintEnd_toEndOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:48: error: '0' is incompatible with attribute layout_constraintBottom_toBottomOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:54: error: '0' is incompatible with attribute layout_constraintStart_toStartOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml:54: error: '0' is incompatible with attribute layout_constraintEnd_toEndOf (attr) reference|enum [parent=0].
-	at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:1060)
-	at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.access$invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:886)
-	at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction.run(LinkApplicationAndroidResourcesTask.kt:463)
-	at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
-	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
-	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
-	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
-	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
-	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
-	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
-	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
-	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
-	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:194)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)
-	at org.gradle.internal.Factories$1.create(Factories.java:31)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
-	... 2 more
-	Suppressed: java.util.NoSuchElementException: Unable to get absolute path from com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_list.xml
-                       because com.proje.mobilesales.composeApp-mergeDebugResources-88 is not key in sourceSetPathMap.
-		at com.android.ide.common.resources.RelativeResourceUtils$relativeResourcePathToAbsolutePath$1.invoke(RelativeResourceUtils.kt:91)
-		at com.android.ide.common.resources.RelativeResourceUtils$relativeResourcePathToAbsolutePath$1.invoke(RelativeResourceUtils.kt:68)
-		at com.android.ide.common.resources.RelativeResourceUtils.relativeResourcePathToAbsolutePath(RelativeResourceUtils.kt:61)
-		at com.android.ide.common.blame.parser.aapt.Aapt2ErrorParser$MessageParser.parse(Aapt2ErrorParser.kt:124)
-		at com.android.ide.common.blame.parser.aapt.Aapt2ErrorParser.parse(Aapt2ErrorParser.kt:99)
-		at com.android.ide.common.blame.parser.aapt.Aapt2OutputParser.parse(Aapt2OutputParser.java:56)
-		at com.android.ide.common.blame.parser.ToolOutputParser.parseToolOutput(ToolOutputParser.java:84)
-		at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteException(Aapt2ErrorUtils.kt:219)
-		at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteLinkException(Aapt2ErrorUtils.kt:133)
-		at com.android.build.gradle.internal.res.Aapt2ProcessResourcesRunnableKt.processResources(Aapt2ProcessResourcesRunnable.kt:76)
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_print_preferences.xml:13: error: resource style/textCustomerSalesHeaderStyle (aka com.proje.mobilesales:style/textCustomerSalesHeaderStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_print_preferences.xml:18: error: resource style/textCustomerComStyle (aka com.proje.mobilesales:style/textCustomerComStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_print_preferences.xml:21: error: resource color/colorDivider2 (aka com.proje.mobilesales:color/colorDivider2) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_print_preferences.xml:28: error: resource style/textCustomerComStyle (aka com.proje.mobilesales:style/textCustomerComStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_print_preferences.xml:34: error: resource style/textCustomerComStyle (aka com.proje.mobilesales:style/textCustomerComStyle) not found.
 		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:1060)
 		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.access$invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:886)
 		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction.run(LinkApplicationAndroidResourcesTask.kt:463)
@@ -97,4 +46,5 @@ Execution failed for task ':composeApp:processDebugResources'.
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
+BUILD FAILED in 2m 40s
 Error: Process completed with exit code 1.

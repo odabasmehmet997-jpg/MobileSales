@@ -34,4 +34,10 @@
 
     <style name="MainActivityTextStyle" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="textCustomerSalesHeaderStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="textCustomerComStyle" parent="Theme.AppCompat.Light">
+    </style>
 </resources>
