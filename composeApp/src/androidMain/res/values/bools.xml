@@ -10,4 +10,6 @@
     <bool name="enable_battery_charging_proxy">true</bool>
     <bool name="enable_battery_not_low_proxy">true</bool>
     <bool name="enable_storage_not_low_proxy">true</bool>
+    <bool name="enable_network_state_proxy">true</bool>
+    <bool name="enable_reschedule_receiver">true</bool>
 </resources>

@@ -8,4 +8,5 @@
     <color name="orange500">#FFFF9800</color>
     <color name="brown500">#FF795548</color>
     <color name="blueGrey500">#FF607D8B</color>
+    <color name="colorAccent">#FF4081</color>
 </resources>
