@@ -1,66 +1,18 @@
-Android Debug Build
-
-Run ./gradlew assembleDebug --stacktrace
-Downloading https://services.gradle.org/distributions/gradle-8.14.5-bin.zip
-.............10%.............20%.............30%.............40%.............50%.............60%..............70%.............80%.............90%.............100%
-
-Welcome to Gradle 8.14.5!
-
-Here are the highlights of this release:
- - Java 24 support
- - GraalVM Native Image toolchain selection
- - Enhancements to test reporting
- - Build Authoring improvements
-
-For more details see https://docs.gradle.org/8.14.5/release-notes.html
-
-Starting a Gradle Daemon (subsequent builds will be faster)
-Type-safe project accessors is an incubating feature.
-
-> Configure project :composeApp
+Configure project :composeApp
 
 Please wait while Kotlin/Native compiler 2.3.21 is being installed.
-Download kotlin-native-prebuilt-linux-x86_64-2.3.21.tar.gz finished, took 2 s 546 ms
+Download kotlin-native-prebuilt-linux-x86_64-2.3.21.tar.gz finished, took 1 s 151 ms
 Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.3.21
-Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.3.21 finished, took 5 s 809 ms
+Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.3.21 finished, took 5 s 712 ms
 
 > Task :composeApp:preBuild UP-TO-DATE
 > Task :composeApp:preDebugBuild UP-TO-DATE
 > Task :composeApp:mergeDebugNativeDebugMetadata NO-SOURCE
 > Task :composeApp:kmpPartiallyResolvedDependenciesChecker
 > Task :composeApp:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :composeApp:dataBindingMergeDependencyArtifactsDebug
 > Task :composeApp:generateDebugResValues
+> Task :composeApp:dataBindingMergeDependencyArtifactsDebug
 > Task :composeApp:generateDebugResources
-
-> Task :composeApp:mergeDebugResources
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values/strings.xml:743:1: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:158:1: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values-ar/values-ar.xml:22:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:288:1: Multiple substitutions specified in non-positional format of string resource string/exp_item_has_negative_balance. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:294:1: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_defined_purchase_price. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:295:1: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_last_purchase_price. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:458:1: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:477:1: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
-/home/runner/.gradle/caches/8.14.5/transforms/f58cc641bc3758604bfcde55731bbf6d/transformed/ui/res/values-ar/values-ar.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/summary_collapsed_preference_list. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:42:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:43:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:105:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:124:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
-/home/runner/.gradle/caches/8.14.5/transforms/f58cc641bc3758604bfcde55731bbf6d/transformed/ui/res/values-tr/values-tr.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/summary_collapsed_preference_list. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:158:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:159:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:219:4: Multiple substitutions specified in non-positional format of string resource string/exp_30_wcf_select_result_error. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:239:4: Multiple substitutions specified in non-positional format of string resource string/exp_41_sales_header_not_select. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:241:4: Multiple substitutions specified in non-positional format of string resource string/exp_43_risk_over_error. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:248:4: Multiple substitutions specified in non-positional format of string resource string/exp_50_due_date_over_error. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:343:4: Multiple substitutions specified in non-positional format of string resource string/exp_item_has_negative_balance. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:355:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_defined_purchase_price. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:358:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_last_purchase_price. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:526:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:548:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
-/home/runner/.gradle/caches/8.14.5/transforms/f58cc641bc3758604bfcde55731bbf6d/transformed/ui/res/values-az/values-az.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/summary_collapsed_preference_list. Did you mean to add the formatted="false" attribute?
-
 > Task :composeApp:convertXmlValueResourcesForAndroidDebug NO-SOURCE
 > Task :composeApp:copyNonXmlValueResourcesForAndroidDebug NO-SOURCE
 > Task :composeApp:prepareComposeResourcesTaskForAndroidDebug NO-SOURCE
@@ -71,30 +23,6 @@ Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linu
 > Task :composeApp:copyNonXmlValueResourcesForCommonMain NO-SOURCE
 > Task :composeApp:prepareComposeResourcesTaskForCommonMain NO-SOURCE
 > Task :composeApp:copyDebugComposeResourcesToAndroidAssets
-
-> Task :composeApp:mergeDebugResources
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:158:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:158:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:225:4: Multiple substitutions specified in non-positional format of string resource string/exp_30_wcf_select_result_error. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:246:4: Multiple substitutions specified in non-positional format of string resource string/exp_41_sales_header_not_select. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:248:4: Multiple substitutions specified in non-positional format of string resource string/exp_43_risk_over_error. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:255:4: Multiple substitutions specified in non-positional format of string resource string/exp_50_due_date_over_error. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:354:4: Multiple substitutions specified in non-positional format of string resource string/exp_item_has_negative_balance. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:369:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_defined_purchase_price. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:372:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_last_purchase_price. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:540:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:562:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
-/home/runner/.gradle/caches/8.14.5/transforms/f58cc641bc3758604bfcde55731bbf6d/transformed/ui/res/values-ru/values-ru.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/summary_collapsed_preference_list. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:147:4: Multiple substitutions specified in non-positional format of string resource string/exp_30_wcf_select_result_error. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:165:4: Multiple substitutions specified in non-positional format of string resource string/exp_41_sales_header_not_select. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:167:4: Multiple substitutions specified in non-positional format of string resource string/exp_43_risk_over_error. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:176:4: Multiple substitutions specified in non-positional format of string resource string/exp_50_due_date_over_error. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:266:4: Multiple substitutions specified in non-positional format of string resource string/exp_item_has_negative_balance. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:277:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_defined_purchase_price. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:278:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_last_purchase_price. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:158:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:159:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:205:4: Multiple substitutions specified in non-positional format of string resource string/exp_30_wcf_select_result_error. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:217:4: Multiple substitutions specified in non-positional format of string resource string/exp_41_sales_header_not_select. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:219:4: Multiple substitutions specified in non-positional format of string resource string/exp_43_risk_over_error. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:297:4: Multiple substitutions specified in non-positional format of string resource string/exp_item_has_negative_balance. Did you mean to add the formatted="false" attribute?
@@ -116,16 +44,56 @@ Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linu
 > Task :composeApp:checkDebugAarMetadata
 > Task :composeApp:parseDebugLocalResources
 > Task :composeApp:compileDebugNavigationResources
-> Task :composeApp:dataBindingGenBaseClassesDebug FAILED
+> Task :composeApp:dataBindingGenBaseClassesDebug
+> Task :composeApp:mapDebugSourceSetPaths
+> Task :composeApp:createDebugCompatibleScreenManifests
+> Task :composeApp:extractDeepLinksDebug
+
+> Task :composeApp:processDebugMainManifest
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/AndroidManifest.xml:5:2-41 Warning:
+	uses-sdk:minSdkVersion value (29) specified in the manifest file is ignored. It is overridden by the value declared in the DSL or the variant API, or 1 if not declared/present. Current value is (26).
+
+> Task :composeApp:processDebugManifest
+> Task :composeApp:processDebugManifestForPackage
+> Task :composeApp:javaPreCompileDebug
+> Task :composeApp:mergeDebugShaders
+> Task :composeApp:compileDebugShaders NO-SOURCE
+> Task :composeApp:debugAssetsCopyForAGP NO-SOURCE
+> Task :composeApp:generateDebugAssets UP-TO-DATE
+> Task :composeApp:mergeDebugAssets
+> Task :composeApp:compressDebugAssets
+> Task :composeApp:processDebugResources FAILED
+> Task :composeApp:checkDebugDuplicateClasses
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':composeApp:dataBindingGenBaseClassesDebug'.
-> Found data binding error(s):
-  
-  ERROR: <ImageView id='@id/image'> conflicts with another tag that has the same ID file://composeApp/src/androidMain/res/layout/abc_activity_chooser_view.xml Line:20
-  ERROR: <ImageView id='@id/image'> conflicts with another tag that has the same ID file://composeApp/src/androidMain/res/layout/abc_activity_chooser_view.xml Line:40
+
+
+25 actionable tasks: 25 executed
+Execution failed for task ':composeApp:processDebugResources'.
+> A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
+   > Android resource linking failed
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:4: error: resource android:color/car_grey_300 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:5: error: resource android:color/car_grey_50 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:9: error: resource android:color/car_green_100 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:10: error: resource android:color/car_grey_400 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:11: error: resource android:color/car_grey_500 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:16: error: resource android:color/car_green_300 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:17: error: resource android:color/car_grey_1000 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:22: error: resource android:color/car_cyan_50 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:37: error: resource android:color/car_blue_700 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:38: error: resource android:color/car_body4 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:39: error: resource android:color/car_body4_light is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:40: error: resource android:color/car_green_300 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:41: error: resource android:color/car_cyan_50 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:42: error: resource android:color/car_green_200 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:43: error: resource android:color/car_blue_800 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:44: error: resource android:color/car_body4_dark is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:45: error: resource android:color/car_borderless_button_text_color is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:46: error: resource android:color/car_action1_light is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:47: error: resource android:color/car_action1 is private.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:48: error: resource android:color/car_blue_300 is private.
 
 
 * Try:
@@ -134,7 +102,7 @@ Execution failed for task ':composeApp:dataBindingGenBaseClassesDebug'.
 > Get more help at https://help.gradle.org.
 
 * Exception is:
-org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':composeApp:dataBindingGenBaseClassesDebug'.
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':composeApp:processDebugResources'.
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
 	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
@@ -157,186 +125,52 @@ org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compose
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
 	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
-	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
-	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
-	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-Caused by: android.databinding.tool.util.LoggedErrorException: Found data binding error(s):
-
-ERROR: <ImageView id='@id/image'> conflicts with another tag that has the same ID file://composeApp/src/androidMain/res/layout/abc_activity_chooser_view.xml Line:20
-ERROR: <ImageView id='@id/image'> conflicts with another tag that has the same ID file://composeApp/src/androidMain/res/layout/abc_activity_chooser_view.xml Line:40
-
-	at android.databinding.tool.processing.Scope.assertNoError(Scope.java:114)
-	at android.databinding.tool.BaseDataBinder.generateAll(BaseDataBinder.kt:101)
-	at com.android.build.gradle.internal.tasks.databinding.DataBindingGenBaseClassesTask$CodeGenerator.run(DataBindingGenBaseClassesTask.kt:325)
-	at com.android.build.gradle.internal.tasks.databinding.DataBindingGenBaseClassesTask.doTaskAction(DataBindingGenBaseClassesTask.kt:152)
-	at com.android.build.gradle.internal.tasks.NewIncrementalTask$taskAction$$inlined$recordTaskAction$1.invoke(BaseTask.kt:82)
-	at com.android.build.gradle.internal.tasks.Blocks.recordSpan(Blocks.java:51)
-	at com.android.build.gradle.internal.tasks.NewIncrementalTask.taskAction(NewIncrementalTask.kt:46)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
-	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:45)
-	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
-	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.execute(IncrementalTaskAction.java:26)
-	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
-	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:244)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
-	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
-	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
-	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
-	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
-	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
-	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
-	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
-	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
-	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
-	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
-	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
-	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
-13 actionable tasks: 13 executed
-	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
-	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
-	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
-	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
-	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
-	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
-	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
-	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
-	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
-	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
-	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
-	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
-	at org.gradle.internal.Either$Right.fold(Either.java:175)
-	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
-	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
-	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
-	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
-	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
-	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:75)
-	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:53)
-	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:53)
-	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:35)
-	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
-	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
-	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
-	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
-	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
-	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
-	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
-	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
-	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:107)
-	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:56)
-	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
-	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
-	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
-	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:56)
-	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
-	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
-	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
-	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
-	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
-	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
-	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
-	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
-	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
-	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
-	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
-	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
-	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
-	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
-	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
-	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
-	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
-	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
-	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
-	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:64)
-	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
-	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
-	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
-	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
-	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
-	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
-	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
-	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
-	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
-	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
-	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
-	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
-	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
-	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
-	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+		at com.android.ide.common.resources.RelativeResourceUtils.relativeResourcePathToAbsolutePath(RelativeResourceUtils.kt:61)
+		at com.android.ide.common.blame.parser.aapt.Aapt2ErrorParser$MessageParser.parse(Aapt2ErrorParser.kt:124)
+		at com.android.ide.common.blame.parser.aapt.Aapt2ErrorParser.parse(Aapt2ErrorParser.kt:99)
+		at com.android.ide.common.blame.parser.aapt.Aapt2OutputParser.parse(Aapt2OutputParser.java:56)
+		at com.android.ide.common.blame.parser.ToolOutputParser.parseToolOutput(ToolOutputParser.java:84)
+		at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteException(Aapt2ErrorUtils.kt:219)
+		at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteLinkException(Aapt2ErrorUtils.kt:133)
+		at com.android.build.gradle.internal.res.Aapt2ProcessResourcesRunnableKt.processResources(Aapt2ProcessResourcesRunnable.kt:76)
+		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:1060)
+		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.access$invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:886)
+		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction.run(LinkApplicationAndroidResourcesTask.kt:463)
+		at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
+		at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+		at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+		at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+		at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+		at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:194)
+		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)
+		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)
+		at org.gradle.internal.Factories$1.create(Factories.java:31)
+		at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+		at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+		at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
+		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
+		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+		at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
 
 
-BUILD FAILED in 1m 52s
-Error: Process completed with exit code 1.
-
- 
-
-Post Set up JDK 17
-
-Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
-Post job cleanup.
-(node:2834) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-(Use `node --trace-deprecation ...` to show where the warning was created)
-
-Post Chek out Code
-
-Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
-Post job cleanup.
-/usr/bin/git version
-git version 2.54.0
-Temporarily overriding HOME='/home/runner/work/_temp/54d6ef61-da06-48fe-8652-71576504c1b6' before making global git config changes
-Adding repository directory to the temporary git global config as a safe directory
-/usr/bin/git config --global --add safe.directory /home/runner/work/MobileSales/MobileSales
-/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-http.https://github.com/.extraheader
-/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
-/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
-/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-
-
-Complete Job
-
-Cleaning up orphan processes
-Terminate orphan process: pid (2675) (java)
-Warning: Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, android-actions/setup-android@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+BUILD FAILED in 1m 34s
