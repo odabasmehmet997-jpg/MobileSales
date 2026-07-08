@@ -1,17 +1,17 @@
 * What went wrong:
 Execution failed for task ':composeApp:processDebugResources'.
 > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
-29 actionable tasks: 29 executed
    > Android resource linking failed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_image_dialog.xml:9: error: resource dimen/half_padding (aka com.proje.mobilesales:dimen/half_padding) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_last_order_products.xml:16: error: resource color/line_color (aka com.proje.mobilesales:color/line_color) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:21: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:24: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:27: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:30: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:37: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:40: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:43: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:61: error: resource color/colorDivider (aka com.proje.mobilesales:color/colorDivider) not found.
+32 actionable tasks: 32 executed
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:10: error: '0' is incompatible with attribute layout_constraintTop_toTopOf (attr) reference|enum [parent=0].
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:13: error: '0' is incompatible with attribute layout_constraintStart_toStartOf (attr) reference|enum [parent=0].
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:13: error: '0' is incompatible with attribute layout_constraintEnd_toEndOf (attr) reference|enum [parent=0].
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:13: error: '0' is incompatible with attribute layout_constraintBottom_toBottomOf (attr) reference|enum [parent=0].
+		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:1060)
+		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.access$invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:886)
+		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction.run(LinkApplicationAndroidResourcesTask.kt:463)
+		at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
 		at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
 		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
 		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
@@ -46,5 +46,5 @@ Execution failed for task ':composeApp:processDebugResources'.
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
-BUILD FAILED in 2m 41s
+BUILD FAILED in 2m 42s
 Error: Process completed with exit code 1.

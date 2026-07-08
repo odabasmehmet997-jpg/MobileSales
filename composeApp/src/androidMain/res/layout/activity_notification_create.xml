@@ -7,16 +7,16 @@
     <androidx.appcompat.widget.Toolbar android:theme="@style/LogoAppToolBar" android:id="@+id/toolbar"
                                        android:background="?attr/colorPrimary" android:layout_width="match_parent"
                                        android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize"
-                                       app:layout_constraintTop_toTopOf="0"/>
+                                       app:layout_constraintTop_toTopOf="parent"/>
     <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="0dp"
-                app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0"
-                app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/toolbar">
         <androidx.constraintlayout.widget.ConstraintLayout android:padding="@dimen/padding"
                                                            android:layout_width="match_parent"
                                                            android:layout_height="wrap_content"
-                                                           app:layout_constraintBottom_toBottomOf="0"
-                                                           app:layout_constraintEnd_toEndOf="0"
-                                                           app:layout_constraintStart_toStartOf="0"
+app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                                                            app:layout_constraintTop_toBottomOf="@+id/toolbar">
             <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
                                                          android:textStyle="bold" android:id="@+id/tvToHeader"
@@ -31,30 +31,30 @@
                                                             android:scaleType="fitCenter" android:tint="@color/grey600"
                                                             android:layout_weight="1"
                                                             android:contentDescription="@string/str_add"
-                                                            app:layout_constraintEnd_toEndOf="0"
-                                                            app:layout_constraintTop_toTopOf="0"/>
+                                                            app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toTopOf="parent"/>
             <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
                                                          android:id="@+id/tvTo" android:layout_width="0dp"
                                                          android:layout_height="wrap_content"
                                                          android:layout_marginTop="@dimen/margin"
                                                          android:minHeight="48dp"
                                                          app:layout_constraintEnd_toStartOf="@+id/imgAddTo"
-                                                         app:layout_constraintStart_toStartOf="0"
+                                                         app:layout_constraintStart_toStartOf="parent"
                                                          app:layout_constraintTop_toBottomOf="@+id/tvToHeader"/>
             <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
                                                          android:textStyle="bold" android:id="@+id/tvTitleHeader"
                                                          android:layout_width="wrap_content" android:layout_height="0dp"
                                                          android:layout_marginTop="@dimen/margin"
                                                          android:text="@string/str_notification_title"
-                                                         app:layout_constraintStart_toStartOf="0"
+                                                         app:layout_constraintStart_toStartOf="parent"
                                                          app:layout_constraintTop_toBottomOf="@+id/tvTo"/>
             <androidx.appcompat.widget.AppCompatEditText android:textAppearance="?android:attr/textAppearanceSmall"
                                                          android:id="@+id/tvNotificationTitle"
                                                          android:layout_width="0dp" android:layout_height="wrap_content"
                                                          android:layout_marginTop="@dimen/margin"
                                                          android:minHeight="48dp" android:minLines="2"
-                                                         android:maxLength="200" app:layout_constraintEnd_toEndOf="0"
-                                                         app:layout_constraintStart_toStartOf="0"
+                                                         android:maxLength="200" app:layout_constraintEnd_toEndOf="parent"
+                                                         app:layout_constraintStart_toStartOf="parent"
                                                          app:layout_constraintTop_toBottomOf="@+id/tvTitleHeader"
                                                          tools:ignore="SpeakableTextPresentCheck"/>
             <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
@@ -62,15 +62,15 @@
                                                          android:layout_width="wrap_content" android:layout_height="0dp"
                                                          android:layout_marginTop="@dimen/margin"
                                                          android:text="@string/str_notification_message"
-                                                         app:layout_constraintStart_toStartOf="0"
+                                                         app:layout_constraintStart_toStartOf="parent"
                                                          app:layout_constraintTop_toBottomOf="@+id/tvNotificationTitle"/>
             <androidx.appcompat.widget.AppCompatEditText android:textAppearance="?android:attr/textAppearanceSmall"
                                                          android:id="@+id/tvMessage" android:layout_width="0dp"
                                                          android:layout_height="wrap_content"
                                                          android:layout_marginTop="@dimen/margin"
                                                          android:minHeight="48dp" android:minLines="3"
-                                                         app:layout_constraintEnd_toEndOf="0"
-                                                         app:layout_constraintStart_toStartOf="0"
+                                                         app:layout_constraintEnd_toEndOf="parent"
+                                                         app:layout_constraintStart_toStartOf="parent"
                                                          app:layout_constraintTop_toBottomOf="@+id/tvMessageHeader"
                                                          tools:ignore="SpeakableTextPresentCheck"/>
             <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
@@ -78,7 +78,7 @@
                                                          android:layout_width="wrap_content" android:layout_height="0dp"
                                                          android:layout_marginTop="@dimen/margin"
                                                          android:text="@string/str_notification_sendDateTime"
-                                                         app:layout_constraintStart_toStartOf="0"
+                                                         app:layout_constraintStart_toStartOf="parent"
                                                          app:layout_constraintTop_toBottomOf="@+id/tvMessage"/>
             <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
                                                          android:id="@+id/tvSendDate"
@@ -86,7 +86,7 @@
                                                          android:layout_height="wrap_content"
                                                          android:layout_marginTop="@dimen/margin"
                                                          app:layout_constraintBottom_toBottomOf="@+id/imgBtnSendDate"
-                                                         app:layout_constraintStart_toStartOf="0"
+                                                         app:layout_constraintStart_toStartOf="parent"
                                                          app:layout_constraintTop_toBottomOf="@+id/tvSendDateHeader"/>
             <androidx.appcompat.widget.AppCompatImageButton android:gravity="center" android:id="@+id/imgBtnSendDate"
                                                             android:background="@null" android:padding="5dp"
@@ -125,7 +125,7 @@
                                                          android:layout_width="wrap_content" android:layout_height="0dp"
                                                          android:layout_marginTop="@dimen/margin"
                                                          android:text="@string/str_notification_payAttentionToWorkTime"
-                                                         app:layout_constraintStart_toStartOf="0"
+                                                         app:layout_constraintStart_toStartOf="parent"
                                                          app:layout_constraintTop_toBottomOf="@+id/imgBtnSendTime"/>
             <androidx.appcompat.widget.SwitchCompat android:gravity="center" android:id="@+id/swcPayAttentionToWorkTime"
                                                     android:layout_width="48dp" android:layout_height="48dp"
@@ -136,7 +136,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
     <include android:id="@+id/loadingBar" android:visibility="gone" android:layout_width="match_parent"
-             android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0"
-             app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"
+             android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
              app:layout_constraintTop_toBottomOf="@+id/toolbar" layout="@layout/loading_item"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
