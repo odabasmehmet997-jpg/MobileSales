@@ -88,4 +88,7 @@
 
     <style name="textCustomerGeneralStyle" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="TextAppearance.App.Title" parent="Theme.AppCompat.Light">
+    </style>
 </resources>
