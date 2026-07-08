@@ -31,4 +31,7 @@
 
     <style name="textTitleStyle" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="MainActivityTextStyle" parent="Theme.AppCompat.Light">
+    </style>
 </resources>

@@ -18,4 +18,5 @@
     <color name="colorDisabled">#FFBDBDBD</color>
     <color name="colorHighlightInverse">#FFE8EAF6</color>
     <color name="subMenu2">#FF455A64</color>
+    <color name="line_color">#FFE0E0E0</color>
 </resources>

@@ -1,19 +1,19 @@
 * What went wrong:
 Execution failed for task ':composeApp:processDebugResources'.
 > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
+29 actionable tasks: 29 executed
    > Android resource linking failed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_cash_credit_fiche_detail_enter.xml:16: error: resource dimen/fab_margin (aka com.proje.mobilesales:dimen/fab_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_cheque_deed_fiche_detail_enter.xml:16: error: resource dimen/fab_margin (aka com.proje.mobilesales:dimen/fab_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_customer_currency_info.xml:30: error: resource dimen/activity_half_vertical_margin (aka com.proje.mobilesales:dimen/activity_half_vertical_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_drawer.xml:12: error: resource attr/colorCardBackground (aka com.proje.mobilesales:attr/colorCardBackground) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_drawer.xml:12: error: resource style/AppNavigationDrawer (aka com.proje.mobilesales:style/AppNavigationDrawer) not found.
-27 actionable tasks: 27 executed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_driver_information.xml:15: error: resource dimen/activity_half_vertical_margin (aka com.proje.mobilesales:dimen/activity_half_vertical_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_driver_information.xml:15: error: resource style/textTitleStyle (aka com.proje.mobilesales:style/textTitleStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_driver_information.xml:15: error: resource dimen/activity_half_vertical_margin (aka com.proje.mobilesales:dimen/activity_half_vertical_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_driver_information.xml:23: error: resource dimen/activity_half_vertical_margin (aka com.proje.mobilesales:dimen/activity_half_vertical_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_driver_information.xml:23: error: resource style/textTitleStyle (aka com.proje.mobilesales:style/textTitleStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_driver_information.xml:23: error: resource dimen/activity_half_vertical_margin (aka com.proje.mobilesales:dimen/activity_half_vertical_margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_image_dialog.xml:9: error: resource dimen/half_padding (aka com.proje.mobilesales:dimen/half_padding) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_last_order_products.xml:16: error: resource color/line_color (aka com.proje.mobilesales:color/line_color) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:21: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:24: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:27: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:30: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:37: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:40: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:43: error: resource style/MainActivityTextStyle (aka com.proje.mobilesales:style/MainActivityTextStyle) not found.
+		at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
 		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
 		at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
 		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
@@ -46,5 +46,5 @@ Execution failed for task ':composeApp:processDebugResources'.
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
-BUILD FAILED in 2m 42s
+BUILD FAILED in 2m 41s
 Error: Process completed with exit code 1.
