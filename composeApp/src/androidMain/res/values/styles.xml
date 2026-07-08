@@ -16,4 +16,13 @@
 
     <style name="editCalendar" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="LogoAppToolBar" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="textOrderLineStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="CustomTabLayoutStyle" parent="Theme.AppCompat.Light">
+    </style>
 </resources>

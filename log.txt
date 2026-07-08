@@ -2,21 +2,21 @@
 Execution failed for task ':composeApp:processDebugResources'.
 > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
    > Android resource linking failed
-     com.proje.mobilesales.composeApp-androidMain-91:/drawable-anydpi/icon_with_gradient.xml:12: error: resource drawable/_icon_with_gradient__0_res_0x7f080008 (aka com.proje.mobilesales:drawable/_icon_with_gradient__0_res_0x7f080008) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/account_extract.xml:45: error: resource style/editCalendar (aka com.proje.mobilesales:style/editCalendar) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/account_extract.xml:60: error: resource style/editCalendar (aka com.proje.mobilesales:style/editCalendar) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/account_extract.xml:88: error: resource color/subMenu2 (aka com.proje.mobilesales:color/subMenu2) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/account_extract.xml:106: error: resource dimen/text_size_x_small (aka com.proje.mobilesales:dimen/text_size_x_small) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/account_extract.xml:121: error: resource dimen/text_size_x_small (aka com.proje.mobilesales:dimen/text_size_x_small) not found.
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:1060)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.access$invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:886)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction.run(LinkApplicationAndroidResourcesTask.kt:463)
-		at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
-		at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
-		at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/account_extract.xml:194: error: resource dimen/text_size_small (aka com.proje.mobilesales:dimen/text_size_small) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/account_extract.xml:204: error: resource dimen/text_size_small (aka com.proje.mobilesales:dimen/text_size_small) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/account_extract.xml:220: error: resource dimen/text_size_small (aka com.proje.mobilesales:dimen/text_size_small) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/account_extract_tiger.xml:103: error: resource dimen/text_size_small (aka com.proje.mobilesales:dimen/text_size_small) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/account_extract_tiger.xml:111: error: resource dimen/text_size_small (aka com.proje.mobilesales:dimen/text_size_small) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/account_extract_tiger.xml:126: error: resource dimen/text_size_small (aka com.proje.mobilesales:dimen/text_size_small) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_case_fiche.xml:17: error: resource style/LogoAppToolBar (aka com.proje.mobilesales:style/LogoAppToolBar) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_case_fiche.xml:72: error: resource style/textOrderLineStyle (aka com.proje.mobilesales:style/textOrderLineStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_case_fiche.xml:81: error: resource style/textOrderLineStyle (aka com.proje.mobilesales:style/textOrderLineStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_case_fiche.xml:104: error: resource style/textOrderLineStyle (aka com.proje.mobilesales:style/textOrderLineStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_case_fiche.xml:113: error: resource style/textOrderLineStyle (aka com.proje.mobilesales:style/textOrderLineStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_case_fiche.xml:136: error: resource style/textOrderLineStyle (aka com.proje.mobilesales:style/textOrderLineStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_case_fiche.xml:145: error: resource style/textOrderLineStyle (aka com.proje.mobilesales:style/textOrderLineStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_cash_and_credit_card_fiche.xml:17: error: resource style/LogoAppToolBar (aka com.proje.mobilesales:style/LogoAppToolBar) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_cash_and_credit_card_fiche.xml:23: error: resource style/CustomTabLayoutStyle (aka com.proje.mobilesales:style/CustomTabLayoutStyle) not found.
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
 		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
@@ -46,5 +46,5 @@ Execution failed for task ':composeApp:processDebugResources'.
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
-BUILD FAILED in 2m 35s
+BUILD FAILED in 1m 38s
 Error: Process completed with exit code 1.
