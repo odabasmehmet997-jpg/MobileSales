@@ -7,17 +7,17 @@
     <TextView android:textAppearance="?android:attr/textAppearanceSmall"
               android:gravity="left|center_vertical|center_horizontal|center|start" android:tag="binding_1"
               android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2"
-              bind:layout_constraintBottom_toBottomOf="0" bind:layout_constraintEnd_toStartOf="@+id/guideline50"
-              bind:layout_constraintStart_toStartOf="0" bind:layout_constraintTop_toTopOf="0"/>
+              bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintEnd_toStartOf="@+id/guideline50"
+              bind:layout_constraintStart_toStartOf="parent" bind:layout_constraintTop_toTopOf="parent"/>
     <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
               android:gravity="center" android:id="@+id/tvStatus" android:layout_width="0dp"
               android:layout_height="wrap_content" android:layout_marginStart="5dp"
-              bind:layout_constraintBottom_toTopOf="@+id/tvStatusDate" bind:layout_constraintEnd_toEndOf="0"
-              bind:layout_constraintStart_toEndOf="@+id/guideline50" bind:layout_constraintTop_toTopOf="0"/>
+              bind:layout_constraintBottom_toTopOf="@+id/tvStatusDate" bind:layout_constraintEnd_toEndOf="parent"
+              bind:layout_constraintStart_toEndOf="@+id/guideline50" bind:layout_constraintTop_toTopOf="parent"/>
     <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:gravity="center"
               android:id="@+id/tvStatusDate" android:tag="binding_2" android:layout_width="0dp"
               android:layout_height="wrap_content" android:layout_marginStart="5dp"
-              bind:layout_constraintEnd_toEndOf="0" bind:layout_constraintStart_toEndOf="@+id/guideline50"
+              bind:layout_constraintEnd_toEndOf="parent" bind:layout_constraintStart_toEndOf="@+id/guideline50"
               bind:layout_constraintTop_toBottomOf="@+id/tvStatus"/>
     <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/guideline50"
                                                 android:layout_width="wrap_content" android:layout_height="wrap_content"

@@ -4,27 +4,27 @@
                                                    android:background="@android:color/white"
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent">
-    <include android:id="@+id/llProgressBar" android:visibility="gone" app:layout_constraintBottom_toBottomOf="0"
-             app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"
-             app:layout_constraintTop_toTopOf="0" layout="@layout/loading_item"/>
+    <include android:id="@+id/llProgressBar" android:visibility="gone" app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" layout="@layout/loading_item"/>
     <ScrollView android:id="@+id/privacy_policy_scroll_view" android:visibility="gone" android:layout_width="0dp"
                 android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/privacy_policy_btn_read"
-                app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"
-                app:layout_constraintTop_toTopOf="0">
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
         <LinearLayout android:orientation="vertical" android:id="@+id/privacy_policy_pdf_container"
                       android:layout_width="match_parent" android:layout_height="wrap_content"/>
     </ScrollView>
     <WebView android:id="@+id/privacy_policy_web_view" android:visibility="gone" android:layout_width="0dp"
              android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/privacy_policy_btn_read"
-             app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"
-             app:layout_constraintTop_toTopOf="0"/>
+             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"/>
     <androidx.appcompat.widget.AppCompatButton android:textStyle="bold" android:textColor="@android:color/white"
                                                android:id="@+id/privacy_policy_btn_read"
                                                android:layout_width="match_parent" android:layout_height="wrap_content"
                                                android:layout_marginBottom="16dp" android:text="@string/str_ok"
                                                android:backgroundTint="@color/colorPrimary"
                                                android:layout_marginHorizontal="16dp"
-                                               app:layout_constraintBottom_toBottomOf="0"
-                                               app:layout_constraintEnd_toEndOf="0"
-                                               app:layout_constraintStart_toStartOf="0"/>
+                                               app:layout_constraintBottom_toBottomOf="parent"
+                                               app:layout_constraintEnd_toEndOf="parent"
+                                               app:layout_constraintStart_toStartOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

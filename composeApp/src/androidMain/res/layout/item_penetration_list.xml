@@ -21,26 +21,26 @@
                         android:id="@+id/mProductSwitch" android:padding="@dimen/padding"
                         android:layout_width="wrap_content" android:layout_height="wrap_content"
                         android:textOn="@string/str_stock_in" android:textOff="@string/str_stock_out" android:text=""
-                        android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="0"
-                        app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                        android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
                 <androidx.appcompat.widget.AppCompatEditText android:textColorHint="@color/grey500"
                                                              android:id="@+id/et_productPrice"
                                                              android:layout_width="150dp"
                                                              android:layout_height="wrap_content"
                                                              android:hint="@string/str_price" android:lines="1"
                                                              android:singleLine="true" android:inputType="numberDecimal"
-                                                             app:layout_constraintBottom_toBottomOf="0"
+                                                             app:layout_constraintBottom_toBottomOf="parent"
                                                              app:layout_constraintLeft_toRightOf="@+id/mProductSwitch"
-                                                             app:layout_constraintTop_toTopOf="0"
+                                                             app:layout_constraintTop_toTopOf="parent"
                                                              app:layout_goneMarginEnd="@dimen/margin"
                                                              style="@style/textProductSubStyle"/>
                 <RelativeLayout android:layout_gravity="center" android:id="@+id/rlt_productOperationAmount"
                                 android:layout_width="wrap_content" android:layout_height="wrap_content"
                                 android:layout_marginLeft="@dimen/margin" android:layout_centerVertical="true"
-                                android:layout_marginStart="@dimen/margin" app:layout_constraintBottom_toBottomOf="0"
+                                android:layout_marginStart="@dimen/margin" app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintLeft_toRightOf="@+id/et_productPrice"
                                 app:layout_constraintRight_toLeftOf="@+id/imgBtn_penetration_not"
-                                app:layout_constraintTop_toTopOf="0">
+                                app:layout_constraintTop_toTopOf="parent">
                     <ImageButton android:id="@+id/imgBtn_product_plus"
                                  android:background="?attr/selectableItemBackground" android:layout_width="30dp"
                                  android:layout_height="30dp" android:layout_marginTop="5dp"
@@ -64,14 +64,14 @@
                 <ImageButton android:layout_gravity="center_vertical" android:id="@+id/imgBtn_penetration_not"
                              android:background="?attr/selectableItemBackground" android:layout_width="wrap_content"
                              android:layout_height="wrap_content" android:src="@drawable/ic_note_grey600_24dp"
-                             android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="0"
+                             android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="parent"
                              app:layout_constraintRight_toLeftOf="@+id/imgBtn_penetration_cam"
-                             app:layout_constraintTop_toTopOf="0"/>
+                             app:layout_constraintTop_toTopOf="parent"/>
                 <ImageButton android:layout_gravity="end" android:id="@+id/imgBtn_penetration_cam"
                              android:background="?attr/selectableItemBackground" android:layout_width="wrap_content"
                              android:layout_height="wrap_content" android:src="@drawable/ic_camera_black_24dp"
-                             android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="0"
-                             app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+                             android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </RelativeLayout>

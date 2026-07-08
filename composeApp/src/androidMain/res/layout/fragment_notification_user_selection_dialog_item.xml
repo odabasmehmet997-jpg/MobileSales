@@ -10,10 +10,10 @@
                                                  android:tag="binding_1" android:layout_width="0dp"
                                                  android:layout_height="48dp" android:maxLines="1"
                                                  android:layout_marginEnd="@dimen/margin"
-                                                 bind:layout_constraintBottom_toBottomOf="0"
+                                                 bind:layout_constraintBottom_toBottomOf="parent"
                                                  bind:layout_constraintEnd_toStartOf="@+id/imgSelected"
-                                                 bind:layout_constraintStart_toStartOf="0"
-                                                 bind:layout_constraintTop_toTopOf="0"/>
+                                                 bind:layout_constraintStart_toStartOf="parent"
+                                                 bind:layout_constraintTop_toTopOf="parent"/>
     <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:id="@+id/imgSelected"
                                                   android:tag="binding_2" android:background="@null"
                                                   android:padding="12dp" android:layout_width="48dp"
@@ -21,7 +21,7 @@
                                                   android:scaleType="fitEnd" android:tint="@color/colorAccent"
                                                   android:layout_weight="1"
                                                   android:contentDescription="@string/str_select_text"
-                                                  bind:layout_constraintBottom_toBottomOf="0"
-                                                  bind:layout_constraintEnd_toEndOf="0"
-                                                  bind:layout_constraintTop_toTopOf="0"/>
+                                                  bind:layout_constraintBottom_toBottomOf="parent"
+                                                  bind:layout_constraintEnd_toEndOf="parent"
+                                                  bind:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,12 +8,12 @@
                                                   android:layout_height="wrap_content"
                                                   android:src="@drawable/rszz_logo_mobile_sales"
                                                   android:scaleType="fitCenter" android:paddingStart="25dp"
-                                                  android:paddingEnd="25dp" app:layout_constraintBottom_toBottomOf="0"
-                                                  app:layout_constraintEnd_toEndOf="0"
-                                                  app:layout_constraintStart_toStartOf="0"
-                                                  app:layout_constraintTop_toTopOf="0"/>
+                                                  android:paddingEnd="25dp" app:layout_constraintBottom_toBottomOf="parent"
+                                                  app:layout_constraintEnd_toEndOf="parent"
+                                                  app:layout_constraintStart_toStartOf="parent"
+                                                  app:layout_constraintTop_toTopOf="parent"/>
     <include android:id="@+id/loadingBar" android:visibility="visible" android:layout_width="match_parent"
-             android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0"
-             app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/logo"
+             android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/logo"
              layout="@layout/item_loading"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
