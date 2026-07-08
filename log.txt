@@ -1,21 +1,31 @@
-Run ./gradlew assembleDebug --stacktrace
-  
+Run ./gradlew clean assembleDebug --stacktrace
 Downloading https://services.gradle.org/distributions/gradle-8.14.5-bin.zip
-.............10%.............20%.............30%.............40%.............50%..............60%.............70%.............80%.............90%.............100%
+.............10%.............20%.............30%.............40%.............50%.............60%..............70%.............80%.............90%.............100%
+
 Welcome to Gradle 8.14.5!
+
 Here are the highlights of this release:
  - Java 24 support
  - GraalVM Native Image toolchain selection
  - Enhancements to test reporting
  - Build Authoring improvements
+
 For more details see https://docs.gradle.org/8.14.5/release-notes.html
+
 Starting a Gradle Daemon (subsequent builds will be faster)
 Type-safe project accessors is an incubating feature.
+
 > Configure project :composeApp
+
 Please wait while Kotlin/Native compiler 2.3.21 is being installed.
-Download kotlin-native-prebuilt-linux-x86_64-2.3.21.tar.gz finished, took 818 ms
+Download kotlin-native-prebuilt-linux-x86_64-2.3.21.tar.gz finished, took 1 s 147 ms
 Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.3.21
-Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.3.21 finished, took 4 s 609 ms
+Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.3.21 finished, took 5 s 669 ms
+
+> Task :composeApp:cleanIosSimulatorArm64Test UP-TO-DATE
+> Task :composeApp:cleanIosX64Test UP-TO-DATE
+> Task :composeApp:cleanAllTests UP-TO-DATE
+> Task :composeApp:clean
 > Task :composeApp:preBuild UP-TO-DATE
 > Task :composeApp:preDebugBuild UP-TO-DATE
 > Task :composeApp:mergeDebugNativeDebugMetadata NO-SOURCE
@@ -24,23 +34,80 @@ Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linu
 > Task :composeApp:generateDebugResValues
 > Task :composeApp:dataBindingMergeDependencyArtifactsDebug
 > Task :composeApp:generateDebugResources
+
 > Task :composeApp:mergeDebugResources
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values/strings.xml:743:1: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:158:1: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
 /home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values-ar/values-ar.xml:22:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:288:1: Multiple substitutions specified in non-positional format of string resource string/exp_item_has_negative_balance. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:294:1: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_defined_purchase_price. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:295:1: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_last_purchase_price. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:458:1: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:477:1: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
-/home/runner/.gradle/caches/8.14.5/transforms/f58cc641bc3758604bfcde55731bbf6d/transformed/ui/res/values-ar/values-ar.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/summary_collapsed_preference_list. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:158:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:42:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:43:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:159:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:105:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:124:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:219:4: Multiple substitutions specified in non-positional format of string resource string/exp_30_wcf_select_result_error. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values/strings.xml:743:1: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
+  symbol:   class FichePropertyEditView
+  location: class DialogSpecodesFilterBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:39: error: cannot find symbol
+      @NonNull FichePropertyEditView fchSpeCode3, @NonNull FichePropertyEditView fchSpeCode4,
+                                                           ^
+  symbol:   class FichePropertyEditView
+  location: class DialogSpecodesFilterBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:40: error: cannot find symbol
+      @NonNull FichePropertyEditView fchSpeCode5) {
+               ^
+  symbol:   class FichePropertyEditView
+  location: class DialogSpecodesFilterBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemProductTreeBinding.java:13: error: package com.proje.mobilesales.core.widget does not exist
+import com.proje.mobilesales.core.widget.TintableTextView;
+                                        ^
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemProductTreeBinding.java:23: error: cannot find symbol
+  public final TintableTextView txtTreeItemDesc;
+               ^
+  symbol:   class TintableTextView
+  location: class ItemProductTreeBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemProductTreeBinding.java:26: error: cannot find symbol
+      @NonNull TintableTextView txtTreeItemDesc) {
+               ^
+  symbol:   class TintableTextView
+  location: class ItemProductTreeBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:14: error: package com.proje.mobilesales.core.widget does not exist
+import com.proje.mobilesales.core.widget.FichePropertyTextView;
+                                        ^
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:30: error: cannot find symbol
+  public final FichePropertyTextView fpeCurrency;
+               ^
+  symbol:   class FichePropertyTextView
+  location: class ActivityCustomerCurrencyInfoBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:33: error: cannot find symbol
+  public final FichePropertyTextView fptCurrencyAmount;
+               ^
+  symbol:   class FichePropertyTextView
+  location: class ActivityCustomerCurrencyInfoBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:36: error: cannot find symbol
+  public final FichePropertyTextView fptRate;
+               ^
+  symbol:   class FichePropertyTextView
+  location: class ActivityCustomerCurrencyInfoBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:39: error: cannot find symbol
+  public final FichePropertyTextView fptTotal;
+               ^
+  symbol:   class FichePropertyTextView
+  location: class ActivityCustomerCurrencyInfoBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:49: error: cannot find symbol
+      @NonNull FichePropertyTextView fpeCurrency, @NonNull FichePropertyTextView fptCurrencyAmount,
+               ^
+  symbol:   class FichePropertyTextView
+  location: class ActivityCustomerCurrencyInfoBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:49: error: cannot find symbol
+      @NonNull FichePropertyTextView fpeCurrency, @NonNull FichePropertyTextView fptCurrencyAmount,
+                                                           ^
+  symbol:   class FichePropertyTextView
+  location: class ActivityCustomerCurrencyInfoBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:50: error: cannot find symbol
+      @NonNull FichePropertyTextView fptRate, @NonNull FichePropertyTextView fptTotal,
+	                 ^
+  symbol:   class FichePropertyTextView
+  location: class ActivityCustomerCurrencyInfoBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:50: error: cannot find symbol
+      @NonNull FichePropertyTextView fptRate, @NonNull FichePropertyTextView fptTotal,
+                                                       ^
+  symbol:   class FichePropertyTextView
+  location: class ActivityCustomerCurrencyInfoBinding
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/CustomerViewBinding.java:16: error: package com.proje.mobilesales.core.widget does not exist
 import com.proje.mobilesales.core.widget.TintableTextView;
                                         ^
@@ -73,56 +140,6 @@ import com.proje.mobilesales.features.visit.view.VisitView;
   symbol:   class VisitView
   location: class ItemVisitBinding
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemVisitBinding.java:25: error: cannot find symbol
-  private ItemVisitBinding(@NonNull CardView rootView, @NonNull VisitView visitView) {
-                                                                ^
-  symbol:   class VisitView
-  location: class ItemVisitBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemPiechartBinding.java:12: error: package com.github.mikephil.charting.charts does not exist
-import com.github.mikephil.charting.charts.PieChart;
-                                          ^
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemPiechartBinding.java:23: error: cannot find symbol
-  public final PieChart chart;
-               ^
-  symbol:   class PieChart
-  location: class ListItemPiechartBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemPiechartBinding.java:25: error: cannot find symbol
-  private ListItemPiechartBinding(@NonNull LinearLayout rootView, @NonNull PieChart chart) {
-                                                                           ^
-  symbol:   class PieChart
-  location: class ListItemPiechartBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentCustomerRiskBinding.java:16: error: package com.proje.mobilesales.core.widget does not exist
-import com.proje.mobilesales.core.widget.AppBarSwipeRefreshLayout;
-                                        ^
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentCustomerRiskBinding.java:35: error: cannot find symbol
-  public final AppBarSwipeRefreshLayout swipeLayout;
-               ^
-  symbol:   class AppBarSwipeRefreshLayout
-  location: class FragmentCustomerRiskBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentCustomerRiskBinding.java:48: error: cannot find symbol
-      @NonNull RecyclerView rcw, @NonNull AppBarSwipeRefreshLayout swipeLayout,
-                                          ^
-  symbol:   class AppBarSwipeRefreshLayout
-  location: class FragmentCustomerRiskBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemBarchartBinding.java:12: error: package com.github.mikephil.charting.charts does not exist
-import com.github.mikephil.charting.charts.BarChart;
-                                          ^
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemBarchartBinding.java:23: error: cannot find symbol
-  public final BarChart chart;
-               ^
-  symbol:   class BarChart
-  location: class ListItemBarchartBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemBarchartBinding.java:25: error: cannot find symbol
-  private ListItemBarchartBinding(@NonNull LinearLayout rootView, @NonNull BarChart chart) {
-                                                                           ^
-  symbol:   class BarChart
-  location: class ListItemBarchartBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:13: error: package com.proje.mobilesales.core.widget does not exist
-import com.proje.mobilesales.core.widget.FichePropertyEditView;
-                                        ^
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:23: error: cannot find symbol
-  public final FichePropertyEditView driverIdentityNr;
-               ^
-  symbol:   class FichePropertyEditView
   location: class DriverInformationItemBinding
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:26: error: cannot find symbol
   public final FichePropertyEditView driverName;
@@ -141,6 +158,56 @@ import com.proje.mobilesales.core.widget.FichePropertyEditView;
   location: class DriverInformationItemBinding
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:35: error: cannot find symbol
   public final FichePropertyEditView driverTrailerPlateNr;
+               ^
+  symbol:   class FichePropertyEditView
+  location: class DriverInformationItemBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:38: error: cannot find symbol
+      @NonNull FichePropertyEditView driverIdentityNr, @NonNull FichePropertyEditView driverName,
+               ^
+  symbol:   class FichePropertyEditView
+  location: class DriverInformationItemBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:38: error: cannot find symbol
+      @NonNull FichePropertyEditView driverIdentityNr, @NonNull FichePropertyEditView driverName,
+                                                                ^
+  symbol:   class FichePropertyEditView
+  location: class DriverInformationItemBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:39: error: cannot find symbol
+      @NonNull FichePropertyEditView driverPlateNr, @NonNull FichePropertyEditView driverSurname,
+               ^
+  symbol:   class FichePropertyEditView
+  location: class DriverInformationItemBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:39: error: cannot find symbol
+      @NonNull FichePropertyEditView driverPlateNr, @NonNull FichePropertyEditView driverSurname,
+                                                             ^
+  symbol:   class FichePropertyEditView
+  location: class DriverInformationItemBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:40: error: cannot find symbol
+      @NonNull FichePropertyEditView driverTrailerPlateNr) {
+               ^
+  symbol:   class FichePropertyEditView
+  location: class DriverInformationItemBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentPinSmsBinding.java:15: error: package cardtek.masterpass.attributes does not exist
+import cardtek.masterpass.attributes.MasterPassEditText;
+                                    ^
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentPinSmsBinding.java:50: error: cannot find symbol
+  public final MasterPassEditText pin;
+               ^
+  symbol:   class MasterPassEditText
+  location: class FragmentPinSmsBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentPinSmsBinding.java:65: error: cannot find symbol
+      @NonNull LinearLayout messageContentView, @NonNull MasterPassEditText pin,
+                                                         ^
+  symbol:   class MasterPassEditText
+  location: class FragmentPinSmsBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemSalesValidationViewBinding.java:13: error: package com.proje.mobilesales.features.sales.view.validation does not exist
+import com.proje.mobilesales.features.sales.view.validation.SalesValidationView;
+                                                           ^
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemSalesValidationViewBinding.java:23: error: cannot find symbol
+  public final SalesValidationView salesValidationView;
+               ^
+  symbol:   class SalesValidationView
+  location: class ItemSalesValidationViewBinding
+/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemSalesValidationViewBinding.java:26: error: cannot find symbol
       @NonNull SalesValidationView salesValidationView) {
                ^
   symbol:   class SalesValidationView
@@ -173,56 +240,6 @@ import com.proje.mobilesales.core.widget.ViewPager;
   location: class ActivityChequeAndDeedFicheBinding
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemPenetrationBinding.java:13: error: package com.proje.mobilesales.features.penetration.view.list does not exist
 import com.proje.mobilesales.features.penetration.view.list.PenetrationView;
-                                                           ^
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemPenetrationBinding.java:23: error: cannot find symbol
-  public final PenetrationView penetrationView;
-               ^
-  symbol:   class PenetrationView
-  location: class ItemPenetrationBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemPenetrationBinding.java:26: error: cannot find symbol
-      @NonNull PenetrationView penetrationView) {
-               ^
-  symbol:   class PenetrationView
-    location: class ItemPenetrationBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemLinechartBinding.java:12: error: package com.github.mikephil.charting.charts does not exist
-import com.github.mikephil.charting.charts.LineChart;
-                                          ^
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemLinechartBinding.java:23: error: cannot find symbol
-  public final LineChart chart;
-               ^
-  symbol:   class LineChart
-  location: class ListItemLinechartBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemLinechartBinding.java:25: error: cannot find symbol
-  private ListItemLinechartBinding(@NonNull LinearLayout rootView, @NonNull LineChart chart) {
-                                                                            ^
-  symbol:   class LineChart
-  location: class ListItemLinechartBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemShipAddressBinding.java:15: error: package com.proje.mobilesales.core.widget does not exist
-import com.proje.mobilesales.core.widget.TintableTextView;
-                                        ^
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemShipAddressBinding.java:31: error: cannot find symbol
-  public final TintableTextView txtCustomerShipAddress;
-               ^
-  symbol:   class TintableTextView
-  location: class ItemShipAddressBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemShipAddressBinding.java:35: error: cannot find symbol
-      @NonNull TintableTextView txtCustomerShipAddress) {
-               ^
-  symbol:   class TintableTextView
-  location: class ItemShipAddressBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemBarcodeProductBinding.java:20: error: package com.proje.mobilesales.core.widget does not exist
-import com.proje.mobilesales.core.widget.TintableTextView;
-                                        ^
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemBarcodeProductBinding.java:132: error: cannot find symbol
-  public final TintableTextView toggle;
-               ^
-  symbol:   class TintableTextView
-  location: class ItemBarcodeProductBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemBarcodeProductBinding.java:182: error: cannot find symbol
-      @NonNull AppCompatSpinner spnSecondProductUnitSpinner, @NonNull TintableTextView toggle,
-                                                                      ^
-  symbol:   class TintableTextView
-  location: class ItemBarcodeProductBinding
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityEDespatchExtraInfoBinding.java:14: error: package com.proje.mobilesales.core.widget does not exist
 import com.proje.mobilesales.core.widget.FichePropertyEditView;
                                         ^
@@ -282,9 +299,13 @@ import com.proje.mobilesales.core.widget.FichePropertyEditView;
   symbol:   class FichePropertyEditView
   location: class ActivityEDespatchExtraInfoBinding
 100 errors
+
 > Task :composeApp:compileDebugJavaWithJavac FAILED
-FAILURE: Build failed with an exception.
+
+
 [Incubating] Problems report is available at: file:///home/runner/work/MobileSales/MobileSales/build/reports/problems/problems-report.html
+FAILURE: Build failed with an exception.
+
 * What went wrong:
 Execution failed for task ':composeApp:compileDebugJavaWithJavac'.
 > Compilation failed; see the compiler output below.
@@ -297,8 +318,8 @@ Execution failed for task ':composeApp:compileDebugJavaWithJavac'.
         @NonNull RecyclerView rcwList, @NonNull AppBarSwipeRefreshLayout swipeLayout) {
                                                 ^
     symbol:   class AppBarSwipeRefreshLayout
-	    location: class ActivityLastOrderProductsBinding
-  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentOrderValidationBinding.java:33: error: cannot find symbol
+    location: class ActivityLastOrderProductsBinding
+	  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentOrderValidationBinding.java:33: error: cannot find symbol
     public final AppBarSwipeRefreshLayout swipeLayout;
                  ^
     symbol:   class AppBarSwipeRefreshLayout
@@ -341,6 +362,56 @@ Execution failed for task ':composeApp:compileDebugJavaWithJavac'.
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:26: error: cannot find symbol
     public final FichePropertyEditView fchSpeCode2;
                  ^
+    symbol:   class FichePropertyEditView
+    location: class DialogSpecodesFilterBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:29: error: cannot find symbol
+    public final FichePropertyEditView fchSpeCode3;
+                 ^
+    symbol:   class FichePropertyEditView
+    location: class DialogSpecodesFilterBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:32: error: cannot find symbol
+    public final FichePropertyEditView fchSpeCode4;
+                 ^
+    symbol:   class FichePropertyEditView
+    location: class DialogSpecodesFilterBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:35: error: cannot find symbol
+    public final FichePropertyEditView fchSpeCode5;
+                 ^
+    symbol:   class FichePropertyEditView
+    location: class DialogSpecodesFilterBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:38: error: cannot find symbol
+        @NonNull FichePropertyEditView fchSpeCode, @NonNull FichePropertyEditView fchSpeCode2,
+                 ^
+    symbol:   class FichePropertyEditView
+    location: class DialogSpecodesFilterBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:38: error: cannot find symbol
+        @NonNull FichePropertyEditView fchSpeCode, @NonNull FichePropertyEditView fchSpeCode2,
+                                                            ^
+    symbol:   class FichePropertyEditView
+    location: class DialogSpecodesFilterBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:39: error: cannot find symbol
+        @NonNull FichePropertyEditView fchSpeCode3, @NonNull FichePropertyEditView fchSpeCode4,
+                 ^
+    symbol:   class FichePropertyEditView
+    location: class DialogSpecodesFilterBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:39: error: cannot find symbol
+        @NonNull FichePropertyEditView fchSpeCode3, @NonNull FichePropertyEditView fchSpeCode4,
+                                                             ^
+    symbol:   class FichePropertyEditView
+    location: class DialogSpecodesFilterBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:40: error: cannot find symbol
+        @NonNull FichePropertyEditView fchSpeCode5) {
+                 ^
+    symbol:   class FichePropertyEditView
+    location: class DialogSpecodesFilterBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemProductTreeBinding.java:23: error: cannot find symbol
+    public final TintableTextView txtTreeItemDesc;
+                 ^
+    symbol:   class TintableTextView
+    location: class ItemProductTreeBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemProductTreeBinding.java:26: error: cannot find symbol
+        @NonNull TintableTextView txtTreeItemDesc) {
+                 ^
     symbol:   class TintableTextView
     location: class ItemProductTreeBinding
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:30: error: cannot find symbol
@@ -350,7 +421,7 @@ Execution failed for task ':composeApp:compileDebugJavaWithJavac'.
     location: class ActivityCustomerCurrencyInfoBinding
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:33: error: cannot find symbol
     public final FichePropertyTextView fptCurrencyAmount;
-                 ^
+	                 ^
     symbol:   class FichePropertyTextView
     location: class ActivityCustomerCurrencyInfoBinding
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:36: error: cannot find symbol
@@ -369,56 +440,6 @@ Execution failed for task ':composeApp:compileDebugJavaWithJavac'.
     symbol:   class FichePropertyTextView
     location: class ActivityCustomerCurrencyInfoBinding
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:49: error: cannot find symbol
-        @NonNull FichePropertyTextView fpeCurrency, @NonNull FichePropertyTextView fptCurrencyAmount,
-                                                             ^
-    symbol:   class FichePropertyTextView
-    location: class ActivityCustomerCurrencyInfoBinding
-  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:50: error: cannot find symbol
-        @NonNull FichePropertyTextView fptRate, @NonNull FichePropertyTextView fptTotal,
-                 ^
-    symbol:   class FichePropertyTextView
-    location: class ActivityCustomerCurrencyInfoBinding
-  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:50: error: cannot find symbol
-        @NonNull FichePropertyTextView fptRate, @NonNull FichePropertyTextView fptTotal,
-                                                         ^
-    symbol:   class FichePropertyTextView
-    location: class ActivityCustomerCurrencyInfoBinding
-  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/CustomerViewBinding.java:68: error: cannot find symbol
-    public final TintableTextView txtCustomerEInvoiceNote;
-                 ^
-    symbol:   class TintableTextView
-    location: class CustomerViewBinding
-  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/CustomerViewBinding.java:74: error: cannot find symbol
-    public final TintableTextView txtCustomerInfoNot;
-                 ^
-    symbol:   class TintableTextView
-    location: class CustomerViewBinding
-  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/CustomerViewBinding.java:110: error: cannot find symbol
-        @NonNull TextView txtCustomerDebit, @NonNull TintableTextView txtCustomerEInvoiceNote,
-                                                     ^
-    symbol:   class TintableTextView
-    location: class CustomerViewBinding
-  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/CustomerViewBinding.java:111: error: cannot find symbol
-        @NonNull TextView txtCustomerEmail, @NonNull TintableTextView txtCustomerInfoNot,
-                                                     ^
-    symbol:   class TintableTextView
-    location: class CustomerViewBinding
-	  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemVisitBinding.java:23: error: cannot find symbol
-    public final VisitView visitView;
-                 ^
-    symbol:   class VisitView
-    location: class ItemVisitBinding
-  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemVisitBinding.java:25: error: cannot find symbol
-    private ItemVisitBinding(@NonNull CardView rootView, @NonNull VisitView visitView) {
-                                                                  ^
-    symbol:   class VisitView
-    location: class ItemVisitBinding
-  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemPiechartBinding.java:23: error: cannot find symbol
-    public final PieChart chart;
-                 ^
-    symbol:   class PieChart
-    location: class ListItemPiechartBinding
-  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemPiechartBinding.java:25: error: cannot find symbol
     private ListItemPiechartBinding(@NonNull LinearLayout rootView, @NonNull PieChart chart) {
                                                                              ^
     symbol:   class PieChart
@@ -441,6 +462,56 @@ Execution failed for task ':composeApp:compileDebugJavaWithJavac'.
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemBarchartBinding.java:25: error: cannot find symbol
     private ListItemBarchartBinding(@NonNull LinearLayout rootView, @NonNull BarChart chart) {
                                                                              ^
+    symbol:   class BarChart
+    location: class ListItemBarchartBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:23: error: cannot find symbol
+    public final FichePropertyEditView driverIdentityNr;
+                 ^
+    symbol:   class FichePropertyEditView
+    location: class DriverInformationItemBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:26: error: cannot find symbol
+    public final FichePropertyEditView driverName;
+                 ^
+    symbol:   class FichePropertyEditView
+    location: class DriverInformationItemBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:29: error: cannot find symbol
+    public final FichePropertyEditView driverPlateNr;
+                 ^
+    symbol:   class FichePropertyEditView
+    location: class DriverInformationItemBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:32: error: cannot find symbol
+    public final FichePropertyEditView driverSurname;
+                 ^
+    symbol:   class FichePropertyEditView
+    location: class DriverInformationItemBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:35: error: cannot find symbol
+    public final FichePropertyEditView driverTrailerPlateNr;
+                 ^
+    symbol:   class FichePropertyEditView
+    location: class DriverInformationItemBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:38: error: cannot find symbol
+        @NonNull FichePropertyEditView driverIdentityNr, @NonNull FichePropertyEditView driverName,
+                 ^
+    symbol:   class FichePropertyEditView
+    location: class DriverInformationItemBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:38: error: cannot find symbol
+        @NonNull FichePropertyEditView driverIdentityNr, @NonNull FichePropertyEditView driverName,
+		                                                                  ^
+    symbol:   class FichePropertyEditView
+    location: class DriverInformationItemBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:39: error: cannot find symbol
+        @NonNull FichePropertyEditView driverPlateNr, @NonNull FichePropertyEditView driverSurname,
+                 ^
+    symbol:   class FichePropertyEditView
+    location: class DriverInformationItemBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:39: error: cannot find symbol
+        @NonNull FichePropertyEditView driverPlateNr, @NonNull FichePropertyEditView driverSurname,
+                                                               ^
+    symbol:   class FichePropertyEditView
+    location: class DriverInformationItemBinding
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:40: error: cannot find symbol
+        @NonNull FichePropertyEditView driverTrailerPlateNr) {
+                 ^
     symbol:   class FichePropertyEditView
     location: class DriverInformationItemBinding
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentPinSmsBinding.java:50: error: cannot find symbol
@@ -508,7 +579,7 @@ Execution failed for task ':composeApp:compileDebugJavaWithJavac'.
                  ^
     symbol:   class TintableTextView
     location: class ItemShipAddressBinding
-	  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemShipAddressBinding.java:35: error: cannot find symbol
+  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemShipAddressBinding.java:35: error: cannot find symbol
         @NonNull TintableTextView txtCustomerShipAddress) {
                  ^
     symbol:   class TintableTextView
@@ -550,7 +621,7 @@ Execution failed for task ':composeApp:compileDebugJavaWithJavac'.
     location: class ActivityEDespatchExtraInfoBinding
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityEDespatchExtraInfoBinding.java:39: error: cannot find symbol
     public final FichePropertyEditView fpeFirstDriverName;
-                 ^
+	                 ^
     symbol:   class FichePropertyEditView
     location: class ActivityEDespatchExtraInfoBinding
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityEDespatchExtraInfoBinding.java:42: error: cannot find symbol
@@ -581,7 +652,6 @@ Execution failed for task ':composeApp:compileDebugJavaWithJavac'.
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityLastOrderProductsBinding.java:15: error: package com.proje.mobilesales.core.widget does not exist
   import com.proje.mobilesales.core.widget.AppBarSwipeRefreshLayout;
                                           ^
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentOrderValidationBinding.java:14: error: package com.proje.mobilesales.core.widget does not exist
   import com.proje.mobilesales.core.widget.AppBarSwipeRefreshLayout;
                                           ^
@@ -596,7 +666,7 @@ Execution failed for task ':composeApp:compileDebugJavaWithJavac'.
                                           ^
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemProductTreeBinding.java:13: error: package com.proje.mobilesales.core.widget does not exist
   import com.proje.mobilesales.core.widget.TintableTextView;
-                                            ^
+                                          ^
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:14: error: package com.proje.mobilesales.core.widget does not exist
   import com.proje.mobilesales.core.widget.FichePropertyTextView;
                                           ^
@@ -614,7 +684,6 @@ Execution failed for task ':composeApp:compileDebugJavaWithJavac'.
                                           ^
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemBarchartBinding.java:12: error: package com.github.mikephil.charting.charts does not exist
   import com.github.mikephil.charting.charts.BarChart;
-27 actionable tasks: 27 executed
                                             ^
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:13: error: package com.proje.mobilesales.core.widget does not exist
   import com.proje.mobilesales.core.widget.FichePropertyEditView;
@@ -645,11 +714,13 @@ Execution failed for task ':composeApp:compileDebugJavaWithJavac'.
                                           ^
   /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityEDespatchExtraInfoBinding.java:14: error: package com.proje.mobilesales.core.widget does not exist
   import com.proje.mobilesales.core.widget.FichePropertyEditView;
-                                          ^
+                                            ^
   100 errors
+
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
 > Run with --scan to get full insights.
+
 * Exception is:
 org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':composeApp:compileDebugJavaWithJavac'.
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
@@ -682,11 +753,12 @@ org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compose
 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
 Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler output below.
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityLastOrderProductsBinding.java:34: error: cannot find symbol
   public final AppBarSwipeRefreshLayout swipeLayout;
-                 ^
+               ^
   symbol:   class AppBarSwipeRefreshLayout
   location: class ActivityLastOrderProductsBinding
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityLastOrderProductsBinding.java:38: error: cannot find symbol
@@ -718,106 +790,6 @@ Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Com
   public IconButton getRoot() {
          ^
   symbol:   class IconButton
-  location: class ButtonMoreBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentListSwipeBinding.java:33: error: cannot find symbol
-  public final AppBarSwipeRefreshLayout swipeLayout;
-               ^
-  symbol:   class AppBarSwipeRefreshLayout
-  location: class FragmentListSwipeBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentListSwipeBinding.java:37: error: cannot find symbol
-      @NonNull AppBarSwipeRefreshLayout swipeLayout) {
-               ^
-  symbol:   class AppBarSwipeRefreshLayout
-  location: class FragmentListSwipeBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:23: error: cannot find symbol
-  public final FichePropertyEditView fchSpeCode;
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DialogSpecodesFilterBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:26: error: cannot find symbol
-  public final FichePropertyEditView fchSpeCode2;
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DialogSpecodesFilterBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:29: error: cannot find symbol
-  public final FichePropertyEditView fchSpeCode3;
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DialogSpecodesFilterBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:32: error: cannot find symbol
-  public final FichePropertyEditView fchSpeCode4;
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DialogSpecodesFilterBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:35: error: cannot find symbol
-  public final FichePropertyEditView fchSpeCode5;
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DialogSpecodesFilterBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:38: error: cannot find symbol
-      @NonNull FichePropertyEditView fchSpeCode, @NonNull FichePropertyEditView fchSpeCode2,
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DialogSpecodesFilterBinding
-  /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:38: error: cannot find symbol
-      @NonNull FichePropertyEditView fchSpeCode, @NonNull FichePropertyEditView fchSpeCode2,
-                                                          ^
-  symbol:   class FichePropertyEditView
-  location: class DialogSpecodesFilterBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:39: error: cannot find symbol
-      @NonNull FichePropertyEditView fchSpeCode3, @NonNull FichePropertyEditView fchSpeCode4,
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DialogSpecodesFilterBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:39: error: cannot find symbol
-      @NonNull FichePropertyEditView fchSpeCode3, @NonNull FichePropertyEditView fchSpeCode4,
-                                                           ^
-  symbol:   class FichePropertyEditView
-  location: class DialogSpecodesFilterBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DialogSpecodesFilterBinding.java:40: error: cannot find symbol
-      @NonNull FichePropertyEditView fchSpeCode5) {
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DialogSpecodesFilterBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemProductTreeBinding.java:23: error: cannot find symbol
-  public final TintableTextView txtTreeItemDesc;
-               ^
-  symbol:   class TintableTextView
-  location: class ItemProductTreeBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemProductTreeBinding.java:26: error: cannot find symbol
-      @NonNull TintableTextView txtTreeItemDesc) {
-               ^
-  symbol:   class TintableTextView
-  location: class ItemProductTreeBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:30: error: cannot find symbol
-  public final FichePropertyTextView fpeCurrency;
-               ^
-  symbol:   class FichePropertyTextView
-  location: class ActivityCustomerCurrencyInfoBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:33: error: cannot find symbol
-  public final FichePropertyTextView fptCurrencyAmount;
-               ^
-  symbol:   class FichePropertyTextView
-  location: class ActivityCustomerCurrencyInfoBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:36: error: cannot find symbol
-  public final FichePropertyTextView fptRate;
-               ^
-  symbol:   class FichePropertyTextView
-  location: class ActivityCustomerCurrencyInfoBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:39: error: cannot find symbol
-  public final FichePropertyTextView fptTotal;
-               ^
-  symbol:   class FichePropertyTextView
-  location: class ActivityCustomerCurrencyInfoBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:49: error: cannot find symbol
-      @NonNull FichePropertyTextView fpeCurrency, @NonNull FichePropertyTextView fptCurrencyAmount,
-               ^
-  symbol:   class FichePropertyTextView
-  location: class ActivityCustomerCurrencyInfoBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:49: error: cannot find symbol
-      @NonNull FichePropertyTextView fpeCurrency, @NonNull FichePropertyTextView fptCurrencyAmount,
-                                                           ^
-  symbol:   class FichePropertyTextView
   location: class ActivityCustomerCurrencyInfoBinding
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityCustomerCurrencyInfoBinding.java:50: error: cannot find symbol
       @NonNull FichePropertyTextView fptRate, @NonNull FichePropertyTextView fptTotal,
@@ -868,106 +840,6 @@ Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Com
   private ListItemPiechartBinding(@NonNull LinearLayout rootView, @NonNull PieChart chart) {
                                                                            ^
   symbol:   class PieChart
-  location: class ListItemPiechartBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentCustomerRiskBinding.java:35: error: cannot find symbol
-  public final AppBarSwipeRefreshLayout swipeLayout;
-               ^
-  symbol:   class AppBarSwipeRefreshLayout
-  location: class FragmentCustomerRiskBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentCustomerRiskBinding.java:48: error: cannot find symbol
-      @NonNull RecyclerView rcw, @NonNull AppBarSwipeRefreshLayout swipeLayout,
-                                          ^
-  symbol:   class AppBarSwipeRefreshLayout
-  location: class FragmentCustomerRiskBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemBarchartBinding.java:23: error: cannot find symbol
-  public final BarChart chart;
-               ^
-  symbol:   class BarChart
-  location: class ListItemBarchartBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ListItemBarchartBinding.java:25: error: cannot find symbol
-  private ListItemBarchartBinding(@NonNull LinearLayout rootView, @NonNull BarChart chart) {
-                                                                           ^
-  symbol:   class BarChart
-  location: class ListItemBarchartBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:23: error: cannot find symbol
-  public final FichePropertyEditView driverIdentityNr;
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DriverInformationItemBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:26: error: cannot find symbol
-  public final FichePropertyEditView driverName;
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DriverInformationItemBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:29: error: cannot find symbol
-  public final FichePropertyEditView driverPlateNr;
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DriverInformationItemBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:32: error: cannot find symbol
-  public final FichePropertyEditView driverSurname;
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DriverInformationItemBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:35: error: cannot find symbol
-  public final FichePropertyEditView driverTrailerPlateNr;
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DriverInformationItemBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:38: error: cannot find symbol
-      @NonNull FichePropertyEditView driverIdentityNr, @NonNull FichePropertyEditView driverName,
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DriverInformationItemBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:38: error: cannot find symbol
-      @NonNull FichePropertyEditView driverIdentityNr, @NonNull FichePropertyEditView driverName,
-                                                                ^
-  symbol:   class FichePropertyEditView
-  location: class DriverInformationItemBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:39: error: cannot find symbol
-      @NonNull FichePropertyEditView driverPlateNr, @NonNull FichePropertyEditView driverSurname,
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DriverInformationItemBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:39: error: cannot find symbol
-      @NonNull FichePropertyEditView driverPlateNr, @NonNull FichePropertyEditView driverSurname,
-                                                             ^
-  symbol:   class FichePropertyEditView
-  location: class DriverInformationItemBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/DriverInformationItemBinding.java:40: error: cannot find symbol
-      @NonNull FichePropertyEditView driverTrailerPlateNr) {
-               ^
-  symbol:   class FichePropertyEditView
-  location: class DriverInformationItemBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentPinSmsBinding.java:50: error: cannot find symbol
-  public final MasterPassEditText pin;
-               ^
-  symbol:   class MasterPassEditText
-  location: class FragmentPinSmsBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/FragmentPinSmsBinding.java:65: error: cannot find symbol
-      @NonNull LinearLayout messageContentView, @NonNull MasterPassEditText pin,
-                                                         ^
-  symbol:   class MasterPassEditText
-  location: class FragmentPinSmsBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemSalesValidationViewBinding.java:23: error: cannot find symbol
-  public final SalesValidationView salesValidationView;
-               ^
-  symbol:   class SalesValidationView
-  location: class ItemSalesValidationViewBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemSalesValidationViewBinding.java:26: error: cannot find symbol
-      @NonNull SalesValidationView salesValidationView) {
-               ^
-  symbol:   class SalesValidationView
-  location: class ItemSalesValidationViewBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemCustomerBinding.java:24: error: cannot find symbol
-  public final CustomerView customerView;
-                 ^
-  symbol:   class CustomerView
-  location: class ItemCustomerBinding
-/home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemCustomerBinding.java:29: error: cannot find symbol
-  private ItemCustomerBinding(@NonNull CardView rootView, @NonNull CustomerView customerView,
-                                                                   ^
-  symbol:   class CustomerView
   location: class ItemCustomerBinding
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityChequeAndDeedFicheBinding.java:70: error: cannot find symbol
   public final ViewPager viewPager;
@@ -1001,7 +873,7 @@ Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Com
   location: class ListItemLinechartBinding
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemShipAddressBinding.java:31: error: cannot find symbol
   public final TintableTextView txtCustomerShipAddress;
-               ^
+                 ^
   symbol:   class TintableTextView
   location: class ItemShipAddressBinding
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ItemShipAddressBinding.java:35: error: cannot find symbol
@@ -1031,7 +903,7 @@ Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Com
   location: class ActivityEDespatchExtraInfoBinding
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityEDespatchExtraInfoBinding.java:30: error: cannot find symbol
   public final FichePropertyEditView fpeCounty;
-                 ^
+               ^
   symbol:   class FichePropertyEditView
   location: class ActivityEDespatchExtraInfoBinding
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityEDespatchExtraInfoBinding.java:33: error: cannot find symbol
@@ -1140,7 +1012,7 @@ import com.proje.mobilesales.core.widget.TintableTextView;
 /home/runner/work/MobileSales/MobileSales/composeApp/build/generated/data_binding_base_class_source_out/debug/out/com/proje/mobilesales/databinding/ActivityEDespatchExtraInfoBinding.java:14: error: package com.proje.mobilesales.core.widget does not exist
 import com.proje.mobilesales.core.widget.FichePropertyEditView;
                                         ^
-100 errors
+100 errors 
 	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:89)
 	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
 	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:98)
@@ -1168,33 +1040,62 @@ import com.proje.mobilesales.core.widget.FichePropertyEditView;
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
 	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler.execute(CompileJavaBuildOperationReportingCompiler.java:48)
-	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:224)
-	at org.gradle.api.tasks.compile.JavaCompile.performIncrementalCompilation(JavaCompile.java:165)
-	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:150)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
-	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:45)
-	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
-	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.execute(IncrementalTaskAction.java:26)
-	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
-	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:244)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
-	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
-	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
-	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
-	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
-	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
-	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
-	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
-	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+	at org.gradle.internal.Either$Right.fold(Either.java:175)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:75)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:53)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:53)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:35)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:107)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:56)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:64)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
@@ -1202,7 +1103,20 @@ import com.proje.mobilesales.core.widget.FichePropertyEditView;
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
-	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
-	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+
+
+BUILD FAILED in 2m 40s
+30 actionable tasks: 28 executed, 2 up-to-date
 Error: Process completed with exit code 1.

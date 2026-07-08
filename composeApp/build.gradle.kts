@@ -152,7 +152,7 @@ android {
     }
 
     buildFeatures {
-        viewBinding = true
+        viewBinding = false
         dataBinding = false
     }
 
