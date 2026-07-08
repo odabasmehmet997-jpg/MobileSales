@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:masterpass="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/material_background"
+                  android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/contentView" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:textStyle="bold" android:id="@+id/title"
+                                                         android:padding="8dp" android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_verification_code"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/message_content_view"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_margin="8dp">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:gravity="start" android:layout_gravity="start"
+                                                             android:id="@+id/txtDialogDescription"
+                                                             android:layout_width="match_parent"
+                                                             android:layout_height="wrap_content"
+                                                             android:singleLine="false"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+                    <cardtek.masterpass.attributes.MasterPassEditText
+                            android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/pin"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp" android:maxLength="6" android:inputType="numberPassword"
+                            masterpass:type="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:gravity="end"
+                            android:id="@+id/resendTimer" android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="180"
+                            android:singleLine="false"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                              android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                    <androidx.appcompat.widget.AppCompatButton android:gravity="center" android:id="@+id/btnValidate"
+                                                               android:layout_width="match_parent"
+                                                               android:layout_height="match_parent"
+                                                               android:text="@string/str_okey"
+                                                               style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+                    <androidx.appcompat.widget.AppCompatButton android:gravity="center" android:id="@+id/btnResend"
+                                                               android:layout_width="match_parent"
+                                                               android:layout_height="match_parent"
+                                                               android:text="@string/str_resend"
+                                                               style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+                  <androidx.appcompat.widget.AppCompatButton android:textColor="@android:color/holo_orange_light"
+                                                             android:gravity="center" android:id="@+id/btnCancel"
+                                                             android:layout_width="match_parent"
+                                                             android:layout_height="match_parent"
+                                                             android:text="@string/str_cancel"
+                                                             style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal"
+                      android:id="@+id/buttonLayout" android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+            <TextView android:id="@+id/empty_view" android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:id="@+id/linearLayoutContainer" android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <CheckedTextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="14sp"
+                     android:textStyle="bold" android:textColor="?android:attr/textColorAlertDialogListItem"
+                     android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/checked_text_item"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                     android:minHeight="?android:attr/listPreferredItemHeight" android:paddingStart="12dp"
+                     android:paddingEnd="7dp"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:gravity="center_vertical"
+                                                 android:id="@+id/textViewBottomDefinition" android:visibility="gone"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content" android:layout_marginTop="-20dp"
+                                                 android:minHeight="30dp" android:paddingStart="12dp"
+                                                 android:paddingEnd="7dp"/>
+</LinearLayout>

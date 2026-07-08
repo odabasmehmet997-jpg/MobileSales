@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:scrollbarStyle="insideOverlay" android:scrollbars="vertical"
+                                           android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/ln_salesShipAddressCustomer" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_ship_account" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent"
+                                android:layout_weight="0.55">
+                    <TextView android:textStyle="bold" android:id="@+id/txt_salesShipAddressAccount"
+                              android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:singleLine="false" android:layout_toLeftOf="@+id/img_salesShipAddressAccountClear"
+                              android:layout_alignParentLeft="true"
+                              android:layout_toStartOf="@+id/img_salesShipAddressAccountClear"
+                              android:layout_alignParentStart="true" style="@style/textCustomerSalesHeaderStyle"/>
+                    <ImageView android:id="@+id/img_salesShipAddressAccountClear" android:visibility="visible"
+                               android:clickable="true" android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" android:src="@drawable/ic_close_circle_grey600_24dp"
+                               android:layout_alignParentRight="true" android:layout_centerHorizontal="true"
+                               android:layout_centerVertical="true" android:layout_alignParentEnd="true"
+                               style="@style/textCustomerSalesHeaderStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesShipAddress" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_ship_address" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent"
+                                android:layout_weight="0.55">
+                    <TextView android:textStyle="bold" android:id="@+id/txt_salesShipAddress"
+                              android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:singleLine="false" android:layout_toLeftOf="@+id/img_salesShipAddressClear"
+                              android:layout_alignParentLeft="true"
+                              android:layout_toStartOf="@+id/img_salesShipAddressClear"
+                              android:layout_alignParentStart="true" style="@style/textCustomerSalesHeaderStyle"/>
+                    <ImageView android:id="@+id/img_salesShipAddressClear" android:visibility="visible"
+                               android:clickable="true" android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" android:src="@drawable/ic_close_circle_grey600_24dp"
+                               android:layout_alignParentRight="true" android:layout_centerHorizontal="true"
+                               android:layout_centerVertical="true" android:layout_alignParentEnd="true"
+                               style="@style/textCustomerSalesHeaderStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesInvoiceAddress" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_invoice_address" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesInvoiceAddress" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="false" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_shipAgent" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_shipAgent" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesShipAgent" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_shipType" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_shipType" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesShipType" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_totalNetVolume" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_total_net_volume" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_totalNetVolume" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_totalGrossVolume" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_total_gross_volume" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_totalGrossVolume" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_totalNetWeight" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_total_net_weight" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_totalNetWeight" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_totalGrossWeight" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_total_gross_weight" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_totalGrossWeight" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+package rx.internal.util.unsafe;
+
+
+public final class Pow2 {
+    public static boolean isPowerOfTwo(int i2) {
+        return (i2 & (i2 + (-1))) == 0;
+    }
+
+    private Pow2() {
+        throw new IllegalStateException("No instances!");
+    }
+
+    public static int roundToPowerOfTwo(int i2) {
+        return 1 << (32 - Integer.numberOfLeadingZeros(i2 - 1));
+    }
+}

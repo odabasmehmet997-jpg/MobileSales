@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ln_defaultPrinter" android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/pref_default_printer"
+                                                     android:textAllCaps="true"
+                                                     style="@style/textCustomerSalesHeaderStyle"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textStyle="bold" android:id="@+id/txt_choosePrinter"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     style="@style/textCustomerComStyle"/>
+    </LinearLayout>
+    <View android:id="@+id/printerDivider" android:background="@color/colorDivider2" android:layout_width="match_parent"
+          android:layout_height="1dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ln_reportDesign" android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_report_designs"
+                                                     android:textAllCaps="true" style="@style/textCustomerComStyle"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textStyle="bold" android:id="@+id/txt_chooseDesign"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_choose_report_design"
+                                                     style="@style/textCustomerComStyle"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="match_parent">
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end"
+        android:id="@+id/btnPrint" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_margin="25dp" android:contentDescription="@string/str_print"
+        app:srcCompat="@drawable/ic_printer_white_24dp" app:backgroundTint="#FF9800"/>
+    </LinearLayout>
+</LinearLayout>

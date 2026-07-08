@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+                android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15dp">
+    <TextView android:textSize="18dp" android:textColor="@color/black" android:id="@+id/CTOTAL"
+              android:layout_width="match_parent" android:layout_height="wrap_content" android:text="111111"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#0090ff"
+              android:id="@+id/CDUEDATE" android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp" android:text="2222222" android:layout_below="@+id/CTOTAL"
+              android:layout_marginStart="5dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#39ff0c"
+              android:id="@+id/CSPECODE" android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp" android:text="333333" android:layout_toRightOf="@+id/CDUEDATE"
+              android:layout_alignTop="@+id/CDUEDATE" android:layout_marginStart="10dp"
+              android:layout_toEndOf="@+id/CDUEDATE"/>
+    <TextView android:id="@+id/LOGICALREF" android:layout_width="0px" android:layout_height="0px"
+              android:text="TextView" android:layout_x="0px" android:layout_y="0px"/>
+</RelativeLayout>

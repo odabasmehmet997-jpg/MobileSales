@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+                                   xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="wrap_content"
+                                   style="@style/AppCardView"
+>
+    <RelativeLayout android:id="@id/content_frame"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <ImageButton android:id="@id/img_customer_ship_address"
+                     android:background="?attr/selectableItemBackground"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/ic_map_marker_24dp_grey"
+                     android:layout_centerVertical="true"
+                     android:rotation="-45.0"
+                     style="@style/textCustomerComTintStyle" tools:ignore="SpeakableTextPresentCheck"/>
+        <com.proje.mobilesales.core.widget.TintableTextView android:id="@id/txt_customer_ship_address"
+                                                            android:layout_width="fill_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="19 Mayıs Mah. İnönü Cad. No:55/12 Koz Yatağı Kadıköy/İstanbul"
+                                                            android:layout_toRightOf="@id/img_customer_ship_address"
+                                                            android:layout_toEndOf="@id/img_customer_ship_address"
+                                                            android:breakStrategy="balanced"
+                                                            style="@style/textCustomerComTintStyle"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

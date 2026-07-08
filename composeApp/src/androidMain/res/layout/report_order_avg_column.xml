@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearMaterial2" android:padding="8dp"
+                  android:longClickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_date"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:id="@+id/tvDate" android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_fiche_number"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+              android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp"
+              android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_fiche_number" android:singleLine="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:id="@+id/tvFicheNo" android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_code" android:singleLine="true"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+              android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp"
+              android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                     android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_total" android:singleLine="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:id="@+id/tvAmount" android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_definition" android:singleLine="true"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+              android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp"
+              android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                     android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_discount_price"
+                                                     android:singleLine="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:id="@+id/tvDiscount" android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_net_total" android:singleLine="true"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+              android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp"
+              android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                     android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_net_total"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:id="@+id/tvNetAmount" android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_net_total"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+              android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp"
+              android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                     android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_explanation"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:id="@+id/tvExplanation" android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_net_total"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+              android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp"
+              android:layout_marginBottom="2dp"/>
+    </LinearLayout>
+</ScrollView>

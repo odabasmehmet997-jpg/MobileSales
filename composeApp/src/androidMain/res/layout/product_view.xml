@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/rlt_product_container" android:padding="5dp" android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlt_product_header" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@+id/txt_productName" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                      android:text="@string/loading_text" android:maxLines="2" style="@style/textTitleStyle"/>
+            <ImageButton android:id="@+id/btn_productInfo" android:background="@android:color/transparent"
+                         android:visibility="gone" android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" android:layout_alignBottom="@+id/txt_productName"
+                         android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+                         android:layout_alignParentEnd="true"
+                         app:srcCompat="@drawable/ic_information_outline_grey600_24dp"/>
+            <TextView android:ellipsize="end" android:id="@+id/txt_productName2" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                      android:text="@string/loading_text" android:maxLines="1"
+                      android:layout_below="@+id/txt_productName" style="@style/textTitleStyle"/>
+            <ImageView android:id="@+id/img_product" android:layout_width="48dp" android:layout_height="48dp"
+                       android:src="@drawable/ic_barcode_scan_grey600_48dp" android:layout_below="@+id/txt_productName2"
+                       android:layout_alignParentStart="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/codeAndPriceContainer"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_marginTop="6dp" android:weightSum="1"
+                          android:layout_below="@+id/txt_productName2" android:layout_toEndOf="@+id/img_product">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0dp"
+                              android:layout_height="wrap_content" android:layout_weight="0.5"
+                              android:layout_below="@+id/txt_productName">
+                    <TextView android:ellipsize="end" android:gravity="start" android:id="@+id/txt_productCode"
+                              android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="@string/loading_text" android:maxLines="2" android:singleLine="false"
+                              android:layout_below="@+id/txt_productName" style="@style/textSubtitleStyle"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ln_product_price"
+                              android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="1"
+                              android:layout_weight="0.5" android:layout_centerHorizontal="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp"
+                                  android:layout_height="wrap_content" android:layout_weight="0.33">
+                        <TextView android:ellipsize="end" android:text="@string/str_fiche_item_price"
+                                  android:maxLines="1" style="@style/textCustomerSubtitleStyle"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp"
+                                  android:layout_height="wrap_content" android:layout_weight="0.67">
+                        <TextView android:textStyle="bold" android:ellipsize="end" android:id="@+id/txt_product_price"
+                                  android:text="@string/loading_text" android:maxLines="2"
+                                  android:textAlignment="textEnd" android:paddingStart="0dp"
+                                  android:paddingEnd="@dimen/padding" style="@style/textCustomerSubtitleNumberStyle"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ln_product_stock"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_marginTop="6dp" android:weightSum="10"
+                          android:layout_below="@+id/codeAndPriceContainer" android:layout_toEndOf="@+id/img_product">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ln_product_actual_stock"
+                              android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="5"
+                              android:layout_weight="5">
+                    <TextView android:ellipsize="end" android:id="@+id/txt_product_actual_stock_text"
+                              android:layout_width="0dp" android:layout_height="wrap_content"
+                              android:text="@string/str_physical_stock" android:maxLines="1" android:layout_weight="2"
+                              style="@style/textCustomerSubtitleStyle"/>
+                    <TextView android:textStyle="bold" android:ellipsize="end"
+                              android:id="@+id/txt_product_actual_stock" android:layout_width="0dp"
+                              android:layout_height="wrap_content" android:text="@string/loading_text"
+                              android:maxLines="4" android:layout_weight="3"
+                              style="@style/textCustomerSubtitleNumberStyle"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ln_product_real_stock"
+                              android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="5"
+                              android:layout_weight="5">
+                    <TextView android:ellipsize="end" android:id="@+id/txt_product_real_stock_text"
+                              android:layout_width="0dp" android:layout_height="wrap_content"
+                              android:text="@string/str_actual" android:maxLines="1" android:layout_weight="2"
+                              style="@style/textCustomerSubtitleStyle"/>
+                    <TextView android:textStyle="bold" android:ellipsize="end" android:id="@+id/txt_real_stock"
+                              android:layout_width="0dp" android:layout_height="wrap_content"
+                              android:text="@string/loading_text" android:maxLines="4" android:layout_weight="3"
+                              style="@style/textCustomerSubtitleNumberStyle"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ln_detailContainer" android:visibility="gone"
+                      android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="4"
+                      android:layout_below="@+id/rlt_product_header">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ln_amount"
+                          android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="@string/str_fiche_item_amount" android:layout_weight="1"
+                          style="@style/textSubtitleStyle"/>
+                <EditText android:id="@+id/edt_amount" android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:layout_weight="1" android:inputType="numberDecimal" android:imeOptions="actionDone"
+                          style="@style/textSubtitleStyle"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ln_unit"
+                          android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+                <androidx.appcompat.widget.AppCompatSpinner android:id="@+id/spn_productUnitSpinner"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:drawSelectorOnTop="true" android:maxWidth="10dp"
+                                                            android:minWidth="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/button_toggle" android:visibility="gone" android:layout_width="match_parent"
+                     android:layout_height="@dimen/expand_height" android:foreground="?attr/selectableItemBackground"
+                     android:layout_below="@+id/ln_detailContainer">
+            <com.proje.mobilesales.core.widget.TintableTextView android:layout_gravity="center" android:id="@+id/toggle"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                app:iconStart="@drawable/ic_chevron_down_white_18dp"
+                                                                style="@style/textSubtitleStyle"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/img_product_select" android:background="?attr/selectableItemBackground"
+                   android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/ic_check_circle_grey600_24dp" android:layout_alignParentRight="true"
+                   android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</merge>

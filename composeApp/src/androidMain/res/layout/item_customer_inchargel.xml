@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent" android:layout_height="wrap_content"
+                                   style="@style/AppCardView">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ln_customer_incharge"
+                  android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="match_parent" android:weightSum="1">
+            <TextView android:text="@string/str_related_person" android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerGeneralStyle"/>
+            <TextView android:id="@+id/tv_customer_incharge_name" android:layout_weight="0.55"
+                      style="@style/textCustomerGeneralValueStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="match_parent" android:weightSum="1">
+            <TextView android:text="@string/str_definition" android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerGeneralStyle"/>
+            <TextView android:id="@+id/tv_customer_incharge_definition" android:layout_weight="0.55"
+                      style="@style/textCustomerGeneralValueStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="match_parent" android:weightSum="1">
+            <TextView android:text="@string/str_phone_number" android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerGeneralStyle"/>
+            <TextView android:id="@+id/tv_customer_incharge_tel" android:layout_weight="0.55"
+                      style="@style/textCustomerGeneralValueStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="match_parent" android:weightSum="1">
+            <TextView android:text="@string/str_email_address" android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerGeneralStyle"/>
+            <TextView android:id="@+id/tv_customer_incharge_email" android:layout_weight="0.55"
+                      style="@style/textCustomerGeneralValueStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

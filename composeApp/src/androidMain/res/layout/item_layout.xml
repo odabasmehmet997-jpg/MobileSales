@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:paddingLeft="25dp" android:paddingTop="7dp" android:paddingRight="7dp" android:paddingBottom="7dp"
+              android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="25dp"
+              android:paddingEnd="7dp">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="20dp" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:paddingStart="20dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="100">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:id="@+id/tvItemTitle"
+                                                             android:layout_width="match_parent"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="Malzemeler alınıyor..."/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:id="@+id/tvItemStatus"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content" android:text="..."/>
+            <androidx.appcompat.widget.AppCompatTextView android:id="@+id/tvItemError" android:visibility="gone"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/progressBarItem"
+                     android:layout_width="18dp" android:layout_height="18dp" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal"
+                                                      android:id="@+id/imItemSpinner" android:visibility="gone"
+                                                      android:layout_width="18dp" android:layout_height="18dp"
+                                                      android:scaleType="fitCenter" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

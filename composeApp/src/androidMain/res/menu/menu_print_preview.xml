@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_printer_white_24dp" android:id="@+id/menu_print" android:menuCategory="secondary"
+          android:title="@string/menu_print_page" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_printer_white_24dp" android:id="@+id/menu_print_all"
+          android:menuCategory="secondary" android:title="@string/menu_print_all"
+          app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_cloud_outline_off_white_24dp" android:id="@+id/menu_connect_device"
+          android:menuCategory="secondary" android:title="@string/menu_connect_device"
+          app:showAsAction="collapseActionView"/>
+    <item android:id="@+id/menu_next_page" android:menuCategory="secondary" android:title="@string/menu_next_page"
+          app:showAsAction="collapseActionView"/>
+    <item android:id="@+id/menu_prev_page" android:menuCategory="secondary" android:title="@string/menu_prev_page"
+          app:showAsAction="collapseActionView"/>
+    <item android:id="@+id/menu_zoom_in" android:menuCategory="secondary" android:title="@string/menu_zoom_in"
+          app:showAsAction="collapseActionView"/>
+    <item android:id="@+id/menu_zoom_out" android:menuCategory="secondary" android:title="@string/menu_zoom_out"
+          app:showAsAction="collapseActionView"/>
+</menu>

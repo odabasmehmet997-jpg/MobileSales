@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rwParametersListView"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textColor="#1B5E20" android:layout_gravity="bottom" android:id="@+id/run_query_button"
+                android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="62dp"
+                android:text="@string/str_apply"/>
+    </LinearLayout>
+</LinearLayout>

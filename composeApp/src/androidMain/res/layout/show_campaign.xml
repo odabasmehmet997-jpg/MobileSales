@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <ListView android:layout_gravity="top" android:id="@+id/lvShowCampaign" android:scrollbars="none"
+              android:layout_width="match_parent" android:layout_height="0dp" android:divider="@null"
+              android:layout_weight="1"/>
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1sp"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal"
+                      android:id="@+id/lnTotalSurplusDiscount" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:layout_width="0dp" android:layout_height="wrap_content"
+                                                         android:text="@string/str_surplus_discount"
+                                                         android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:gravity="end" android:layout_gravity="end"
+                                                         android:id="@+id/tvSurplusDiscount" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_tmp_0_float"
+                                                         android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal"
+                      android:id="@+id/lnTotalLineDiscount" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:layout_width="0dp" android:layout_height="wrap_content"
+                                                         android:text="@string/str_total_line_discount"
+                                                         android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:gravity="end" android:layout_gravity="end"
+                                                         android:id="@+id/tvTotalLineDiscount"
+                                                         android:layout_width="0dp" android:layout_height="wrap_content"
+                                                         android:text="@string/str_tmp_0_float"
+                                                         android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal"
+                      android:id="@+id/lnTotalGeneralDiscount" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:layout_width="0dp" android:layout_height="wrap_content"
+                                                         android:text="@string/str_total_general_discount"
+                                                         android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:gravity="end" android:layout_gravity="end"
+                                                         android:id="@+id/tvTotalGeneralDiscount"
+                                                         android:layout_width="0dp" android:layout_height="wrap_content"
+                                                         android:text="@string/str_tmp_0_float"
+                                                         android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal"
+                      android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:layout_width="0dp" android:layout_height="wrap_content"
+                                                         android:text="@string/str_total_discount"
+                                                         android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:gravity="end" android:layout_gravity="end"
+                                                         android:id="@+id/tvTotalDiscount" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_tmp_0_float"
+                                                         android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal"
+                      android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:layout_width="0dp" android:layout_height="wrap_content"
+                                                         android:text="@string/str_total_quantity"
+                                                         android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:gravity="end" android:layout_gravity="end"
+                                                         android:id="@+id/tvTotal" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_tmp_0_float"
+                                                         android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal"
+                      android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:layout_width="0dp" android:layout_height="wrap_content"
+                                                         android:text="@string/str_total_vat"
+                                                         android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:gravity="end" android:layout_gravity="end"
+                                                         android:id="@+id/tvTotalKdv" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_tmp_0_float"
+                                                         android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal"
+                      android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:layout_width="0dp" android:layout_height="wrap_content"
+                                                         android:text="@string/str_total_net"
+                                                         android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:gravity="end" android:layout_gravity="end"
+                                                         android:id="@+id/tvNetTotal" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_tmp_0_float"
+                                                         android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1sp"/>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:background="@android:color/transparent" android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <View android:layout_gravity="center_vertical" android:background="@color/line_color" android:paddingBottom="1dp"
+          android:layout_width="match_parent" android:layout_height="0.1sp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linearMaterial2"
+                  android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvFicheNo"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginRight="4dp"
+                                                     android:text="@string/str_fiche_number" android:singleLine="false"
+                                                     android:layout_weight="4" android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvCode"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="@string/str_code" android:singleLine="true"
+                                                     android:layout_weight="1.5" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvDefinition_"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="@string/str_explanation" android:singleLine="true"
+                                                     android:layout_weight="3" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvOrderState"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="@string/str_sales_order_state"
+                                                     android:singleLine="true" android:layout_weight="2"
+                                                     android:layout_marginStart="4dp" android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="right"
+                                                     android:id="@+id/tvGrossTotal" android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="@string/str_total" android:singleLine="true"
+                                                     android:layout_weight="2" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="right"
+                                                     android:id="@+id/tvNetTotal" android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:text="223231"
+                                                     android:singleLine="true" android:layout_weight="2"
+                                                     android:layout_marginStart="4dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<table id='main' border='0' width='100%' height='100%' leftmargin='0' topmargin='0'>
+<tr valign='top'>
+<td>
+<table id='header' border='0'>
+<tr align='center'><td colspan='2'><b><font name='tahoma' size='4' color='red'>@TODOINFOSTR</font><b><td></tr>
+<tr><td colspan='2' height='5'><td></tr>
+<tr>
+<td bgcolor='EBEEED'><b><font name='tahoma' size='2'>@TODODESCRIPTIONSTR</font><b><td>
+<td><font name='tahoma' size='2'>@TODODESCRIPTION</font><td>
+</tr>
+<tr>
+<td bgcolor='EBEEED'><b><font name='tahoma' size='2'>@TODOSTATUSSTR</font><b><td>
+<td><font name='tahoma' size='2'>@TODOSTATUS</font><td>
+</tr>
+<tr>
+<td bgcolor='EBEEED'><b><font name='tahoma' size='2'>@TODOBEGDATESTR</font><b><td>
+<td><font name='tahoma' size='2'>@TODOBEGDATE</font><td>
+</tr>
+<tr>
+<td bgcolor='EBEEED'><b><font name='tahoma' size='2'>@TODOENDDATESTR</font><b><td>
+<td><font name='tahoma' size='2'>@TODOENDDATE</font><td>
+</tr>
+<tr>
+<td bgcolor='EBEEED'><b><font name='tahoma' size='2'>@TODODETAILSTR</font><b><td>
+<td><font name='tahoma' size='2'>@TODODETAIL</font><td>
+</tr>
+<tr>
+<td bgcolor='EBEEED'><b><font name='tahoma' size='2'>@TODOREADTIMESTR</font><b><td>
+<td><font name='tahoma' size='2'>@TODOREADTIME</font><td>
+</tr>
+<tr>
+<td bgcolor='EBEEED'><b><font name='tahoma' size='2'>@TODOCOMPLATETIMESTR</font><b><td>
+<td><font name='tahoma' size='2'>@TODOCOMPLATETIME</font><td>
+</tr>
+<tr>
+<td bgcolor='EBEEED'><b><font name='tahoma' size='2'>@TODOUSERSTR</font><b><td>
+<td><font name='tahoma' size='2'>@TODOUSER</font><td>
+</tr>
+<tr>
+<td bgcolor='EBEEED'><b><font name='tahoma' size='2'>@TODOUSERNOTESTR</font><b><td>
+<td><font name='tahoma' size='2'>@TODOUSERNOTE</font><td>
+</tr>
+</table>
+<td>
+</tr>
+</table>
+</body>
+</html>

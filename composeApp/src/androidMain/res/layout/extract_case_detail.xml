@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                          android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:textStyle="bold" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="@string/str_date" android:layout_weight="4"
+                                                             android:paddingStart="4dp" android:paddingEnd="4dp"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:id="@+id/tvDate" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:layout_weight="6" android:paddingStart="4dp"
+                                                             android:paddingEnd="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                          android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:textStyle="bold" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="@string/str_fiche_number"
+                                                             android:layout_weight="4" android:paddingStart="4dp"
+                                                             android:paddingEnd="4dp"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:id="@+id/tvFicheNo" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:layout_weight="6" android:paddingStart="4dp"
+                                                             android:paddingEnd="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                          android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:textStyle="bold" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="@string/str_customer"
+                                                             android:layout_weight="4" android:paddingStart="4dp"
+                                                             android:paddingEnd="4dp"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:id="@+id/tvCustomer" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:layout_weight="6" android:paddingStart="4dp"
+                                                             android:paddingEnd="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                          android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:textStyle="bold" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="@string/str_special_code"
+                                                             android:layout_weight="4" android:paddingStart="4dp"
+                                                             android:paddingEnd="4dp"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:id="@+id/tvSpecode" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:layout_weight="6" android:paddingStart="4dp"
+                                                             android:paddingEnd="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                          android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:textStyle="bold" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="@string/str_explanation"
+                                                             android:layout_weight="4" android:paddingStart="4dp"
+                                                             android:paddingEnd="4dp"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:id="@+id/tvDesc" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:layout_weight="6" android:paddingStart="4dp"
+                                                             android:paddingEnd="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                          android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:textStyle="bold" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="@string/str_receipt_number"
+                                                             android:layout_weight="4" android:paddingStart="4dp"
+                                                             android:paddingEnd="4dp"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:id="@+id/tvDoCode" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:layout_weight="6" android:paddingStart="4dp"
+                                                             android:paddingEnd="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                          android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:textStyle="bold" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="@string/str_total" android:layout_weight="4"
+                                                             android:paddingStart="4dp" android:paddingEnd="4dp"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:id="@+id/tvAmount" android:paddingLeft="4dp"
+                                                             android:paddingRight="4dp" android:clickable="false"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:layout_weight="6" android:paddingStart="4dp"
+                                                             android:paddingEnd="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

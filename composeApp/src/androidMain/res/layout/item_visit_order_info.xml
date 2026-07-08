@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+                android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/img_fiche_transfer" android:layout_width="wrap_content"
+               android:layout_height="wrap_content" android:src="@drawable/ic_check_circle_grey600_24dp"
+               android:layout_alignParentRight="true" android:layout_alignParentBottom="true"
+               android:layout_alignParentEnd="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ln_ficheHeader"
+                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_marginBottom="5dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_medium"
+                                                         android:textStyle="bold" android:id="@+id/tv_time"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content" android:text="10:00"/>
+            <TextView android:textSize="@dimen/text_size_medium" android:textStyle="bold"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/bracket"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_medium"
+                                                         android:textStyle="bold" android:id="@+id/tv_customerName"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="DENEME SANAYİ VE TİCARET A.Ş."
+                                                         android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ln_customerInfo"
+                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_margin="5dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:id="@+id/tv_customerCode"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="ALC.01.00001" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/text_size_small" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="@string/bracket"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:id="@+id/tv_shipAddressOrBankExplanation"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content" android:maxLines="1"
+                                                         android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ln_receiptInfo"
+                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_margin="5dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:id="@+id/tv_branch" android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content" android:text="Şube"/>
+            <TextView android:textSize="@dimen/text_size_small" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="@string/colon"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:id="@+id/tv_branchNote"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content" android:text=""
+                                                         android:singleLine="true" android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:id="@+id/tv_accountNumber"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content" android:text="Hesap No"/>
+            <TextView android:textSize="@dimen/text_size_small" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="@string/colon"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:id="@+id/tv_accountNumberNote"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content" android:text=""
+                                                         android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ln_debitedOrVisitReason"
+                      android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:layout_margin="5dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:id="@+id/tv_debitedOrVisitReason"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content" android:text="Borçlu"/>
+            <TextView android:textSize="@dimen/text_size_small" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text=" : "/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:id="@+id/tv_debitedOrVisitReasonExplanation"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content" android:text="-"
+                                                         android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ln_totalLayout"
+                      android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:layout_margin="5dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:id="@+id/tv_note" android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content" android:text="Vade"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:id="@+id/tv_noteColon"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/colon"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:id="@+id/tv_noteExplanation"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content" android:text="-"
+                                                         android:singleLine="true" android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:id="@+id/tv_total" android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content" android:text="Tutar"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:id="@+id/tv_totalColon"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/colon"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small" android:gravity="end"
+                                                         android:id="@+id/tv_totalExplanation"
+                                                         android:paddingRight="30dp" android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content" android:text="323232"
+                                                         android:singleLine="true" android:layout_weight="1"
+                                                         android:paddingEnd="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

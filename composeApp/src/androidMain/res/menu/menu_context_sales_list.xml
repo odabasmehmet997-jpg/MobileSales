@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_contextual_edit" android:title="@string/menu_edit"/>
+    <item android:id="@+id/menu_contextual_copy" android:title="@string/menu_copy"/>
+    <item android:id="@+id/menu_contextual_send" android:title="@string/menu_send"/>
+    <item android:id="@+id/menu_contextual_delete" android:title="@string/menu_delete"/>
+    <item android:id="@+id/menu_contextual_status_change" android:title="@string/menu_status_change"/>
+    <item android:id="@+id/menu_contextual_print" android:title="@string/menu_print"/>
+    <item android:id="@+id/menu_contextual_cancel" android:title="@string/menu_contextual_cancel"/>
+    <item android:id="@+id/menu_contextual_send_email" android:title="@string/menu_contextual_send_email"/>
+    <item android:id="@+id/menu_contextual_save_pdf" android:title="@string/menu_contextual_save_pdf"/>
+    <item android:id="@+id/menu_contextual_updateAsNotTransfered" android:visible="false"
+          android:title="@string/menu_not_be_transferred"/>
+    <item android:id="@+id/menu_contextual_send_edocument" android:visible="false"
+          android:title="@string/menu_contextual_send_edocument"/>
+    <item android:id="@+id/menu_contextual_create_draft_edocument" android:visible="false"
+          android:title="@string/menu_contextual_create_draft"/>
+    <item android:id="@+id/menu_contextual_create_draft_and_send_edocument" android:visible="false"
+          android:title="@string/menu_contextual_create_draft_and_send"/>
+    <item android:id="@+id/menu_contextual_edocument_pdf" android:title="@string/menu_contextual_edocument_pdf"/>
+    <item android:id="@+id/menu_contextual_edocument_draft_pdf" android:visible="false"
+          android:title="@string/menu_contextual_edocument_draft_pdf"/>
+    <item android:id="@+id/menu_contextual_edocument_draft_pdf_3_inc" android:visible="false"
+          android:title="@string/menu_contextual_edocument_draft_pdf_3_inc"/>
+    <item android:id="@+id/menu_contextual_print_with_printer_service" android:visible="false"
+          android:title="@string/str_print"/>
+    <item android:id="@+id/menu_contextual_update_order_fiche_status" android:title="@string/str_update_order_status"/>
+</menu>

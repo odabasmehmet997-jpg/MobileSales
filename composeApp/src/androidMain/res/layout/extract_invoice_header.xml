@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+            android:background="@color/white" android:scrollbars="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:scrollbars="vertical"
+                  android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:padding="8dp" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_fiche_number" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvFicheNo"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_date" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvDate"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_customer" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvCustomer"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <View android:background="@color/line_color" android:layout_width="match_parent"
+                      android:layout_height="1dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_department" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvBranch"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_section" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvDepartment"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_factory" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvFactory"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_warehouse" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvWarehouse"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <View android:background="@color/line_color" android:layout_width="match_parent"
+                      android:layout_height="1dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_payments" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvPayment"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_trading_group" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvTradinggrp"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_document_number" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvDocode"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_special_code" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvSpecode"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_auth_code" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvCyphcode"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_salesman_code" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvSalesman"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_project_code" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvProjectCode"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <View android:background="@color/line_color" android:layout_width="match_parent"
+                      android:layout_height="1dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_ship_to" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvShipAccount"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_shippent_address" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvShipAddress"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_delivery_type" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/tvShipDeliveryMethod" android:clickable="false" android:layout_width="0dp"
+                            android:layout_height="wrap_content" android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_delivery_code" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvShipAgent"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_transportation_type" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvShipTransType"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <View android:background="@color/line_color" android:layout_width="match_parent"
+                      android:layout_height="1dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_description1" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvDesc1"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_description2" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvDesc2"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_description3" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvDesc3"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                              android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:text="@string/str_description4" android:layout_weight="4"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvDesc4"
+                            android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="6"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

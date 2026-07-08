@@ -1,0 +1,7 @@
+<tr class="lineTableTr">
+    <td class="lineTableTd">&nbsp;{PRODUCT_NAME}</td>
+    <td class="lineTableTd">&nbsp;{PRODUCT_AMOUNT}</td>
+    <td class="lineTableTd">&nbsp;{PRODUCT_UNIT}</td>
+    <td class="lineTableTd">&nbsp;{PRODUCT_LINE_PRICE} {PRICE_CURRENCY}</td>
+    <td class="lineTableTd">&nbsp;{PRODUCT_TOTAL} {PRICE_CURRENCY}</td>
+</tr>

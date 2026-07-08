@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/rlt_product_header"
+                    android:padding="@dimen/fiche_padding" android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlt_product_container" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_sales" android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" android:src="@drawable/ic_cube_send_grey600_48dp"/>
+            <TextView android:id="@+id/txt_sales_customer_name" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="@string/loading_text"
+                      android:layout_toRightOf="@+id/img_sales" android:layout_toEndOf="@+id/img_sales"
+                      style="@style/textTitleStyle"/>
+            <TextView android:id="@+id/txt_sales_ship_address_definition" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="@string/loading_text"
+                      android:layout_toRightOf="@+id/img_sales" android:layout_below="@+id/txt_sales_customer_name"
+                      android:layout_toEndOf="@+id/img_sales" style="@style/textSubtitleStyle"/>
+            <TextView android:id="@+id/txt_sales_fiche_id" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="3dp"
+                      android:text="@string/loading_text" android:layout_toRightOf="@+id/img_sales"
+                      android:layout_below="@+id/txt_sales_ship_address_definition"
+                      android:layout_toEndOf="@+id/img_sales" style="@style/textSubtitleStyle"/>
+            <TextView android:id="@+id/txt_sales_fiche_date" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="3dp"
+                      android:text="@string/loading_text" android:layout_toRightOf="@+id/txt_sales_fiche_id"
+                      android:layout_below="@+id/txt_sales_ship_address_definition"
+                      android:layout_toEndOf="@+id/txt_sales_fiche_id" style="@style/textSubtitleStyle"/>
+            <TextView android:id="@+id/txt_sales_fiche_def" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="3dp"
+                      android:text="@string/loading_text" android:layout_toRightOf="@+id/txt_sales_fiche_date"
+                      android:layout_below="@+id/txt_sales_ship_address_definition"
+                      android:layout_toEndOf="@+id/txt_sales_fiche_date" style="@style/textSubtitleStyle"/>
+            <include android:id="@+id/button_more" android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" android:layout_marginRight="-10dp"
+                     android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+                     layout="@layout/button_more"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlt_customer_detail" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_below="@+id/rlt_product_container">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ln_sales"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_marginTop="3dp" android:weightSum="3" android:layout_below="@+id/img_product">
+                <TextView android:id="@+id/txt_sales_trade_day" android:text="@string/loading_text"
+                          style="@style/textCustomerSubtitleWeightStyle"/>
+                <TextView android:id="@+id/txt_sales_specode" android:text="@string/loading_text"
+                          style="@style/textCustomerSubtitleWeightStyle"/>
+                <TextView android:id="@+id/txt_sales_document_no" android:text="@string/loading_text"
+                          style="@style/textCustomerSubtitleWeightStyle"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                          android:id="@+id/ln_sales_payment" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:layout_marginTop="3dp" android:weightSum="3"
+                          android:layout_below="@+id/ln_sales">
+                <TextView android:id="@+id/txt_sales_pay_plan" android:text="@string/loading_text"
+                          android:singleLine="true" android:layout_weight="1"
+                          style="@style/textCustomerSubtitleWeightStyle"/>
+                <TextView android:gravity="left|center_vertical|center_horizontal|center|start"
+                          android:id="@+id/txt_sales_status" android:text="@string/loading_text"
+                          android:singleLine="true" android:layout_weight="1"
+                          style="@style/textCustomerSubtitleWeightStyle"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0dp"
+                              android:layout_height="wrap_content" android:weightSum="8" android:layout_weight="1">
+                    <TextView android:layout_gravity="center" android:layout_width="0dp" android:layout_weight="3"
+                              style="@style/textCustomerSubtitleStyle"/>
+                    <TextView android:textStyle="bold" android:gravity="end" android:layout_gravity="center"
+                              android:id="@+id/txt_sales_total" android:layout_width="0dp"
+                              android:text="@string/loading_text" android:singleLine="false" android:layout_weight="5"
+                              style="@style/textCustomerSubtitleNumberStyle2"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ln_sales_slsDefinition"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_marginTop="3dp" android:weightSum="1"
+                          android:layout_below="@+id/ln_sales_payment">
+                <TextView android:id="@+id/txt_sales_slsDefinition" android:text="@string/loading_text"
+                          android:layout_weight="1" style="@style/textCustomerSubtitleWeightStyle"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_marginTop="3dp" android:layout_below="@+id/ln_sales_slsDefinition">
+                <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal"
+                                android:id="@+id/ln_sales_info_not" android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                    <TextView android:id="@+id/txt_sales_info_not" android:text="@string/loading_text"
+                              android:singleLine="true" android:layout_toLeftOf="@+id/txt_sales_transfer"
+                              android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+                              android:layout_toStartOf="@+id/txt_sales_transfer" android:layout_alignParentStart="true"
+                              style="@style/textCustomerSubtitleStyle"/>
+                    <com.proje.mobilesales.core.widget.TintableTextView android:textStyle="bold"
+                                                                        android:textColor="@color/red500"
+                                                                        android:gravity="end"
+                                                                        android:id="@+id/txt_sales_transfer"
+                                                                        android:text=""
+                                                                        android:layout_alignParentRight="true"
+                                                                        android:layout_centerVertical="true"
+                                                                        android:layout_alignParentEnd="true"
+                                                                        app:iconStart="@drawable/ic_check_circle_grey600_24dp"
+                                                                        style="@style/textCustomerSubtitleStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

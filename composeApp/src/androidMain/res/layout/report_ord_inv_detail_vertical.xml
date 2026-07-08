@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearMaterial2" android:padding="8dp"
+                  android:longClickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_line_type"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:id="@+id/tvLineType" android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_line_type"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+              android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp"
+              android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_code"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:id="@+id/tvCode" android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_code"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+              android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp"
+              android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_explanation" android:singleLine="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:id="@+id/tvDefinition_" android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_explanation" android:singleLine="true"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+              android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp"
+              android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                     android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_prices" android:singleLine="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:id="@+id/tvQuantity" android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_prices" android:singleLine="true"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+              android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp"
+              android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                     android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_total" android:singleLine="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:id="@+id/tvGrossTotal" android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_total" android:singleLine="true"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+              android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp"
+              android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                     android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_net_total"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:id="@+id/tvNetTotal" android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_net_total"/>
+    </LinearLayout>
+</ScrollView>

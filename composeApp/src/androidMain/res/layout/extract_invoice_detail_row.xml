@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvItem"
+                                                     android:paddingRight="2dp" android:clickable="false"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:text="@string/str_material" android:layout_weight="8"
+                                                     android:paddingEnd="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="end"
+                                                     android:id="@+id/tvAmount" android:paddingLeft="2dp"
+                                                     android:paddingRight="2dp" android:clickable="false"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:text="@string/str_prices" android:layout_weight="4"
+                                                     android:paddingStart="2dp" android:paddingEnd="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="end"
+                                                     android:id="@+id/tvPrice" android:paddingLeft="2dp"
+                                                     android:paddingRight="2dp" android:clickable="false"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:text="@string/str_price" android:layout_weight="4"
+                                                     android:paddingStart="2dp" android:paddingEnd="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="end"
+                                                     android:id="@+id/tvPrPrice" android:paddingLeft="2dp"
+                                                     android:paddingRight="2dp" android:clickable="false"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:text="@string/str_currency_price" android:layout_weight="4"
+                                                     android:paddingStart="2dp" android:paddingEnd="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="end"
+                                                     android:id="@+id/tvKdv" android:paddingLeft="2dp"
+                                                     android:paddingRight="2dp" android:clickable="false"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:text="@string/str_vat_rate" android:layout_weight="4"
+                                                     android:paddingStart="2dp" android:paddingEnd="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:gravity="end"
+                                                     android:id="@+id/tvKdvAmount" android:paddingLeft="2dp"
+                                                     android:paddingRight="2dp" android:clickable="false"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:text="@string/str_vat_total" android:layout_weight="4"
+                                                     android:paddingStart="2dp" android:paddingEnd="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="end"
+                                                     android:id="@+id/tvTotal" android:paddingLeft="2dp"
+                                                     android:clickable="false" android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_total" android:layout_weight="4"
+                                                     android:paddingStart="2dp"/>
+    </LinearLayout>
+</LinearLayout>

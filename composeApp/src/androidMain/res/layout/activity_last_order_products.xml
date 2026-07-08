@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linear_filter_div" android:paddingTop="8dp"
+                  android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatCheckBox android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:id="@+id/chk_all_salesmen"
+                                                     android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_all_salesmen" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/transparent"
+                  android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:background="@color/line_color"
+              android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="1sp"/>
+    </LinearLayout>
+    <com.proje.mobilesales.core.widget.AppBarSwipeRefreshLayout android:id="@+id/swipe_layout"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/rcwList"
+                                                   android:scrollbars="vertical" android:clipToPadding="false"
+                                                   android:layout_width="wrap_content"
+                                                   android:layout_height="match_parent" android:fadeScrollbars="true"/>
+    </com.proje.mobilesales.core.widget.AppBarSwipeRefreshLayout>
+</LinearLayout>

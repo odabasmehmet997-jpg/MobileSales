@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal"
+              android:id="@+id/layout_root" android:padding="10dp" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TableLayout android:id="@+id/TableLayout02" android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+            <TableLayout android:id="@+id/TableLayout01" android:layout_width="0dp"
+                         android:layout_height="wrap_content" android:layout_weight="1">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lyHeader"
+                              android:layout_width="match_parent" android:layout_height="48dp">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/etOrderNo"
+                                                                 android:layout_width="0dp"
+                                                                 android:layout_height="48dp" android:text=""
+                                                                 android:hint="@string/str_order_number"
+                                                                 android:singleLine="true" android:layout_weight="1"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatTextView android:id="@+id/tvSpace"
+                                                             android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content" android:text=""/>
+                <androidx.appcompat.widget.AppCompatTextView android:id="@+id/tvCustomerCode"
+                                                             android:background="#0090ff"
+                                                             android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="@string/str_account_info"/>
+                <androidx.appcompat.widget.AppCompatTextView android:id="@+id/tvCustomer"
+                                                             android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="MUS01-AHMET KILIÇ"/>
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content" android:text=""/>
+                <androidx.appcompat.widget.AppCompatTextView android:background="#0090ff"
+                                                             android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="@string/str_ship_to"/>
+                <androidx.appcompat.widget.AppCompatTextView android:id="@+id/tvShipmentAccount"
+                                                             android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="MUS01-AHMET KILIÇ"/>
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content" android:text=""/>
+                <androidx.appcompat.widget.AppCompatTextView android:background="#0090ff"
+                                                             android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="@string/str_shippent_address_info"/>
+                <androidx.appcompat.widget.AppCompatTextView android:id="@+id/tvShipmentAddress"
+                                                             android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="MUS01-AHMET KILIÇ"/>
+            </TableLayout>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content" android:text=""/>
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content" android:text=""/>
+        <LinearLayout android:id="@+id/LinearLayout02" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatButton android:layout_gravity="end" android:id="@+id/btnOk"
+                                                       android:layout_width="wrap_content"
+                                                       android:layout_height="wrap_content"
+                                                       android:text="@string/str_okey" android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatButton android:layout_gravity="end" android:id="@+id/btnCancel"
+                                                       android:layout_width="wrap_content"
+                                                       android:layout_height="wrap_content"
+                                                       android:text="@string/str_cancel" android:layout_weight="1"/>
+        </LinearLayout>
+    </TableLayout>
+</LinearLayout>

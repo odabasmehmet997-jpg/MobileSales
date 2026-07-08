@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:id="@+id/linearMaterial2" android:paddingTop="@dimen/fiche_padding"
+              android:paddingBottom="@dimen/fiche_padding" android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ln_ficheDescription" android:layout_width="0dp"
+                      android:layout_height="wrap_content" android:weightSum="5" android:layout_weight="7">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="2">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_x_small"
+                                                             android:textColor="@color/grey800"
+                                                             android:id="@+id/txt_ficheInfo"
+                                                             android:layout_width="match_parent"
+                                                             android:layout_height="wrap_content"
+                                                             android:singleLine="true"
+                                                             style="@style/ReportRowTextView"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingTop="2dp" android:paddingBottom="2dp"
+                          android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="2"
+                          android:layout_weight="3">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                             android:textStyle="bold"
+                                                             android:textColor="@color/colorPrimary"
+                                                             android:gravity="right|center_vertical|center_horizontal|center|end"
+                                                             android:id="@+id/txt_ficheDebit" android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:layout_weight="1"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                             android:textStyle="bold" android:textColor="@color/black"
+                                                             android:gravity="right|center_vertical|center_horizontal|center|end"
+                                                             android:id="@+id/txt_ficheCredit"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ln_ficheBalance" android:layout_width="0dp"
+                      android:layout_height="wrap_content" android:weightSum="1" android:layout_weight="3">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                         android:textStyle="bold"
+                                                         android:textColor="@color/colorPrimary" android:ellipsize="end"
+                                                         android:gravity="right|center_vertical|center_horizontal|center|end"
+                                                         android:id="@+id/txt_ficheBalance" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content" android:maxLines="4"
+                                                         android:minLines="1" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

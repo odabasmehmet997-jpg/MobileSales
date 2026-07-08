@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal" android:background="@color/colorPrimary" android:paddingLeft="10dp"
+              android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:paddingStart="10dp" android:paddingEnd="10dp">
+    <EditText android:textColor="@color/white" android:id="@+id/edt_amount" android:layout_width="0dp"
+              android:layout_height="wrap_content" android:cursorVisible="true" android:maxLines="1"
+              android:minLines="1" android:layout_weight="1" android:inputType="number|numberSigned|numberDecimal"
+              android:imeOptions="actionDone" android:textCursorDrawable="@color/white"
+              android:backgroundTint="@color/white" android:hint="" tools:ignore="SpeakableTextPresentCheck"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_accept" android:layout_width="wrap_content"
+               android:layout_height="wrap_content" android:src="@drawable/ic_check_circle_outline_white_24dp"
+               android:text="@string/str_okey"/>
+</LinearLayout>

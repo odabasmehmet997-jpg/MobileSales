@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="psBaslangicBilgi">
+    <PreferenceCategory android:title="@string/str_work_info">
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_plate" android:key="etPlaka"
+                            android:summary="" android:defaultValue=""/>
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_start_km"
+                            android:key="etBasKM" android:summary="" android:defaultValue=""
+                            android:inputType="numberDecimal"/>
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_end_km" android:key="etSonKM"
+                            android:summary="" android:defaultValue="" android:inputType="numberDecimal"/>
+        <com.proje.mobilesales.core.preferences.EditTextPref android:name="EditText Preference"
+                                                             android:title="@string/str_note" android:key="etNot"
+                                                             android:summary="" android:defaultValue=""/>
+    </PreferenceCategory>
+</PreferenceScreen>

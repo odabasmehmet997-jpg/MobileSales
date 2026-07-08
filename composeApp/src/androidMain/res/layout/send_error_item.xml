@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal"
+              android:paddingLeft="40dp" android:paddingTop="9dp" android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:paddingStart="40dp">
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_gravity="right|center_vertical|center_horizontal|center|end"
+            android:id="@+id/tvSendErrorItem" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1000"/>
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/imSpinner"
+            android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/error_outline"
+            android:scaleType="fitCenter" android:layout_weight="1"/>
+    <androidx.appcompat.widget.Toolbar android:layout_gravity="right|center_vertical|center_horizontal|center|end"
+                                       android:id="@+id/sendErrorToolbar" android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"/>
+</LinearLayout>

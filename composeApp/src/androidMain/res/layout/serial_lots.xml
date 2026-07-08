@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:focusableInTouchMode="true"
+              android:descendantFocusability="beforeDescendants" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  tools:ignore="UselessParent">
+        <include layout="@layout/toolbar"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_weight="1">
+            <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="100"
+                         tools:ignore="NestedWeights">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/edLotNo" android:focusable="true"
+                                                             android:focusableInTouchMode="true"
+                                                             android:layout_width="match_parent"
+                                                             android:layout_height="wrap_content"
+                                                             android:inputType="none" android:imeOptions="actionDone"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:gravity="center_vertical"
+                                                             android:layout_gravity="right|center_vertical|center_horizontal|center|end"
+                                                             android:id="@+id/tvCheckedCount" android:focusable="false"
+                                                             android:clickable="false"
+                                                             android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="0 Seçili" android:alpha="0.8"
+                                                             tools:ignore="RtlHardcoded"/>
+            </FrameLayout>
+            <androidx.appcompat.widget.AppCompatImageButton android:gravity="center" android:id="@+id/imgBtnSearch"
+                                                            android:layout_width="48dp" android:layout_height="48dp"
+                                                            android:src="@drawable/ic_menu_search_holo_dark"
+                                                            android:scaleType="fitCenter" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/ln_surplusAmount" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:weightSum="1"
+                      android:layout_marginStart="4dp">
+            <TextView android:textStyle="bold" android:gravity="start" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="@string/str_surplus_amount_abbr"
+                      android:paddingStart="0dp" android:paddingEnd="0dp"/>
+            <EditText android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/edt_surplusAmount"
+                      android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.25"
+                      android:inputType="numberDecimal"
+                      android:layout_marginStart="@dimen/activity_quad_vertical_margin"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                      android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:id="@+id/tvSerialNo" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:layout_marginLeft="4dp"
+                                                         android:layout_marginRight="4dp"
+                                                         android:text="@string/str_lot_no_exp_date"
+                                                         android:singleLine="false" android:layout_weight="4.1"
+                                                         android:layout_marginStart="4dp"
+                                                         android:layout_marginEnd="4dp"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:id="@+id/tvUserAmount" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:layout_marginLeft="4dp"
+                                                         android:layout_marginRight="4dp"
+                                                         android:text="@string/str_user_amount"
+                                                         android:singleLine="true" android:layout_weight="1.7"
+                                                         android:layout_marginStart="4dp"
+                                                         android:layout_marginEnd="4dp"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:id="@+id/tvAmount" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:layout_marginLeft="4dp"
+                                                         android:layout_marginRight="4dp"
+                                                         android:text="@string/str_remaining_amount"
+                                                         android:singleLine="true" android:layout_weight="2"
+                                                         android:layout_marginStart="4dp"
+                                                         android:layout_marginEnd="4dp"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:id="@+id/tvUnit" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:layout_marginLeft="4dp"
+                                                         android:layout_marginRight="4dp"
+                                                         android:text="@string/str_unit" android:singleLine="true"
+                                                         android:layout_weight="1.2" android:layout_marginStart="4dp"
+                                                         android:layout_marginEnd="4dp"/>
+            <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/cbListItem" android:visibility="invisible"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content"
+                                                         android:layout_weight="0.1"/>
+        </LinearLayout>
+        <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="100">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/lvSerialLotNos"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center"
+                          android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+                          android:id="@+id/linearProgress" android:background="#99000000" android:visibility="invisible"
+                          android:layout_width="match_parent" android:layout_height="match_parent">
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

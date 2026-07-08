@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <com.proje.mobilesales.core.widget.FichePropertyTextView android:id="@+id/fpe_currency"
+                                                                 android:layout_width="match_parent"
+                                                                 android:layout_height="wrap_content"
+                                                                 android:singleLine="true"
+                                                                 app:title="@string/str_currency"/>
+        <com.proje.mobilesales.core.widget.FichePropertyTextView android:id="@+id/fpt_currencyAmount"
+                                                                 android:layout_width="match_parent"
+                                                                 android:layout_height="wrap_content"
+                                                                 android:singleLine="true"
+                                                                 app:title="@string/str_currency_amount"/>
+        <com.proje.mobilesales.core.widget.FichePropertyTextView android:id="@+id/fpt_Rate"
+                                                                 android:layout_width="match_parent"
+                                                                 android:layout_height="wrap_content"
+                                                                 app:title="@string/str_currency_rate"/>
+        <com.proje.mobilesales.core.widget.FichePropertyTextView android:id="@+id/fpt_Total"
+                                                                 android:layout_width="match_parent"
+                                                                 android:layout_height="wrap_content"
+                                                                 android:singleLine="true"
+                                                                 app:title="@string/str_quantity"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/activity_half_vertical_margin" android:baselineAligned="false">
+            <LinearLayout android:id="@+id/lnClear" android:focusable="true" android:clickable="true"
+                          android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5">
+                <androidx.appcompat.widget.AppCompatButton android:textColor="#DD2C00"
+                                                           android:gravity="center" android:id="@+id/btnClear"
+                                                           android:layout_width="match_parent"
+                                                           android:layout_height="match_parent"
+                                                           android:text="@string/str_clear"
+                                                           style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/lnOk" android:focusable="true" android:clickable="true"
+                          android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5">
+                <androidx.appcompat.widget.AppCompatButton android:gravity="center" android:id="@+id/btnOk"
+                                                           android:layout_width="match_parent"
+                                                           android:layout_height="match_parent"
+                                                           android:text="@string/str_save"
+                                                           style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

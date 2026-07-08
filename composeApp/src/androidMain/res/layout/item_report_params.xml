@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent" android:layout_height="wrap_content"
+                                   style="@style/AppCardView">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ln_report_params"
+                  android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+        <androidx.appcompat.widget.AppCompatTextView android:layout_gravity="center" android:id="@+id/txtCaption"
+                                                     android:text="" android:singleLine="true"
+                                                     android:layout_weight="0.4"
+                                                     style="@style/textCustomerGeneralStyle"/>
+        <com.proje.mobilesales.core.view.CustomEditText
+                android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/txtValue"
+                android:layout_weight="0.6" style="@style/textCustomerGeneralStyle"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

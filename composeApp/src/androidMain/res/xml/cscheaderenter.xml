@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="psCscHeader">
+    <PreferenceCategory android:title="@string/str_general_information" android:key="pgCscGenelBilgiler">
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_total" android:key="etTutar" android:summary="" android:defaultValue="" android:inputType="numberDecimal"/>
+        <ListPreference android:title="@string/str_case" android:key="lpKasa" android:summary="" android:defaultValue=""/>
+        <EditTextPreference android:name="EditText Preference" android:maxLength="17" android:title="@string/str_receipt_number" android:key="etMakbuzNo" android:summary="" android:defaultValue=""/>
+        <ListPreference android:title="@string/str_trading_group" android:key="lpTicariIslemGrubu" android:summary="" android:defaultValue=""/>
+        <ListPreference android:title="@string/str_auth_code" android:key="lpYetkiKodu" android:summary="" android:defaultValue=""/>
+        <com.proje.mobilesales.core.preferences.EditTextPref android:maxLength="200" android:title="@string/str_explanation" android:key="etAciklama" android:summary="" android:defaultValue=""/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_others" android:key="pgDigerBilgiler">
+        <ListPreference android:title="@string/str_department" android:key="lpIsyeri" android:summary="" android:defaultValue=""/>
+        <ListPreference android:title="@string/str_section" android:key="lpBolum" android:summary="" android:defaultValue=""/>
+        <ListPreference android:title="@string/str_special_code" android:key="lpOzelKodu" android:summary="" android:defaultValue=""/>
+        <ListPreference android:title="@string/str_project_code" android:key="lpProjeKodu" android:summary="" android:defaultValue=""/>
+        <Preference android:title="@string/str_salesman_code" android:key="lpSalesManCode" android:summary="" android:defaultValue=""/>
+    </PreferenceCategory>
+</PreferenceScreen>

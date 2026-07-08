@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent" android:layout_height="wrap_content"
+                                   style="@style/AppCardView">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_sales" android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" android:src="@drawable/ic_cube_send_grey600_36dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatCheckedTextView android:textSize="18dp" android:textStyle="bold"
+                                                                    android:ellipsize="marquee"
+                                                                    android:gravity="center_vertical"
+                                                                    android:id="@+id/CNAME" android:paddingLeft="5dp"
+                                                                    android:descendantFocusability="blocksDescendants"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                                                                    android:text="DENEME SAN. TİC.A.Ş."
+                                                                    android:paddingStart="5dp"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:textColor="@color/subMenu1"
+                                                             android:id="@+id/FICHENO"
+                                                             android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:layout_marginLeft="5dp" android:text="4496"
+                                                             android:layout_below="@+id/CNAME"
+                                                             android:layout_marginStart="5dp"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:textColor="@color/subMenu1" android:id="@+id/DATE"
+                                                             android:paddingLeft="10dp"
+                                                             android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="16.10.2016"
+                                                             android:layout_toRightOf="@+id/FICHENO"
+                                                             android:layout_alignTop="@+id/FICHENO"
+                                                             android:paddingStart="10dp"
+                                                             android:layout_toEndOf="@+id/FICHENO"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="10dp"
+                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_margin="3dp" android:paddingStart="10dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                         android:textColor="@color/subMenu2" android:id="@+id/SLCODESTR"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_salesman_code"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                         android:textColor="@color/subMenu2"
+                                                         android:id="@+id/SLCODESTR2"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content" android:text=": "/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                         android:textStyle="bold" android:textColor="@color/subMenu2"
+                                                         android:id="@+id/SLSCODE" android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content" android:text="2222222"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:layout_margin="3dp" android:paddingStart="10dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                         android:textColor="@color/subMenu3" android:id="@+id/CNAME2STR"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_ship_to"
+                                                         android:layout_below="@+id/SLCODESTR"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                         android:textColor="@color/subMenu3"
+                                                         android:id="@+id/CNAME2STR2"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content" android:text=": "
+                                                         android:layout_toRightOf="@+id/CNAME2STR"
+                                                         android:layout_alignTop="@+id/CNAME2STR"
+                                                         android:layout_toEndOf="@+id/CNAME2STR"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                         android:textStyle="bold" android:textColor="@color/subMenu3"
+                                                         android:id="@+id/CNAME2" android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content" android:text="2222222"
+                                                         android:layout_toRightOf="@+id/CNAME2STR2"
+                                                         android:layout_alignTop="@+id/CNAME2STR2"
+                                                         android:layout_toEndOf="@+id/CNAME2STR2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:layout_margin="3dp" android:paddingStart="10dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                         android:textColor="@color/subMenu5" android:id="@+id/SNAMESTR"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_shippent_address"
+                                                         android:layout_below="@+id/CNAME2STR"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                         android:textColor="@color/subMenu5" android:id="@+id/SNAMESTR2"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content" android:text=": "
+                                                         android:layout_toRightOf="@+id/SNAMESTR"
+                                                         android:layout_alignTop="@+id/SNAMESTR"
+                                                         android:layout_toEndOf="@+id/SNAMESTR"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                         android:textColor="@color/subMenu5" android:id="@+id/SNAME"
+                                                         android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content" android:text="2222222"
+                                                         android:layout_toRightOf="@+id/SNAMESTR2"
+                                                         android:layout_alignTop="@+id/SNAMESTR2"
+                                                         android:layout_toEndOf="@+id/SNAMESTR2"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

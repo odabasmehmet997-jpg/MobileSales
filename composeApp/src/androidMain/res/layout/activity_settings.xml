@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+	<include layout="@layout/toolbar"/>
+	<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1">
+		<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+			<com.proje.mobilesales.core.widget.TintableTextView
+					android:id="@+id/drawer_printer_settings"
+					android:text="@string/activity_title_printer_settings"
+					app:iconStart="@drawable/ic_printer_white_24dp"
+					style="@style/DrawerPrefenceTextStyle"/>
+			<View
+					android:background="@color/blackT12"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/divider"/>
+			<com.proje.mobilesales.core.widget.TintableTextView
+					android:id="@+id/drawer_print_settings"
+					android:text="@string/activity_title_print_settings"
+					app:iconStart="@drawable/ic_animation_white_24dp"
+					style="@style/DrawerPrefenceTextStyle"/>
+			<View
+					android:background="@color/blackT12"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/divider"/>
+			<com.proje.mobilesales.core.widget.TintableTextView
+					android:id="@+id/drawer_transfer_settings"
+					android:text="@string/activity_title_transfer_settings"
+					app:iconStart="@drawable/ic_cloud_sync_white_24dp"
+					style="@style/DrawerPrefenceTextStyle"/>
+			<View
+					android:background="@color/blackT12"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/divider"/>
+			<com.proje.mobilesales.core.widget.TintableTextView
+					android:id="@+id/drawer_printer_service_settings"
+					android:text="@string/activity_title_printer_service_settings"
+					app:iconStart="@drawable/ic_printer_white_24dp"
+					style="@style/DrawerPrefenceTextStyle"/>
+			<View
+					android:background="@color/blackT12"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/divider"/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal"
+              android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/black"
+              android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/todoBegHour"
+              android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+              android:layout_marginStart="5dp"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone"
+                  android:layout_width="wrap_content" android:layout_height="match_parent">
+        <View android:background="#666666" android:layout_width="1dp" android:layout_height="wrap_content"
+              android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_weight="1"/>
+        <View android:layout_gravity="center" android:background="@drawable/circle" android:layout_width="10dp"
+              android:layout_height="10dp"/>
+        <View android:background="#666666" android:layout_width="1dp" android:layout_height="wrap_content"
+              android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp"
+                  android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/black"
+                  android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                  android:id="@+id/todoTitle" android:padding="5dp" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/subMenu6"
+                  android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                  android:id="@+id/todoNote" android:padding="5dp" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+        <View android:background="@color/subMenu6" android:visibility="gone" android:layout_width="match_parent"
+              android:layout_height="1dp" android:layout_marginLeft="5dp" android:layout_marginStart="5dp"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/imgType" android:layout_width="24dp"
+               android:layout_height="24dp" android:layout_marginRight="5dp" android:layout_marginEnd="5dp"/>
+</LinearLayout>

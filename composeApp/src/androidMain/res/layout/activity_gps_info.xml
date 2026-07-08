@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <fragment android:id="@+id/frgGoogleMap" android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize"
+                  class="com.google.android.gms.maps.MapFragment"/>
+        <androidx.appcompat.widget.AppCompatCheckBox android:textSize="@dimen/text_size_small"
+                                                     android:textColor="@color/black"
+                                                     android:id="@+id/chk_openEditModeMap"
+                                                     android:background="@drawable/bottom_shadow"
+                                                     android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_marginTop="?attr/actionBarSize"
+                                                     android:checked="false"
+                                                     android:text="@string/str_customer_gps_close_edit_mode"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+                android:id="@+id/fab_routeCustomer" android:visibility="invisible" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_navigation"
+                android:contentDescription="@string/str_directions_to_customer"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <LinearLayout android:id="@+id/ln_amount" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:weightSum="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/str_total"
+                      android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerSalesHeaderStyle"/>
+            <EditText android:textStyle="bold" android:id="@+id/et_amount" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                      android:inputType="numberDecimal" android:imeOptions="actionDone"
+                      style="@style/textCustomerSalesHeaderStyle"/>
+        </LinearLayout>
+        <View android:background="@color/colorDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:id="@+id/ln_expiry" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:weightSum="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/str_expiry"
+                      android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerSalesHeaderStyle"/>
+            <TextView android:textStyle="bold" android:id="@+id/txt_expiry" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:singleLine="true" android:maxLength="17"
+                      android:layout_weight="0.55" style="@style/textCustomerSalesHeaderStyle"/>
+        </LinearLayout>
+        <View android:background="@color/colorDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:id="@+id/ln_serialNo" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:weightSum="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                      android:text="@string/str_serial_number" android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerSalesHeaderStyle"/>
+            <EditText android:textStyle="bold" android:id="@+id/et_serialNo" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                      android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+        </LinearLayout>
+        <View android:background="@color/colorDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:id="@+id/ln_debtor" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:weightSum="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/str_debtor"
+                      android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerSalesHeaderStyle"/>
+            <EditText android:textStyle="bold" android:id="@+id/et_debtor" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                      android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+        </LinearLayout>
+        <View android:background="@color/colorDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:id="@+id/ln_bankName" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:weightSum="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                      android:text="@string/str_bank_name" android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerSalesHeaderStyle"/>
+            <EditText android:textStyle="bold" android:id="@+id/et_bankName" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                      android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+        </LinearLayout>
+        <View android:background="@color/colorDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:id="@+id/ln_branch" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:weightSum="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                      android:text="@string/str_bank_branch" android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerSalesHeaderStyle"/>
+            <EditText android:textStyle="bold" android:id="@+id/et_branch" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                      android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+        </LinearLayout>
+        <View android:background="@color/colorDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:id="@+id/ln_accountNo" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:weightSum="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                      android:text="@string/str_account_number" android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerSalesHeaderStyle"/>
+            <EditText android:textStyle="bold" android:id="@+id/et_accountNo" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                      android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+        </LinearLayout>
+        <View android:background="@color/colorDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:id="@+id/ln_guarantor" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:weightSum="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                      android:text="@string/str_guarantor" android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerSalesHeaderStyle"/>
+            <EditText android:textStyle="bold" android:id="@+id/et_guarantor" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                      android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+        </LinearLayout>
+        <View android:background="@color/colorDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:id="@+id/ln_paymentPlace" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:weightSum="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                      android:text="@string/str_payment_place" android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerSalesHeaderStyle"/>
+            <EditText android:textStyle="bold" android:id="@+id/et_paymentPlace" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                      android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+        </LinearLayout>
+        <View android:background="@color/colorDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:id="@+id/ln_stamp" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:weightSum="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                      android:text="@string/str_stamp_value" android:layout_weight="0.45" android:textAllCaps="true"
+                      style="@style/textCustomerSalesHeaderStyle"/>
+            <EditText android:textStyle="bold" android:id="@+id/et_stamp" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                      android:inputType="numberDecimal" android:imeOptions="actionDone"
+                      style="@style/textCustomerSalesHeaderStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

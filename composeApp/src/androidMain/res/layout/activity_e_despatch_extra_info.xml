@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <androidx.core.widget.NestedScrollView android:scrollbarStyle="outsideOverlay" android:scrollbars="vertical"
+                                           android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fpe_plateNr"
+                                                                     android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     android:singleLine="true"
+                                                                     app:title="@string/str_plate_nr"/>
+            <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fpe_TaxNr"
+                                                                     android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     android:singleLine="true"
+                                                                     app:title="@string/str_tax_number"/>
+            <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fpe_Title"
+                                                                     android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     app:title="@string/str_definition"/>
+            <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fpe_County"
+                                                                     android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     android:singleLine="true"
+                                                                     app:title="@string/str_town"/>
+            <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fpe_City"
+                                                                     android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     android:singleLine="true"
+                                                                     app:title="@string/str_city"/>
+            <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fpe_Country"
+                                                                     android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     android:singleLine="true"
+                                                                     app:title="@string/str_country"/>
+            <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fpe_postalCode"
+                                                                     android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     android:singleLine="true"
+                                                                     app:title="@string/str_postal_code"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/activity_half_vertical_margin"
+                          android:layout_marginBottom="@dimen/activity_half_vertical_margin">
+                <TextView android:textStyle="bold" android:gravity="center_horizontal" android:id="@+id/txtFirstDriver"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/str_firstDriverInfo" android:layout_centerHorizontal="true"
+                          style="@style/textTitleStyle" tools:ignore="ObsoleteLayoutParam"/>
+            </LinearLayout>
+            <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fpe_firstDriverName"
+                                                                     android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     android:singleLine="true"
+                                                                     app:title="@string/str_name"/>
+            <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fpe_firstDriverSurname"
+                                                                     android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     android:singleLine="true"
+                                                                     app:title="@string/str_surname"/>
+            <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fpe_firstDriverDescription"
+                                                                     android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     app:title="@string/str_explanation"/>
+            <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fpe_firstDriverIdentityNr"
+                                                                     android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     android:singleLine="true"
+                                                                     app:title="@string/str_customer_tc_no"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/activity_half_vertical_margin"
+                          android:layout_marginBottom="@dimen/activity_half_vertical_margin">
+                <TextView android:textStyle="bold" android:gravity="center_horizontal"
+                          android:id="@+id/txtFirstTrailerInfo" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:text="@string/str_trailerPlates"
+                          android:layout_centerHorizontal="true" style="@style/textTitleStyle"
+                          tools:ignore="ObsoleteLayoutParam"/>
+            </LinearLayout>
+            <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fpe_firstTrailerPlate"
+                                                                     android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     android:singleLine="true"
+                                                                     app:title="@string/str_first_plate_number"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:background="@android:color/transparent" android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <View android:layout_gravity="center_vertical" android:background="@color/line_color" android:paddingBottom="1dp"
+          android:layout_width="match_parent" android:layout_height="0.1sp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linearMaterial2"
+                  android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvCode"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="Kodu" android:singleLine="true"
+                                                     android:layout_weight="2" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvDefinition_"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="Açıklama" android:singleLine="true"
+                                                     android:layout_weight="4" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvStock"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="@string/str_stock" android:singleLine="true"
+                                                     android:layout_weight="2" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+    </LinearLayout>
+</LinearLayout>

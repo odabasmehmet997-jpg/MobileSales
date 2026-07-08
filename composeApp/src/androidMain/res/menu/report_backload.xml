@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@android:drawable/ic_menu_revert" android:id="@+id/reportRefresh"
+          android:title="@string/str_refresh"/>
+    <item android:icon="@android:drawable/ic_menu_revert" android:id="@+id/reportBackLoad"
+          android:title="@string/str_show_hidden_colon"/>
+    <item android:icon="@android:drawable/ic_menu_revert" android:id="@+id/reportFullScreen"
+          android:title="@string/str_exit_full_screen"/>
+    <item android:icon="@drawable/ic_send_white_24dp" android:id="@+id/reportSendMail" android:visible="false"
+          android:title="@string/menu_send_mail"/>
+    <item android:id="@+id/reportDownloadExcel" android:visible="false" android:title="@string/menu_download_excel"/>
+    <item android:icon="@drawable/ic_picture_as_pdf_white_24dp" android:id="@+id/menu_pdf" android:visible="false"
+          android:menuCategory="secondary" android:title="@string/menu_pdf" app:showAsAction="always"/>
+    <item android:id="@+id/menu_sort_customer_name" android:visible="false"
+          android:title="@string/menu_sort_product_name"/>
+</menu>

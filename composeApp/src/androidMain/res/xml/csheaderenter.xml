@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="psCsHeader">
+    <PreferenceCategory android:title="@string/str_amount_information" android:key="pgCsGenelBilgiler">
+        <Preference android:title="@string/str_slip_entry" android:key="pTutarGirisi" android:summary=""/>
+        <com.proje.mobilesales.core.preferences.LogoDatePreference android:title="@string/str_payroll_date" android:key="dpCSTarih" android:defaultValue="1991.01.01"/>
+        <ListPreference android:title="@string/str_trading_group" android:key="lpTicariIslemGrubu" android:summary="" android:defaultValue=""/>
+        <ListPreference android:title="@string/str_auth_code" android:key="lpYetkiKodu" android:summary="" android:defaultValue=""/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_description" android:key="pgAciklama">
+        <com.proje.mobilesales.core.preferences.EditTextPref android:maxLength="50" android:title="@string/str_description1" android:key="etExplanation1" android:summary="" android:defaultValue=""/>
+        <com.proje.mobilesales.core.preferences.EditTextPref android:maxLength="50" android:title="@string/str_description2" android:key="etExplanation2" android:summary="" android:defaultValue=""/>
+        <com.proje.mobilesales.core.preferences.EditTextPref android:maxLength="50" android:title="@string/str_description3" android:key="etExplanation3" android:summary="" android:defaultValue=""/>
+        <com.proje.mobilesales.core.preferences.EditTextPref android:maxLength="50" android:title="@string/str_description4" android:key="etExplanation4" android:summary="" android:defaultValue=""/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_others" android:key="pgCsDigerBilgiler">
+        <ListPreference android:title="@string/str_department" android:key="lpIsyeri" android:summary="" android:defaultValue=""/>
+        <ListPreference android:title="@string/str_section" android:key="lpBolum" android:summary="" android:defaultValue=""/>
+        <ListPreference android:title="@string/str_special_code" android:key="lpOzelKodu" android:summary="" android:defaultValue=""/>
+        <ListPreference android:title="@string/str_project_code" android:key="lpProjeKodu" android:summary="" android:defaultValue=""/>
+        <com.proje.mobilesales.core.preferences.EditTextPref android:maxLength="50" android:title="@string/str_document_number" android:key="etDocNo" android:summary="" android:defaultValue=""/>
+    </PreferenceCategory>
+</PreferenceScreen>

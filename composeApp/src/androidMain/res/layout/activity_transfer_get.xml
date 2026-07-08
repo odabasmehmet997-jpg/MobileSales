@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent" android:keepScreenOn="true">
+    <include layout="@layout/toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcwTransferGet" android:scrollbars="vertical"
+                                               android:layout_width="match_parent" android:layout_height="match_parent"
+                                               app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <FrameLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end"
+                 android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:id="@+id/twFabText"
+                                                         android:text="@string/str_transfer_get_start"
+                                                         style="@style/FabTextStyle"/>
+          <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fabStartTransfer"
+                                                                                 android:layout_width="wrap_content"
+                                                                                 android:layout_height="wrap_content"
+                                                                                 android:layout_margin="@dimen/fab_margin"
+                                                                                 android:contentDescription="@string/str_transfer_get_start"
+                                                                                 android:src="@drawable/ic_cached_white_48dp"
+                                                                                 android:layout_toRightOf="@+id/twFabText"
+                                                                                 app:backgroundTint="@color/orange500"
+                                                                                 app:elevation="6dp" app:fabSize="auto"
+                                                                                 app:layout_anchorGravity="fill_horizontal"
+                                                                                 app:pressedTranslationZ="12dp"/>
+        </RelativeLayout>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

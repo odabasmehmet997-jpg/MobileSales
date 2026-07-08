@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:id="@+id/content_frame" android:layout_width="match_parent"
+                                                     android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent"
+                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="match_parent" android:weightSum="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/lnMenuContainer"
+                          android:background="@color/white" android:layout_width="match_parent"
+                          android:layout_height="0dp" android:weightSum="1" android:layout_weight="0.65">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lyMainFirst"
+                              android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="1"
+                              android:layout_weight="0.33" tools:ignore="NestedWeights">
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/txtOrder"
+                                                                 android:text="@string/activity_title_order"
+                                                                 android:drawableTop="@drawable/ic_clipboard_check_grey600_36dp"
+                                                                 style="@style/MainActivityTextStyle"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/txtRequest"
+                                                                 android:text="@string/activity_title_request"
+                                                                 android:drawableTop="@drawable/ic_cart_plus_grey600_36dp"
+                                                                 style="@style/MainActivityTextStyle"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/txtDistribution"
+                                                                 android:text="@string/activity_title_distribution"
+                                                                 android:drawableTop="@drawable/ic_truck_grey600_36dp"
+                                                                 style="@style/MainActivityTextStyle"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/txtCustomer"
+                                                                 android:text="@string/activity_title_customer"
+                                                                 android:drawableTop="@drawable/ic_account_circle_grey600_36dp"
+                                                                 style="@style/MainActivityTextStyle"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lyMainSecond"
+                              android:layout_width="match_parent" android:layout_height="0dp"
+                              android:layout_weight="0.33" tools:ignore="NestedWeights">
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/txtProduct"
+                                                                 android:text="@string/activity_title_product"
+                                                                 android:drawableTop="@string/activity_title_product"
+                                                                 style="@style/MainActivityTextStyle"
+                                                                 app:drawableTopCompat="@drawable/ic_barcode_scan_grey600_36dp"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/txtUtil"
+                                                                 android:text="@string/activity_title_util"
+                                                                 android:drawableTop="@drawable/ic_wrench_grey600_36dp"
+                                                                 style="@style/MainActivityTextStyle"
+                                                                 app:drawableTopCompat="@drawable/ic_wrench_grey600_36dp"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/txtReport"
+                                                                 android:text="@string/activity_title_report"
+                                                                 android:drawableTop="@drawable/ic_file_chart_grey600_36dp"
+                                                                 style="@style/MainActivityTextStyle"
+                                                                 app:drawableTopCompat="@drawable/ic_file_chart_grey600_36dp"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/txtTransfer"
+                                                                 android:text="@string/activity_title_transfer"
+                                                                 android:drawableTop="@string/activity_title_transfer"
+                                                                 style="@style/MainActivityTextStyle"
+                                                                 app:drawableTopCompat="@drawable/ic_cached_grey600_36dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lyMainThird"
+                              android:layout_width="match_parent" android:layout_height="0dp"
+                              android:layout_weight="0.33">
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/txtWhTransfer"
+                                                                 android:text="@string/str_activity_title_vehicle_transfer"
+                                                                 android:drawableTop="@drawable/ic_baseline_import_export_36"
+                                                                 style="@style/MainActivityTextStyle"/>
+                    <androidx.appcompat.widget.AppCompatTextView style="@style/MainActivityTextStyle"
+                                                                 tools:ignore="SpeakableTextPresentCheck"/>
+                    <androidx.appcompat.widget.AppCompatTextView style="@style/MainActivityTextStyle"
+                                                                 tools:ignore="SpeakableTextPresentCheck"/>
+                    <androidx.appcompat.widget.AppCompatTextView style="@style/MainActivityTextStyle"
+                                                                 tools:ignore="SpeakableTextPresentCheck"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llTodoMesaj"
+                          android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="1"
+                          android:layout_weight="0.35">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_to_do" android:scrollbars="vertical"
+                                                           android:layout_width="match_parent"
+                                                           android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

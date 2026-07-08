@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/linearFilterDiv"
+                  android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:baselineAligned="false" android:layout_weight="1">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="0dp"
+                      android:layout_height="wrap_content" android:layout_weight="4">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linearDate1" android:focusable="true"
+                          android:clickable="true" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:layout_margin="1dp" android:paddingStart="4dp"
+                          style="@style/editCalendar">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                             android:id="@+id/tvDate1" android:focusable="false"
+                                                             android:clickable="false" android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:layout_marginLeft="4dp" android:singleLine="true"
+                                                             android:layout_weight="100"
+                                                             android:layout_marginStart="4dp"/>
+                <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center_vertical"
+                                                                android:background="@android:color/transparent"
+                                                                android:focusable="false" android:clickable="false"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@android:drawable/ic_menu_my_calendar"
+                                                                android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="top" android:layout_width="0dp" android:layout_height="match_parent"
+                      android:layout_marginBottom="1dp" android:layout_weight="1" android:layout_marginStart="4dp"
+                      style="@style/editCalendar">
+            <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center_vertical"
+                                                            android:id="@+id/imgList"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:src="@android:drawable/ic_search_category_default"
+                                                            android:scaleType="fitCenter"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/transparent"
+                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_marginTop="2dp" android:layout_weight="1">
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+              android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="1dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/transparent"
+                  android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:background="@color/line_color"
+              android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="0.1sp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/transparent"
+                  android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:background="@color/line_color"
+              android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="0.1sp"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="100">
+        <com.proje.mobilesales.core.widget.AppBarSwipeRefreshLayout android:id="@+id/swipe_layout"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/rcwList"
+                                                       android:scrollbars="vertical" android:clipToPadding="false"
+                                                       android:layout_width="wrap_content"
+                                                       android:layout_height="match_parent"
+                                                       android:fadeScrollbars="true"/>
+        </com.proje.mobilesales.core.widget.AppBarSwipeRefreshLayout>
+    </FrameLayout>
+</LinearLayout>

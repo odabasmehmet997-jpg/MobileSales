@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent" android:layout_height="wrap_content"
+                                   style="@style/AppCardView">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:weightSum="100">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent"
+                      android:layout_weight="90">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ln_distribution_list_container"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:weightSum="1">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                              android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:text="@string/str_fiche_number" android:layout_weight="0.7"
+                              style="@style/textSerialGroupGeneralStyle"/>
+                    <TextView android:id="@+id/tvFicheNo" android:layout_width="match_parent"
+                              android:layout_height="match_parent" android:text="..." android:layout_weight="0.3"
+                              style="@style/textSerialGroupGeneralStyle"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                              android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:text="@string/str_date" android:layout_weight="0.7"
+                              style="@style/textSerialGroupGeneralStyle"/>
+                    <TextView android:id="@+id/tvDateTime" android:layout_width="match_parent"
+                              android:layout_height="match_parent" android:text="..." android:layout_weight="0.3"
+                              style="@style/textSerialGroupGeneralStyle"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ln_cari"
+                              android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:layout_weight="1">
+                    <TextView android:id="@+id/lblCari" android:layout_width="match_parent"
+                              android:layout_height="match_parent" android:text="@string/str_customer"
+                              android:layout_weight="0.7" style="@style/textSerialGroupGeneralStyle"/>
+                    <TextView android:id="@+id/tvCustomer" android:layout_width="match_parent"
+                              android:layout_height="match_parent" android:text="..." android:layout_weight="0.3"
+                              style="@style/textSerialGroupGeneralStyle"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent"
+                      android:layout_weight="10">
+            <include android:id="@+id/button_more" android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" android:layout_marginTop="15dp"
+                     android:layout_marginRight="5dp" layout="@layout/button_more"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

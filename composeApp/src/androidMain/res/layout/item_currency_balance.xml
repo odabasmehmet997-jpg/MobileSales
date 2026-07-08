@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="@color/zxing_transparent" card_view:cardCornerRadius="4dp" card_view:cardElevation="1dp" card_view:cardUseCompatPadding="false" card_view:contentPadding="6dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ln_item_currency_balance" android:background="@color/zxing_transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textStyle="bold" android:padding="4dp" android:text="@string/str_tc_currency_abbrv" android:drawablePadding="0dp" android:layout_weight="0.16" style="@style/textCustomerGeneralStyle"/>
+            <TextView android:id="@+id/tv_idCurrency" android:padding="4dp" android:drawablePadding="0dp" android:layout_weight="0.33" style="@style/textCustomerGeneralStyle"/>
+            <TextView android:textStyle="bold" android:padding="4dp" android:text="@string/str_tc_balance_abbrv" android:drawablePadding="0dp" android:layout_weight="0.17" style="@style/textCustomerGeneralStyle"/>
+            <TextView android:id="@+id/tv_idBalance" android:padding="4dp" android:drawablePadding="0dp" android:layout_weight="0.34" style="@style/textCustomerGeneralStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textStyle="bold" android:padding="4dp" android:text="@string/str_tc_debit_abbrv" android:drawablePadding="0dp" android:layout_weight="0.16" style="@style/textCustomerGeneralStyle"/>
+            <TextView android:id="@+id/tv_idDebit" android:padding="4dp" android:drawablePadding="0dp" android:layout_weight="0.33" style="@style/textCustomerGeneralStyle"/>
+            <TextView android:textStyle="bold" android:padding="4dp" android:text="@string/str_lc_balance_abbrv" android:drawablePadding="0dp" android:layout_weight="0.17" style="@style/textCustomerGeneralStyle"/>
+            <TextView android:id="@+id/tv_lcBalance" android:padding="4dp" android:drawablePadding="0dp" android:layout_weight="0.34" style="@style/textCustomerGeneralStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textStyle="bold" android:padding="4dp" android:text="@string/str_tc_credit_abbrv" android:drawablePadding="0dp" android:layout_weight="0.16" style="@style/textCustomerGeneralStyle"/>
+            <TextView android:id="@+id/tv_tcCredit" android:padding="4dp" android:drawablePadding="0dp" android:layout_weight="0.33" style="@style/textCustomerGeneralStyle"/>
+            <TextView android:textStyle="bold" android:padding="4dp" android:text="@string/str_rc_balance_abbrv" android:drawablePadding="0dp" android:layout_weight="0.17" style="@style/textCustomerGeneralStyle"/>
+            <TextView android:id="@+id/tv_rcBalance" android:padding="4dp" android:drawablePadding="0dp" android:layout_weight="0.34" style="@style/textCustomerGeneralStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+            android:scrollbarStyle="outsideOverlay"
+            android:id="@+id/rcw_cashcreditdetaillist"
+            android:paddingBottom="8dp"
+            android:scrollbars="vertical"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true"/>
+</RelativeLayout>

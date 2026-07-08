@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/btn_nav_up" android:background="?android:attr/selectableItemBackground"
+                     android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:src="@drawable/navigation_up" android:contentDescription="@string/str_up"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp"
+                      android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textStyle="bold" android:id="@+id/txt_selected_folder_label"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/str_selected_folder"/>
+            <TextView android:ellipsize="start" android:id="@+id/txt_selected_folder"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="test" android:scrollHorizontally="true"
+                      android:singleLine="true"/>
+        </LinearLayout>
+        <ImageButton android:id="@+id/btn_create_folder" android:background="?android:attr/selectableItemBackground"
+                     android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:src="@drawable/ic_action_create"
+                     android:contentDescription="@string/str_create_folder"/>
+    </LinearLayout>
+    <View android:background="@color/android_bright_blue" android:layout_width="match_parent"
+          android:layout_height="1dp"/>
+    <ListView android:id="@+id/list_dirs" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textSize="30sp" android:gravity="center" android:id="@+id/txt_list_empty" android:padding="10dp"
+              android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+              android:text="@string/str_empty_list" android:alpha="0.5"/>
+</LinearLayout>

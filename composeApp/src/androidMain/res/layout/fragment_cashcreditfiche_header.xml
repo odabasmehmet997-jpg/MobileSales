@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:focusable="true" android:focusableInTouchMode="true"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:scrollbarStyle="outsideOverlay" android:scrollbars="vertical"
+                                           android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/ln_customerTradingGroup" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_trading_group" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_customerTradingGroup" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_authCode" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_auth_code" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_authCode" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_explanation1" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_description1" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/etExplanation1" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_Explanation2" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_description2" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/etExplanation2" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_explanation3" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_description3" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/etExplanation3" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_explanation4" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_description4" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/etExplanation4" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_bank" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_bank" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_bank" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_account" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_account" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_account" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_workplace" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_branch" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_workplace" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_department" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_section" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_department" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_specialCode" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_special_code" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_specialCode" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_projectCode" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_project_code" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_projectCode" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_promiseCode" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_contract_code" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_promiseCode" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_installment" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_installment_number" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/etInstallment" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          android:inputType="number" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:orientation="vertical" android:layout_width="match_parent"
+                                                     android:layout_height="match_parent" android:keepScreenOn="true"
+                                                     app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <include layout="@layout/toolbar"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearFilterDiv" android:padding="8dp"
+                      android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:baselineAligned="false" android:layout_weight="1">
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="0dp" android:baselineAligned="false" android:layout_weight="2">
+                <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="0dp"
+                              android:layout_height="wrap_content" android:layout_weight="1">
+                    <include android:id="@+id/linearDateLayout" layout="@layout/activity_base_report_wcf"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="bottom" android:orientation="vertical"
+                              android:visibility="visible" android:layout_width="0dp"
+                              android:layout_height="match_parent" android:layout_margin="1dp"
+                              android:layout_marginLeft="4dp" android:layout_weight="1" android:layout_marginStart="4dp"
+                              style="@style/editCalendar">
+                    <androidx.appcompat.widget.AppCompatSpinner android:id="@+id/spReportCurrencyType"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:drawSelectorOnTop="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_margin="1dp" style="@style/editCalendar">
+                <androidx.appcompat.widget.AppCompatCheckBox android:textAppearance="?android:attr/textAppearanceSmall"
+                                                             android:layout_gravity="center_vertical"
+                                                             android:id="@+id/chGroup" android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="@string/str_reporting_currency"
+                                                             android:layout_weight="1"/>
+                <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center_horizontal"
+                                                                android:id="@+id/imgList"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@android:drawable/ic_search_category_default"
+                                                                android:scaleType="fitCenter"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@android:color/transparent"
+                      android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_gravity="center_vertical" android:background="@color/subMenu2"
+                  android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="0.1sp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                          android:id="@+id/linearMaterial2" android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_x_small"
+                                                             android:textColor="#1B5E20" android:gravity="center"
+                                                             android:id="@+id/tvDescription"
+                                                             android:background="@color/colorPrimary"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="@string/str_extract_report_fiche_description_debit_credit"
+                                                             android:singleLine="true" android:layout_weight="7"/>
+                <View android:background="@color/white" android:layout_width="1dp"
+                      android:layout_height="match_parent"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_x_small"
+                                                             android:textColor="#1B5E20" android:gravity="center"
+                                                             android:id="@+id/tvBalance"
+                                                             android:background="@color/colorPrimary"
+                                                             android:layout_width="0dp"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="@string/str_balance"
+                                                             android:singleLine="true" android:layout_weight="3"/>
+            </LinearLayout>
+            <View android:layout_gravity="center_vertical" android:background="@color/subMenu2"
+                  android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="0.1sp"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="100">
+            <ListView android:id="@+id/lvList" android:scrollbars="none" android:layout_width="match_parent"
+                      android:layout_height="match_parent" android:divider="#333333" android:dividerHeight="1px"
+                      android:headerDividersEnabled="true" android:footerDividersEnabled="true"/>
+            <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center"
+                          android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+                          android:id="@+id/linearProgress" android:visibility="gone" android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <View android:layout_gravity="center_vertical" android:background="@color/subMenu2"
+                  android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="0.1sp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="10">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lnDebitCredit"
+                              android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="2"
+                              android:layout_weight="7">
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                                 android:textStyle="bold"
+                                                                 android:textColor="@color/colorPrimary"
+                                                                 android:gravity="right|center_vertical|center_horizontal|center|end"
+                                                                 android:id="@+id/txt_ficheTotalDebit"
+                                                                 android:layout_width="0dp"
+                                                                 android:layout_height="wrap_content"
+                                                                 android:layout_weight="1"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small"
+                                                                 android:textStyle="bold"
+                                                                 android:textColor="@color/black"
+                                                                 android:gravity="right|center_vertical|center_horizontal|center|end"
+                                                                 android:id="@+id/txt_ficheTotalCredit"
+                                                                 android:layout_width="0dp"
+                                                                 android:layout_height="wrap_content"
+                                                                 android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/lnFicheTotalBalance"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:weightSum="1"
+                              android:layout_weight="3">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_ficheTotalBalance"
+                            android:textSize="@dimen/text_size_small"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="right|center_vertical|center_horizontal|center|end"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

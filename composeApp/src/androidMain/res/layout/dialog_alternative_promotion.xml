@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ln_item_alternative_promotion_header"
+                  android:paddingLeft="@dimen/half_padding" android:paddingTop="@dimen/half_padding"
+                  android:paddingRight="@dimen/half_padding" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:layout_margin="@dimen/half_padding"
+                  android:paddingStart="@dimen/half_padding" android:paddingEnd="@dimen/half_padding"
+                  tools:ignore="MissingConstraints">
+        <TextView android:text="@string/str_code" android:layout_weight="0.2"
+                  style="@style/textItemSurplusDiscountHeader"/>
+        <TextView android:text="@string/str_explanation" android:layout_weight="0.4"
+                  style="@style/textItemSurplusDiscountHeader"/>
+        <TextView android:text="@string/str_quantity" android:layout_weight="0.2"
+                  style="@style/textItemSurplusDiscountHeader"/>
+        <TextView android:gravity="end" android:visibility="gone" android:text="@string/str_actual"
+                  android:layout_weight="0.2" style="@style/textItemSurplusDiscountHeader"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerViewList" android:layout_width="match_parent"
+                                               android:layout_height="300dp" android:layout_margin="@dimen/half_padding"
+                                               app:layout_constraintBottom_toTopOf="@+id/ln_item_alternative_promotion_footer"
+                                               app:layout_constraintTop_toBottomOf="@+id/ln_item_alternative_promotion_header"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ln_item_alternative_promotion_footer"
+                  android:paddingLeft="@dimen/half_padding" android:paddingRight="@dimen/half_padding"
+                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_margin="@dimen/half_padding" android:paddingStart="@dimen/half_padding"
+                  android:paddingEnd="@dimen/half_padding" app:layout_constraintTop_toBottomOf="@+id/recyclerViewList">
+        <TextView android:text="@string/str_line_quantity" android:layout_weight="0.35"
+                  style="@style/textItemSurplusDiscountHeader"/>
+        <TextView android:id="@+id/tv_alternative_line_quantity" android:layout_weight="0.15"
+                  style="@style/textItemSurplusDiscountHeader"/>
+        <TextView android:text="@string/str_selected_quantity" android:layout_weight="0.35"
+                  style="@style/textItemSurplusDiscountHeader"/>
+        <TextView android:id="@+id/tv_alternative_selected_quantity" android:layout_weight="0.15"
+                  style="@style/textItemSurplusDiscountHeader"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

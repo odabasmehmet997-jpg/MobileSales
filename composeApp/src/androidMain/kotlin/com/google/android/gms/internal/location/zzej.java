@@ -1,0 +1,15 @@
+package com.google.android.gms.internal.location;
+
+import android.os.Parcelable;
+
+public final class zzej implements Parcelable.Creator {
+
+    public java.lang.Object createFromParcel(final android.os.Parcel r12) {
+
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.internal.location.zzej.createFromParcel(android.os.Parcel):java.lang.Object");
+    }
+
+    public Object[] newArray(final int i2) {
+        return new zzei[i2];
+    }
+}

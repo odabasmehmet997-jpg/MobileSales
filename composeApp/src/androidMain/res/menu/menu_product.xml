@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/group_product_filter" android:checkableBehavior="single">
+        <item android:id="@+id/menu_all" android:title="@string/menu_all"/>
+        <item android:id="@+id/menu_product" android:title="@string/menu_product"/>
+        <item android:id="@+id/menu_service" android:title="@string/menu_service"/>
+    </group>
+    <item android:icon="@drawable/ic_barcode_scan_white_24dp" android:id="@+id/menu_barcode"
+          android:menuCategory="secondary" android:title="@string/menu_barcode" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_check_all_white_24dp" android:id="@+id/menu_done" android:menuCategory="secondary"
+          android:title="@string/menu_done" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_sort" android:menuCategory="secondary"
+          android:title="@string/menu_sort_code" app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_filter_by_group"
+          android:menuCategory="secondary" android:title="@string/menu_filterby_group"
+          app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_recommended_products"
+          android:menuCategory="secondary" android:title="@string/menu_recommended_products"
+          app:showAsAction="collapseActionView"/>
+</menu>

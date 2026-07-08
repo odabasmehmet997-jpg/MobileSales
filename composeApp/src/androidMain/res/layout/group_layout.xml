@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMediumInverse"
+                                                     android:id="@+id/tvCategoryTitle" android:paddingLeft="40dp"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:text="Kategori Başlık" android:layout_weight="100"
+                                                     android:paddingStart="40dp"/>
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progressBarCategory"
+                     android:layout_width="30dp" android:layout_height="30dp" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imCategorySpinner" android:visibility="gone"
+                                                      android:layout_width="30dp" android:layout_height="30dp"
+                                                      android:scaleType="fitCenter" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="0.5sp"
+          android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_marginStart="40dp"
+          android:layout_marginEnd="40dp"/>
+</LinearLayout>

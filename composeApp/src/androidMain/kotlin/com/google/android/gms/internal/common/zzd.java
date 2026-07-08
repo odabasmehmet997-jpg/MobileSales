@@ -1,0 +1,9 @@
+package com.google.android.gms.internal.common;
+
+import androidx.core.view.accessibility.AccessibilityEventCompat;
+
+/* compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+public enum zzd {
+    ;
+    public static final int zza = AccessibilityEventCompat.TYPE_VIEW_TARGETED_BY_SCROLL;
+}

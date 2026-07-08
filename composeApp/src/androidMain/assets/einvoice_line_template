@@ -1,0 +1,13 @@
+<tr class="lineTableTr">
+    <td class="lineTableTd">&nbsp;{LINE_NO}</td>
+    <td class="lineTableTd">&nbsp;{PRODUCT_CODE}</td>
+    <td class="lineTableTd">&nbsp;{PRODUCT_NAME}</td>
+    <td align="right" class="lineTableTd">&nbsp;{LINEEXP}</td>
+    <td align="right" class="lineTableTd">&nbsp;{PRODUCT_AMOUNT} {PRODUCT_UNIT}</td>
+    <td align="right" class="lineTableTd">&nbsp;{PRODUCT_LINE_PRICE} {PRICE_CURRENCY}</td>
+    <td align="right" class="lineTableTd">&nbsp;{DISTDISC} {PRICE_CURRENCY}</td>
+    <td align="right" class="lineTableTd">&nbsp;{VAT}</td>
+    <td align="right" class="lineTableTd">&nbsp;{VATAMNT} {PRICE_CURRENCY}</td>
+    <td align="right" class="lineTableTd">&nbsp;{VATEXCEPTREASON}</td>
+    <td align="right" class="lineTableTd">&nbsp;{PRODUCT_TOTAL} {PRICE_CURRENCY}</td>
+</tr>

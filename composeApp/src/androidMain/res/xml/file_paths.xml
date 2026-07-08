@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+<external-path name="my_images" path="Android/data/com.proje.mobilesales/files/Pictures"/>
+<external-path name="external_files" path="."/>
+<cache-path name="reportPdf" path="reportPdf/"/>
+<cache-path name="eDespatchPdf" path="eDespatchPdf/"/>
+<cache-path name="salesPdf" path="salesPdf/"/>
+<cache-path name="exportSettings" path="exportSettings/"/>
+<cache-path name="toDoHtml" path="toDoHtml/"/>
+<cache-path name="emailAttachments" path="emailAttachments/"/>
+</paths>

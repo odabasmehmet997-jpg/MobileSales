@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom"
+              android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18dp" android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_total_discount"
+                                                     android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18dp" android:gravity="end"
+                                                     android:id="@+id/tvTotalDiscount"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_tmp_0_float" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18dp" android:id="@+id/tvTotalLabel"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_total_quantity"
+                                                     android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18dp" android:gravity="end"
+                                                     android:id="@+id/tvTotal" android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_tmp_0_float" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18dp" android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_total_vat" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18dp" android:gravity="end"
+                                                     android:id="@+id/tvTotalVat" android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_tmp_0_float" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18dp" android:id="@+id/tvTotalNetLabel"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_total_net" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18dp" android:gravity="end"
+                                                     android:id="@+id/tvTotalNet" android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_tmp_0_float" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

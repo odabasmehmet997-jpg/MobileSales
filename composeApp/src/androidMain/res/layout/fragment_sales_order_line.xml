@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/rlt_product_container" android:layout_width="match_parent"
+                 android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/buttons_container"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:weightSum="3">
+                <androidx.appcompat.widget.AppCompatButton android:gravity="center"
+                                                           android:id="@+id/btn_addProductBarcode"
+                                                           android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:text="@string/str_product_select_barcode"
+                                                           android:layout_weight="1"
+                                                           style="@style/Widget.AppCompat.Button.Borderless"/>
+                <View android:background="@color/colorDivider2" android:layout_width="1dp"
+                      android:layout_height="match_parent"/>
+                <androidx.appcompat.widget.AppCompatButton android:gravity="center" android:id="@+id/btn_addProduct"
+                                                           android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:text="@string/str_product_select"
+                                                           android:layout_weight="1"
+                                                           style="@style/Widget.AppCompat.Button.Borderless"/>
+                <View android:background="@color/colorDivider2" android:layout_width="1dp"
+                      android:layout_height="match_parent"/>
+                <androidx.appcompat.widget.AppCompatButton android:gravity="center" android:id="@+id/btn_addProductForm"
+                                                           android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:text="@string/str_product_enter_form"
+                                                           android:layout_weight="1"
+                                                           style="@style/Widget.AppCompat.Button.Borderless"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/rcwList"
+                                               android:layout_width="match_parent" android:layout_height="match_parent"
+                                               android:layout_above="@+id/frm_OrderLineTotal"
+                                               android:layout_below="@+id/rlt_product_container"/>
+    <FrameLayout android:scrollbarStyle="outsideOverlay" android:id="@+id/frm_OrderLineTotal"
+                 android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                 android:layout_marginBottom="-225dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="262dp"
+                      android:weightSum="7">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ln_orderLineTotal"
+                          android:background="@color/colorPrimary" android:layout_width="match_parent"
+                          android:layout_height="0dp" android:weightSum="2" android:layout_weight="1">
+                <ImageButton android:id="@+id/img_orderLineTotalUp" android:background="@color/colorPrimary"
+                             android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:src="@drawable/ic_arrow_up_bold_circle_outline_white_36dp"/>
+                <TextView android:textColor="@color/white" android:id="@+id/txt_orderLineTotalLabel"
+                          android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="@string/str_sales_fiche_total" android:layout_weight="1"
+                          style="@style/textOrderLineStyle"/>
+                <TextView android:textColor="@color/white" android:gravity="end" android:id="@+id/txt_orderLineTotal"
+                          android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="@string/str_tmp_0_float" android:layout_weight="1"
+                          style="@style/textOrderLineStyle"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal"
+                          android:id="@+id/ln_orderLineDiscountTotal" android:background="@color/colorPrimary"
+                          android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="2"
+                          android:layout_weight="1">
+                <ImageButton android:background="@color/colorPrimary" android:visibility="invisible"
+                             android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:src="@drawable/ic_arrow_up_bold_circle_outline_white_36dp"/>
+                <TextView android:textColor="@color/white" android:layout_width="0dp"
+                          android:layout_height="wrap_content" android:text="@string/str_sales_discount_total"
+                          android:layout_weight="1" style="@style/textOrderLineStyle"/>
+                <TextView android:textColor="@color/white" android:gravity="end" android:id="@+id/txt_orderLineDiscount"
+                          android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="@string/str_tmp_0_float" android:layout_weight="1"
+                          style="@style/textOrderLineStyle"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal"
+                          android:id="@+id/ln_orderLineVatTotal" android:background="@color/colorPrimary"
+                          android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="2"
+                          android:layout_weight="1">
+                <ImageButton android:background="@color/colorPrimary" android:visibility="invisible"
+                             android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:src="@drawable/ic_arrow_up_bold_circle_outline_white_36dp"/>
+                <TextView android:textColor="@color/white" android:layout_width="0dp"
+                          android:layout_height="wrap_content" android:text="@string/str_sales_vat_total"
+                          android:layout_weight="1" style="@style/textOrderLineStyle"/>
+                <TextView android:textColor="@color/white" android:gravity="end" android:id="@+id/txt_orderLineVatTotal"
+                          android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="@string/str_tmp_0_float" android:layout_weight="1"
+                          style="@style/textOrderLineStyle"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal"
+                          android:id="@+id/ln_orderLineNetTotal" android:background="@color/colorPrimary"
+                          android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="2"
+                          android:layout_weight="1">
+                <ImageButton android:background="@color/colorPrimary" android:visibility="invisible"
+                             android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:src="@drawable/ic_arrow_up_bold_circle_outline_white_36dp"/>
+                <TextView android:textColor="@color/white" android:layout_width="0dp"
+                          android:layout_height="wrap_content" android:text="@string/str_sales_net_total"
+                          android:layout_weight="1" style="@style/textOrderLineStyle"/>
+                <TextView android:textColor="@color/white" android:gravity="end" android:id="@+id/txt_orderLineNet"
+                          android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="@string/str_tmp_0_float" android:layout_weight="1"
+                          style="@style/textOrderLineStyle"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal"
+                          android:id="@+id/ln_orderLineCountTotal" android:background="@color/colorPrimary"
+                          android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="2"
+                          android:layout_weight="1">
+                <ImageButton android:background="@color/colorPrimary" android:visibility="invisible"
+                             android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:src="@drawable/ic_arrow_up_bold_circle_outline_white_36dp"/>
+                <TextView android:textColor="@color/white" android:layout_width="0dp"
+                          android:layout_height="wrap_content" android:text="@string/str_sales_line_count"
+                          android:layout_weight="1" style="@style/textOrderLineStyle"/>
+                <TextView android:textColor="@color/white" android:gravity="end" android:id="@+id/txt_orderLineCount"
+                          android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="@string/str_tmp_0_float" android:layout_weight="1"
+                          style="@style/textOrderLineStyle"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ln_orderLineSku"
+                          android:background="@color/colorPrimary" android:layout_width="match_parent"
+                          android:layout_height="0dp" android:weightSum="2" android:layout_weight="1">
+                <ImageButton android:background="@color/colorPrimary" android:visibility="invisible"
+                             android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:src="@drawable/ic_arrow_up_bold_circle_outline_white_36dp"/>
+                <TextView android:textColor="@color/white" android:layout_width="0dp"
+                          android:layout_height="wrap_content" android:text="@string/str_sales_line_sku"
+                          android:layout_weight="1" style="@style/textOrderLineStyle"/>
+                <TextView android:textColor="@color/white" android:gravity="end" android:id="@+id/txt_orderLineSku"
+                          android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="@string/str_tmp_0_float" android:layout_weight="1"
+                          style="@style/textOrderLineStyle"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal"
+                          android:id="@+id/ln_orderLineTotalAmount" android:background="@color/colorPrimary"
+                          android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="2"
+                          android:layout_weight="1">
+                <ImageButton android:background="@color/colorPrimary" android:visibility="invisible"
+                             android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:src="@drawable/ic_arrow_up_bold_circle_outline_white_36dp"/>
+                <TextView android:textColor="@color/white" android:layout_width="0dp"
+                          android:layout_height="wrap_content" android:text="@string/str_fiche_item_amount"
+                          android:layout_weight="1" style="@style/textOrderLineStyle"/>
+                <TextView android:textColor="@color/white" android:gravity="end"
+                          android:id="@+id/txt_orderLineTotalAmount" android:layout_width="0dp"
+                          android:layout_height="wrap_content" android:text="@string/str_tmp_0_float"
+                          android:layout_weight="1" style="@style/textOrderLineStyle"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal"
+                          android:id="@+id/ln_orderLineUnitTotal" android:background="@color/colorPrimary"
+                          android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="2"
+                          android:layout_weight="1">
+                <ImageButton android:background="@color/colorPrimary" android:visibility="invisible"
+                             android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:src="@drawable/ic_arrow_up_bold_circle_outline_white_36dp"/>
+                <TextView android:textColor="@color/white" android:layout_width="0dp"
+                          android:layout_height="wrap_content" android:text="@string/str_sales_line_unitTotals"
+                          android:layout_weight="1" style="@style/textOrderLineStyle"/>
+                <TextView android:textColor="@color/white" android:gravity="end"
+                          android:id="@+id/txt_orderLineUnitTotal" android:layout_width="0dp"
+                          android:layout_height="wrap_content" android:text="@string/str_tmp_0_float"
+                          android:layout_weight="1" style="@style/textOrderLineStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

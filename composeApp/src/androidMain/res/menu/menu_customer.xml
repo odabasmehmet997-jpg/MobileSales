@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_update" android:menuCategory="secondary" android:title="@string/menu_update_customer"
+          app:showAsAction="collapseActionView"/>
+    <item android:id="@+id/menu_poll_campaign_point_customer" android:menuCategory="secondary"
+          android:title="@string/menu_poll_campaign_point_customer" app:showAsAction="collapseActionView"/>
+    <item android:id="@+id/menu_open_location" android:menuCategory="secondary"
+          android:title="@string/menu_open_location" app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_camera_white_24dp" android:id="@+id/menu_photo" android:menuCategory="secondary"
+          android:title="@string/menu_add_photo" app:showAsAction="collapseActionView"/>
+</menu>

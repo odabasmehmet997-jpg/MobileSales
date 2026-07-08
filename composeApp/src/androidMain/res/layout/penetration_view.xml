@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/rlt_penetration_container" android:padding="@dimen/fiche_padding"
+                    android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlt_penetration_header" android:padding="10dp"
+                        android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@+id/txt_penetrationDefinition"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginRight="10dp" android:text="@string/loading_text" android:singleLine="true"
+                      android:layout_toRightOf="@+id/button_more" android:layout_alignParentLeft="true"
+                      android:layout_marginEnd="10dp" android:layout_toEndOf="@+id/button_more"
+                      android:layout_alignParentStart="true" style="@style/textTitleStyle"/>
+            <include android:id="@+id/button_more" android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" android:layout_marginRight="-10dp"
+                     android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+                     android:layout_marginEnd="-10dp" android:layout_alignParentEnd="true"
+                     layout="@layout/button_more"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlt_penetrationDetail" android:padding="10dp"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlt_penetration_header">
+            <com.proje.mobilesales.core.widget.TintableTextView android:id="@+id/txt_penetrationDate"
+                                                                android:text="@string/loading_text"
+                                                                android:singleLine="true"
+                                                                style="@style/textCustomerSubtitleStyle"/>
+            <com.proje.mobilesales.core.widget.TintableTextView android:textStyle="bold"
+                                                                android:textColor="@color/red500" android:gravity="end"
+                                                                android:id="@+id/txt_penetrationTransfer"
+                                                                android:layout_alignParentRight="true"
+                                                                android:layout_centerVertical="true"
+                                                                android:layout_alignParentEnd="true"
+                                                                app:iconStart="@drawable/ic_check_circle_grey600_24dp"
+                                                                style="@style/textCustomerSubtitleStyle"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

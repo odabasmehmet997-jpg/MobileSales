@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="16dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/testid" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:gravity="start" android:layout_gravity="center" android:id="@+id/txtDialogTitle" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="false"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall" android:gravity="start" android:layout_gravity="center" android:id="@+id/txtDialogDescription" android:padding="8dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="false"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <LinearLayout android:id="@+id/lnCancel" android:focusable="true" android:clickable="true"
+                              android:layout_width="0dp" android:layout_height="match_parent"
+                              android:layout_weight="0.5" tools:ignore="DuplicateClickableBoundsCheck">
+                    <androidx.appcompat.widget.AppCompatButton android:textColor="@color/colorAccent"
+                                                               android:gravity="center" android:id="@+id/btnCancel"
+                                                               android:layout_width="match_parent"
+                                                               android:layout_height="match_parent"
+                                                               android:text="@string/str_cancel"
+                                                               style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/lnOk" android:focusable="true" android:clickable="true"
+                              android:layout_width="0dp" android:layout_height="match_parent"
+                              android:layout_weight="0.5" tools:ignore="DuplicateClickableBoundsCheck">
+                    <androidx.appcompat.widget.AppCompatButton android:gravity="center" android:id="@+id/btnOk"
+                                                               android:layout_width="match_parent"
+                                                               android:layout_height="match_parent"
+                                                               android:text="@string/str_okey"
+                                                               style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

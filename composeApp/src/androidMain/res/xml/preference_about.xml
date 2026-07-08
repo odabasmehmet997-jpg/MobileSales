@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                                      android:key="psSettings">
+    <androidx.preference.Preference android:title="@string/str_app_name" android:summary="@string/str_firm_copyright"/>
+    <androidx.preference.Preference android:title="@string/str_firm_copyright"
+                                    android:summary="@string/str_legal_warning"/>
+    <androidx.preference.Preference android:title="@string/str_version" android:key="pVersion" android:summary="5.0.2"/>
+    <androidx.preference.Preference android:title="@string/str_database_version" android:key="pDBVersion"
+                                    android:summary="1"/>
+    <androidx.preference.Preference android:title="@string/str_firm_name" android:key="pLink"
+                                    android:summary="www.proje.com.tr"/>
+    <androidx.preference.Preference android:title="@string/str_erp_info" android:key="pErpType" android:summary=""/>
+    <androidx.preference.Preference android:title="@string/str_licence_info" android:key="pLicence" android:summary=""/>
+    <androidx.preference.Preference android:title="@string/str_privacy_policy" android:key="pPrivacyLink"
+                                    android:summary="https://www.proje.com.tr/proje-gizlilik-politikalari"/>
+</androidx.preference.PreferenceScreen>

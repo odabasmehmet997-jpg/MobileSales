@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/AppCardView">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="40dp" style="@style/AppCardView">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ln_salesman_list_container" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+            <TextView android:gravity="center_vertical" android:id="@+id/tvSalesManCode" android:layout_width="0dp" android:layout_height="match_parent" android:text="..." android:layout_weight="30" style="@style/textSerialGroupGeneralStyle"/>
+            <TextView android:gravity="center_vertical" android:id="@+id/tvSalesMan" android:layout_width="0dp" android:layout_height="match_parent" android:text="..." android:layout_weight="70" style="@style/textSerialGroupGeneralStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

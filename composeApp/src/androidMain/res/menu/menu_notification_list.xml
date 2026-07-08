@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_filter" android:menuCategory="secondary"
+          android:title="@string/menu_filter" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_plus_circle_outline_white_24dp" android:id="@+id/menu_new"
+          android:menuCategory="secondary" android:title="@string/menu_new_notification" app:showAsAction="always"/>
+</menu>

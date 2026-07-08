@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="prccdDetail">
+    <PreferenceCategory android:title="@string/str_amount_information" android:key="pgccdTutar">
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_total" android:key="etTutar" android:summary="" android:defaultValue="" android:inputType="numberDecimal"/>
+        <EditTextPreference android:name="EditText Preference" android:maxLength="17" android:title="@string/str_receipt_number" android:key="etMakbuzNo" android:summary="" android:defaultValue=""/>
+        <ListPreference android:title="@string/str_payments" android:key="lpOdemeler" android:summary="" android:defaultValue=""/>
+        <EditTextPreference android:name="EditText Preference" android:maxLength="25" android:title="@string/str_credit_cart_number" android:key="etKrediKartNo" android:summary="" android:defaultValue="" android:inputType="number"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_bank_account_information" android:key="pgBanka">
+        <ListPreference android:title="@string/str_bank" android:key="lpBanka" android:summary="" android:defaultValue=""/>
+        <ListPreference android:title="@string/str_account" android:key="lpHesap" android:summary="" android:defaultValue=""/>
+    </PreferenceCategory>
+</PreferenceScreen>

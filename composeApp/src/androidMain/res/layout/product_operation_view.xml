@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:padding="5dp" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:minHeight="80dp">
+        <RelativeLayout android:id="@+id/rlt_product_container" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+            <TextView android:id="@+id/txt_productName" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="@string/loading_text" android:maxLines="2"
+                      android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                      android:layout_alignParentStart="true" style="@style/textTitleStyle"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ln_discountContainer"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_below="@+id/txt_productName" android:layout_alignParentRight="true"
+                          android:layout_alignParentEnd="true">
+                <include android:id="@+id/inc_discount1" android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" layout="@layout/product_operation_discount"/>
+                <include android:id="@+id/inc_discount2" android:visibility="gone" android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" layout="@layout/product_operation_discount"/>
+                <include android:id="@+id/inc_discount3" android:visibility="gone" android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" layout="@layout/product_operation_discount"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rlt_product_info" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:layout_below="@+id/txt_productName"
+                            android:layout_toStartOf="@+id/ln_discountContainer" android:layout_alignParentStart="true">
+                <LinearLayout android:id="@+id/ll_operation_view" android:layout_width="match_parent"
+                              android:layout_height="wrap_content" android:layout_alignParentTop="true"
+                              android:layout_alignParentStart="true">
+                    <RelativeLayout android:id="@+id/rlt_productOperationAmount" android:layout_width="0dp"
+                                    android:layout_height="wrap_content" android:layout_weight="0.65">
+                        <TextView android:id="@+id/txt_product_amount_title" android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/str_fiche_item_amount_short"
+                                  style="@style/textProductSubStyle"/>
+                        <LinearLayout android:id="@+id/lnAmountDialogOpener" android:visibility="gone"
+                                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                                      android:layout_alignParentTop="true" android:layout_centerInParent="true"
+                                      android:layout_toStartOf="@+id/imgBtn_product_plus"
+                                      android:layout_toEndOf="@+id/imgBtn_product_minus">
+                            <TextView android:gravity="center" android:id="@+id/txtDialogSelectedAmount"
+                                      android:focusable="true" android:focusableInTouchMode="true"
+                                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                                      android:maxWidth="57dp" android:text="1" android:paddingStart="2dp"
+                                      android:paddingEnd="2dp" style="@style/textProductSubStyle"/>
+                        </LinearLayout>
+                        <ImageButton android:id="@+id/imgBtn_product_plus"
+                                     android:background="?attr/selectableItemBackground" android:layout_width="30dp"
+                                     android:layout_height="30dp" android:layout_marginTop="5dp"
+                                     android:src="@drawable/ic_plus_circle_outline_grey600_24dp"
+                                     android:layout_toEndOf="@+id/edt_product_amount"/>
+                        <EditText android:gravity="end" android:id="@+id/edt_product_amount"
+                                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:maxWidth="57dp" android:minWidth="57dp" android:text="0"
+                                  android:singleLine="true" android:selectAllOnFocus="true" android:maxLength="7"
+                                  android:layout_alignParentTop="true" android:inputType="numberDecimal"
+                                  android:paddingEnd="2dp" android:layout_toEndOf="@+id/imgBtn_product_minus"
+                                  style="@style/textProductSubStyle"/>
+                        <ImageButton android:id="@+id/imgBtn_product_minus"
+                                     android:background="?attr/selectableItemBackground" android:layout_width="30dp"
+                                     android:layout_height="30dp"
+                                     android:src="@drawable/ic_minus_circle_outline_grey600_24dp"
+                                     android:layout_alignTop="@+id/imgBtn_product_plus"
+                                     android:layout_toEndOf="@+id/txt_product_amount_title"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rlt_productUnitSelect" android:layout_width="0dp"
+                                    android:layout_height="wrap_content" android:layout_weight="0.35">
+                        <androidx.appcompat.widget.AppCompatSpinner android:id="@+id/spn_productUnitSpinner"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:drawSelectorOnTop="true"
+                                                                    android:maxWidth="10dp" android:minWidth="10dp"
+                                                                    android:layout_alignParentRight="true"
+                                                                    android:layout_alignParentEnd="true"
+                                                                    style="@style/textProductSubStyle"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/priceContainer"
+                              android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:weightSum="1" android:layout_below="@+id/ll_operation_view">
+                    <LinearLayout android:layout_gravity="center" android:id="@+id/ln_price" android:layout_width="0dp"
+                                  android:layout_height="wrap_content" android:layout_weight="0.55">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="@string/str_fiche_item_price" android:layout_weight="0.25"
+                                  style="@style/textSubtitleStyle"/>
+                        <EditText android:id="@+id/edtPrice" android:layout_width="0dp"
+                                  android:layout_height="wrap_content" android:selectAllOnFocus="true"
+                                  android:layout_weight="0.3" android:inputType="numberDecimal"
+                                  android:imeOptions="actionDone" android:paddingStart="0dp" android:paddingEnd="0dp"
+                                  style="@style/textSubtitleStyle"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/priceInfoContainer"
+                              android:paddingTop="@dimen/padding" android:layout_width="match_parent"
+                              android:layout_height="wrap_content" android:weightSum="1"
+                              android:layout_below="@+id/priceContainer">
+                    <TextView android:visibility="visible" android:layout_width="0dp"
+                              android:layout_height="wrap_content" android:text="@string/str_defined_price_abbr"
+                              android:layout_weight="0.25" style="@style/textSubtitleStyle"/>
+                    <TextView android:textStyle="bold" android:gravity="start" android:id="@+id/txtPriceInfo"
+                              android:layout_width="0dp" android:layout_height="wrap_content"
+                              android:layout_weight="0.7" android:paddingStart="0dp" android:paddingEnd="@dimen/padding"
+                              style="@style/textSubtitleStyle"/>
+                </LinearLayout>
+                <EditText android:textSize="@dimen/text_size_x_medium" android:id="@+id/txt_productExplanation"
+                          android:visibility="gone" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:maxLines="1" android:selectAllOnFocus="true"
+                          android:layout_below="@+id/priceInfoContainer" android:layout_alignEnd="@+id/priceContainer"
+                          android:layout_alignParentStart="true"/>
+                <LinearLayout android:id="@+id/ln_salesDetailPromotion" android:visibility="gone"
+                              android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:weightSum="1" android:layout_below="@+id/txt_productExplanation"
+                              android:layout_alignEnd="@+id/ll_operation_view" android:layout_alignParentStart="true">
+                    <TextView android:textSize="@dimen/text_size_x_medium" android:gravity="center"
+                              android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                              android:layout_width="0dp" android:layout_height="match_parent"
+                              android:text="@string/str_promotion" android:layout_weight="0.45"
+                              android:textAllCaps="true"/>
+                    <CheckBox android:textStyle="bold" android:id="@+id/chk_salesDetailPromotion"
+                              android:layout_width="0dp" android:layout_height="match_parent"
+                              android:layout_weight="0.15" style="@style/textCustomerSalesHeaderStyle"/>
+                    <FrameLayout android:id="@+id/fl_spn_lineType" android:layout_width="0dp"
+                                 android:layout_height="match_parent" android:layout_weight="0.4">
+                        <Spinner android:id="@+id/spn_lineType" android:layout_width="match_parent"
+                                 android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                                 android:drawSelectorOnTop="true" android:maxWidth="10dp" android:minWidth="10dp"
+                                 style="@style/textProductSubStyle"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/ln_surplusAmount" android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_marginTop="8dp" android:weightSum="1"
+                              android:layout_below="@+id/ln_salesDetailPromotion"
+                              android:layout_alignEnd="@+id/ll_operation_view" android:layout_alignParentStart="true">
+                    <TextView android:visibility="visible" android:layout_width="0dp"
+                              android:layout_height="wrap_content" android:text="@string/str_surplus_amount_abbr"
+                              android:layout_weight="0.35" style="@style/textSubtitleStyle"/>
+                    <EditText android:id="@+id/edt_surplusAmount" android:layout_width="0dp"
+                              android:layout_height="wrap_content" android:layout_weight="0.35"
+                              android:inputType="numberDecimal" style="@style/textSubtitleStyle"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/button_toggle" android:layout_width="match_parent"
+                     android:layout_height="@dimen/expand_height" android:foreground="?attr/selectableItemBackground"
+                     android:layout_below="@+id/rlt_product_container">
+            <com.proje.mobilesales.core.widget.TintableTextView android:layout_gravity="center" android:id="@+id/toggle"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                app:iconStart="@drawable/ic_chevron_down_white_18dp"
+                                                                style="@style/textSubtitleStyle"/>
+        </FrameLayout>
+    </RelativeLayout>
+</merge>

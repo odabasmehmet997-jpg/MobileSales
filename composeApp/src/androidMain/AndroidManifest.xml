@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+           android:installLocation="preferExternal">
+	<uses-sdk android:minSdkVersion="29" />
+	<supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" android:xlargeScreens="true"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.BLUETOOTH"/>
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+	<uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+	<uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+	<uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" android:maxSdkVersion="30"/>
+	<uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" android:minSdkVersion="29"/>
+	<uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+	<queries>
+		<package android:name="com.google.android.apps.maps"/>
+	</queries>
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<permission android:name="com.proje.mobilesales.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+	<uses-permission android:name="com.proje.mobilesales.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+	<uses-feature android:name="android.hardware.camera" android:required="false"/>
+	<uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+	<uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+	<uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+	<uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+	<uses-feature android:name="android.hardware.wifi" android:required="false"/>
+	<application android:label="@string/str_app_name" android:icon="@mipmap/ic_launcher" android:theme="@style/LogoTheme"  android:name="com.proje.mobilesales.core.MobileSales" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="true"
+	             android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true">
+		<activity android:name="com.proje.mobilesales.features.reports.view.activity.BaseReportWcfActivity" android:exported="false"/>
+		<activity android:name="com.proje.mobilesales.features.notification.view.create.NotificationCreateActivity" android:exported="false"/>
+		<activity android:name="com.proje.mobilesales.features.notification.view.NotificationWelcomeActivity" android:exported="false" android:launchMode="singleTop"/>
+		<activity android:name="com.proje.mobilesales.features.notification.view.detail.NotificationDetailActivity" android:exported="false"/>
+		<activity android:name="com.proje.mobilesales.features.notification.view.list.NotificationListActivity" android:exported="false" android:launchMode="singleTop"/>
+		<activity android:label="@string/str_reports" android:name="com.proje.mobilesales.features.reports.view.activity.ItemReportsActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:name="com.proje.mobilesales.features.customer.view.info.CustomerCurrencyInfoActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_app_name" android:name="com.proje.mobilesales.features.activity.SplashscreenActivity" android:theme="@style/FullscreenTheme"  android:exported="true" android:configChanges="keyboardHidden|orientation|screenSize">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity android:label="@string/str_app_name" android:name="com.proje.mobilesales.features.activity.LoginActivity" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="adjustNothing"/>
+		<activity android:label="@string/str_app_name" android:name="com.proje.mobilesales.features.activity.MainActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_settings" android:name="com.proje.mobilesales.features.settings.view.activity.SettingsActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_settings" android:name="com.proje.mobilesales.features.settings.view.activity.PreferenceActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="locale|orientation|screenSize" android:parentActivityName="com.proje.mobilesales.features.activity.LoginActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<action android:name="android.intent.action.EDIT"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="application/octet-stream" android:host="*" android:pathPattern=".*.mssettings"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<action android:name="android.intent.action.EDIT"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="application/mssettings" android:host="*" android:pathPattern=".*.mssettings"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:scheme="file"/>
+				<data android:host="*"/>
+				<data android:pathPattern=".*.mssettings"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:scheme="http"/>
+				<data android:host="*"/>
+				<data android:mimeType="application/mssettings"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:scheme="http"/>
+				<data android:host="*"/>
+				<data android:pathPattern=".*.mssettings"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="*/*" android:scheme="file" android:host="*" android:pathPattern=".*.mssettings"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+				<data android:scheme="http" android:host="*" android:pathPattern=".*.mssettings"/>
+				<data android:scheme="https" android:host="*" android:pathPattern=".*.mssettings"/>
+				<data android:scheme="content" android:host="*" android:pathPattern=".*.mssettings"/>
+				<data android:scheme="file" android:host="*" android:pathPattern=".*.mssettings"/>
+			</intent-filter>
+			<meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".features.activity.LoginActivity"/>
+		</activity>
+		<activity android:label="@string/activity_title_device_connect" android:name="com.proje.mobilesales.features.settings.view.activity.BluetoothDeviceListActivity" android:theme="@android:style/Theme.Dialog"  android:configChanges="keyboardHidden|orientation"/>
+		<activity android:label="@string/str_product_select_barcode" android:name="com.proje.mobilesales.features.activity.BarcodeScannerProductViewActivity" android:stateNotNeeded="true" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_product_select_barcode" android:name="com.proje.mobilesales.features.activity.BarcodeScannerView" android:stateNotNeeded="true" android:screenOrientation="portrait" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+		<activity android:label="@string/str_product_select_barcode" android:name="com.proje.mobilesales.features.cabinoperation.view.activity.BarcodeScannerCabinView" android:stateNotNeeded="true" android:screenOrientation="portrait" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+		<activity android:label="@string/activity_title_transfer" android:name="com.proje.mobilesales.features.activity.TransferActivity" android:configChanges="locale|orientation|screenSize" android:parentActivityName="com.proje.mobilesales.features.activity.MainActivity">
+			<meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".features.activity.MainActivity"/>
+		</activity>
+		<activity android:label="@string/activity_title_transfer_send" android:name="com.proje.mobilesales.features.activity.TransferSendActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_transfer_get" android:name="com.proje.mobilesales.features.activity.TransferGetActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_transfer_get" android:name="com.proje.mobilesales.features.activity.TransferGetSettingActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_other_gps_location" android:name="com.proje.mobilesales.features.gpsinfo.view.activity.GpsInfoActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_other_average_calc" android:name="com.proje.mobilesales.features.tools.view.activity.AverageCalcActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_other_start_info" android:name="com.proje.mobilesales.features.tools.view.activity.StartInfoEnterActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_util" android:name="com.proje.mobilesales.features.tools.view.activity.OtherMenuActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_customer" android:name="com.proje.mobilesales.features.customer.view.list.CustomerListActivity" android:exported="false" android:launchMode="singleTask" android:configChanges="locale|orientation|screenSize">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable_customer"/>
+		</activity>
+		<activity android:label="@string/activity_title_customer" android:name="com.proje.mobilesales.features.customer.view.general.CustomerActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_new_customer" android:name="com.proje.mobilesales.features.customer.view.newadd.CustomerNewActivity" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity android:label="@string/str_customer_all_person" android:name="com.proje.mobilesales.features.customer.view.communication.person.CustomerPersonActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_customer_ship_address" android:name="com.proje.mobilesales.features.customer.view.communication.ship.CustomerShipAddressActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="locale|orientation|screenSize">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable_ship_address"/>
+		</activity>
+		<activity android:label="@string/str_sales" android:name="com.proje.mobilesales.features.sales.view.list.SalesListActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="locale|orientation|screenSize">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable_sales"/>
+		</activity>
+		<activity android:label="@string/activity_title_visit_list" android:name="com.proje.mobilesales.features.visit.view.activity.VisitListActivityNew" android:exported="false" android:launchMode="singleTop" android:configChanges="locale|orientation|screenSize">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable_visit"/>
+		</activity>
+		<activity android:label="@string/activity_title_sales_new" android:name="com.proje.mobilesales.features.sales.view.newadd.SalesActivityNew" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_sales_order" android:name="com.proje.mobilesales.features.sales.view.order.SalesOrderListActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_distribution" android:name="com.proje.mobilesales.features.sales.view.distribution.DistributionListActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_visit" android:name="com.proje.mobilesales.features.visit.view.activity.VisitEnterActivityNew" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity android:label="@string/activity_title_product" android:name="com.proje.mobilesales.features.product.view.list.ProductListActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="locale|orientation|screenSize">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable_product"/>
+		</activity>
+		<activity android:label="@string/activity_title_order" android:name="com.proje.mobilesales.features.sales.view.validation.OrderValidationListActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="locale|orientation|screenSize">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable_sales"/>
+		</activity>
+		<activity android:label="@string/activity_title_sales_detail_enter" android:name="com.proje.mobilesales.features.sales.view.detail.SalesDetailActivity" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity android:label="@string/str_account_info" android:name="com.proje.mobilesales.features.customer.view.info.CustomerInfoActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="" android:name="com.proje.mobilesales.features.dailyinformation.view.activity.DailyFicheListActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="" android:name="com.proje.mobilesales.features.collections.prefs.view.activity.SalesCashAndCreditHeaderEnterActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="" android:name="com.proje.mobilesales.features.collections.prefs.view.activity.SalesCashAndCreditDetailEnterActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="" android:name="com.proje.mobilesales.features.collections.prefs.view.activity.SalesChequeAndDeedHeaderEnterActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="" android:name="com.proje.mobilesales.features.collections.prefs.view.activity.SalesChequeAndDeedDetailEnterActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="" android:name="com.proje.mobilesales.features.collections.prefs.view.activity.SalesChequeAndDeedDetailActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_case" android:name="com.proje.mobilesales.features.collections.prefs.view.activity.SalesCaseCashHeaderEnterActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_print_preview" android:name="com.proje.mobilesales.features.activity.PrintPreviewActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_print_preferences" android:name="com.proje.mobilesales.features.settings.view.activity.PrintPreferencesActivity" android:exported="false"/>
+		<activity android:label="@string/str_about" android:name="com.proje.mobilesales.features.about.view.activity.AboutActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_select_device" android:name="com.proje.mobilesales.features.settings.view.activity.DeviceListActivity" android:theme="@android:style/Theme.Dialog"  android:configChanges="keyboardHidden|orientation"/>
+		<activity android:label="@string/str_my_tasks" android:name="com.proje.mobilesales.features.todo.view.activity.TodoListActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_task_informations" android:name="com.proje.mobilesales.features.todo.view.activity.TodoReadActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_marketing_messages" android:name="com.proje.mobilesales.features.activity.MarketingMessageListActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_marketing_messages" android:name="com.proje.mobilesales.features.activity.MarketingMessageViewActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_penetration_list" android:name="com.proje.mobilesales.features.penetration.view.list.PenetrationListActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_penetration" android:name="com.proje.mobilesales.features.penetration.view.detail.PenetrationActivity" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+		<activity android:label="@string/str_reports" android:name="com.proje.mobilesales.features.reports.view.activity.ReportAllActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_material_picture" android:name="com.proje.mobilesales.features.activity.ImageViewActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_serial_number" android:name="com.proje.mobilesales.features.sales.view.serilot.SalesSeriLotActivity" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+		<activity android:label="@string/str_serial_group" android:name="com.proje.mobilesales.features.sales.view.serialgroup.SalesSerialGroupActivity" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+		<activity android:label="@string/str_detail" android:name="com.proje.mobilesales.features.sales.view.campaign.SalesCampaignActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_orders" android:name="com.proje.mobilesales.features.reports.view.activity.ReportWCFAllReportActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_vehicle_stock_status" android:name="com.proje.mobilesales.features.reports.view.activity.ReportWCFVehicleStatusActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_sales_summary_report" android:name="com.proje.mobilesales.features.reports.view.activity.ReportWCFSalesSummaryActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_sales_report" android:name="com.proje.mobilesales.features.reports.view.activity.ReportWCFSalesOrdInvActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_account_extract" android:name="com.proje.mobilesales.features.reports.view.activity.ReportExtractActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_account_extract_detail" android:name="com.proje.mobilesales.features.reports.view.activity.ReportExtractDetailActivity" android:configChanges="keyboardHidden|orientation"/>
+		<activity android:label="@string/str_account_extract_detail" android:name="com.proje.mobilesales.features.reports.view.activity.ReportExtractCaseCashDetailActivity" android:configChanges="keyboardHidden|orientation"/>
+		<activity android:label="@string/str_account_extract_detail" android:name="com.proje.mobilesales.features.reports.view.activity.ReportExtractInvoiceActivity" android:configChanges="keyboardHidden|orientation"/>
+		<activity android:label="@string/str_account_extract_detail" android:name="com.proje.mobilesales.features.reports.view.activity.ReportExtractInvoiceHeaderActivity" android:theme="@style/preferenceStyle" android:configChanges="keyboardHidden|orientation"/>
+		<activity android:label="@string/str_account_extract_detail" android:name="com.proje.mobilesales.features.reports.view.activity.ReportExtractInvoiceDetailActivity" android:configChanges="keyboardHidden|orientation"/>
+		<activity android:label="@string/str_average_invoice_expiry" android:name="com.proje.mobilesales.features.reports.view.activity.ReportWcfInvoiceAvgTimeActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+		<activity android:label="@string/str_average_date_report" android:name="com.proje.mobilesales.features.reports.view.activity.ReportWcfAvgCalTimeActivity" android:configChanges="keyboardHidden|orientation"/>
+		<activity android:label="@string/str_customer_route_list" android:name="com.proje.mobilesales.features.customer.view.route.CustomerRouteListActivity" android:configChanges="keyboardHidden|orientation"/>
+		<activity android:label="@string/str_debt_tracking" android:name="com.proje.mobilesales.features.reports.view.activity.ReportWcfDebitFollowActivity" android:configChanges="keyboardHidden|orientation"/>
+		<activity android:label="@string/str_order_report" android:name="com.proje.mobilesales.features.reports.view.activity.ReportWcfOrderListActivity" android:configChanges="keyboardHidden|orientation"/>
+		<activity android:label="@string/str_detailed_collection_report" android:name="com.proje.mobilesales.features.reports.view.activity.ReportWcfCollectionsListActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+		<activity android:label="@string/str_report_params" android:name="com.proje.mobilesales.features.userreport.view.activity.UserReportsParametersActivity" android:configChanges="locale|keyboardHidden|orientation|screenSize"/>
+		<activity android:label="@string/str_reports" android:name="com.proje.mobilesales.features.userreport.view.activity.UserReportsActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_reports" android:name="com.proje.mobilesales.features.userreport.view.activity.UserReportsFormActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_reports" android:name="com.proje.mobilesales.features.userreport.view.activity.UserReportsGridActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:name="com.proje.mobilesales.features.userreport.view.activity.UserReportsChartActivity"/>
+		<activity android:name="com.proje.mobilesales.features.collections.cashandcreditcardfiche.view.activity.CashAndCreditCardFicheActivity" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+		<activity android:name="com.proje.mobilesales.features.collections.cashandcreditcardfiche.view.activity.CashCreditFicheDetailEnterActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:name="com.proje.mobilesales.features.collections.receipt.view.activity.ReceiptFicheListActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="locale|orientation|screenSize">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable_sales"/>
+		</activity>
+		<activity android:name="com.proje.mobilesales.features.sales.view.mans.SalesMansListActivity"/>
+		<activity android:label="@string/str_case" android:name="com.proje.mobilesales.features.collections.casefiche.view.activity.CaseFicheActivity" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+		<activity android:name="com.proje.mobilesales.features.collections.chequeanddeedfiche.view.activity.ChequeAndDeedFicheActivity" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+		<activity android:name="com.proje.mobilesales.features.collections.chequeanddeedfiche.view.activity.ChequeDeedFicheDetailEnterActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:theme="@style/NoTitleDialogActivity" android:name="com.proje.mobilesales.features.activity.ImageDialogActivity" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+		<activity android:label="@string/str_customer_all_person" android:name="com.proje.mobilesales.features.customer.view.communication.person.CustomerNetPersonActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_cabin_list" android:name="com.proje.mobilesales.features.cabinoperation.view.activity.CabinListActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/activity_title_cabin_list" android:name="com.proje.mobilesales.features.cabinoperation.view.activity.CabinNewListActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_variant" android:name="com.proje.mobilesales.features.sales.view.variant.SalesVariantActivity" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+		<activity android:label="@string/activity_title_product" android:name="com.proje.mobilesales.features.product.view.tree.ProductTreeActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="locale|orientation|screenSize">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable_product"/>
+		</activity>
+		<activity android:name="com.proje.mobilesales.features.driverinformation.view.activity.EDispatchExtraInfoActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:name="com.proje.mobilesales.features.driverinformation.view.activity.DriverInformationActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_product_select_barcode" android:name="com.proje.mobilesales.features.activity.BarcodeReaderView" android:stateNotNeeded="true" android:screenOrientation="portrait" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+		<activity android:label="@string/str_reports" android:name="com.proje.mobilesales.features.notification.view.NotificationActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/str_report_designs" android:name="com.proje.mobilesales.features.reports.view.activity.ReportDesignListActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:label="@string/menu_last_order_products" android:name="com.proje.mobilesales.features.sales.view.list.LastOrderProductsActivity" android:configChanges="locale|orientation|screenSize"/>
+		<activity android:name="cardtek.masterpass.cardIO.MasterPassCardIOActivity"/>
+		<meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent"/>
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+		<meta-data android:name="firebase_crashlytics_collection_enabled" android:value="true"/>
+		<provider android:name="androidx.core.content.FileProvider" android:enabled="true" android:exported="false" android:authorities="com.proje.mobilesales.fileprovider" android:grantUriPermissions="true">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+		</provider>
+		<receiver android:name="com.proje.mobilesales.core.receiver.StartDataSyncReceiver" android:exported="false">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED"/>
+				<action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.PACKAGE_REPLACED"/>
+				<data android:scheme="package"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.PACKAGE_ADDED"/>
+				<data android:scheme="package"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<service android:name="com.proje.mobilesales.core.service.LocationUpdatesService" android:enabled="true" android:exported="false" android:foregroundServiceType="location"/>
+		<service android:name="com.proje.mobilesales.core.service.DataSyncService" android:enabled="true"/>
+		<service android:name="com.proje.mobilesales.core.service.DataTransferSyncService" android:enabled="true"/>
+		<service android:name="com.proje.mobilesales.core.service.PrintService" android:enabled="true"/>
+		<service android:name="com.proje.mobilesales.core.service.MyFirebaseMessagingService" android:exported="false">
+			<intent-filter>
+				<action android:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<uses-library android:name="org.apache.http.legacy" android:required="false"/>
+		<receiver android:name="com.google.firebase.messaging.FirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+		<provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.proje.mobilesales.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+		<receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+		<service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+		<service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+		<provider
+				android:name="androidx.startup.InitializationProvider"
+				android:authorities="${applicationId}.androidx-startup"
+				android:exported="false">
+			<meta-data
+					android:name="androidx.work.WorkManagerInitializer"
+					android:value="androidx.startup" tools:node="merge" />
+			<meta-data
+					android:name="androidx.emoji2.text.EmojiCompatInitializer"
+					android:value="androidx.startup" tools:node="merge"/>
+			<meta-data
+					android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+					android:value="androidx.startup" tools:node="merge"/>
+			<meta-data
+					android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+					android:value="androidx.startup" tools:node="merge" />
+		</provider>
+		<service
+				android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+				android:enabled="@bool/enable_system_alarm_service_default"
+				android:exported="false"
+				android:directBootAware="false"/>
+		<service
+				android:name="androidx.work.impl.background.systemjob.SystemJobService"
+				android:permission="android.permission.BIND_JOB_SERVICE"
+				android:enabled="@bool/enable_system_job_service_default"
+				android:exported="true"
+				android:directBootAware="false"/>
+		<service
+				android:name="androidx.work.impl.foreground.SystemForegroundService"
+				android:enabled="@bool/enable_system_foreground_service_default"
+				android:exported="false"
+				android:directBootAware="false"/>
+		<receiver
+				android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+				android:enabled="true"
+				android:exported="false"
+				android:directBootAware="false">
+		</receiver>
+		<receiver
+				android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+				android:enabled="@bool/enable_battery_charging_proxy"
+				android:exported="false"
+				android:directBootAware="false">
+			<intent-filter>
+				<action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver
+				android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+				android:enabled="@bool/enable_battery_not_low_proxy"
+				android:exported="false"
+				android:directBootAware="false">
+			<intent-filter>
+				<action android:name="android.intent.action.BATTERY_OKAY"/>
+				<action android:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver
+				android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+				android:enabled="@bool/enable_storage_not_low_proxy"
+				android:exported="false"
+				android:directBootAware="false">
+			<intent-filter>
+				<action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver
+				android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+				android:enabled="@bool/enable_network_state_proxy"
+				android:exported="false"
+				android:directBootAware="false">
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver
+				android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+				android:enabled="@bool/enable_reschedule_receiver"
+				android:exported="false"
+				android:directBootAware="false" tools:node="replace">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED"/>
+				<action android:name="android.intent.action.TIME_SET"/>
+				<action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver
+				android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+				android:enabled="@bool/enable_system_alarm_service_default"
+				android:exported="false"
+				android:directBootAware="false">
+			<intent-filter>
+				<action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver
+				android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+				android:permission="android.permission.DUMP"
+				android:enabled="true"
+				android:exported="true"
+				android:directBootAware="false">
+			<intent-filter>
+				<action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<uses-library
+				android:name="androidx.window.extensions"
+				android:required="false"/>
+		<uses-library
+				android:name="androidx.window.sidecar"
+				android:required="false"/>
+		<service
+				android:name="androidx.room.MultiInstanceInvalidationService"
+				android:exported="false"
+				android:directBootAware="true"/>
+		<receiver
+				android:name="androidx.profileinstaller.ProfileInstallReceiver"
+				android:permission="android.permission.DUMP"
+				android:enabled="true"
+				android:exported="true"
+				android:directBootAware="false">
+			<intent-filter>
+				<action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+			</intent-filter>
+		</receiver>
+		<service
+				android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+				android:exported="false">
+			<meta-data
+					android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+					android:value="cct"/>
+		</service>
+		<service
+				android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+				android:permission="android.permission.BIND_JOB_SERVICE"
+				android:exported="false"/>
+		<receiver
+				android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+				android:exported="false"/>
+		<activity
+				android:theme="@style/zxing_CaptureTheme"
+				android:name="com.journeyapps.barcodescanner.CaptureActivity"
+				android:clearTaskOnLaunch="true"
+				android:stateNotNeeded="true"
+				android:screenOrientation="sensorLandscape"
+				android:windowSoftInputMode="stateAlwaysHidden"/>
+	</application>
+</manifest>

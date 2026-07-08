@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_barcode_scan_white_24dp" android:id="@+id/menu_barcode"
+          android:menuCategory="secondary" android:title="@string/menu_barcode" app:showAsAction="always"/>
+    <item android:id="@+id/menu_range_select" android:menuCategory="secondary" android:title="@string/menu_range_select"
+          app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_check_all_white_24dp" android:id="@+id/menu_select_all"
+          android:menuCategory="secondary" android:title="@string/menu_select_all"
+          app:showAsAction="collapseActionView"/>
+</menu>

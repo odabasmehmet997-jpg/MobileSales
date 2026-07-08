@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1" android:id="@+id/txt_name"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_fiche_item_name"
+                                                     android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1" android:id="@+id/FVNAME"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content" android:text="111111"
+                                                     android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1" android:id="@+id/txt_code"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_fiche_item_code"
+                                                     android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1" android:id="@+id/FVCODE"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content" android:text="111111"
+                                                     android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1" android:id="@+id/txt_unit"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_fiche_item_unit"
+                                                     android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1" android:id="@+id/FVUNIT"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content" android:text="111111"
+                                                     android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1" android:id="@+id/txt_amount"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_fiche_item_amount"
+                                                     android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1" android:id="@+id/FVAMOUNT"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content" android:text="111111"
+                                                     android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1"
+                                                     android:id="@+id/txt_unit_price"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_fiche_item_unit_price"
+                                                     android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1" android:id="@+id/FVPRICE"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content" android:text="111111"
+                                                     android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1" android:id="@+id/txt_vat"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_vat_ratio" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1" android:id="@+id/FVVAT"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content" android:text="111111"
+                                                     android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1" android:id="@+id/txt_netTotal"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/str_fiche_item_total"
+                                                     android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:textColor="@color/subMenu1" android:id="@+id/FVNETTOTAL"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/LOGICALREF" android:layout_width="0px"
+                                                 android:layout_height="0px" android:text="TextView"
+                                                 android:layout_x="0px" android:layout_y="0px"/>
+</LinearLayout>

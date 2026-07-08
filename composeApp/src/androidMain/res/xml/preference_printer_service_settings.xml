@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                                      android:layout_width="match_parent" android:layout_height="match_parent">
+    <SwitchPreferenceCompat android:title="@string/pref_use_printer_service"
+                            android:key="@string/pref_use_printer_service_key"
+                            android:summary="@string/pref_print_service_screen_use_printer_service"
+                            android:defaultValue="false"/>
+    <EditTextPreference android:title="@string/pref_printer_service_address"
+                        android:key="@string/pref_printer_service_address_key"
+                        android:summary="@string/pref_default_printer_service_address"
+                        android:defaultValue="@string/pref_default_printer_service_address"
+                        android:dialogTitle="@string/pref_printer_service_address"/>
+    <ListPreference android:entries="@array/pref_printer_service_list_entries"
+                    android:title="@string/pref_default_printer" android:key="@string/pref_default_printer_key"
+                    android:summary="@string/pref_select_printer" android:defaultValue="@string/pref_select_printer"
+                    android:entryValues="@array/pref_printer_service_list_values"/>
+</androidx.preference.PreferenceScreen>

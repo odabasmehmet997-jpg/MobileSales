@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView android:id="@+id/zxing_barcode_scanner"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="match_parent"
+                                                         app:zxing_scanner_layout="@layout/custom_barcode_scanner"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/img_switch_flashlight"
+                                                  android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content"
+                                                  android:src="@drawable/ic_flashlight_white_48dp"
+                                                  android:layout_alignParentLeft="true"
+                                                  android:layout_alignParentStart="true"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/img_close" android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content"
+                                                  android:src="@drawable/ic_close_white_48dp"
+                                                  android:layout_alignParentRight="true"
+                                                  android:layout_centerHorizontal="true"
+                                                  android:layout_alignParentEnd="true"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/img_complete" android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content"
+                                                  android:src="@drawable/ic_check_white_48dp"
+                                                  android:layout_above="@+id/img_pause"
+                                                  android:layout_alignParentLeft="true"
+                                                  android:layout_centerHorizontal="true"
+                                                  android:layout_alignParentStart="true"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/img_pause" android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content"
+                                                  android:src="@drawable/ic_pause_white_48dp"
+                                                  android:layout_alignParentLeft="true"
+                                                  android:layout_alignParentBottom="true"
+                                                  android:layout_centerHorizontal="true"
+                                                  android:layout_alignParentStart="true"/>
+    <View android:id="@+id/centerHorizont" android:layout_width="0dp" android:layout_height="match_parent"
+          android:layout_toLeftOf="@+id/barcodePreview" android:layout_centerHorizontal="true"
+          android:layout_toStartOf="@+id/barcodePreview"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/barcodePreview" android:layout_width="128dp"
+                                                  android:layout_height="128dp" android:layout_alignParentRight="true"
+                                                  android:layout_alignParentBottom="true"
+                                                  android:layout_alignParentEnd="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ln_barcodeTextContainer"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:baselineAligned="true" android:weightSum="5" android:layout_toLeftOf="@+id/barcodePreview"
+                  android:layout_toRightOf="@+id/img_pause" android:layout_alignTop="@+id/barcodePreview"
+                  android:layout_alignParentBottom="true" android:layout_toStartOf="@+id/barcodePreview"
+                  android:layout_toEndOf="@+id/img_pause">
+        <ListView android:scrollbarStyle="outsideOverlay" android:layout_gravity="center_vertical"
+                  android:id="@+id/lst_barcode" android:scrollbars="vertical" android:layout_width="wrap_content"
+                  android:layout_height="match_parent" android:stackFromBottom="true"/>
+    </LinearLayout>
+    <com.proje.mobilesales.core.widget.TintableTextView android:textSize="36dp" android:textColor="@color/white"
+                                                        android:id="@+id/tintableTextView"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="@string/str_barcode_scanning"
+                                                        android:layout_alignParentTop="true"
+                                                        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

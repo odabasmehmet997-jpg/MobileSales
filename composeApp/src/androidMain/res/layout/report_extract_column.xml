@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearMaterial2" android:padding="8dp" android:longClickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_date"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvProcessDate" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_fiche_number" android:singleLine="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvFicheNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/tvFicheTypeHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_fiche_type" android:singleLine="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvFicheType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_debit"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvDebit" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_credit"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvCredit" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_balance"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/tvBakiye" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+    </LinearLayout>
+</ScrollView>

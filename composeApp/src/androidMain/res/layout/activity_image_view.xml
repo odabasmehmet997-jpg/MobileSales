@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <com.proje.mobilesales.core.widget.AppBarSwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize">
+        <FrameLayout android:id="@+id/content_frame"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+            <ImageView android:layout_gravity="start"
+                       android:id="@+id/img_item"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:scaleType="matrix"/>
+        </FrameLayout>
+    </com.proje.mobilesales.core.widget.AppBarSwipeRefreshLayout>
+</FrameLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:padding="8dp"
+                  android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                      android:id="@+id/linearMaterial2" android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                         android:id="@+id/tvCode" android:tag="1"
+                                                         android:layout_width="0dp" android:layout_height="wrap_content"
+                                                         android:layout_marginLeft="4dp"
+                                                         android:layout_marginRight="4dp"
+                                                         android:text="@string/str_code" android:singleLine="true"
+                                                         android:layout_weight="2" android:layout_marginStart="4dp"
+                                                         android:layout_marginEnd="4dp"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                         android:id="@+id/tvDefinition_" android:tag="2"
+                                                         android:layout_width="0dp" android:layout_height="wrap_content"
+                                                         android:layout_marginLeft="4dp"
+                                                         android:layout_marginRight="4dp"
+                                                         android:text="@string/str_explanation"
+                                                         android:singleLine="true" android:layout_weight="4"
+                                                         android:layout_marginStart="4dp"
+                                                         android:layout_marginEnd="4dp"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                         android:id="@+id/tvStock" android:tag="3"
+                                                         android:layout_width="0dp" android:layout_height="wrap_content"
+                                                         android:layout_marginLeft="4dp"
+                                                         android:layout_marginRight="4dp"
+                                                         android:text="@string/str_stock" android:singleLine="true"
+                                                         android:layout_weight="2" android:layout_marginStart="4dp"
+                                                         android:layout_marginEnd="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+          android:layout_width="match_parent" android:layout_height="0.1sp" android:layout_marginTop="1dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="100">
+        <ListView android:id="@+id/lvReportVehicleStatus" android:background="@android:color/transparent"
+                  android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+                      android:id="@+id/linearProgress" android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:layout_gravity="center_vertical" android:background="#55e2e1e1" android:paddingBottom="1dp"
+          android:layout_width="match_parent" android:layout_height="0.1sp"/>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:background="@android:color/transparent" android:clickable="false"
+              android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linearMaterial2"
+                  android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvFicheType"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginRight="4dp"
+                                                     android:text="@string/str_fiche_type" android:layout_weight="2"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvCount"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="@string/str_tmp_0" android:singleLine="true"
+                                                     android:layout_weight="2" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvTotal"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="@string/str_tmp_0_float" android:singleLine="true"
+                                                     android:layout_weight="2" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvTotalVat"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="@string/str_tmp_0_float" android:singleLine="true"
+                                                     android:layout_weight="2" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvTotalDiscount"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="@string/str_tmp_0_float" android:singleLine="true"
+                                                     android:layout_weight="2" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/tvNetTotal"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp"
+                                                     android:text="@string/str_tmp_0_float" android:singleLine="true"
+                                                     android:layout_weight="2" android:layout_marginStart="4dp"/>
+    </LinearLayout>
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1sp"/>
+</LinearLayout>

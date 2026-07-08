@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListPreference android:entries="@array/pref_transfer_type_values" android:title="@string/pref_transfer_type_title"
+                    android:key="@string/pref_tranfer_type" android:defaultValue="@string/str_delete_and_transfer"
+                    android:dialogTitle="@string/pref_dialog_transfer_type_title"
+                    android:entryValues="@array/pref_transfer_type_values"/>
+    <com.proje.mobilesales.core.preferences.EditTextIntegerPref android:title="@string/pref_transfer_part_size_title"
+                                                                android:key="@string/pref_tranfer_part_size"
+                                                                android:defaultValue="@string/pref_transfer_part_size_default"
+                                                                android:dialogTitle="@string/pref_dialog_transfer_part_size_title"
+                                                                android:inputType="number" app:maxIntValue="100000"
+                                                                app:minIntValue="50"/>
+    <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_use_transfer_log_title"
+                                                android:key="@string/pref_use_transfer_log_key"
+                                                android:summary="@string/pref_use_transfer_log_summary"
+                                                android:defaultValue="false"/>
+</PreferenceScreen>

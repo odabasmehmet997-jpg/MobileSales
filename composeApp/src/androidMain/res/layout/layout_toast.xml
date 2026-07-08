@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:id="@+id/parentLayout"
+              android:paddingLeft="8dp"
+              android:paddingRight="8dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+	<ImageView
+			android:id="@+id/imageView"
+			android:layout_width="48dp"
+			android:layout_height="48dp"
+			android:src="@drawable/ic_check_black_24dp"/>
+	<com.joanzapata.iconify.widget.IconTextView
+			android:textSize="22sp"
+			android:textColor="#ffffff"
+			android:id="@+id/faTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="48dp"
+			android:text="{fa-android}"
+			android:layout_gravity="center_vertical"/>
+	<TextView
+			android:textSize="@dimen/textsize"
+			android:id="@+id/textView"
+			android:layout_width="wrap_content"
+			android:layout_height="48dp"
+			android:layout_marginLeft="4dp"
+			android:text="ds"
+			android:layout_gravity="center_vertical"/>
+</LinearLayout>

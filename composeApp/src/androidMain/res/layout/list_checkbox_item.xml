@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical"
+              android:orientation="horizontal" android:id="@+id/linearCheckList"
+              android:background="@android:color/transparent" android:paddingTop="5dp" android:paddingBottom="5dp"
+              android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants"
+              android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:cacheColorHint="@android:color/transparent">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content"
+                  android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:layout_weight="3.9"
+                  android:layout_marginStart="4dp" android:layout_marginEnd="4dp">
+        <HorizontalScrollView android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent"
+                              android:layout_height="match_parent">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:scrollbarStyle="insideOverlay"
+                      android:ellipsize="end" android:id="@+id/tvCode" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true"/>
+        </HorizontalScrollView>
+        <HorizontalScrollView android:id="@+id/expDateScrollView" android:paddingTop="5dp" android:paddingBottom="5dp"
+                              android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:scrollbarStyle="insideOverlay"
+                      android:ellipsize="end" android:id="@+id/tvExpDate" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true"/>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatEditText android:textAppearance="?android:attr/textAppearanceSmall"
+                                                 android:gravity="end" android:id="@+id/edtUserAmount"
+                                                 android:focusable="true" android:focusableInTouchMode="true"
+                                                 android:clickable="true" android:layout_width="0dp"
+                                                 android:layout_height="wrap_content" android:layout_marginLeft="4dp"
+                                                 android:layout_marginRight="4dp" android:singleLine="true"
+                                                 android:selectAllOnFocus="true" android:layout_weight="1.7"
+                                                 android:inputType="numberDecimal" android:imeOptions="actionDone"
+                                                 android:layout_marginStart="4dp" android:layout_marginEnd="4dp"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                 android:gravity="end" android:id="@+id/tvAmount"
+                                                 android:layout_width="0dp" android:layout_height="wrap_content"
+                                                 android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                 android:singleLine="true" android:layout_weight="1.7"
+                                                 android:layout_marginStart="4dp" android:layout_marginEnd="4dp"/>
+    <androidx.appcompat.widget.AppCompatSpinner android:textAppearance="?android:attr/textAppearanceSmall"
+                                                android:gravity="center" android:id="@+id/tvUnit"
+                                                android:paddingBottom="6dp" android:layout_width="0dp"
+                                                android:layout_height="wrap_content" android:drawSelectorOnTop="true"
+                                                android:maxWidth="10dp" android:minWidth="10dp"
+                                                android:text="@string/str_units" android:layout_weight="2"
+                                                style="@style/textProductSubStyle"/>
+    <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/cbListItem" android:focusable="false"
+                                                 android:focusableInTouchMode="false" android:clickable="false"
+                                                 android:layout_width="wrap_content"
+                                                 android:layout_height="wrap_content" android:layout_weight="0.01"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+                android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/btn_pair" android:focusable="false" android:focusableInTouchMode="false"
+            android:clickable="false" android:layout_width="125dp" android:layout_height="wrap_content"
+            android:text="@string/str_pair_bluetooth_device" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    <TextView android:textSize="16sp" android:id="@+id/tv_name" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:text="Galaxy Nexus" android:layout_toLeftOf="@+id/btn_pair"
+              android:layout_alignTop="@+id/btn_pair" android:layout_alignParentLeft="true"
+              android:layout_toStartOf="@+id/btn_pair" android:layout_alignParentStart="true"/>
+    <TextView android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="000000000" android:layout_toLeftOf="@+id/btn_pair"
+              android:layout_alignBottom="@+id/btn_pair" android:layout_alignParentLeft="true"
+              android:layout_toStartOf="@+id/btn_pair" android:layout_alignParentStart="true"/>
+</RelativeLayout>

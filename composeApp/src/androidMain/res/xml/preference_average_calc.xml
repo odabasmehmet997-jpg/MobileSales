@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="psOrtalamVade">
+    <PreferenceCategory android:title="@string/str_new_expiry1" android:key="pgOrtalama">
+        <com.proje.mobilesales.core.preferences.LogoDatePreference android:title="@+string/str_date"
+                                                                   android:key="dpTarih1"
+                                                                   android:defaultValue="1991.01.01"/>
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_total" android:key="etTutar1"
+                            android:summary="" android:defaultValue="" android:inputType="numberDecimal"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_new_expiry2" android:key="pgOrtalama">
+        <com.proje.mobilesales.core.preferences.LogoDatePreference android:title="@string/str_date"
+                                                                   android:key="dpTarih2"
+                                                                   android:defaultValue="1991.01.01"/>
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_total" android:key="etTutar2"
+                            android:summary="" android:defaultValue="" android:inputType="numberDecimal"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_new_expiry3" android:key="pgOrtalama">
+        <com.proje.mobilesales.core.preferences.LogoDatePreference android:title="@string/str_date"
+                                                                   android:key="dpTarih3"
+                                                                   android:defaultValue="1991.01.01"/>
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_total" android:key="etTutar3"
+                            android:summary="" android:defaultValue="" android:inputType="numberDecimal"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_new_expiry4" android:key="pgOrtalama">
+        <com.proje.mobilesales.core.preferences.LogoDatePreference android:title="@string/str_date"
+                                                                   android:key="dpTarih4"
+                                                                   android:defaultValue="1991.01.01"/>
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_total" android:key="etTutar4"
+                            android:summary="" android:defaultValue="" android:inputType="numberDecimal"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_new_expiry5" android:key="pgOrtalama">
+        <com.proje.mobilesales.core.preferences.LogoDatePreference android:title="@string/str_date"
+                                                                   android:key="dpTarih5"
+                                                                   android:defaultValue="1991.01.01"/>
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_total" android:key="etTutar5"
+                            android:summary="" android:defaultValue="" android:inputType="numberDecimal"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_new_expiry6" android:key="pgOrtalama">
+        <com.proje.mobilesales.core.preferences.LogoDatePreference android:title="@string/str_date"
+                                                                   android:key="dpTarih6"
+                                                                   android:defaultValue="1991.01.01"/>
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_total" android:key="etTutar6"
+                            android:summary="" android:defaultValue="" android:inputType="numberDecimal"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_new_expiry7" android:key="pgOrtalama">
+        <com.proje.mobilesales.core.preferences.LogoDatePreference android:title="@string/str_date"
+                                                                   android:key="dpTarih7"
+                                                                   android:defaultValue="1991.01.01"/>
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_total" android:key="etTutar7"
+                            android:summary="" android:defaultValue="" android:inputType="numberDecimal"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_new_expiry8" android:key="pgOrtalama">
+        <com.proje.mobilesales.core.preferences.LogoDatePreference android:title="@string/str_date"
+                                                                   android:key="dpTarih8"
+                                                                   android:defaultValue="1991.01.01"/>
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_total" android:key="etTutar8"
+                            android:summary="" android:defaultValue="" android:inputType="numberDecimal"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_new_expiry9" android:key="pgOrtalama">
+        <com.proje.mobilesales.core.preferences.LogoDatePreference android:title="@string/str_date"
+                                                                   android:key="dpTarih9"
+                                                                   android:defaultValue="1991.01.01"/>
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_total" android:key="etTutar9"
+                            android:summary="" android:defaultValue="" android:inputType="numberDecimal"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_new_expiry10" android:key="pgOrtalama">
+        <com.proje.mobilesales.core.preferences.LogoDatePreference android:title="@string/str_date"
+                                                                   android:key="dpTarih10"
+                                                                   android:defaultValue="1991.01.01"/>
+        <EditTextPreference android:name="EditText Preference" android:title="@string/str_total" android:key="etTutar10"
+                            android:summary="" android:defaultValue="" android:inputType="numberDecimal"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppCardView">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/rlt_product_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/txt_productName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/loading_text"
+                    android:maxLines="2"
+                    style="@style/textTitleStyle"/>
+            <TextView
+                    android:id="@+id/txt_productCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/loading_text" android:maxLines="2" style="@style/textSubtitleStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical"
+                          android:id="@+id/rlt_product_container"
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="60">
+                <LinearLayout android:orientation="horizontal"
+                              android:id="@+id/ln_detailContainer"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:weightSum="6">
+                    <LinearLayout android:layout_gravity="center"
+                                  android:orientation="horizontal"
+                                  android:id="@+id/ln_amount"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="3">
+                        <TextView android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/str_fiche_item_amount"
+                                  android:layout_weight="1.2"
+                                  style="@style/textSubtitleStyle"/>
+                        <EditText android:id="@+id/edt_amount"
+                                  android:layout_width="0dp"
+                                  android:layout_height="48dp"
+                                  android:selectAllOnFocus="true"
+                                  android:layout_weight="1.8"
+                                  android:inputType="numberDecimal"
+                                  android:imeOptions="actionDone"
+                                  style="@style/textSubtitleStyle"
+                                  tools:ignore="SpeakableTextPresentCheck"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_gravity="center"
+                            android:id="@+id/ln_unit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3">
+                        <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spn_productUnitSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:drawSelectorOnTop="true"
+                                android:maxWidth="10dp"
+                                android:minWidth="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal"
+                              android:id="@+id/ln_detailSecondContainer"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:weightSum="6">
+                    <LinearLayout android:layout_gravity="center"
+                                  android:orientation="horizontal"
+                                  android:id="@+id/ln_secondAmount"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="3">
+                        <TextView android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/str_fiche_item_amount2"
+                                  android:layout_weight="1.2"
+                                  style="@style/textSubtitleStyle"/>
+                        <EditText android:id="@+id/edt_secondAmount"
+                                  android:layout_width="0dp"
+                                  android:layout_height="48dp"
+                                  android:selectAllOnFocus="true"
+                                  android:layout_weight="1.8"
+                                  android:inputType="numberDecimal"
+                                  android:imeOptions="actionDone"
+                                  style="@style/textSubtitleStyle"
+                                  tools:ignore="SpeakableTextPresentCheck"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_gravity="center"
+                            android:id="@+id/ln_secondUnit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3">
+                        <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spn_secondProductUnitSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:drawSelectorOnTop="true"
+                                android:maxWidth="10dp"
+                                android:minWidth="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal"
+                              android:id="@+id/ln_priceContainer"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:weightSum="6">
+                    <LinearLayout android:layout_gravity="center"
+                                  android:orientation="horizontal"
+                                  android:id="@+id/ln_definedPrice"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="3">
+                        <TextView android:id="@+id/txtSelectablePrice"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/str_defined_price_abbr"
+                                  android:layout_weight="1.2"
+                                  style="@style/textSubtitleStyle"/>
+                        <TextView android:id="@+id/txt_definedPrice"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1.8"
+                                  style="@style/textSubtitleStyle"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center"
+                                  android:id="@+id/ln_price"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="3">
+                        <TextView android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/str_fiche_item_price"
+                                  android:layout_weight="1.2"
+                                  style="@style/textSubtitleStyle"/>
+                        <EditText android:id="@+id/edtPrice"
+                                  android:layout_width="0dp"
+                                  android:layout_height="48dp"
+                                  android:selectAllOnFocus="true"
+                                  android:layout_weight="1.8"
+                                  android:inputType="numberDecimal"
+                                  android:imeOptions="actionDone"
+                                  style="@style/textSubtitleStyle"
+                                  tools:ignore="SpeakableTextPresentCheck"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal"
+                              android:id="@+id/ln_product_stock"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="@dimen/activity_half_two_vertical_margin"
+                              android:layout_marginBottom="@dimen/activity_half_two_vertical_margin"
+                              android:weightSum="6">
+                    <LinearLayout android:orientation="horizontal"
+                                  android:id="@+id/ln_product_actual_stock"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="3">
+                        <TextView android:ellipsize="end"
+                                  android:id="@+id/txt_product_actual_stock_text"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/str_physical_stock"
+                                  android:maxLines="1"
+                                  android:layout_weight="1.2"
+                                  style="@style/textSubtitleStyle"/>
+                        <TextView android:textStyle="bold"
+                                  android:ellipsize="end"
+                                  android:id="@+id/txt_product_actual_stock"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/loading_text"
+                                  android:maxLines="4"
+                                  android:layout_weight="1.8"
+                                  style="@style/textCustomerSubtitleNumberStyle"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal"
+                                  android:id="@+id/ln_product_real_stock"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="3">
+                        <TextView android:ellipsize="end"
+                                  android:id="@+id/txt_product_real_stock_text"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/str_actual"
+                                  android:maxLines="1"
+                                  android:layout_weight="1.2"
+                                  style="@style/textSubtitleStyle"/>
+                        <TextView android:textStyle="bold"
+                                  android:ellipsize="end"
+                                  android:id="@+id/txt_real_stock"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/loading_text"
+                                  android:maxLines="4"
+                                  android:layout_weight="1.8"
+                                  style="@style/textCustomerSubtitleNumberStyle"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal"
+                                  android:id="@+id/lnDiscountHolder"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:paddingStart="@dimen/padding"
+                                  android:paddingEnd="@dimen/padding">
+                        <include android:id="@+id/inc_discount1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 layout="@layout/product_operation_discount"/>
+                        <include android:id="@+id/inc_discount2"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 layout="@layout/product_operation_discount"/>
+                        <include android:id="@+id/inc_discount3"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 layout="@layout/product_operation_discount"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:paddingStart="@dimen/padding"
+                                  android:paddingEnd="@dimen/padding">
+                        <EditText android:textSize="@dimen/text_size_x_medium"
+                                  android:id="@+id/edtExplanation"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="48dp"
+                                  android:selectAllOnFocus="true"
+                                  android:inputType="textAutoComplete"
+                                  android:imeOptions="actionDone"
+                                  tools:ignore="SpeakableTextPresentCheck"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal"
+                                  android:id="@+id/lnPromotion"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:weightSum="100">
+                        <TextView android:textSize="@dimen/text_size_x_medium"
+                                  android:gravity="center_vertical"
+                                  android:id="@+id/txt_promotion"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/str_promotion"
+                                  android:layout_weight="40"
+                                  android:textAllCaps="true"
+                                  android:paddingStart="8dp"
+                                  android:paddingEnd="8dp"/>
+                        <CheckBox android:id="@+id/chk_salesDetailPromotion"
+                                  android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="15"/>
+                        <LinearLayout android:id="@+id/ln_Line"
+                                      android:layout_width="0dp"
+                                      android:layout_height="wrap_content"
+                                      android:layout_weight="45">
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spn_lineType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="48dp"
+                                    android:drawSelectorOnTop="true"
+                                    android:maxWidth="10dp"
+                                    android:minWidth="10dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal"
+                                  android:id="@+id/ln_surplusAmount"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="@dimen/margin"
+                                  android:weightSum="100">
+                        <TextView android:id="@+id/txt_surplusAmountHeader"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/str_surplus_amount_abbr"
+                                  android:layout_weight="30"
+                                  style="@style/textSubtitleStyle"/>
+                        <EditText android:id="@+id/edt_surplusAmount"
+                                  android:layout_width="0dp"
+                                  android:layout_height="48dp"
+                                  android:layout_weight="30"
+                                  android:inputType="numberDecimal"
+                                  style="@style/textSubtitleStyle"
+                                  tools:ignore="SpeakableTextPresentCheck"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center"
+                          android:orientation="vertical"
+                          android:id="@+id/lnButton"
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="10">
+                <ImageView android:layout_gravity="center_vertical"
+                           android:id="@+id/img_add_to_list"
+                           android:padding="5dp"
+                           android:visibility="visible"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/ok_white"/>
+                <ImageView android:layout_gravity="center_vertical"
+                           android:id="@+id/img_remove_from_list"
+                           android:visibility="visible"
+                           android:layout_width="match_parent"
+                           android:layout_height="46dp"
+                           android:src="@drawable/delete_red"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/button_toggle"
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/expand_height"
+                     android:foreground="?attr/selectableItemBackground">
+            <com.proje.mobilesales.core.widget.TintableTextView
+                    android:layout_gravity="center"
+                    android:id="@+id/toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:iconStart="@drawable/ic_chevron_down_white_18dp"
+                    style="@style/textSubtitleStyle"
+                    tools:ignore="SpeakableTextPresentCheck"/>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="prcsDetail">
+	<PreferenceCategory
+			android:title="@string/str_amount_information"
+			android:key="pgcsTutar">
+		<EditTextPreference
+				android:name="EditText Preference"
+				android:title="@string/str_total"
+				android:key="etTutar"
+				android:summary=""
+				android:defaultValue=""
+				android:inputType="numberDecimal"/>
+		<com.proje.mobilesales.core.preferences.LogoDatePreference
+				android:title="@string/str_expiry"
+				android:key="dpVadeTarihi"
+				android:defaultValue="1991.01.01"/>
+		<EditTextPreference
+				android:name="EditText Preference"
+				android:maxLength="31"
+				android:title="@string/str_serial_number"
+				android:key="etSeriNo"
+				android:summary=""
+				android:defaultValue=""/>
+		<EditTextPreference
+				android:name="EditText Preference"
+				android:maxLength="200"
+				android:title="@string/str_debtor"
+				android:key="etBorclu"
+				android:summary=""
+				android:defaultValue=""/>
+		<EditTextPreference
+				android:name="EditText Preference"
+				android:maxLength="21"
+				android:title="@string/str_bank_name"
+				android:key="etBankaAdi"
+				android:summary=""
+				android:defaultValue=""/>
+		<EditTextPreference
+				android:name="EditText Preference"
+				android:maxLength="17"
+				android:title="@string/str_bank_branch"
+				android:key="etSube"
+				android:summary=""
+				android:defaultValue=""/>
+		<EditTextPreference
+				android:name="EditText Preference"
+				android:maxLength="50"
+				android:title="@string/str_account_number"
+				android:key="etHesap"
+				android:summary=""
+				android:defaultValue=""/>
+		<EditTextPreference
+				android:name="EditText Preference"
+				android:maxLength="31"
+				android:title="@string/str_guarantor"
+				android:key="etKefil"
+				android:summary=""
+				android:defaultValue=""/>
+		<EditTextPreference
+				android:name="EditText Preference"
+				android:maxLength="16"
+				android:title="@string/str_payment_place"
+				android:key="etOdemeYeri"
+				android:summary=""
+				android:defaultValue=""/>
+		<EditTextPreference
+				android:name="EditText Preference"
+				android:title="@string/str_stamp_value"
+				android:key="etPul"
+				android:summary=""
+				android:defaultValue=""
+				android:inputType="numberDecimal"/>
+	</PreferenceCategory>
+</PreferenceScreen>

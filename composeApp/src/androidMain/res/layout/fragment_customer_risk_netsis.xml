@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <com.proje.mobilesales.core.widget.AppBarSwipeRefreshLayout android:id="@+id/swipe_layout"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="48dp">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/content_frame" android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/lyChecks" android:paddingTop="10dp"
+                              android:layout_width="match_parent" android:layout_height="48dp"
+                              android:layout_centerInParent="false" android:layout_centerHorizontal="false"
+                              android:layout_centerVertical="false">
+                    <CheckBox android:gravity="left|center_vertical|center_horizontal|center"
+                              android:id="@+id/chbSipRiskDavran" android:clickable="false"
+                              android:layout_width="match_parent" android:layout_height="48dp"
+                              android:layout_marginRight="10dp" android:checked="false"
+                              android:text="@string/str_order_risk_control" android:layoutDirection="rtl"
+                              style="@style/textCustomerGeneralStyle" tools:ignore="RtlHardcoded"/>
+                    <CheckBox android:gravity="left|center_vertical|center_horizontal|center"
+                              android:id="@+id/chbSevkRiskDavran" android:clickable="false"
+                              android:layout_width="match_parent" android:layout_height="48dp"
+                              android:layout_marginRight="10dp" android:checked="false"
+                              android:text="@string/str_shipment_risk_control" android:layoutDirection="rtl"
+                              style="@style/textCustomerGeneralStyle" tools:ignore="RtlHardcoded"/>
+                    <CheckBox android:gravity="left|center_vertical|center_horizontal|center"
+                              android:id="@+id/chbYukRiskDavran" android:clickable="false"
+                              android:layout_width="match_parent" android:layout_height="48dp"
+                              android:layout_marginRight="10dp" android:checked="false"
+                              android:text="@string/str_loading_risk_control" android:layoutDirection="rtl"
+                              style="@style/textCustomerGeneralStyle" tools:ignore="RtlHardcoded"/>
+                    <CheckBox android:gravity="left|center_vertical|center_horizontal|center"
+                              android:id="@+id/chbIrsRiskDavran" android:clickable="false"
+                              android:layout_width="match_parent" android:layout_height="48dp"
+                              android:layout_marginRight="10dp" android:checked="false"
+                              android:text="@string/str_dispatch_risk_control" android:layoutDirection="rtl"
+                              style="@style/textCustomerGeneralStyle" tools:ignore="RtlHardcoded"/>
+                    <CheckBox android:gravity="left|center_vertical|center_horizontal|center"
+                              android:id="@+id/chbFatRiskDavran" android:clickable="false"
+                              android:layout_width="match_parent" android:layout_height="48dp"
+                              android:layout_marginRight="10dp" android:checked="false"
+                              android:text="@string/str_invoice_risk_control" android:layoutDirection="rtl"
+                              style="@style/textCustomerGeneralStyle" tools:ignore="RtlHardcoded"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcw" android:layout_width="match_parent"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_below="@+id/lyChecks"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                              android:layout_height="match_parent" android:weightSum="1"
+                              android:layout_below="@+id/rcw">
+                    <TextView android:textStyle="bold" android:layout_gravity="center"
+                              android:text="@string/str_risk_total" android:singleLine="false"
+                              android:layout_weight="0.5" style="@style/textCustomerGeneralStyle"/>
+                    <TextView android:textStyle="bold"
+                              android:gravity="right|center_vertical|center_horizontal|center|end"
+                              android:layout_gravity="center" android:id="@+id/txtRiskToplami"
+                              android:text="@string/str_tmp_0" android:singleLine="false" android:layout_weight="0.5"
+                              style="@style/textCustomerGeneralStyle" tools:ignore="RtlHardcoded"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.proje.mobilesales.core.widget.AppBarSwipeRefreshLayout>
+</RelativeLayout>

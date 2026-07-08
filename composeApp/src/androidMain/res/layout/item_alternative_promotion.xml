@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                   android:layout_height="wrap_content" style="@style/AppCardView">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ln_item_alternative_promotion"
+                  android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/tv_promotion_code" android:layout_weight="0.2"
+                  style="@style/textCustomerSalesHeaderStyle"/>
+        <TextView android:id="@+id/tv_promotion_name" android:layout_height="match_parent" android:layout_weight="0.4"
+                  style="@style/textCustomerSalesHeaderStyle"/>
+        <EditText android:id="@+id/tv_promotion_amount" android:layout_height="match_parent" android:layout_weight="0.2"
+                  android:inputType="numberDecimal" style="@style/textCustomerSalesHeaderStyle"
+                  tools:ignore="SpeakableTextPresentCheck"/>
+        <TextView android:gravity="end" android:id="@+id/tv_promotion_stock" android:visibility="gone"
+                  android:layout_weight="0.2" style="@style/textCustomerSalesHeaderStyle"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

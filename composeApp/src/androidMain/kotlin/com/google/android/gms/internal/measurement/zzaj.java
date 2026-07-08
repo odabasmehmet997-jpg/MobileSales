@@ -1,0 +1,32 @@
+package com.google.android.gms.internal.measurement;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+/* compiled from: com.google.android.gms:play-services-measurement@@20.1.1 */
+public enum zzaj {
+    ;
+
+    public static zzap zza(zzal zzal, zzap zzap, zzg zzg, List list) {
+        if (zzal.zzt(zzap.zzi())) {
+            zzap zzf = zzal.zzf(zzap.zzi());
+            if (zzf instanceof zzai) {
+                return ((zzai) zzf).zza(zzg, list);
+            }
+            throw new IllegalArgumentException(String.format("%s is not a function", zzap.zzi()));
+        } else if ("hasOwnProperty".equals(zzap.zzi())) {
+            zzh.zzh("hasOwnProperty", 1, list);
+            if (zzal.zzt(zzg.zzb((zzap) list.get(0)).zzi())) {
+                return com.google.android.gms.internal.measurement.zzap.zzk;
+            }
+            return com.google.android.gms.internal.measurement.zzap.zzl;
+        } else {
+            throw new IllegalArgumentException(String.format("Object has no function %s", zzap.zzi()));
+        }
+    }
+
+    public static Iterator zzb(Map map) {
+        return new zzak(map.keySet().iterator());
+    }
+}

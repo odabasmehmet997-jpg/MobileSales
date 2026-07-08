@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:id="@+id/widget42" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <ScrollView android:id="@+id/ScrollView01" android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="100">
+        <androidx.appcompat.widget.AppCompatTextView android:typeface="monospace" android:id="@+id/tvPreview"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent" android:ems="1"/>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatSeekBar android:layout_gravity="center" android:id="@+id/seek_change_textsize"
+                                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                                android:layout_weight="1"/>
+</LinearLayout>

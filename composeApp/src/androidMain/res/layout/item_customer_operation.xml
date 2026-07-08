@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:layout_width="match_parent" android:layout_height="wrap_content"
+                                   style="@style/AppCardView">
+    <com.proje.mobilesales.core.widget.TintableTextView android:gravity="start" android:id="@+id/txt_customer_operation"
+                                                        android:textAlignment="viewStart"
+                                                        app:iconEnd="@drawable/ic_chevron_right_grey600_24dp"
+                                                        app:iconStart="@drawable/ic_file_chart_grey600_24dp"
+                                                        style="@style/textCustomerOperationStyle"/>
+</androidx.cardview.widget.CardView>

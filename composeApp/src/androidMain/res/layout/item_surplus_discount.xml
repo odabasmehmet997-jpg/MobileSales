@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent" android:layout_height="wrap_content"
+                                   style="@style/AppCardView">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ln_item_surplus_discount"
+                  android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+            <TextView android:text="@string/str_condition_code" android:layout_weight="0.3"
+                      style="@style/textItemSurplusDiscountHeader"/>
+            <TextView android:id="@+id/tv_discount_code" android:layout_weight="0.3"
+                      style="@style/textItemSurplusDiscount"/>
+            <TextView android:text="@string/str_explanation" android:layout_weight="0.25"
+                      style="@style/textItemSurplusDiscountHeader"/>
+            <TextView android:id="@+id/tv_discount_definition" android:layout_weight="0.25"
+                      style="@style/textItemSurplusDiscount"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+            <TextView android:text="@string/str_surplus_product" android:layout_weight="0.25"
+                      style="@style/textItemSurplusDiscountHeader"/>
+            <TextView android:id="@+id/tv_surplus_stock_name" android:layout_weight="0.15"
+                      style="@style/textItemSurplusDiscount"/>
+            <TextView android:text="@string/str_quantity" android:layout_weight="0.2"
+                      style="@style/textItemSurplusDiscountHeader"/>
+            <TextView android:id="@+id/tv_surplus_stock_amount" android:layout_weight="0.15"
+                      style="@style/textItemSurplusDiscount"/>
+            <TextView android:text="@string/str_surplus_amount" android:layout_weight="0.25"
+                      style="@style/textItemSurplusDiscountHeader"/>
+            <TextView android:id="@+id/tv_surplus_extra_amount" android:layout_weight="0.1"
+                      style="@style/textItemSurplusDiscount"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+            <TextView android:text="@string/str_discount1" android:layout_weight="0.25"
+                      style="@style/textItemSurplusDiscountHeader"/>
+            <TextView android:id="@+id/tv_surplus_discount1" android:layout_weight="0.15"
+                      style="@style/textItemSurplusDiscount"/>
+            <TextView android:text="@string/str_discount2" android:layout_weight="0.2"
+                      style="@style/textItemSurplusDiscountHeader"/>
+            <TextView android:id="@+id/tv_surplus_discount2" android:layout_weight="0.15"
+                      style="@style/textItemSurplusDiscount"/>
+            <TextView android:text="@string/str_discount3" android:layout_weight="0.25"
+                      style="@style/textItemSurplusDiscountHeader"/>
+            <TextView android:id="@+id/tv_surplus_discount3" android:layout_weight="0.1"
+                      style="@style/textItemSurplusDiscount"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+            <TextView android:text="@string/str_discount4" android:layout_weight="0.25"
+                      style="@style/textItemSurplusDiscountHeader"/>
+            <TextView android:id="@+id/tv_surplus_discount4" android:layout_weight="0.15"
+                      style="@style/textItemSurplusDiscount"/>
+            <TextView android:text="@string/str_discount5" android:layout_weight="0.2"
+                      style="@style/textItemSurplusDiscountHeader"/>
+            <TextView android:id="@+id/tv_surplus_discount5" android:layout_weight="0.15"
+                      style="@style/textItemSurplusDiscount"/>
+            <TextView android:text="@string/str_discount6" android:layout_weight="0.25"
+                      style="@style/textItemSurplusDiscountHeader"/>
+            <TextView android:id="@+id/tv_surplus_discount6" android:layout_weight="0.1"
+                      style="@style/textItemSurplusDiscount"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

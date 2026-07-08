@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/empty_search"
+                android:focusable="false" android:visibility="gone" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <com.proje.mobilesales.core.widget.TintableTextView android:text="@string/str_empty_search_text"
+                                                        android:layout_centerInParent="true"
+                                                        android:breakStrategy="balanced"
+                                                        app:iconTop="@drawable/ic_message_outline_grey600_48dp"
+                                                        style="@style/textEmptyStyle"/>
+</RelativeLayout>

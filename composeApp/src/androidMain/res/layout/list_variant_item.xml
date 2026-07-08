@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical"
+              android:orientation="vertical" android:id="@+id/linearCheckList"
+              android:background="@android:color/transparent" android:paddingTop="5dp" android:paddingBottom="5dp"
+              android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants"
+              android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:cacheColorHint="@android:color/transparent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/padding" android:layout_width="0dp"
+                      android:layout_height="wrap_content" android:layout_marginLeft="4dp"
+                      android:layout_marginRight="4dp" android:layout_weight="7.1" android:layout_marginStart="4dp"
+                      android:layout_marginEnd="4dp">
+            <HorizontalScrollView android:paddingTop="5dp" android:paddingBottom="5dp"
+                                  android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall"
+                          android:scrollbarStyle="insideOverlay" android:ellipsize="end" android:id="@+id/tvCode"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="000000000000000000000001" android:maxLines="1"
+                          android:scrollHorizontally="true"/>
+            </HorizontalScrollView>
+            <HorizontalScrollView android:paddingTop="5dp" android:paddingBottom="5dp"
+                                  android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall"
+                          android:scrollbarStyle="insideOverlay" android:ellipsize="end" android:id="@+id/tvVariantName"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="ORTA BEDEN KAZAK" android:lines="1" android:scrollHorizontally="true"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatEditText android:textAppearance="?android:attr/textAppearanceSmall"
+                                                     android:gravity="end" android:id="@+id/edtUserAmount"
+                                                     android:clickable="true" android:layout_width="0dp"
+                                                     android:layout_height="48dp" android:layout_marginLeft="4dp"
+                                                     android:layout_marginRight="4dp" android:singleLine="true"
+                                                     android:selectAllOnFocus="true" android:layout_weight="2.8"
+                                                     android:inputType="numberDecimal" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"
+                                                     android:hint="null"/>
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/cbListItem" android:paddingRight="@dimen/padding"
+                                                     android:focusable="false" android:focusableInTouchMode="false"
+                                                     android:clickable="false" android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content" android:layout_weight="0.01"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                  android:layout_marginStart="4dp" android:layout_marginEnd="4dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ln_product_actual_stock"
+                      android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="5"
+                      android:layout_weight="5">
+            <TextView android:ellipsize="end" android:id="@+id/txt_product_actual_stock_text" android:layout_width="0dp"
+                      android:layout_height="wrap_content" android:text="@string/str_physical_stock"
+                      android:maxLines="1" android:layout_weight="2" style="@style/textCustomerSubtitleStyle"/>
+            <TextView android:textStyle="bold" android:ellipsize="end" android:id="@+id/txt_product_actual_stock"
+                      android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:text="@string/loading_text" android:maxLines="4" android:layout_weight="3"
+                      style="@style/textCustomerSubtitleNumberStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ln_product_real_stock"
+                      android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="5"
+                      android:layout_weight="5">
+            <TextView android:ellipsize="end" android:id="@+id/txt_product_real_stock_text" android:layout_width="0dp"
+                      android:layout_height="wrap_content" android:text="@string/str_actual" android:maxLines="1"
+                      android:layout_weight="2" style="@style/textCustomerSubtitleStyle"/>
+            <TextView android:textStyle="bold" android:ellipsize="end" android:id="@+id/txt_real_stock"
+                      android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:text="@string/loading_text" android:maxLines="4" android:layout_weight="3"
+                      style="@style/textCustomerSubtitleNumberStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

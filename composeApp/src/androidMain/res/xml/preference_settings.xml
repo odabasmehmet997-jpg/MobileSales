@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                                      android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.preference.ListPreference android:title="@string/pref_language_title"
+                                        android:key="@string/pref_language_key"
+                                        android:summary="@string/pref_language_summary"
+                                        android:defaultValue="@string/pref_language_default"
+                                        app:entries="@array/pref_language_entries"
+                                        app:entryValues="@array/pref_language_values"/>
+    <androidx.preference.ListPreference android:entries="@array/pref_erp_type_entries"
+                                        android:title="@string/pref_erp_type_title"
+                                        android:key="@string/pref_erp_type_key"
+                                        android:summary="@string/pref_erp_type_summary"
+                                        android:defaultValue="@string/pref_erp_type_default"
+                                        android:entryValues="@array/pref_erp_type_values"/>
+    <androidx.preference.ListPreference android:title="@string/pref_communication_type_title"
+                                        android:key="@string/pref_communication_type_key"
+                                        android:summary="@string/pref_communication_type_summary"/>
+    <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_use_demo_title"
+                                                android:key="@string/pref_use_demo_key"
+                                                android:summary="@string/pref_use_demo_summary"
+                                                android:defaultValue="@string/pref_use_demo_default"/>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_category_tiger_title"
+                                            android:key="@string/pref_category_tiger_key">
+        <androidx.preference.EditTextPreference android:title="@string/pref_server_address_title"
+                                                android:key="@string/pref_tiger_server_address_key"
+                                                android:summary="@string/pref_server_address_summary"/>
+        <com.proje.mobilesales.core.preferences.EditTextPasswordPref
+                android:title="@string/pref_tiger_security_code_title"
+                android:key="@string/pref_tiger_security_code_key"
+                android:summary="@string/pref_tiger_security_code_summary"/>
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref android:title="@string/pref_firm_number_title"
+                                                                    android:key="@string/pref_tiger_firm_number_key"
+                                                                    android:inputType="number" app:maxIntValue="999"
+                                                                    app:minIntValue="1"/>
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_category_netsis_title"
+                                            android:key="@string/pref_category_netsis_key">
+        <androidx.preference.EditTextPreference android:title="@string/pref_server_address_title"
+                                                android:key="@string/pref_netsis_server_address_key"
+                                                android:summary="@string/pref_server_address_summary"/>
+        <com.proje.mobilesales.core.preferences.EditTextPasswordPref android:title="@string/pref_netsis_username_title"
+                                                                     android:key="@string/pref_netsis_username_key"/>
+        <com.proje.mobilesales.core.preferences.EditTextPasswordPref android:title="@string/pref_netsis_password_title"
+                                                                     android:key="@string/pref_netsis_password_key"/>
+        <com.proje.mobilesales.core.preferences.EditTextPasswordPref android:title="@string/pref_netsis_db_name_title"
+                                                                     android:key="@string/pref_netsis_db_name_key"/>
+        <com.proje.mobilesales.core.preferences.EditTextPasswordPref
+                android:title="@string/pref_netsis_db_username_title"
+                android:key="@string/pref_netsis_db_username_key"/>
+        <com.proje.mobilesales.core.preferences.EditTextPasswordPref
+                android:title="@string/pref_netsis_db_password_title" android:key="@string/pref_netsis_db_password_key"
+                android:inputType="textPassword"/>
+        <androidx.preference.ListPreference android:entries="@array/pref_netsis_db_type_entries"
+                                            android:title="@string/pref_netsis_db_type_title"
+                                            android:key="@string/pref_netsis_db_type_key"
+                                            android:defaultValue="@string/pref_netsis_db_type_default"
+                                            android:entryValues="@array/pref_netsis_db_type_values"/>
+        <com.proje.mobilesales.core.preferences.BranchPreferences
+                android:title="@string/pref_netsis_db_branch_code_title"
+                android:key="@string/pref_netsis_db_branch_code_key"/>
+        <androidx.preference.Preference android:title="@string/pref_netsis_ping_title"
+                                        android:key="@string/pref_netsis_ping_key"/>
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

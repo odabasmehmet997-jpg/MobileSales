@@ -1,0 +1,2390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="abc_action_bar_home_description">پیمایش به صفحه اصلی</string>
+    <string name="abc_action_bar_up_description">رفتن به بالا</string>
+    <string name="abc_action_menu_overflow_description">گزینه‌های بیشتر</string>
+    <string name="abc_action_mode_done">تمام</string>
+    <string name="abc_activity_chooser_view_see_all">دیدن همه</string>
+    <string name="abc_activitychooserview_choose_application">انتخاب برنامه</string>
+    <string name="abc_capital_off">خاموش</string>
+    <string name="abc_capital_on">روشن</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">حذف</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">فاصله</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">منو+</string>
+    <string name="abc_search_hint">جستجو…</string>
+    <string name="abc_searchview_description_clear">پاک کردن پُرسمان</string>
+    <string name="abc_searchview_description_query">درخواست جستجو</string>
+    <string name="abc_searchview_description_search">جستجو</string>
+    <string name="abc_searchview_description_submit">ارسال پُرسمان</string>
+    <string name="abc_searchview_description_voice">جستجوی گفتاری</string>
+    <string name="abc_shareactionprovider_share_with">هم‌رسانی با</string>
+    <string name="abc_shareactionprovider_share_with_application">هم‌رسانی با %s</string>
+    <string name="abc_toolbar_collapse_description">کوچک کردن</string>
+    <string name="activity_title_about">درباره</string>
+    <string name="activity_title_cabin_list">لیست کابین</string>
+    <string name="activity_title_customer">مشتریان</string>
+    <string name="activity_title_customer_add_image">اضافه کردن تصویر مشتری</string>
+    <string name="activity_title_customer_image">تصویر مشتری</string>
+    <string name="activity_title_customer_ship_address">آدرس‌های حمل</string>
+    <string name="activity_title_daily_info">اطلاعات روزانه</string>
+    <string name="activity_title_device_connect">انتخاب دستگاه</string>
+    <string name="activity_title_distribution">توزیع</string>
+    <string name="activity_title_main">صفحهٔ اصلی</string>
+    <string name="activity_title_marketing_message">پیام‌های بازاریابی</string>
+    <string name="activity_title_new_customer">مشتری جدید</string>
+    <string name="activity_title_order">تأیید سفارش</string>
+    <string name="activity_title_other_average_calc">محاسبهٔ میانگین سررسید</string>
+    <string name="activity_title_other_gps_location">اطلاعات محل جی‌پی‌اس</string>
+    <string name="activity_title_other_start_info">اطلاعات کار</string>
+    <string name="activity_title_penetration">نفوذ</string>
+    <string name="activity_title_penetration_list">فهرست نفوذها</string>
+    <string name="activity_title_print_preferences">تنظیمات چاپ</string>
+    <string name="activity_title_print_settings">تنظیمات چاپ</string>
+    <string name="activity_title_printer_service_settings">تنظیمات سرویس چاپگر</string>
+    <string name="activity_title_printer_settings">تنظیمات چاپگر</string>
+    <string name="activity_title_product">محصولات</string>
+    <string name="activity_title_product_image">تصویر محصول</string>
+    <string name="activity_title_quit">خروج</string>
+    <string name="activity_title_report">گزارش‌ها</string>
+    <string name="activity_title_request">تقاضا</string>
+    <string name="activity_title_sales_detail_enter">ورود جزئیات اجناس</string>
+    <string name="activity_title_sales_new">سفارش فروش</string>
+    <string name="activity_title_search">جستجو</string>
+    <string name="activity_title_settings">تنظیمات</string>
+    <string name="activity_title_todo">وظایف</string>
+    <string name="activity_title_transfer">انتقال داده</string>
+    <string name="activity_title_transfer_get">درون‌ریزی داده</string>
+    <string name="activity_title_transfer_get_settings">تنظیمات انتقال داده</string>
+    <string name="activity_title_transfer_send">ارسال داده</string>
+    <string name="activity_title_transfer_settings">تنظیمات انتقال</string>
+    <string name="activity_title_util">ابزارها</string>
+    <string name="activity_title_visit_list">لیست ویزیت</string>
+    <string name="array_str_accounting_manager">مدیر حسابداری</string>
+    <string name="array_str_accounting_specialist">متخصص حسابداری</string>
+    <string name="array_str_all_invoices">همه فاکتورها</string>
+    <string name="array_str_apply_campaign">اعمال کمپین (*)</string>
+    <string name="array_str_apply_terms_of_sales">اعمال شرایط فروش (*)</string>
+    <string name="array_str_business_owner">بازرگان</string>
+    <string name="array_str_central_office">دفتر مرکزی</string>
+    <string name="array_str_check_endorsement_risk">گردش مالی خطر را بررسی می کند</string>
+    <string name="array_str_check_principal_risk">خطر واقعی چک</string>
+    <string name="array_str_choose">انتخاب کنید</string>
+    <string name="array_str_completed">کامل شد</string>
+    <string name="array_str_continues">در حال پیش رفت</string>
+    <string name="array_str_convert_to_turkish_characters">به شخصیت های ترکی تبدیل شده است</string>
+    <string name="array_str_creditor">طلبکاران با</string>
+    <string name="array_str_customer_checks_pnotes">بررسی مشتری / عمل</string>
+    <string name="array_str_customer_information">اطلاعات</string>
+    <string name="array_str_debtor">وام گیرندگان با</string>
+    <string name="array_str_defined_reports">گزارش های تعریف شده</string>
+    <string name="array_str_delete">حذف</string>
+    <string name="array_str_dispatch_note">اعزام</string>
+    <string name="array_str_dispatch_note_risk">خطر دریافت</string>
+    <string name="array_str_dispatch_suggestion">پیشنهاد اعزام</string>
+    <string name="array_str_dispatch_total">اعزام کل (*)</string>
+    <string name="array_str_dont_use_turkish_characters">از شخصیت های ترک استفاده نکنید</string>
+    <string name="array_str_end_date">تاریخ پایان</string>
+    <string name="array_str_endorsement_checks_pnotes">تأیید چک / عمل</string>
+    <string name="array_str_explanation">توضیح</string>
+    <string name="array_str_finance_manager">مدیر مالی</string>
+    <string name="array_str_finance_specialist">متخصص امور مالی</string>
+    <string name="array_str_general_manager">مدیر کل</string>
+    <string name="array_str_goods_and_services">کالا/خدمات</string>
+    <string name="array_str_gps_location_information">اطلاعات موقعیت مکانی GPS</string>
+    <string name="array_str_hospital">بیمارستان</string>
+    <string name="array_str_image">تصویر</string>
+    <string name="array_str_invoice_cancel">لغو فاکتور (*)</string>
+    <string name="array_str_invoice_total">کل فاکتور (*)</string>
+    <string name="array_str_invoices_in_date_range">صورتحساب برای محدوده تاریخ</string>
+    <string name="array_str_leave_as_is">به حال خودش بگزارید</string>
+    <string name="array_str_loading_risk">خطر بارگیری</string>
+    <string name="array_str_material_information">اطلاعات</string>
+    <string name="array_str_material_picture">تصویر مواد</string>
+    <string name="array_str_medical">پزشکی</string>
+    <string name="array_str_mixed_box_detail">جزئیات بسته بندی کامپوزیت</string>
+    <string name="array_str_multiple">چندگانه</string>
+    <string name="array_str_no_printer">چاپگر پیدا نشد</string>
+    <string name="array_str_not_started_yet">شروع نشده است</string>
+    <string name="array_str_note">توجه داشته باشید</string>
+    <string name="array_str_open_account">حساب شارژ</string>
+    <string name="array_str_optic">نوری</string>
+    <string name="array_str_order">سفارش</string>
+    <string name="array_str_order_can_be_shipped">سفارش (قابل تحویل)</string>
+    <string name="array_str_order_risk">ریسک سفارش</string>
+    <string name="array_str_order_total">سفارش کل (*)</string>
+    <string name="array_str_other">دیگر</string>
+    <string name="array_str_our_own_checks_pnotes">بررسی / عملکرد شرکت</string>
+    <string name="array_str_pharmacy">داروخانه</string>
+    <string name="array_str_pnote_endorsement_risk">خطر سود معاملات سفته</string>
+    <string name="array_str_pnote_principal_risk">سفته خطر واقعی</string>
+    <string name="array_str_purchasing_manager">مدیر خرید</string>
+    <string name="array_str_purchasing_specialist">متخصص خرید</string>
+    <string name="array_str_rejected">رد شد</string>
+    <string name="array_str_review">چشم انداز</string>
+    <string name="array_str_risk_guarantee">&gt;پوشش خطر</string>
+    <string name="array_str_shipment_risk">خطر حمل و نقل</string>
+    <string name="array_str_single">تنها</string>
+    <string name="array_str_starting_date">روز آغاز</string>
+    <string name="array_str_store_manager">مدیر فروشگاه</string>
+    <string name="array_str_submit_document_no_field">قسمت شماره سند را تنظیم کنید</string>
+    <string name="array_str_submit_receipt_no_field">قسمت شماره کوپن را تنظیم کنید</string>
+    <string name="array_str_subscription">اشتراک، ابونمان</string>
+    <string name="array_str_text">متن</string>
+    <string name="array_str_to_file">فایل</string>
+    <string name="array_str_to_printer">چاپگر</string>
+    <string name="array_str_transfer">انتقال داده</string>
+    <string name="array_str_use_rest">از REST استفاده کنید</string>
+    <string name="array_str_use_wcf">از WCF استفاده کنید</string>
+    <string name="array_str_use_web_service">از وب سرویس استفاده کنید</string>
+    <string name="bottomsheet_action_collapse">جمع کردن برگ زیرین</string>
+    <string name="bottomsheet_action_expand">ازهم بازکردن برگ زیرین</string>
+    <string name="bottomsheet_action_expand_halfway">گسترده کردن تا نیمه</string>
+    <string name="bottomsheet_drag_handle_clicked">روی دستگیره کشاندن دوضربه زده شد</string>
+    <string name="bottomsheet_drag_handle_content_description">دستگیره کشاندن</string>
+    <string name="call_notification_answer_action" tools:ignore="PrivateResource">پاسخ دادن</string>
+    <string name="call_notification_answer_video_action">ویدیو</string>
+    <string name="call_notification_decline_action">رد کردن</string>
+    <string name="call_notification_hang_up_action">قطع تماس</string>
+    <string name="call_notification_incoming_text">تماس ورودی</string>
+    <string name="call_notification_ongoing_text">تماس درحال انجام</string>
+    <string name="call_notification_screening_text">درحال غربال کردن تماس ورودی</string>
+    <string name="character_counter_content_description">نویسه‌های واردشده %1d از %2d</string>
+    <string name="character_counter_overflowed_content_description">محدودیت نویسه از حد مجاز %1d از %2d بیشتر شده است</string>
+    <string name="clear_text_end_icon_content_description">پاک کردن نوشتار</string>
+    <string name="close_drawer">بستن دراور</string>
+    <string name="common_google_play_services_enable_button">فعال کردن</string>
+    <string name="common_google_play_services_enable_text" tools:ignore="PrivateResource">تا وقتی «خدمات Google Play» را فعال نکنید، %1s کار نمی‌کند.</string>
+    <string name="common_google_play_services_enable_title" tools:ignore="PrivateResource">فعال کردن «خدمات Google Play»</string>
+    <string name="common_google_play_services_install_button">نصب</string>
+    <string name="common_google_play_services_install_text" tools:ignore="PrivateResource">%1s بدون خدمات Google Play که در دستگاه شما وجود ندارد اجرا نمی‌شود.</string>
+    <string name="common_google_play_services_install_title" tools:ignore="PrivateResource">دریافت «خدمات Google Play»</string>
+    <string name="common_google_play_services_notification_channel_name" tools:ignore="PrivateResource">دردسترس بودن خدمات Google Play</string>
+    <string name="common_google_play_services_notification_ticker" tools:ignore="PrivateResource">خطا در خدمات Google Play</string>
+    <string name="common_google_play_services_unknown_issue" tools:ignore="PrivateResource">%1s برای استفاده از خدمات Google Play با مشکل روبرو است. لطفاً دوباره امتحان کنید.</string>
+    <string name="common_google_play_services_unsupported_text" tools:ignore="PrivateResource">%1s بدون خدمات Google Play که در دستگاه شما پشتیبانی نمی‌شود، اجرا نخواهد شد.</string>
+    <string name="common_google_play_services_update_button">به‌روزرسانی</string>
+    <string name="common_google_play_services_update_text" tools:ignore="PrivateResource">تاز مانی که «خدمات Google Play» را به‌روزرسانی نکنید، %1s اجرا نمی‌شود.</string>
+    <string name="common_google_play_services_update_title" tools:ignore="PrivateResource">به‌روزرسانی «خدمات Google Play»</string>
+    <string name="common_google_play_services_updating_text" tools:ignore="PrivateResource">%1s بدون «خدمات Google Play» که درحال حاضر درحال به‌روزرسانی هستند، کار نمی‌کند.</string>
+    <string name="common_google_play_services_wear_update_text" tools:ignore="PrivateResource">نسخه جدید «خدمات Google Play» نیاز است. به‌زودی به‌طور خودکار به‌روزرسانی می‌شود.</string>
+    <string name="common_open_on_phone">باز کردن در تلفن</string>
+    <string name="common_signin_button_text">ورود به سیستم</string>
+    <string name="common_signin_button_text_long">ورود به سیستم با Google</string>
+    <string name="copy">کپی</string>
+    <string name="error_a11y_label">خطا: نامعتبر</string>
+    <string name="error_icon_content_description">خطا</string>
+	<string name="exp_10_transfer_get_error">هنگام دریافت داده خطایی روی داد</string>
+    <string name="exp_11_wcf_response_error">هنگام اتصال به سرور خطایی روی داد n لطفاً تنظیمات سرور خود را بررسی کنید</string>
+    <string name="exp_12_wcf_http_response_error">هنگام دریافت داده ها از سرور خطایی روی داد</string>
+    <string name="exp_13_wcf_xml_parse_error">خطای XML رخ داده است</string>
+    <string name="exp_14_wcf_call_query_error">هنگام انتقال Wcf خطایی روی داد.\n</string>
+    <string name="exp_15_value_high">مقدار حداکثر است</string>
+    <string name="exp_16_value_low">حداقل مقدار است</string>
+    <string name="exp_17_send_error">هنگام ارسال داده خطایی روی داد</string>
+    <string name="exp_18_database_read_error">خطای خواندن داده های پایگاه داده</string>
+    <string name="exp_19_transfer_update_error">هنگام بروزرسانی خطایی روی داد</string>
+    <string name="exp_1_erp_null">ERP مرجع یافت نشد. تنظیمات خود را بررسی کنید</string>
+    <string name="exp_20_bluetooth_connection_error">چاپگر بلوتوث قابل اتصال نیست</string>
+    <string name="exp_21_bluetooth_name_null_error">نام چاپگر بلوتوث مشخص نشده است</string>
+    <string name="exp_22_location_service_connection_error">سرویس موقعیت مکانی قابل اتصال نیست</string>
+    <string name="exp_23_internet_connection_not_found">شما یک اتصال اینترنتی فعال ندارید. لطفاً تنظیمات اینترنت خود را بررسی کنید.</string>
+    <string name="exp_24_barcode_reader_not_found">هیچ خواننده بارکد فعال متن در دستگاه شما وجود ندارد</string>
+    <string name="exp_25_database_write_error">خطای نوشتن داده پایگاه داده</string>
+    <string name="exp_26_customer_ref_not_found">مرجع مشتری یافت نشد یا خطایی روی داده است</string>
+    <string name="exp_27_database_fiche_delete_error">هنگام حذف کوپن خطایی روی داد</string>
+    <string name="exp_28_socket_timeout">تصال به سرور امکان پذیر نیست \n لطفاً تنظیمات سرور خود را بررسی کنید</string>
+    <string name="exp_29_io">خطای سواد آموزی رخ داده است</string>
+    <string name="exp_2_communication_null">وضعیت اتصال یافت نشد</string>
+    <string name="exp_30_wcf_select_result_error">\n پیام های نتیجه خطا WCF \n%1s \n ارسال پرس و جو \n%2s</string>
+    <string name="exp_31_fiche_not_add_product">خط دریافت مواد اضافه شده است</string>
+    <string name="exp_32_sales_null">خطا در ذخیره کوپن</string>
+    <string name="exp_33_sales_detail_amount_not_enter">%1s مقدار برای خط کوپن وارد نشده است. لطفاً مقدار را وارد کنید.</string>
+    <string name="exp_34_sales_detail_price_not_enter">%1s برای خط مواد وارد نشده است. لطفاً یک قیمت وارد کنید.</string>
+    <string name="exp_35_sales_detail_serial_lot_not_enter">%1s خط مواد برای سری / اطلاعات تعداد وارد نشده است.</string>
+    <string name="exp_36_visit_reason_not_select">لطفا دلیل بازدید را انتخاب کنید</string>
+    <string name="exp_37_visit_not_enter">لطفاً یک یادداشت وارد کنید</string>
+    <string name="exp_38_warning_visit_ship_address_not_select">حساب حمل و نقل برای بازدید وارد نشده است!</string>
+    <string name="exp_39_bluetooth_not_found">دستگاه شما از بلوتوث پشتیبانی نمی کند!</string>
+    <string name="exp_3_username_password_null">نام کاربری یا رمز عبور نمی تواند خالی باشد</string>
+    <string name="exp_40_print_fiche_process_index_error">داده ای برای چاپ وجود ندارد</string>
+    <string name="exp_41_sales_header_not_select">%1s انتخاب نشده است لطفا انتخاب کنید%1s \n</string>
+    <string name="exp_42_transfer_product_get_error">هنگام انتقال محصولات خطایی روی داد.</string>
+    <string name="exp_43_risk_over_error">از محدودیت خطر %1s فراتر رفته است!حد مجاز: %2s</string>
+    <string name="exp_44_null_exception">خطای کد 44!</string>
+    <string name="exp_45_undefined">خطای کد 45! تعریف نشده!</string>
+    <string name="exp_46_doc_no_unique">شماره سند قبلاً استفاده شده است:%1s</string>
+    <string name="exp_47_doc_no_error">کد خطا: 47 پرس و جو شماره سند</string>
+    <string name="exp_48_sales_detail_unit_not_found">هیچ واحد مشخصی برای خط مواد یافت نمی شود %1s</string>
+    <string name="exp_49_undefined_network_error">خطای نامشخص شبکه!</string>
+    <string name="exp_4_device_use_other">این کاربر در یک دستگاه دیگر مورد استفاده قرار می گیرد!</string>
+    <string name="exp_50_due_date_over_error">از حد مجاز مشتری فراتر رفته است</string>
+    <string name="exp_51_sales_detail_serial_group_not_enter">%1s اطلاعات سریال برای خط مواد وارد نشده است. لطفاً اطلاعات گروه سریال را وارد کنید.</string>
+    <string name="exp_52_wcf_connection_error_new_customer_saved">مشتری بصورت آفلاین ذخیره شد</string>
+    <string name="exp_53_risk_over_netsis_error">از محدودیت خطر %1s فراتر رفته است!</string>
+    <string name="exp_54_sales_detail_variant_not_found">برای خط وارد نشده است. لطفاً نوع خود را انتخاب کنید. %1s</string>
+    <string name="exp_55_sales_detail_location_amount">اطلاعات مقدار موجودی برای خط مناسب نیست %1s.</string>
+    <string name="exp_56_unsent_cabin_operation_before_get_data">شما عملیات کابین را ارسال نکرده اید. شما نیاز به ارسال اطلاعات قبل از دریافت داده ها دارید.</string>
+    <string name="exp_57_working_on_demo_server">در حال کار روی سرور، لطفاً بعداً دوباره امتحان کنید.</string>
+    <string name="exp_58_tiger_user_does_not_have_authorization">شما مجوزی برای وارد کردن مدت شرکت ندارید. تنظیمات خود را بررسی کنید.</string>
+    <string name="exp_59_netsis_user_does_not_have_authorization">برای شعبه تجاری که می خواهید وارد شوید مجوز ندارید. تنظیمات خود را بررسی کنید.</string>
+    <string name="exp_5_user_not_found">اطلاعات وارد شده نادرست است. لطفا اطلاعات خود را بررسی کنید</string>
+    <string name="exp_60_not_empty_taxpayer_code">کد مالیات‌دهنده نباید خالی باشد</string>
+    <string name="exp_61_not_empty_taxpayer_name">نام مالیات‌دهنده نباید خالی باشد</string>
+    <string name="exp_62_begin_date">تاریخ شروع نباید خالی باشد</string>
+    <string name="exp_63_end_date">تاریخ پایان نباید خالی باشد</string>
+    <string name="exp_64_begin_date_bigger_than_end_date">تاریخ شروع نمی تواند بزرگتر از تاریخ پایان باشد.</string>
+    <string name="exp_65_file_number">شمارهٔ پرونده نباید خالی باشد</string>
+    <string name="exp_66_cannot_enter_data_outside_working_hours">واردکردن داده‌ها در خارج از ساعات اداری میسر نیست</string>
+    <string name="exp_67_cannot_import_data_outside_working_hours">درون‌ریزی داده‌ها در خارج از ساعات اداری میسر نیست</string>
+    <string name="exp_68_cannot_send_data_outside_working_hours">ارسال داده‌ها در خارج از ساعات اداری میسر نیست</string>
+    <string name="exp_69_cannot_get_report_outside_working_hours">دریافت گزارش‌ها در خارج از ساعات اداری میسر نیست</string>
+    <string name="exp_70_edespatch_serial">E-Despatch Serial is missing.\n</string>
+    <string name="exp_71_edespatch_info">E-Despatch information is missing.\n</string>
+    <string name="exp_72_edespatch_plate">E-Despatch Plate Number is missing.\n</string>
+    <string name="exp_73_edespatch_tax_number">E-Despatch Tax Number is missing.\n</string>
+    <string name="exp_74_edespatch_title">E-Despatch Title is missing.\n</string>
+    <string name="exp_75_edespatch_county">E-Despatch County is missing.\n</string>
+    <string name="exp_76_edespatch_city">E-Despatch City is missing.\n</string>
+    <string name="exp_77_edespatch_country">E-Despatch Country is missing.\n</string>
+    <string name="exp_78_edespatch_postCode">E-Despatch Post Code is missing.\n</string>
+    <string name="exp_79_edespatch_first_driver_name">E-Despatch Driver 1 Name is missing.\n</string>
+    <string name="exp_7_transfer_part_size">تعداد سوابق قابل انتقال در یک زمان نمی تواند کمتر از 0 و بیش از 10000 باشد
+    </string>
+    <string name="exp_80_edespatch_first_driver_last_name">E-Despatch Driver 1 Lastname is missing.\n</string>
+    <string name="exp_81_edespatch_first_driver_identity_number">E-Despatch Driver 1 Identity Number is missing.\n
+    </string>
+    <string name="exp_82_einvoice_serial">اطلاعات سریال فاکتور الکترونیکی باید وارد شود</string>
+    <string name="exp_83_earchive_serial">اطلاعات سریال بایگانی الکترونیکی باید وارد شود</string>
+    <string name="exp_84_unsupported_report_type">نوع گزارش پشتیبانی نمی‌شود</string>
+    <string name="exp_85_error_invalid_report_format">فرمت گزارش نامعتبر است</string>
+    <string name="exp_86_error_amount_can_not_be_zero">مقدار نباید صفر باشد</string>
+    <string name="exp_87_error_entered_serial_group_is_not_available">گروه سریال واردشده موجود نیست</string>
+    <string name="exp_88_error_entered_amount_is_not_appropriate">مقدار واردشده نامناسب است</string>
+    <string name="exp_89_wrong_file_type_mssettings">فرمت فایل اشتباه انتخاب شده است. فایل با پسوند .mssettings را
+        انتخاب کنید.
+    </string>
+    <string name="exp_8_transfer_select_size">شما باید حداقل یک وضعیت انتقال را انتخاب کنید</string>
+    <string name="exp_90_error_create_auto_visit">سابقه بازدید خودکار ایجاد نشد.</string>
+    <string name="exp_91_error_complete_other_active_visit">تا زمانی که رکورد بازدید فعال خود را کامل نکنید، نمی توانید
+        اقدام جدیدی انجام دهید.
+    </string>
+    <string name="exp_92_error_cancel_to_start_auto_visit">شما نمی توانید بدون شروع یک رکورد بازدید خودکار اقدامی انجام
+        دهید.
+    </string>
+    <string name="exp_93_error_auto_visit_operations">سوابق ایجاد شده به صورت خودکار قابل پردازش نیستند.</string>
+    <string name="exp_94_error_active_period_is_not_selected">بدون انتخاب دوره فعال نمی توانید وارد برنامه شوید.
+    </string>
+    <string name="exp_95_error_promotion_cannot_be_moved">خط تبلیغات قابل جابجایی نیست.</string>
+    <string name="exp_96_error_open_invoice_report_detail">هیچ مرجع کوپنی برای نمایش در گزارش یافت نشد.</string>
+    <string name="exp_97_return_dispatch_description">توضیحاتی را برای خط برگشت وارد کنید.</string>
+    <string name="exp_98_error_save_csv">هنگام ذخیره سند خطایی روی داد.</string>
+    <string name="exp_9_login_error">هنگام ورود به سیستم خطایی روی داد</string>
+    <string name="exp_active_period">هیچ دوره فعالی دریافت نشد!</string>
+    <string name="exp_campaign_not_found">هیچ کمپین قابل اجرا یافت نشد.</string>
+    <string name="exp_customer_has_restriction">کدنویسی با کد %1s مسدود شده است. عملیات تکمیل نشده است.</string>
+    <string name="exp_customer_sales_authorization">مشتری با عنوان %1s نمی تواند برای فروش و توزیع استفاده شود.
+    </string>
+    <string name="exp_expiry_date">لطفاً سررسید را وارد کنید</string>
+    <string name="exp_has_overdue_debt">بدهی معوق وجود دارد. برای ادامه تراکنش باید پرداخت انجام شود.\nمبلغ بدهی: %1s
+    </string>
+    <string name="exp_item_has_negative_balance">سهام کد شده %1s دارای مانده منفی است. موجودی منفی: -%2s</string>
+    <string name="exp_license_expiry_date_sales_managers">حق شما برای مشاهده و دسترسی به محصولات منقضی شده است زیرا اشتراک شما در راه حل فروش لوگو موبایل شما منقضی شده است. برای تمدید اشتراک می توانید با شریک تجاری لوگوی ما که با او کار می کنید تماس بگیرید.</string>
+    <string name="exp_license_expiry_date_sales_persons">در مورد مشکلی که در دسترسی به محصول خود تجربه می کنید، می توانید با سرپرست سیستم یا شریک تجاری لوگو که با آن کار می کنید تماس بگیرید.</string>
+    <string name="exp_license_warning_sales_managers">دوره اشتراک شما برای راه حل فروش لوگو موبایل شما در %1s منقضی می شود. برای تمدید اشتراک می توانید با شریک تجاری لوگوی ما که با او کار می کنید تماس بگیرید.</string>
+    <string name="exp_not_have_delete_menu_rights">این فیش مجوز حذف ندارد.</string>
+    <string name="exp_payroll_date">لطفاً تاریخ لیست حقوق را وارد کنید</string>
+    <string name="exp_price_below_defined_purchase_price">قیمت فروش مواد با کد %1s زیر قیمت خرید تعریف شده تعیین شده است. (قیمت خرید: %2s)!</string>
+    <string name="exp_price_below_last_purchase_price">قیمت فروش مواد با کد %1s کمتر از آخرین قیمت خرید تعیین شده است. (قیمت خرید: %2s)!</string>
+    <string name="exp_rooted_device">این برنامه روی دستگاه روت شده قابل استفاده نیست.</string>
+    <string name="exp_ship_agent">نمایندگی حمل و نقل نمی تواند خالی باشد</string>
+    <string name="exp_suspicious_activity">مسافتی که معامله می کنید در محدوده مقدار مشخص شده در پارامترها نیست.</string>
+    <string name="expand_button_title">پیشرفته</string>
+    <string name="exposed_dropdown_menu_content_description">نمایش منوی کرکره‌ای</string>
+    <string name="focus_for_barcode">برای خواندن بارکد، فوکوس کنید!</string>
+    <string name="hint_search_customer">جستجوی مشتریان</string>
+    <string name="hint_search_demand">برگه تقاضای جستجو</string>
+    <string name="hint_search_order">جستجوی سفارش</string>
+    <string name="hint_search_penetration">جستجوی نفوذ</string>
+    <string name="hint_search_product">جستجوی محصول</string>
+    <string name="hint_search_receipt">جستجوی رسید</string>
+    <string name="hint_search_sales">جستجوی برگهٔ فروش</string>
+    <string name="hint_search_ship_address">جستجوی آدرس حمل</string>
+    <string name="hint_search_visit">جستجوی ویزیت</string>
+    <string name="icon_content_description">نماد کادر گفتگو</string>
+    <string name="item_view_role_description">برگه</string>
+    <string name="manu_sales_order_detail_transfer">انتقال جزئیات سفارش</string>
+    <string name="material_clock_toggle_content_description">انتخاب .ق.ظ. یا ب.ظ.</string>
+    <string name="material_hour_24h_suffix">%1s ساعت</string>
+    <string name="material_hour_selection">انتخاب ساعت</string>
+    <string name="material_hour_suffix">ساعت %1s</string>
+    <string name="material_minute_selection">انتخاب دقیقه</string>
+    <string name="material_minute_suffix">%1s دقیقه</string>
+    <string name="material_timepicker_am">ق.ظ</string>
+    <string name="material_timepicker_clock_mode_description">برای وارد کردن زمان، به حالت ساعت تغییر وضعیت دهید.
+    </string>
+    <string name="material_timepicker_hour">ساعت</string>
+    <string name="material_timepicker_minute">دقیقه</string>
+    <string name="material_timepicker_pm">ب.ظ</string>
+    <string name="material_timepicker_select_time">انتخاب زمان</string>
+    <string name="material_timepicker_text_input_mode_description">برای وارد کردن زمان، به حالت ورودی نوشتاری تغییر
+        وضعیت دهید.
+    </string>
+    <string name="menu_add_all_whouse_items">افزودن همه محصولات</string>
+    <string name="menu_add_photo">اضافه‌کردن عکس</string>
+    <string name="menu_all">همه</string>
+    <string name="menu_analyse">دیدن</string>
+    <string name="menu_barcode">خواندن بارکد</string>
+    <string name="menu_clear">پاک کنید</string>
+    <string name="menu_clear_search_history">پاک کنید</string>
+    <string name="menu_clear_search_history_question">آیا می‌خواهید تنظیمات را ریست کنید؟</string>
+    <string name="menu_clear_selected">حذف انتخاب‌شده</string>
+    <string name="menu_connect_device">اتصال به دستگاه</string>
+    <string name="menu_contextual_cancel">لغو</string>
+    <string name="menu_contextual_create_draft">پیش نویس E-Document ایجاد کنید</string>
+    <string name="menu_contextual_create_draft_and_send">پیش نویس ایجاد کنید و سند الکترونیکی ارسال کنید</string>
+    <string name="menu_contextual_edespatch_pdf">پی دی اف</string>
+    <string name="menu_contextual_edocument_draft_pdf">پیش نویس اسناد الکترونیکی PDF</string>
+    <string name="menu_contextual_edocument_draft_pdf_3_inc">پیش نویس سند الکترونیکی پی دی اف 3 اینچی</string>
+    <string name="menu_contextual_edocument_pdf">سند الکترونیکی پی دی اف</string>
+    <string name="menu_contextual_save_pdf">ذخیره به عنوان Pdf</string>
+    <string name="menu_contextual_send_edocument">ارسال سند الکترونیکی</string>
+    <string name="menu_contextual_send_email">ارسال ایمیل</string>
+    <string name="menu_copy">کپی</string>
+    <string name="menu_delete">حذف</string>
+    <string name="menu_dispatchable">قابل‌تحویل</string>
+    <string name="menu_dispatchable_selected">گزینهٔ انتخابی را به قابل‌تحویل تغییر بده</string>
+    <string name="menu_done">تکمیل‌شده</string>
+    <string name="menu_download_excel">دانلود با فرمت اکسل</string>
+    <string name="menu_edit">ویرایش</string>
+    <string name="menu_excel">EXCEL</string>
+    <string name="menu_exist">موجود است.</string>
+    <string name="menu_export_settings">صدور (اکسپورت)</string>
+    <string name="menu_fiche_cancel">لغو برگه</string>
+    <string name="menu_fiche_online_total">پرس‌وجو در کل برگه‌های آنلاین</string>
+    <string name="menu_fiche_reports">بازکردن گزارش‌ها</string>
+    <string name="menu_fiche_save">ذخیره‌کردن برگهٔ سفارش</string>
+    <string name="menu_filter">فیلتر</string>
+    <string name="menu_filter_city_town">فیلتر برحسب شهر/ شهرک</string>
+    <string name="menu_filter_day">روز</string>
+    <string name="menu_filter_debit">فیلتر برحسب بدهی</string>
+    <string name="menu_filter_route">مسیر</string>
+    <string name="menu_filter_specode">فیلتر بر اساس کد سفارشی</string>
+    <string name="menu_filterby_group">فیلتر بر اساس گروه</string>
+    <string name="menu_follow_route">مسیر را دنبال کنید</string>
+    <string name="menu_how_to_use">نحوهٔ استفاده</string>
+    <string name="menu_last_order_products">محصولات در آخرین سفارش</string>
+    <string name="menu_minus_selected">افزایش انتخاب‌شده</string>
+    <string name="menu_new_customer">AR/AP جدید</string>
+    <string name="menu_new_dispatch">ایجاد گزارش</string>
+    <string name="menu_new_invoice">ایجاد فاکتور</string>
+    <string name="menu_new_notification">اطلاعیه جدید</string>
+    <string name="menu_next_page">صفحهٔ بعدی</string>
+    <string name="menu_not">موجود نیست.</string>
+    <string name="menu_not_be_transferred">قابل انتقال نیست</string>
+    <string name="menu_open_location">نمایش اطلاعات محل</string>
+    <string name="menu_pdf">PDF</string>
+    <string name="menu_pdf_clear_path">ذخیره مسیر پاک شود</string>
+    <string name="menu_pdf_download">دانلود</string>
+    <string name="menu_pdf_share">اشتراک گذاری</string>
+    <string name="menu_pdf_show">نشان دادن</string>
+    <string name="menu_plus_selected">کاهش انتخاب‌شده</string>
+    <string name="menu_poll_campaign_point_customer">پرس‌وجو در اطلاعات امتیاز کمپین</string>
+    <string name="menu_prev_page">صفحهٔ قبلی</string>
+    <string name="menu_print">پیش‌نمایش چاپ</string>
+    <string name="menu_print_all">چاپ همه</string>
+    <string name="menu_print_page">چاپ صفحه</string>
+    <string name="menu_product">محصولات</string>
+    <string name="menu_product_cancel">لغو تغییرات</string>
+    <string name="menu_product_delete">حذف محصول از برگهٔ سفارش</string>
+    <string name="menu_product_information">بازکردن اطلاعات محصول</string>
+    <string name="menu_product_save">ذخیره‌کردن محصول</string>
+    <string name="menu_range_select">انتخاب ردیفی</string>
+    <string name="menu_recommended_products">محصولات پیشنهادی</string>
+    <string name="menu_reject">رد کردن</string>
+    <string name="menu_remove_photo">پاک کردن عکس</string>
+    <string name="menu_remove_printer">حذف چاپگرها</string>
+    <string name="menu_remove_printer_settings_question">آیا می‌خواهید چاپگرها را حذف کنید؟</string>
+    <string name="menu_reset">ریست</string>
+    <string name="menu_reset_all_settings">همهٔ تنظیمات ریست شود</string>
+    <string name="menu_reset_log_path">تنظیم مجدد مسیر ورود به سیستم</string>
+    <string name="menu_reset_settings">ریست</string>
+    <string name="menu_reset_settings_path">تنظیم مجدد مسیر تنظیمات</string>
+    <string name="menu_reset_settings_question">آیا می‌خواهید تنظیمات را ریست کنید؟</string>
+    <string name="menu_restore_settings">بازیابی تنظیمات</string>
+    <string name="menu_run_query">اجرای پرس‌وجو</string>
+    <string name="menu_sales_cancel_apply_campaign">لغو کمپین</string>
+    <string name="menu_sales_cancel_sales_condition">لغو شرط فروش</string>
+    <string name="menu_sales_distribution_transfer">انتقال سفارش توزیع</string>
+    <string name="menu_sales_do_apply_campaign">اعمال کمپین</string>
+    <string name="menu_sales_do_sales_condition">اعمال شرط فروش</string>
+    <string name="menu_sales_driver_information">اطلاعات راننده</string>
+    <string name="menu_sales_eDespatch_Additional">اطلاعات ارسال</string>
+    <string name="menu_sales_filter">فیلتر</string>
+    <string name="menu_sales_new">برگهٔ سفارش جدید</string>
+    <string name="menu_sales_order_transfer">انتقال سفارش</string>
+    <string name="menu_sales_show_campaigns">نمایش کمپین‌ها</string>
+    <string name="menu_sales_show_currency_price">نمایش قیمت ارز</string>
+    <string name="menu_save_settings">ذخیره‌سازی</string>
+    <string name="menu_select_all">انتخاب همه</string>
+    <string name="menu_send">انتقال</string>
+    <string name="menu_send_mail">ارسال ایمیل</string>
+    <string name="menu_serial_select">انتخاب ترتیبی</string>
+    <string name="menu_service">خدمات</string>
+    <string name="menu_settings">تنظیمات</string>
+    <string name="menu_share_settings">اشتراک‌گذاری تنظیمات</string>
+    <string name="menu_show_all_customer">همهٔ مشتریان نمایش داده شوند</string>
+    <string name="menu_show_only_near_customer">فقط مشتریان مجاور نمایش داده شوند</string>
+    <string name="menu_show_photo">ارسال عکس</string>
+    <string name="menu_sort">مرتب‌سازی</string>
+    <string name="menu_sort_code">مرتب‌سازی برحسب کد</string>
+    <string name="menu_sort_name">مرتب‌سازی برحسب نام</string>
+    <string name="menu_sort_name2">مرتب‌سازی براساس نام «۲»‌</string>
+    <string name="menu_sort_product_code">مرتب سازی بر اساس کد مواد</string>
+    <string name="menu_sort_product_name">مرتب سازی بر اساس توضیحات مواد</string>
+    <string name="menu_sorting_debit">مرتب‌سازی برحسب بدهی</string>
+    <string name="menu_sorting_name">مرتب‌سازی برحسب نام</string>
+    <string name="menu_status_change">تغییر وضعیت</string>
+    <string name="menu_undispatchable">غیرقابل‌تحویل</string>
+    <string name="menu_undispatchable_selected">گزینهٔ انتخابی را به غیرقابل‌تحویل تغییر بده</string>
+    <string name="menu_unselect_all">لغو انتخاب همه</string>
+    <string name="menu_update_customer">به‌روزرسانی اطلاعات مشتریان</string>
+    <string name="menu_update_stock_amounts">مقدار سهام را به روز کنید</string>
+    <string name="menu_use_connection_key">اتصال</string>
+    <string name="menu_zoom_in">بزرگ‌نمایی</string>
+    <string name="menu_zoom_out">کوچک‌نمایی</string>
+    <string name="mtrl_badge_numberless_content_description" tools:ignore="PrivateResource">اعلان جدید</string>
+    <string name="mtrl_checkbox_state_description_checked" tools:ignore="PrivateResource">دارای علامت</string>
+    <string name="mtrl_checkbox_state_description_indeterminate" tools:ignore="PrivateResource">برخی موارد علامت دارند</string>
+    <string name="mtrl_checkbox_state_description_unchecked" tools:ignore="PrivateResource">بدون علامت</string>
+    <string name="mtrl_chip_close_icon_content_description" tools:ignore="PrivateResource">برداشتن %1s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" tools:ignore="PrivateResource">بیش از %1d اعلان جدید</string>
+    <string name="mtrl_picker_a11y_next_month" tools:ignore="PrivateResource">تغییر به ماه بعدی</string>
+    <string name="mtrl_picker_a11y_prev_month" tools:ignore="PrivateResource">تغییر به ماه قبلی</string>
+    <string name="mtrl_picker_announce_current_range_selection" tools:ignore="PrivateResource">"تاریخ شروع انتخاب‌شده: %1s – تاریخ پایان انتخاب‌شده: \%2s </string>
+    <string name="mtrl_picker_announce_current_selection" tools:ignore="PrivateResource">انتخاب کنونی: %1s</string>
+    <string name="mtrl_picker_announce_current_selection_none" tools:ignore="PrivateResource">خالی</string>
+    <string name="mtrl_picker_cancel" tools:ignore="PrivateResource">لغو</string>
+    <string name="mtrl_picker_confirm" tools:ignore="PrivateResource">تأیید</string>
+    <string name="mtrl_picker_date_header_selected" tools:ignore="PrivateResource">%1s</string>
+    <string name="mtrl_picker_date_header_title" tools:ignore="PrivateResource">انتخاب تاریخ</string>
+    <string name="mtrl_picker_date_header_unselected" tools:ignore="PrivateResource">تاریخ انتخابی</string>
+    <string name="mtrl_picker_day_of_week_column_header" tools:ignore="PrivateResource">%1s</string>
+    <string name="mtrl_picker_end_date_description" tools:ignore="PrivateResource">تاریخ پایان: %1s</string>
+    <string name="mtrl_picker_invalid_format" tools:ignore="PrivateResource">قالب نامعتبر است.</string>
+    <string name="mtrl_picker_invalid_format_example" tools:ignore="PrivateResource">مثال: %1s</string>
+    <string name="mtrl_picker_invalid_format_use" tools:ignore="PrivateResource">قالب: %1s</string>
+    <string name="mtrl_picker_invalid_range" tools:ignore="PrivateResource">محدوده نامعتبر است.</string>
+    <string name="mtrl_picker_navigate_to_current_year_description" tools:ignore="PrivateResource">پیمایش به سال فعلی %1d</string>
+    <string name="mtrl_picker_navigate_to_year_description" tools:ignore="PrivateResource">رفتن به سال %1d</string>
+    <string name="mtrl_picker_out_of_range" tools:ignore="PrivateResource">خارج از محدوده: %1s</string>
+    <string name="mtrl_picker_range_header_only_end_selected" tools:ignore="PrivateResource">تاریخ شروع – %1s</string>
+    <string name="mtrl_picker_range_header_only_start_selected" tools:ignore="PrivateResource">%1s – تاریخ پایان</string>
+    <string name="mtrl_picker_range_header_selected" tools:ignore="PrivateResource">%1s–%2s</string>
+    <string name="mtrl_picker_range_header_title" tools:ignore="PrivateResource">انتخاب محدوده</string>
+    <string name="mtrl_picker_range_header_unselected" tools:ignore="PrivateResource">تاریخ شروع – تاریخ پایان</string>
+    <string name="mtrl_picker_save" tools:ignore="PrivateResource">ذخیره</string>
+    <string name="mtrl_picker_start_date_description" tools:ignore="PrivateResource">تاریخ شروع: %1s</string>
+    <string name="mtrl_picker_text_input_date_hint" tools:ignore="PrivateResource">تاریخ</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint" tools:ignore="PrivateResource">تاریخ پایان</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint" tools:ignore="PrivateResource">تاریخ شروع</string>
+    <string name="mtrl_picker_text_input_day_abbr" tools:ignore="PrivateResource">d</string>
+    <string name="mtrl_picker_text_input_month_abbr" tools:ignore="PrivateResource">m</string>
+    <string name="mtrl_picker_text_input_year_abbr" tools:ignore="PrivateResource">y</string>
+    <string name="mtrl_picker_today_description" tools:ignore="PrivateResource">امروز %1s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode" tools:ignore="PrivateResource">رفتن به روش ورودی تقویم</string>
+    <string name="mtrl_picker_toggle_to_day_selection" tools:ignore="PrivateResource">برای رفتن به نمای «تقویم» ضربه بزنید</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode" tools:ignore="PrivateResource">رفتن به حالت ورودی نوشتاری</string>
+    <string name="mtrl_picker_toggle_to_year_selection" tools:ignore="PrivateResource">برای رفتن به نمای سال ضربه بزنید</string>
+    <string name="mtrl_timepicker_cancel" tools:ignore="PrivateResource">لغو</string>
+	<string name="mtrl_timepicker_confirm" tools:ignore="PrivateResource">تأیید</string>
+    <string name="not_set" tools:ignore="PrivateResource">تنظیم نشده</string>
+    <string name="open_drawer" tools:ignore="PrivateResource">باز کردن دراور</string>
+    <string name="password_toggle_content_description" tools:ignore="PrivateResource">نمایش گذرواژه</string>
+    <string name="pref_category_netsis_title" tools:ignore="PrivateResource">تنظیمات اتصال نتسیس</string>
+    <string name="pref_category_tiger_title" tools:ignore="PrivateResource">تنظیمات اتصال TIGER/GO</string>
+    <string name="pref_communication_type_summary" tools:ignore="PrivateResource">نوع سرویس برای برقراری ارتباط با برنامهٔ ERP</string>
+    <string name="pref_communication_type_title" tools:ignore="PrivateResource">نوع اتصال</string>
+    <string name="pref_connection_key_summary" tools:ignore="PrivateResource">برای تنظیمات اتصال از کلید رمزگذاری شده استفاده کنید</string>
+    <string name="pref_connection_key_title" tools:ignore="PrivateResource">کلید اتصال</string>
+    <string name="pref_default_printer" tools:ignore="PrivateResource">چاپگر پیش فرض</string>
+    <string name="pref_default_printer_service_address" tools:ignore="PrivateResource">printerserviceaddress:45001</string>
+    <string name="pref_dialog_transfer_part_size_title" tools:ignore="PrivateResource">تعداد رکوردهایی را که بناست در یک نوبت از سرور منتقل شوند وارد
+        کنید
+    </string>
+    <string name="pref_dialog_transfer_type_title" tools:ignore="PrivateResource">نوع انتقال داده را انتخاب کنید</string>
+    <string name="pref_end_image_summary" tools:ignore="PrivateResource">تصویر پایانی را که می خواهید استفاده کنید انتخاب کنید</string>
+    <string name="pref_end_image_title" tools:ignore="PrivateResource">تصویر در حال پایان</string>
+    <string name="pref_erp_type_summary" tools:ignore="PrivateResource">محصول ERP لوگو</string>
+    <string name="pref_erp_type_title" tools:ignore="PrivateResource">نوع ERP</string>
+    <string name="pref_firm_number_title" tools:ignore="PrivateResource">شمارهٔ مؤسسه</string>
+    <string name="pref_language_summary" tools:ignore="PrivateResource">زبانی را که می‌خواهید در اپلیکیشن استفاده کنید انتخاب کنید.</string>
+    <string name="pref_language_title" tools:ignore="PrivateResource">زبان</string>
+    <string name="pref_netsis_db_branch_code_title" tools:ignore="PrivateResource">کد شعبه</string>
+    <string name="pref_netsis_db_name_title" tools:ignore="PrivateResource">نام پایگاه داده</string>
+    <string name="pref_netsis_db_password_title" tools:ignore="PrivateResource">رمز عبور کاربر پایگاه داده</string>
+    <string name="pref_netsis_db_type_title" tools:ignore="PrivateResource">نوع پایگاه داده</string>
+    <string name="pref_netsis_db_username_title" tools:ignore="PrivateResource">نام کاربری پایگاه داده</string>
+    <string name="pref_netsis_password_title" tools:ignore="PrivateResource">رمز عبور نتسیس</string>
+    <string name="pref_netsis_ping_title" tools:ignore="PrivateResource">تست اتصال</string>
+    <string name="pref_netsis_username_title" tools:ignore="PrivateResource">نام کاربری نتسیس</string>
+    <string name="pref_pplz_command_category_title" tools:ignore="PrivateResource">خط فرمان PPLZ</string>
+    <string name="pref_pplz_command_help_title" tools:ignore="PrivateResource">نحوهٔ استفاده از PPLZ</string>
+    <string name="pref_pplz_encoding_title" tools:ignore="PrivateResource">کدگذاری زبان</string>
+    <string name="pref_pplz_font_height_title" tools:ignore="PrivateResource">ارتفاع فونت را وارد کنید</string>
+    <string name="pref_pplz_font_id_title" tools:ignore="PrivateResource">انتخاب فونت</string>
+    <string name="pref_pplz_font_margin_title" tools:ignore="PrivateResource">حاشیهٔ صفحه را وارد کنید</string>
+    <string name="pref_pplz_font_space_title" tools:ignore="PrivateResource">فاصلهٔ خطوط را وارد کنید</string>
+    <string name="pref_pplz_font_width_title" tools:ignore="PrivateResource">عرض فونت را وارد کنید</string>
+    <string name="pref_pplz_use_rtl_title" tools:ignore="PrivateResource">راست‌نویس کردن سطرها</string>
+    <string name="pref_print_destination_title" tools:ignore="PrivateResource">مقصد</string>
+    <string name="pref_print_file_export_path_summary" tools:ignore="PrivateResource">لطفاً مسیر را انتخاب کنید</string>
+    <string name="pref_print_file_export_path_title" tools:ignore="PrivateResource">مسیر برون‌بری فایل</string>
+    <string name="pref_print_language_title" tools:ignore="PrivateResource">زبان چاپگر</string>
+    <string name="pref_print_remove_blank_lines_title" tools:ignore="PrivateResource">خطوط خالی را حذف کن</string>
+    <string name="pref_print_screen_case_title" tools:ignore="PrivateResource">صندوق</string>
+    <string name="pref_print_screen_cash_title" tools:ignore="PrivateResource">نقدی</string>
+    <string name="pref_print_screen_cheque_title" tools:ignore="PrivateResource">چک</string>
+    <string name="pref_print_screen_credit_card_title" tools:ignore="PrivateResource">کارت اعتباری</string>
+    <string name="pref_print_screen_deed_title" tools:ignore="PrivateResource">سفته</string>
+    <string name="pref_print_screen_delivery_note_title" tools:ignore="PrivateResource">گزارش حمل</string>
+    <string name="pref_print_screen_detail_line_size_title" tools:ignore="PrivateResource">شمارهٔ خطی که بناست دقیقاً‌ چاپ شود</string>
+    <string name="pref_print_screen_dispatch_title" tools:ignore="PrivateResource">گزارش</string>
+    <string name="pref_print_screen_first_printed_matter_title" tools:ignore="PrivateResource">شروع شمارهٔ سند چاپ‌شده</string>
+    <string name="pref_print_screen_general_end_code_title" tools:ignore="PrivateResource">کدهای پایان</string>
+    <string name="pref_print_screen_general_show_preview_summary" tools:ignore="PrivateResource">پیش‌نمایش پیش از چاپ</string>
+    <string name="pref_print_screen_general_show_preview_title">نمایش پیش‌نمایش</string>
+    <string name="pref_print_screen_general_start_code_title">کدهای شروع</string>
+    <string name="pref_print_screen_general_title">سایر تنظیمات</string>
+    <string name="pref_print_screen_general_turkish_options_summary">نمایش کاراکترهای ترکی در زمان چاپ</string>
+    <string name="pref_print_screen_general_turkish_options_title">گزینهٔ کاراکترهای ترکی</string>
+    <string name="pref_print_screen_general_wait_time_title">مدت انتظار</string>
+    <string name="pref_print_screen_invoice_title">فاکتور</string>
+    <string name="pref_print_screen_last_printed_matter_title">پایان شمارهٔ سند چاپ‌شده</string>
+    <string name="pref_print_screen_list_printed_matter_title">رکورد سند چاپ‌شده</string>
+    <string name="pref_print_screen_list_printer_title">انتخاب چاپگر</string>
+    <string name="pref_print_screen_order_title">ترتیب</string>
+    <string name="pref_print_screen_printed_matter_category_title">تنظیمات سند چاپ‌شده</string>
+    <string name="pref_print_screen_retail_invoice_title">فاکتور خرده‌فروشی</string>
+    <string name="pref_print_screen_show_header_summary">عنوان در همهٔ صفحه‌ها نمایش داده شود</string>
+    <string name="pref_print_screen_show_header_title">نمایش عنوان</string>
+    <string name="pref_print_screen_show_page_footer_summary">در صفحهٔ آخر نمایش داده نشود</string>
+    <string name="pref_print_screen_show_page_footer_title">قطع صفحه</string>
+    <string name="pref_print_screen_use_printed_matter_title">استفاده از شمارهٔ سند چاپ‌شده</string>
+    <string name="pref_print_service_screen_use_printer_service">اجازه دهید از سرویس چاپگر برای عملیات چاپ استفاده شود
+    </string>
+    <string name="pref_print_type_title">روش چاپ</string>
+    <string name="pref_printer_always_connect_summary">همیشه به چاپگر متصل بمان</string>
+    <string name="pref_printer_always_connect_title">به چاپگر متصل بمان</string>
+    <string name="pref_printer_font_size_title">اندازهٔ فونت</string>
+    <string name="pref_printer_one_summary">برای اتصال چاپگر، کلیک کنید</string>
+    <string name="pref_printer_one_title">چاپگر ۱</string>
+    <string name="pref_printer_service_address">آدرس خدمات چاپگر</string>
+    <string name="pref_printer_two_summary">برای اتصال چاپگر، کلیک کنید</string>
+    <string name="pref_printer_two_title">چاپگر ۲</string>
+    <string name="pref_select_printer">برای انتخاب چاپگر کلیک کنید</string>
+
+    <string name="pref_server_address_summary" tools:ignore="PrivateResource">آدرس سرویسی که برای ارتباط با ERP استفاده می‌کنید. مثلا (نمونه):
+        192.168.1.1:8080
+    </string>
+    <string name="pref_server_address_title">آدرس سرور</string>
+    <string name="pref_start_image_summary">تصویر ابتدایی را که می خواهید استفاده کنید انتخاب کنید</string>
+    <string name="pref_start_image_title">شروع تصویر</string>
+    <string name="pref_tiger_security_code_summary" tools:ignore="PrivateResource">کد امنیتی‌ای که در تنظیمات WCF وارد کرده‌اید</string>
+    <string name="pref_tiger_security_code_title">کد امنیتی WCF</string>
+    <string name="pref_transfer_part_size_title">تعداد رکوردهایی که بناست در یک نوبت از سرور منتقل شوند:</string>
+    <string name="pref_transfer_type_title">نوع انتقال داده</string>
+    <string name="pref_use_demo_summary" tools:ignore="PrivateResource">استفاده از اتصال اپلیکیشن به سرور دمو</string>
+    <string name="pref_use_demo_title">استفاده به صورت دمو</string>
+    <string name="pref_use_different_encoding_title" tools:ignore="PrivateResource">استفاده از کدگذاری زبان‌های دیگر</string>
+    <string name="pref_use_pplz_command_title" tools:ignore="PrivateResource">از خط فرمان PPLZ استفاده کن</string>
+    <string name="pref_use_printer_service" tools:ignore="PrivateResource">از سرویس چاپگر استفاده کنید</string>
+    <string name="pref_use_transfer_log_summary" tools:ignore="PrivateResource">گزارش سفارش‌های ارسالی را ثبت کن</string>
+    <string name="pref_use_transfer_log_title" tools:ignore="PrivateResource">گزارش را ثبت کن</string>
+    <string name="preference_copied">«%1s» در بریده‌دان کپی شد.</string>
+    <string name="search_menu_title">جستجو</string>
+    <string name="searchview_clear_text_content_description">پاک کردن نوشتار</string>
+    <string name="searchview_navigation_content_description">برگشتن</string>
+    <string name="side_sheet_accessibility_pane_title">برگ کناری</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="str_0">صفر</string>
+    <string name="str_1">یک</string>
+    <string name="str_10">ده</string>
+    <string name="str_2">دو</string>
+    <string name="str_20">بیست</string>
+    <string name="str_3">سه</string>
+    <string name="str_30">سی</string>
+    <string name="str_4">چهار</string>
+    <string name="str_40">چهل</string>
+    <string name="str_5">پنج</string>
+    <string name="str_50">پنجاه</string>
+    <string name="str_6">شش</string>
+    <string name="str_60">شصت</string>
+    <string name="str_7">هفت</string>
+    <string name="str_70">هفتاد</string>
+    <string name="str_8">هشت</string>
+    <string name="str_80">هشتاد</string>
+    <string name="str_9">نه</string>
+    <string name="str_90">نود</string>
+    <string name="str_about">درباره</string>
+    <string name="str_accept">تایید</string>
+    <string name="str_access_denied_use_device">دسترسی امکان‌پذیر نیست. نمی‌توانید از این دستگاه استفاده کنید</string>
+    <string name="str_account">حساب</string>
+    <string name="str_account_extract">برون‌بری</string>
+    <string name="str_account_extract_detail">جزئیات چکیدهٔ حساب</string>
+    <string name="str_account_info">اطلاعات حساب</string>
+    <string name="str_account_number">شمارهٔ حساب</string>
+    <string name="str_activate">فعال شود</string>
+    <string name="str_activation_complete">فعال‌سازی انجام شد</string>
+    <string name="str_activity_title_product_groups">گروه محصولات</string>
+    <string name="str_activity_title_transfer_delete">داده‌ها را حذف کن</string>
+    <string name="str_activity_title_vehicle_transfer">انتقال</string>
+    <string name="str_actual">واقعی:</string>
+    <string name="str_actual_stock">موجودی کنونی:</string>
+    <string name="str_add">اضافه</string>
+    <string name="str_add_photo">اضافه‌کردن تصویر</string>
+    <string name="str_addition_product">اضافه‌کردن محصول</string>
+    <string name="str_additional_invoice_type">نوع فاکتور اضافی</string>
+    <string name="str_address">آدرس</string>
+    <string name="str_address1">آدرس ۱</string>
+    <string name="str_address2">آدرس ۲</string>
+    <string name="str_alert_print_preview_max_zoom">بزرگ‌نمایی بیشتر امکان‌پذیر نیست.</string>
+    <string name="str_all">همه</string>
+    <string name="str_all_salesmen">کلیه فروشندگان</string>
+    <string name="str_all_shipped">همه بارگیری شده</string>
+    <string name="str_alternative_promotion">تبلیغات جایگزین</string>
+    <string name="str_alternative_promotion_not_found">تبلیغات جایگزین یافت نشد</string>
+    <string name="str_amount">میزان</string>
+    <string name="str_amount2">مقدار 2</string>
+    <string name="str_amount_could_not_be_zero_for_selected">مقدار ردیف‌های انتخابی نباید صفر باشد</string>
+    <string name="str_amount_information">اطلاعات میزان</string>
+    <string name="str_analyze">دیدن</string>
+    <string name="str_app_name">فروش سیار</string>
+    <string name="str_app_restart_change_language">برای تغییر زبان، اپلیکیشن باید از نو شروع شود</string>
+    <string name="str_applicable_campaigns">مبارزات قابل اجرا</string>
+    <string name="str_apply">درخواست دادن</string>
+    <string name="str_apply_all">همه را به کار ببر</string>
+    <string name="str_apply_campaign_and_show">کمپین را اعمال کن و نمایش بده (*)</string>
+    <string name="str_apply_sales_condition">اعمال شرط فروش (*)</string>
+    <string name="str_applying_email_form_design">طراحی فرم فرم ایمیل</string>
+    <string name="str_approval_number">شماره تاییدیه</string>
+    <string name="str_approve">خواندم و تأیید می‌کنم</string>
+    <string name="str_approve_masterpass_payment">مبلغ تراکنش از کارت اعتباری شما کسر می شود. می خواهید ادامه دهید؟
+    </string>
+    <string name="str_approve_text">تأیید قراردادها</string>
+    <string name="str_approved">تایید شده</string>
+    <string name="str_area">حوزه</string>
+    <string name="str_area_code">کد</string>
+    <string name="str_auth_code">کد مجوز دسترسی</string>
+    <string name="str_auto_time_enabled_error">تراکنش شما توسط برنامه مسدود شده است، زیرا تنظیم خودکار تاریخ و زمان
+        سیستم عامل تلفن همراه شما خاموش است.
+    </string>
+    <string name="str_aux_codes">کدهای کمکی</string>
+    <string name="str_auxiliary_sprecial_code">کد تراکنش کمکی</string>
+    <string name="str_average_calc_item_limit">نمی‌توانید متغیر دیگری اضافه کنید.</string>
+    <string name="str_average_calc_lira">میزان</string>
+    <string name="str_average_date_report">گزارش میانگین سررسید</string>
+    <string name="str_average_expiry_account">میانگین سررسید</string>
+    <string name="str_average_expiry_information">میانگین سررسید</string>
+    <string name="str_average_invoice_expiry">فاکتور میانگین سررسید</string>
+    <string name="str_back_to_top">بازگشت به بالا</string>
+    <string name="str_balance">مانده</string>
+    <string name="str_balance_info_updated">اطلاعات مانده حساب به‌روزرسانی شد</string>
+    <string name="str_balance_order">دستور تعادل</string>
+    <string name="str_bank">بانک</string>
+    <string name="str_bank_account_information">اطلاعات حساب بانکی</string>
+    <string name="str_bank_accounts">حساب‌های بانکی</string>
+    <string name="str_bank_and_accounts">بانک و حساب‌ها</string>
+    <string name="str_bank_branch">شعبهٔ بانک</string>
+    <string name="str_bank_name">نام بانک</string>
+    <string name="str_banks">بانک‌ها</string>
+    <string name="str_barcode">بارکد</string>
+    <string name="str_barcode_completed">بارکدها تکمیل شد</string>
+    <string name="str_barcode_count">تعداد بارکدهای خوانده شده:</string>
+    <string name="str_barcode_not_add_product">محصول را به فهرست اضافه نکرده‌اید. می‌خواهید به عقب بازگردید؟</string>
+    <string name="str_barcode_not_found">بارکد یافت نشد</string>
+    <string name="str_barcode_scan">اسکن بارکد</string>
+    <string name="str_barcode_scan_before">بارکد اسکن شده است</string>
+    <string name="str_barcode_scan_product_add_before">محصول اضافه شده است!</string>
+    <string name="str_barcode_scan_product_add_list">محصول به فهرست اضافه شد.</string>
+    <string name="str_barcode_scan_product_not_find">محصولی که جستجو کردید یافت نشد.</string>
+    <string name="str_barcode_scan_product_other_unit_add_before">واحد متفاوتی برای محصول اضافه شده است!</string>
+    <string name="str_barcode_scanning">اسکن بارکد</string>
+    <string name="str_barcode_transferring">در حال انتقال بارکدها…</string>
+    <string name="str_barcodes">بارکدها</string>
+    <string name="str_barcodes_saving">ذخیره‌سازی بارکد…</string>
+    <string name="str_begin_date">تاریخ شروع</string>
+    <string name="str_being_shipped">در حال حمل</string>
+    <string name="str_bill_receipt">وصول سفته</string>
+    <string name="str_billion">میلیارد</string>
+    <string name="str_bluetooth_access">دسترسی بلوتوث</string>
+    <string name="str_bluetooth_close">بلوتوث غیرفعال شد</string>
+    <string name="str_bluetooth_device_found">دستگاه بلوتوث پیدا شد %1s</string>
+    <string name="str_bluetooth_device_paired">دستگاه‌ها جفت شدند</string>
+    <string name="str_bluetooth_device_unpaired">دستگاه جفت‌شده حذف شد</string>
+    <string name="str_bluetooth_devices">دستگاه‌های بلوتوث</string>
+    <string name="str_bluetooth_not_found">دستگاه بلوتوث یافت نشد</string>
+    <string name="str_bluetooth_open">بلوتوث فعال شد</string>
+    <string name="str_bluetooth_permissions_need">برای استفاده از بلوتوث، اجازهٔ شما لازم است. آیا اجازه می‌دهید؟
+    </string>
+    <string name="str_branch">شعبه</string>
+    <string name="str_branches">شعبه‌ها</string>
+    <string name="str_brand">علامت</string>
+    <string name="str_brand_code">کد علامت</string>
+    <string name="str_buying_return_receipt">خرید رسید مرجوعی</string>
+    <string name="str_cabin">کابین</string>
+    <string name="str_cabin_code">کد کابین</string>
+    <string name="str_cabin_operations">عملیات کابین</string>
+    <string name="str_calculate">محاسبه</string>
+    <string name="str_camera_access">دسترسی به دوربین</string>
+    <string name="str_camera_permission_for_barcode">برای اسکن بارکد اجازه دوربین لازم است.</string>
+    <string name="str_camera_permission_for_take_photo">برای گرفتن عکس مجوز دوربین لازم است.</string>
+    <string name="str_campaign_amount">تعداد:</string>
+    <string name="str_campaign_code">کد کمپین:</string>
+    <string name="str_campaign_info_cleared">اطلاعات کمپین پاک شد</string>
+    <string name="str_campaign_name">نام کمپین:</string>
+    <string name="str_campaign_point">امتیاز:</string>
+    <string name="str_campaing_will_be_reapplied">به دلیل تغییراتی که ایجاد کرده اید ، کمپین مجدداً استفاده خواهد شد
+    </string>
+    <string name="str_can_be_shipped">قابل‌حمل است</string>
+    <string name="str_can_not_be_shipped">قابل‌حمل نیست</string>
+    <string name="str_cancel">لغو</string>
+    <string name="str_cancel_barcode_question">آیا می‌خواهید اضافه‌کردن متن بارکد را لغو کنید؟</string>
+    <string name="str_cancel_fiche_title">لغو</string>
+    <string name="str_cancel_penetration_fiche_title">لغو نفوذ</string>
+    <string name="str_cancel_process">شما این عملیات را لغو کردید</string>
+    <string name="str_cancel_sales_campaign">کمپین لغو شد.</string>
+    <string name="str_cancel_sales_campaign_quest">آیا می‌خواهید کمپین را لغو کنید؟</string>
+    <string name="str_cancel_sales_condition_quest">آیا می‌خواهید شرط فروش را لغو کنید؟</string>
+    <string name="str_cancel_sales_fiche_title">لغو برگه</string>
+    <string name="str_cancel_visit_fiche_title">لغو ویزیت</string>
+    <string name="str_cannot_cancel_when_paid_online">شما نمی توانید معامله را لغو کنید زیرا معاملات پرداخت شده به صورت
+        آنلاین وجود دارد.
+    </string>
+    <string name="str_cannot_change_online_paid_transaction">با تکمیل مراحل پرداخت آنلاین ، نمی توانید معامله را تغییر
+        دهید.
+    </string>
+    <string name="str_cannot_connect_device">اتصال به دستگاه امکان‌پذیر نیست</string>
+    <string name="str_cannot_delete_online_paid_lines">پرداخت آنلاین حذف نمی شود.</string>
+    <string name="str_cart">کارت</string>
+    <string name="str_case">صندوق امانات</string>
+    <string name="str_case_collections">صندوق امانات</string>
+    <string name="str_case_print_preview">پیش‌نمایش چاپ صندوق امانات</string>
+    <string name="str_case_receipt">وصول به روش صندوق امانات</string>
+    <string name="str_cash_collection">نقدی</string>
+    <string name="str_cash_collections">نقدی</string>
+    <string name="str_cash_entry">ورود پرداخت نقدی</string>
+    <string name="str_cash_payment">پرداخت نقدی</string>
+    <string name="str_cash_print_preview">پیش‌نمایش چاپ نقدی</string>
+    <string name="str_cash_receipt">وصول نقدی</string>
+    <string name="str_change_order_status_dispatchable_selected">آیا می‌خواهید سفارش‌های انتخابی را قابل‌تحویل کنید؟
+    </string>
+    <string name="str_change_order_status_undispatchable_selected">آیا می‌خواهید سفارش‌های انتخابی را غیرقابل‌تحویل
+        کنید؟
+    </string>
+    <string name="str_changed_transfer">فقط متغیرها منتقل شود</string>
+    <string name="str_check_collection">چک</string>
+    <string name="str_check_collections">چک</string>
+    <string name="str_check_internet_connection">اتصال اینترنت خود را بررسی نمایید</string>
+    <string name="str_check_issued_account">چک صادر شد (AR/AP)</string>
+    <string name="str_check_payment_after_customer_payment">گرفتن مبالغ از مشتریان بعد از سررسید</string>
+    <string name="str_check_print_preview">پیش‌نمایش چاپ چک</string>
+    <string name="str_check_risk_limit_please_wait">در حال کنترل ریسک…لطفاً صبر کنید...</string>
+    <string name="str_checking_exchange_rates">در حال بررسی نرخ‌های مبادله</string>
+    <string name="str_checking_version">در حال بررسی نسخه…</string>
+    <string name="str_cheque_collection_entry">ورود چک</string>
+    <string name="str_cheque_entry">ورود چک</string>
+    <string name="str_cheque_receipt">وصول چک</string>
+    <string name="str_choose_file_path_for_log">لطفاً مسیر پرونده را برای ذخیره اطلاعات گزارش انتخاب کنید</string>
+    <string name="str_choose_file_path_for_print">لطفاً مسیر را برای ذخیره اطلاعات چاپ انتخاب کنید.</string>
+    <string name="str_choose_from_library">انتخاب از گالری</string>
+    <string name="str_choose_masterpass_card_to_continue">برای استفاده از فرآیند پرداخت و ذخیره ، باید یکی از کارتهای
+        Masterpass خود را انتخاب کرده و مراحل را ادامه دهید.
+    </string>
+    <string name="str_choose_report_design">طراحی گزارش را انتخاب کنید.</string>
+    <string name="str_city">شهر</string>
+    <string name="str_city_not_found">شهر تعریف شده یافت نشد</string>
+    <string name="str_clear">پاک کنید</string>
+    <string name="str_client_auth_code">کد مجوز دسترسی سرویس‌گیرنده</string>
+    <string name="str_client_code">کد سرویس‌گیرنده</string>
+    <string name="str_close">بستن</string>
+    <string name="str_close_outstandings">بسته نشده بسته خواهد شد</string>
+    <string name="str_closed_risk">ریسک نهایی</string>
+    <string name="str_code">کد</string>
+    <string name="str_collection_detail_not_added">جزئیات وصول هنوز اضافه نشده است</string>
+    <string name="str_collection_reports">گزارش های مجموعه</string>
+    <string name="str_collection_total">جمع‌ کل مبالغ وصول‌شده</string>
+    <string name="str_collections">وصول‌ها</string>
+    <string name="str_communication">ارتباطات</string>
+    <string name="str_company_number">شرکت</string>
+    <string name="str_competitive_product_information_shown">اطلاعات محصول رقابتی نمایش داده شد</string>
+    <string name="str_complete_visit">تمومش کن</string>
+    <string name="str_comply_before_route">باید از ترتیب جاری مسیرتان تبعیت کنید!</string>
+    <string name="str_composite_package">بستهٔ کامپوزیت</string>
+    <string name="str_composite_package_detail">جزئیات بستهٔ کامپوزیت</string>
+    <string name="str_condition">شرط</string>
+    <string name="str_condition_code">کد شرط</string>
+    <string name="str_condition_code_not_found">هیچ شرایط مشخصی یافت نشد</string>
+    <string name="str_confirm_clear_selected">آیا می‌خواهید گزینهٔ انتخابی را حذف کنید؟</string>
+    <string name="str_confirm_delete_notification">اعلان حذف خواهد شد. آیا شما می خواهید ادامه دهید؟</string>
+    <string name="str_confirm_order_status_change_accept_selected">آیا مایل به تایید موارد انتخاب‌شده هستید؟</string>
+    <string name="str_confirm_save_notification">اعلان ذخیره خواهد شد تا برای کاربران منتخب ارسال شود. آیا شما می خواهید
+        ادامه دهید؟
+    </string>
+    <string name="str_connect_device">اتصال به دستگاه</string>
+    <string name="str_connect_internet_message">از اتصال‌تان به اینترنت مطمئن شوید</string>
+    <string name="str_connect_internet_settings_title">تنظیمات</string>
+    <string name="str_connect_location_message">از روشن بودن تنظیمات مکان‌تان مطمئن شوید</string>
+    <string name="str_connected_device">دستگاه متصل</string>
+    <string name="str_connecting_device">در حال اتصال…</string>
+    <string name="str_connection_error">اتصال به سرور امکان‌پذیر نیست. لطفاً اتصال اینترنت‌تان را بررسی کنید.</string>
+    <string name="str_connection_key_cannot_be_decrypred">کلید اتصال رمزگشایی نشد شما می توانید از برنامه پانلی برای
+        تولید کلید استفاده کنید
+    </string>
+    <string name="str_consignee">محموله</string>
+    <string name="str_contact_information">اطلاعات تماس</string>
+    <string name="str_contract">سبک</string>
+    <string name="str_contract_code">کد قرارداد</string>
+    <string name="str_contracts_explanation">حریم خصوصی و حقوق شما برای ما مهم است. لطفاً قبل از استفاده از خدمات ما،
+        تمام قراردادها را با دقت بخوانید و تأیید کنید. با خواندن و تأیید قراردادها، می‌توانید با اطمینان از خدمات ما
+        استفاده کنید.
+    </string>
+    <string name="str_could_not_get_designs">طرح های مورد استفاده قابل بازیابی نیستند. تنظیمات سرویس خود را بررسی کنید
+    </string>
+    <string name="str_could_not_read_license_user_count">تعداد کاربران مجوز خوانده نشد</string>
+    <string name="str_could_not_read_wor_user_count">قادر به خواندن تعداد کاربران ثبت نام شده نیست</string>
+    <string name="str_count">تعداد</string>
+    <string name="str_country">کشور</string>
+    <string name="str_country_not_found">کشور تعریف شده یافت نشد</string>
+    <string name="str_create_folder">ایجاد پوشه‌ی جدید</string>
+    <string name="str_create_folder_error">امکان ایجاد پوشه جدید وجود ندارد.</string>
+    <string name="str_create_folder_msg">ویرایش نام پوشه</string>
+    <string name="str_credit">بستانکار</string>
+    <string name="str_credit_balance">بستانکار</string>
+    <string name="str_credit_card_fiche">فیش کارت اعتباری</string>
+    <string name="str_credit_card_return_slip">برگهٔ مرجوعی کارت اعتباری</string>
+    <string name="str_credit_card_slip">برگهٔ کارت اعتباری</string>
+    <string name="str_credit_cart_collections">برگهٔ کارت اعتباری</string>
+    <string name="str_credit_cart_entry">ورود کارت اعتباری</string>
+    <string name="str_credit_cart_number">شمارهٔ کارت اعتباری</string>
+    <string name="str_credit_cart_print_preview">پیش‌نمایش برگهٔ کارت اعتباری</string>
+    <string name="str_credit_cart_receipt">وصول به روش کارت اعتباری</string>
+    <string name="str_credit_note">برگ بستانکار</string>
+    <string name="str_curr_rate_success">مقادیر نرخ ارز در حال دریافت است.</string>
+    <string name="str_currency">واحد پول</string>
+    <string name="str_currency_amount">مبلغ ارز</string>
+    <string name="str_currency_informations">اطلاعات ارزی</string>
+    <string name="str_currency_price">قیمت ارز</string>
+    <string name="str_currency_rate">نرخ</string>
+    <string name="str_currency_type">نوع پول رایج</string>
+    <string name="str_customer">حساب</string>
+    <string name="str_customerDiscount">تخفیف کنونی</string>
+    <string name="str_customer_account_cards">حساب‌های R/P</string>
+    <string name="str_customer_account_completed">حساب‌های R/P تکمیل شد</string>
+    <string name="str_customer_account_saving">در حال ذخیرهٔ حساب‌های R/P…</string>
+    <string name="str_customer_account_transferring">در حال انتقال حساب‌های R/P…</string>
+    <string name="str_customer_accounts">AR/AP</string>
+    <string name="str_customer_all_person">همهٔ مخاطبان</string>
+    <string name="str_customer_balance">مانده</string>
+    <string name="str_customer_balance_title">جمع‌بندی AR/AP</string>
+    <string name="str_customer_campaing_detail">پرس‌وجو در وضعیت AR/AP</string>
+    <string name="str_customer_campaing_detail_not_found">برای این AR/AP، اطلاعات نقطه یافت نشد.</string>
+    <string name="str_customer_campaing_detail_title">اطلاعات نقطهٔ AR/AP</string>
+    <string name="str_customer_check_deed">چک/ سند مشتری</string>
+    <string name="str_customer_currency_info">اطلاعات ارز مشتری</string>
+    <string name="str_customer_currency_info_will_be_cleared">اطلاعات ارز مشتری پاک شده و صفحه بسته خواهد شد. می خواهید
+        ادامه دهید؟
+    </string>
+    <string name="str_customer_debit">بدهکار حساب</string>
+    <string name="str_customer_extract">برون‌بری</string>
+    <string name="str_customer_gps_close_edit_mode">حالت ویرایش غیرفعال شد</string>
+    <string name="str_customer_gps_how_to_use_message">برای ذخیره‌کردن محل مشتری و ذخیره‌کردن مشتریان در محل کنونی‌تان،
+        روی دکمهٔ محل در سمت راست و بالا کلیک کنید. با کلیک روی نقشه یا نگه‌داشتن مکان‌نما روی علامت نقشه، می‌توانید هر
+        محلی را روی نقشه انتخاب و رها کنید. بعد از انتخاب محل، روی دکمهٔ ارسال در سمت راست بالا کلیک کنید تا محل مشتری
+        ذخیره یا به‌روزرسانی شود.
+    </string>
+    <string name="str_customer_gps_how_to_use_title">ذخیرهٔ محل مشتری</string>
+    <string name="str_customer_gps_location_not_found">محل یافت نمی‌شود.</string>
+    <string name="str_customer_gps_open_edit_mode">حالت ویرایش فعال شد</string>
+    <string name="str_customer_gps_save_failed">ذخیرهٔ اطلاعات محل مشتری امکان‌پذیر نیست.</string>
+    <string name="str_customer_gps_save_success">اطلاعات محل مشتری ذخیره شد.</string>
+    <string name="str_customer_gps_save_title">محل مشتری ذخیره شود؟</string>
+    <string name="str_customer_gps_send">ذخیرهٔ اطلاعات جی‌پی‌اس AR/AP</string>
+    <string name="str_customer_gps_send_failed">ذخیره‌کردن اطلاعات جی‌پی‌اس AR/AP امکان‌پذیر نیست. لطفاً اتصال
+        اینترنت‌تان را بررسی کنید.
+    </string>
+    <string name="str_customer_gps_send_update">در حال به‌روزرسانی اطلاعات جی‌پی‌اس AR/AP</string>
+    <string name="str_customer_gps_update_message">اطلاعات محل این مشتری تعیین شده است. آیا می‌خواهید اطلاعات محل را
+        به‌روزرسانی کنید؟
+    </string>
+    <string name="str_customer_gps_update_title">محل مشتری به‌روزرسانی شود؟</string>
+    <string name="str_customer_image">تصویر AR/AP</string>
+    <string name="str_customer_image_saved">در حال ذخیره‌ی تصویر مشتری، لطفاً منتظر بمانید.</string>
+    <string name="str_customer_information_update">به‌روزرسانی اطلاعات AR/AP</string>
+    <string name="str_customer_information_updated">اطلاعات AR/AP به‌روزرسانی می‌شود.</string>
+    <string name="str_customer_information_updating">در حال به‌روزرسانی اطلاعات AR/AP</string>
+    <string name="str_customer_informations">اطلاعات مشتریان</string>
+    <string name="str_customer_invoice_address">آدرس فاکتور</string>
+    <string name="str_customer_last_sales_date">آخرین تاریخ فروش</string>
+    <string name="str_customer_list_average">A.D.D:</string>
+    <string name="str_customer_list_balance">B:</string>
+    <string name="str_customer_list_credit">C:</string>
+    <string name="str_customer_list_debit">D:</string>
+    <string name="str_customer_list_email">ایمیل:</string>
+    <string name="str_customer_list_info_not">توضیحات اطلاعات:</string>
+    <string name="str_customer_list_last_order">ترتیب:</string>
+    <string name="str_customer_list_pay_plan">P.P:</string>
+    <string name="str_customer_list_person">مخاطب:</string>
+    <string name="str_customer_list_tel">تلفن:</string>
+    <string name="str_customer_locations">مکان‌ّ‌های مشتری</string>
+    <string name="str_customer_new_image_saved">تصویر مشتری ذخیره شد</string>
+    <string name="str_customer_order_no">شمارهٔ سفارش مشتری</string>
+    <string name="str_customer_order_number">شمارهٔ سفارش مشتری</string>
+    <string name="str_customer_pay_plan">برنامهٔ پرداخت</string>
+    <string name="str_customer_pending_order_total">جمع کل سفارش‌های تحویل‌نشده</string>
+    <string name="str_customer_penetration">نفوذ/ موجودبودن</string>
+    <string name="str_customer_person_1">مخاطب ۱</string>
+    <string name="str_customer_person_2">مخاطب ۲</string>
+    <string name="str_customer_person_3">مخاطب ۳</string>
+    <string name="str_customer_receipt">رسید مشتری</string>
+    <string name="str_customer_ref_not_found">مرجع مشتری یافت نشد. لطفا داده های خود را به روز کنید</string>
+    <string name="str_customer_relations">روابط مشتری</string>
+    <string name="str_customer_reports">گزارش های جاری</string>
+    <string name="str_customer_route_list">لیست مسیر حساب</string>
+    <string name="str_customer_sales_order">سفارش‌های فروش</string>
+    <string name="str_customer_ship_address">آدرس حمل</string>
+    <string name="str_customer_specode_1">کد کمکی ۱</string>
+    <string name="str_customer_specode_2">کد کمکی ۲</string>
+    <string name="str_customer_specode_3">کد کمکی ۳</string>
+    <string name="str_customer_specode_4">کد کمکی ۴</string>
+    <string name="str_customer_specode_5">کد کمکی ۵</string>
+    <string name="str_customer_summary_invoice_title">صورت‌نشده</string>
+    <string name="str_customer_summary_monthly_sales">فروش ماهانه</string>
+    <string name="str_customer_summary_order_title">سفارش‌های تحویل‌نشده</string>
+    <string name="str_customer_summary_top_ten_product">محصولات محبوب ‍۱۰</string>
+    <string name="str_customer_summary_weekly_sales">فروش هفتگی</string>
+    <string name="str_customer_tax_no">شمارهٔ مالیاتی</string>
+    <string name="str_customer_tax_office">ادارهٔ مالیات</string>
+    <string name="str_customer_tc_no">شمارهٔ شناسهٔ T.R.</string>
+    <string name="str_customer_total_credit">بستانکاری کل</string>
+    <string name="str_customer_total_debit">بدهی کل</string>
+    <string name="str_customer_total_title">جمع کل AR/AP</string>
+    <string name="str_customer_trading_group">گروه تجاری</string>
+    <string name="str_customer_transfer_failed">%1s مشتریان کدگذاری‌شده قابل‌انتقال نیستند</string>
+    <string name="str_customer_transferred">مشتری منتقل شد. باید به فهرست مشتریان بازگردید.</string>
+    <string name="str_customer_transferring">مشتری در حال انتقال است</string>
+    <string name="str_customer_unsent_data">مشتری ارسال اسناد %1s را لغو کرده است. آیا مایلید ادامه بدهید؟</string>
+    <string name="str_customer_unsent_data_not_continue">مشتری ارسال اسناد %1s را لغو کرده است. نمی‌توانید به این
+        فرآیند ادامه بدهید!
+    </string>
+    <string name="str_customer_update_please_wait">در حال به‌روزرسانی مشتریان…لطفاً صبر کنید...</string>
+    <string name="str_customer_visit">ویزیت</string>
+    <string name="str_customers_transferred">مشتریان منتقل شدند</string>
+    <string name="str_daily_operations">عملیات روزانه</string>
+    <string name="str_data_not_found">سند یافت نشد.</string>
+    <string name="str_data_transfer">انتقال داده</string>
+    <string name="str_data_transfer_completed">انتقال داده انجام شد</string>
+    <string name="str_data_transferring">در حال انتقال داده…</string>
+    <string name="str_database_version">نسخهٔ پایگاه داده</string>
+    <string name="str_date">تاریخ</string>
+    <string name="str_day">روز</string>
+    <string name="str_debit">بدهکار</string>
+    <string name="str_debit_balance">بدهکار</string>
+    <string name="str_debt_note">سفته</string>
+    <string name="str_debt_tracking">نگهداری حساب بدهی</string>
+    <string name="str_debt_tracking_report">رهگیری بدهی</string>
+    <string name="str_debtor">بدهکار</string>
+    <string name="str_decrease_font">کاهش اندازهٔ فونت</string>
+    <string name="str_deed_entry">ورود سند</string>
+    <string name="str_defective">ناقص</string>
+    <string name="str_defined_price">قیمت تعریف‌شده</string>
+    <string name="str_defined_price_abbr">قیمت :</string>
+    <string name="str_defined_reports">گزارش‌های تعریف‌شده</string>
+    <string name="str_definition">تعریف</string>
+    <string name="str_definition_fields">فیلدهای تعریف‌شده</string>
+    <string name="str_delete">حذف</string>
+    <string name="str_delete_all_data_confirm">آیا از حذف همهٔ داده‌ها مطمئنید؟</string>
+    <string name="str_delete_and_transfer">حذف کن و انتقال بده</string>
+    <string name="str_delete_data_confirm">اسنادی که انتخاب کرده‌اید حذف خواهد شد. آیا ادامه می‌دهید؟</string>
+    <string name="str_delete_data_end">حذف داده‌ها انجام شد.</string>
+    <string name="str_delete_last_information_three_day">اطلاعات تا سه روز قبل حذف شود</string>
+    <string name="str_deleted">حذف شد</string>
+    <string name="str_deliver">تحویل</string>
+    <string name="str_delivery_code">کد تحویل</string>
+    <string name="str_delivery_code_not_found">کد تحویل تعریف‌شده یافت نشد.</string>
+    <string name="str_delivery_date">تاریخ تحویل</string>
+    <string name="str_delivery_note_preview">پیش‌نمایش گزارش حمل</string>
+    <string name="str_delivery_time">زمان تحویل</string>
+    <string name="str_delivery_type">نوع تحویل</string>
+    <string name="str_demand">تقاضا</string>
+    <string name="str_demand_detail">جزئیات تقاضا</string>
+    <string name="str_demand_enter">ورود تقاضا</string>
+    <string name="str_demand_line">خط تقاضا</string>
+    <string name="str_demand_materials">اجناس تقاضاشده</string>
+    <string name="str_demands">تقاضاها</string>
+    <string name="str_demo">دمو</string>
+    <string name="str_demo_data_clear">پاک‌کردن داده‌های دمو</string>
+    <string name="str_demo_username_password">برای دمو \nUsername: SCMDEMO\nPassword: L0G0</string>
+    <string name="str_department">دپارتمان</string>
+    <string name="str_deposit">سپرده</string>
+    <string name="str_description">شرح</string>
+    <string name="str_description1">شرح ۱</string>
+    <string name="str_description2">شرح ۲</string>
+    <string name="str_description3">شرح ۳</string>
+    <string name="str_description4">شرح ۴</string>
+    <string name="str_design_files">فایل‌های طراحی</string>
+    <string name="str_design_files_settings">تنظیمات فایل‌های طراحی</string>
+    <string name="str_design_files_wcf">WCF فایل‌های طراحی</string>
+    <string name="str_designs">طراحی‌ها</string>
+    <string name="str_dest_branch">بخش مقصد</string>
+    <string name="str_dest_division">بخش مقصد</string>
+    <string name="str_dest_factory">کارخانه مقصد</string>
+    <string name="str_dest_warehouse">انبار مقصد</string>
+    <string name="str_detail">جزئیات</string>
+    <string name="str_detail_print_row_count">تعداد خطوطی که بناست با جزئیات چاپ شود</string>
+    <string name="str_detailed_collection_report">جزئیات گزارش‌های وصول</string>
+    <string name="str_detailed_slip_list">جزئیات فهرست برگهٔ سفارش</string>
+    <string name="str_device_connected">دستگاه متصل است</string>
+    <string name="str_device_disconnected">اتصال دستگاه قطع شد</string>
+    <string name="str_device_not_found">دستگاهی یافت نشد</string>
+    <string name="str_device_not_support_feature">دستگاه شما از این قابلیت پشتیبانی نمی‌کند.</string>
+    <string name="str_device_use_other_logout">این کاربر در دستگاه دیگری استفاده می شود! لطفاً از برنامه خارج شده و برای
+        ارسال و دریافت داده مجدداً وارد سیستم شوید.
+    </string>
+    <string name="str_diff_between_erpAndLocal">در سابقه ارسال شده تفاوت وجود دارد. سابقه ارسال شده را بررسی کنید.
+    </string>
+    <string name="str_directions_to_customer">راهنمایی به مشتری</string>
+    <string name="str_discount">تخفیف</string>
+    <string name="str_discount1">تخفیف ۱</string>
+    <string name="str_discount2">تخفیف ۲</string>
+    <string name="str_discount3">تخفیف ۳</string>
+    <string name="str_discount4">تخفیف ۴</string>
+    <string name="str_discount5">تخفیف ۵</string>
+    <string name="str_discount6">تخفیف ۶</string>
+    <string name="str_discount_card">کارت تخفیف</string>
+    <string name="str_discount_cards">کارت‌های تخفیف</string>
+    <string name="str_discount_cards_general">کارت‌های تخفیف: عمومی</string>
+    <string name="str_discount_cards_line">کارت‌های تخفیف محصول خاص</string>
+    <string name="str_discount_code">کد تخفیف</string>
+    <string name="str_discount_code_not_found">تخفیف تعریف‌شده یافت نشد.</string>
+    <string name="str_discount_colon">تخفیف:</string>
+    <string name="str_discount_colon_short">D:</string>
+    <string name="str_discount_price">میزان تخفیف</string>
+    <string name="str_discount_rate">نرخ تخفیف</string>
+    <string name="str_discount_ratio">نسبت تخفیف</string>
+    <string name="str_discount_ratio_percent">نسبت تخفیف (٪)</string>
+    <string name="str_discount_total">مجموع تخفیف</string>
+    <string name="str_discount_type">نوع تخفیف</string>
+    <string name="str_discounts">تخفیف‌ها</string>
+    <string name="str_disk_read">خواندن دیسک</string>
+    <string name="str_dispatch">گزارش</string>
+    <string name="str_dispatch_detail_entry">ورود جزئیات گزارش</string>
+    <string name="str_dispatch_details">جزئیات گزارش</string>
+    <string name="str_dispatch_entry">ورود گزارش</string>
+    <string name="str_dispatch_print_preview">پیش‌نمایش چاپ گزارش</string>
+    <string name="str_dispatch_proposal">گزارش (طرح پیشنهادی)</string>
+    <string name="str_dispatch_risk_control">چک‌کردن ریسک گزارش</string>
+    <string name="str_dispatch_totals">صدور گزارش جمع کل سفارش</string>
+    <string name="str_dispatches">گزارش‌ها</string>
+    <string name="str_displayed">نمایش‌داده‌شده:</string>
+    <string name="str_distribution_ordinance_number">شمارهٔ دستور توزیع</string>
+    <string name="str_division">بخش</string>
+    <string name="str_do_collection">وصول کنید</string>
+    <string name="str_do_reserve">رزروشده</string>
+    <string name="str_do_sales_campaign_quest">آیا می‌خواهید کمپین را اعمال کنید؟</string>
+    <string name="str_do_sales_condition_quest">آیا می‌خواهید شرط فروش را اعمال کنید؟</string>
+    <string name="str_do_visit">ویزیت کنید</string>
+    <string name="str_document_failed_to_print">سند نمیتواند چاپ شود. تنظیمات خود را بررسی کنید</string>
+    <string name="str_document_no">کد سند</string>
+    <string name="str_document_number">شمارهٔ سند</string>
+    <string name="str_document_printed_success">سند با موفقیت چاپ شد</string>
+    <string name="str_document_tracking_no">شمارهٔ رهگیری سند</string>
+    <string name="str_document_tracking_number">شمارهٔ رهگیری سند</string>
+    <string name="str_done">انجام شد</string>
+    <string name="str_dont_have_any_card_linked_with_masterpass">شما هیچ کارت ثبت شده ای در حساب MasterPass خود
+        ندارید.
+    </string>
+    <string name="str_dont_show_preview_screen">صفحهٔ پیش‌نمایش را نشان نده</string>
+    <string name="str_downloading_new_version">در حال بارگیری نسخهٔ جدید</string>
+    <string name="str_due_date">تاریخ سررسید</string>
+    <string name="str_due_date_day">سررسید (روز)</string>
+    <string name="str_due_date_diff_invoice_issued">فاکتور تفاوت سررسید (صادره)</string>
+    <string name="str_due_date_diff_invoice_received">فاکتور تفاوت سررسید (دریافتی)</string>
+    <string name="str_due_date_limit_over_title">موعد مقرر بیش از</string>
+    <string name="str_eArchiveInternetInvoice_invoice_type_for_erp">e-Archive (Internet) Invoice</string>
+    <string name="str_eArchiveInvoice_invoice_type_for_erp">e-Archive Invoice</string>
+    <string name="str_eDespatch">E-Despatch</string>
+    <string name="str_eInvoice_invoice_type_for_erp">e-Invoice</string>
+    <string name="str_edit">ویرایش</string>
+    <string name="str_edit_selected_products">لطفا تنظیمات را براساس محصولات دریافتی انجام دهید.</string>
+    <string name="str_edoc_draft_created">پیش نویس سند الکترونیکی ایجاد شد</string>
+    <string name="str_edoc_draft_not_foud">پیش نویس سند الکترونیکی یافت نشد</string>
+    <string name="str_edoc_send">به عنوان E-Document ارسال شده است</string>
+    <string name="str_edoc_status_not_suitable_to_send">وضعیت E-Document برای ارسال مناسب نیست.</string>
+    <string name="str_eft">حوالهٔ الکترونیک</string>
+    <string name="str_einvoice_user">کاربر فاکتور الکترونیک</string>
+    <string name="str_email_address">آدرس ایمیل</string>
+    <string name="str_email_address2">آدرس ایمیل 2</string>
+    <string name="str_email_address_required">آدرس ایمیل مورد نیاز است</string>
+    <string name="str_email_templates">قالب‌های آماده‌ی ایمیل</string>
+    <string name="str_empty_list">خالی</string>
+    <string name="str_empty_list_text">محتوا یافت نشد.</string>
+    <string name="str_empty_reportContent">محتوای گزارش خالی است</string>
+    <string name="str_empty_search_text">محتوایی که جستجو کردید یافت نشد.</string>
+    <string name="str_end_codes">کدهای پایان</string>
+    <string name="str_end_date">تاریخ پایان</string>
+    <string name="str_end_km">پایان KM</string>
+    <string name="str_endorsement_check_deed">پشت‌نویسی چک/ سند</string>
+    <string name="str_enter_firm_number">لطفاً شمارهٔ شرکت را وارد کنید</string>
+    <string name="str_enter_information_before_detail">ابتدا، جزئیات اطلاعات باید وارد شود</string>
+    <string name="str_enter_only_one_form_day">در هر روز، فقط یک فرم مشابه را می‌توانید پر کنید</string>
+    <string name="str_enter_pin_sms_for_purchase">لطفاً پین خود را که به صورت پیام کوتاه به دستگاه شما ارسال شده وارد
+        کنید
+    </string>
+    <string name="str_enter_pin_sms_masterpass_verification_code">برای تأیید شماره تلفن حساب Masterpass خود ، کد تأیید
+        ارسال شده از طریق پیام کوتاه به تلفن خود را وارد کنید.
+    </string>
+    <string name="str_enter_pin_sms_verification_code">برای تأیید حساب Masterpass خود در تاجر ، کد تأیید ارسال شده از
+        طریق پیام کوتاه به تلفن خود را وارد کنید.
+    </string>
+    <string name="str_enter_quantity">تعداد:</string>
+    <string name="str_enter_web_service_address">لطفاً آدرس وب سرویس را وارد کنید</string>
+    <string name="str_entry_return_dispatch">ورود گزارش تخفیف</string>
+    <string name="str_entry_return_invoice">ورود فاکتور تخفیف</string>
+    <string name="str_equals">معادل‌ها</string>
+    <string name="str_erp_info">نوع ERP ذیربط</string>
+    <string name="str_erp_invoice_type">نوع فاکتور</string>
+    <string name="str_erp_parameters">پارامترهای ERP</string>
+    <string name="str_erp_type_null">لطفاً تنظیمات ERP را چک کنید.</string>
+    <string name="str_error_already_exists">پوشه از قبل وجود دارد.</string>
+    <string name="str_error_report_query_could_not_be_executed">پرس‌وجوی گزارش قابل‌انجام نیست!</string>
+    <string name="str_exchange">مبادله</string>
+    <string name="str_exchange_detail_entry">ورود جزئیات مبادله</string>
+    <string name="str_exchange_entry">ورود مبادله</string>
+    <string name="str_exchange_materials">اجناس مبادله‌شده</string>
+    <string name="str_exchange_rate">نرخ ارز</string>
+    <string name="str_exchange_rate_difference_operation">عملیات تفاوت نرخ مبادله</string>
+    <string name="str_exchange_rate_not_found_for">نرخ‌های مبادله یافت نشد</string>
+    <string name="str_exchange_rate_types">انواع نرخ ارز</string>
+    <string name="str_existing_items_will_deleted">همه محصولات حذف شده و دوباره اضافه می شوند. می خواهید ادامه دهید؟
+    </string>
+    <string name="str_exit">خروج</string>
+    <string name="str_exit_app">آیا می‌خواهید خارج شوید؟</string>
+    <string name="str_exit_full_screen">خروج از حالت تمام‌صفحه</string>
+    <string name="str_expense">مخارج</string>
+    <string name="str_expiration_date">تاریخ انقضا</string>
+    <string name="str_expiry">سررسید</string>
+    <string name="str_explanation">شرح</string>
+    <string name="str_explanation_1">شرح ۱</string>
+    <string name="str_explanation_2">شرح ۲</string>
+    <string name="str_explanation_3">شرح ۳</string>
+    <string name="str_explanation_4">شرح ۴</string>
+    <string name="str_explanation_5">شرح ۵</string>
+    <string name="str_explanation_6">شرح ۶</string>
+    <string name="str_explanation_7">شرح ۷</string>
+    <string name="str_explanation_8">شرح ۸</string>
+    <string name="str_explanation_9">شرح ۹</string>
+    <string name="str_export_database">صادر کردن پرونده های پایگاه داده</string>
+    <string name="str_extract_current">ارز (بدهکار/ بستانکار)</string>
+    <string name="str_extract_report_fiche_description_debit_credit">تاریخ - شمارهٔ برگه/ بدهکار - بستانکار</string>
+    <string name="str_extract_report_fiche_description_procdate">تاریخ - شمارهٔ برگه/ بدهکار - بستانکار</string>
+    <string name="str_factory">کارخانه</string>
+    <string name="str_failed_sent_work_info_try_again">در حین ارسال اطلاعات کار، خطایی رخ داد! لطفاً دوباره تلاش کنید!
+    </string>
+    <string name="str_failed_sent_work_info_updated">اطلاعات کار قابل‌ارسال نیست! سیستم در حال به‌روزرسانی است…
+    </string>
+    <string name="str_fast_barcode_read">بارکدخوانی سریع</string>
+    <string name="str_fax_number">شمارهٔ فکس</string>
+    <string name="str_fiche_already_sent">این رکورد قبلاً ارسال شده است. برای ارسال مجدد ، رکورد موجود در Erp باید حذف
+        شود.
+    </string>
+    <string name="str_fiche_cancel_failed">قبض لغو نشد.</string>
+    <string name="str_fiche_cancel_success">قبض لغو شد.</string>
+    <string name="str_fiche_delete_confirm">آیا از حذف این برگه مطمئنید؟</string>
+    <string name="str_fiche_delete_erp">در این پایگاه داده، برگه‌ای یافت نشد.</string>
+    <string name="str_fiche_detail">جزئیات فیش</string>
+    <string name="str_fiche_input_type">لطفاً وضعیت را انتخاب کنید</string>
+    <string name="str_fiche_item_amount">تعداد:</string>
+    <string name="str_fiche_item_amount2">مقدار 2:</string>
+    <string name="str_fiche_item_amount_short">M:</string>
+    <string name="str_fiche_item_code">کد کالا:</string>
+    <string name="str_fiche_item_name">نام کالا:</string>
+    <string name="str_fiche_item_price">قیمت:</string>
+    <string name="str_fiche_item_total">جمع کل خالص:</string>
+    <string name="str_fiche_item_unit">واحد:</string>
+    <string name="str_fiche_item_unit_price">قیمت واحد:</string>
+    <string name="str_fiche_item_vat">مالیات بر ارزش افزوده:</string>
+    <string name="str_fiche_loading">در حال بارگذاری برگه…</string>
+    <string name="str_fiche_not_editted">برگه قابل‌ویرایش نیست.</string>
+    <string name="str_fiche_not_transferred">فیش ارسال نشد</string>
+    <string name="str_fiche_number">فیش شمارهٔ</string>
+    <string name="str_fiche_number_sent">ارسال شد، شمارهٔ فیش:</string>
+    <string name="str_fiche_save_on_error">در حین ذخیره‌کردن برگه، خطایی رخ داد.</string>
+    <string name="str_fiche_save_successful">برگه ذخیره شد.</string>
+    <string name="str_fiche_send_complete">انتقال داده انجام شد.</string>
+    <string name="str_fiche_status_control">وضعیت برگه/ طرح پیشنهادی در حال بررسی است. لطفاً صبر کنید.</string>
+    <string name="str_fiche_status_not_offer">برگه در وضعیت طرح پیشنهادی نیست. برگه قابل‎ویرایش نیست!</string>
+    <string name="str_fiche_total">جمع کل فیش (*)</string>
+    <string name="str_fiche_transferred">فیش ارسال شد</string>
+    <string name="str_fiche_type">نوع فیش</string>
+    <string name="str_file_number">شمارهٔ پرونده</string>
+    <string name="str_filter_by_debit">فیلتر برحسب بدهکار</string>
+    <string name="str_finance">تأمین مالی</string>
+    <string name="str_finish_other_active_visit">%1s بازدید برای مشتری با عنوان ادامه دارد. آیا می خواهید بازدید را
+        تکمیل کنید و معامله را ادامه دهید؟
+    </string>
+    <string name="str_firm_copyright">شرکت مشاوره پروژه و خدمات کامپیوتری (شرکت بامسئولیت محدود</string>
+    <string name="str_firm_credit_card_fiche">فیش کارت اعتباری شرکت</string>
+    <string name="str_firm_credit_card_return_fiche">فیش برگشت اعتبار شرکت</string>
+    <string name="str_firm_name">شرکت مشاوره پروژه و خدمات کامپیوتری (شرکت بامسئولیت محدود</string>
+    <string name="str_firstDriverInfo">اطلاعات راننده - 1</string>
+    <string name="str_first_driver">راننده اول</string>
+    <string name="str_first_plate_number">Plate - 1</string>
+    <string name="str_fixed_asset">دارایی ثابت</string>
+    <string name="str_for_permission_deny">شما اجازه %1s را نداده اید.</string>
+    <string name="str_for_permission_never_ask">درخواست مجوز برای %1s دوباره درخواست نمی شود.</string>
+    <string name="str_foreign_exchange_certificate_purchasing">گواهی خرید ارز خارجی</string>
+    <string name="str_foreign_exchange_certificate_selling">گواهی فروش ارز خارجی</string>
+    <string name="str_form">فرم‌ها</string>
+    <string name="str_form_definition_price_not_found">قیمت تعریف‌شده یافت نشد</string>
+    <string name="str_form_dialog_cancel">لغو</string>
+    <string name="str_form_dialog_penetration">نفوذ</string>
+    <string name="str_form_dialog_penetration_title">ورود نفوذ</string>
+    <string name="str_form_dialog_save">ذخیره‌سازی</string>
+    <string name="str_form_dialog_title">ورود اطلاعات فرم</string>
+    <string name="str_form_name_font_size">اندازهٔ فونت نام جنس در فرم</string>
+    <string name="str_form_price">در حال انتقال اطلاعات فرم قیمت</string>
+    <string name="str_form_stock">در حال انتقال اطلاعات فرم موجودی</string>
+    <string name="str_forms">فرم‌ها</string>
+    <string name="str_friday">جمعه</string>
+    <string name="str_from_who">از</string>
+    <string name="str_full_screen">تمام‌صفحه</string>
+    <string name="str_general_agreement">متن اطلاع‌رسانی</string>
+    <string name="str_general_discount">تخفیف عمومی</string>
+    <string name="str_general_information">عمومی</string>
+    <string name="str_get_all_customer_buy_price">گرفتن آخرین قیمت خرید همهٔ مشتریان</string>
+    <string name="str_get_all_customer_sell_price">گرفتن قیمت فروش همهٔ مشتریان</string>
+    <string name="str_get_cabin">در حال بازیابی کابین‌ها</string>
+    <string name="str_get_cities">دریافت اطلاعات شهر</string>
+    <string name="str_get_clcard_incharge">در حال دریافت اطلاعات مخاطب</string>
+    <string name="str_get_counties">در حال بازیابی اطلاعات کشور</string>
+    <string name="str_get_customer_last_buy_price">گرفتن آخرین قیمت خرید مشتری</string>
+    <string name="str_get_customer_last_sell_price">گرفتن آخرین قیمت فروش مشتری</string>
+    <string name="str_get_info">دریافت اطلاعات</string>
+    <string name="str_get_info_description">می‌توانید داده‌هایی مانند حساب‌های R/P، اجناس و غیره را دریافت کنید.
+    </string>
+    <string name="str_get_item_tags">دریافت برچسب ها</string>
+    <string name="str_get_last_customer_sales_date_of_item">دریافت آخرین تاریخ فروش</string>
+    <string name="str_get_last_purchase_info">دریافت آخرین اطلاعات خرید</string>
+    <string name="str_get_logo_data">در حال دریافت اطلاعات...</string>
+    <string name="str_get_price_rest_error">قیمت‌های اجناس قابل‌انتقال نیست!</string>
+    <string name="str_get_price_type">نوع قیمت</string>
+    <string name="str_get_print_value_error">در زمان بازیابی داده‌ها برای چاپ، خطایی رخ داد.</string>
+    <string name="str_get_print_value_not_found">داده‌ای برای چاپ وجود ندارد.</string>
+    <string name="str_get_product_please_wait">در حال آماده‌سازی فهرست محصولات. لطفاً صبر کنید.</string>
+    <string name="str_get_stock_rest_error">موجودی اجناس قابل‌انتقال نیست!</string>
+    <string name="str_get_towns">دریافت اطلاعات منطقه</string>
+    <string name="str_get_user_rest_param_error">در حین دریافت اطلاعات کاربر، خطایی رخ داد!</string>
+    <string name="str_getting_customer_risk_totals">بازیابی اطلاعات در مورد ریسک مشتری</string>
+    <string name="str_given_pro_forma_sales_invoice">پیش‌فاکتور فروش</string>
+    <string name="str_given_service_sales_invoice">فاکتور فروش خدمات</string>
+    <string name="str_global_general_type">عمومی (کلی)</string>
+    <string name="str_global_line_type">خط</string>
+    <string name="str_go_to_customer">برو به قسمت «وضعیت کنونی»</string>
+    <string name="str_goods_purchase_invoice">فاکتور خرید کالا</string>
+    <string name="str_gps_info">اطلاعات جی‌پی‌اس</string>
+    <string name="str_gps_location_info">محل جی‌پی‌اس</string>
+    <string name="str_gps_use_licence">برای انجام عملیات جی‌پی‌اس، باید لایسنس بخرید.</string>
+    <string name="str_granted_self_employment_receipt">رسید خوداشتغالی اعطا شد</string>
+    <string name="str_gross_volume">حجم ناخالص</string>
+    <string name="str_gross_weight">وزن ناخالص</string>
+    <string name="str_group_code">کد گروه</string>
+    <string name="str_guarantor">ضامن</string>
+    <string name="str_have_survey">شما یک نظرسنجی فعلی به نام %1s دارید. آیا می خواهید در نظرسنجی شرکت کنید؟</string>
+    <string name="str_height">ارتفاع</string>
+    <string name="str_hint_search_cabin">جستجوی کابین</string>
+    <string name="str_hundred">صد</string>
+    <string name="str_id_be_eleven_digit">شمارهٔ شناسه باید ۱۱ رقمی باشد.</string>
+    <string name="str_image_downloading">لطفاً صبر کنید. در حال بارگیری تصویر...</string>
+    <string name="str_import_distribution_ordinance">درون‌ریزی دستور توزیع</string>
+    <string name="str_import_order">واردکردن سفارش</string>
+    <string name="str_incharge">متصدی</string>
+    <string name="str_include_vat">با احتساب مالیات بر ارزش افزوده</string>
+    <string name="str_incoming_messages">پیام‌های ورودی</string>
+    <string name="str_incoming_remittance">حوالهٔ پولی (دریافتی)</string>
+    <string name="str_incorrect_installment_number">شمارهٔ قسط نادرست است</string>
+    <string name="str_increase_font">افزایش اندازهٔ فونت</string>
+    <string name="str_informations_deleted">رکوردها حذف شد</string>
+    <string name="str_input_type_form">واردکردن فرم</string>
+    <string name="str_input_type_list">واردکردن لیست</string>
+    <string name="str_install_new_version">نسخه‌ای که برای نصب سیستم جدید بجای سیستم قدیمی استفاده می‌شود عبارت است از
+    </string>
+    <string name="str_installment_number">تعداد اقساط</string>
+    <string name="str_instead_of_edespatch">جایگزین بارنامه می شود</string>
+    <string name="str_invalid_email_address">آدرس ایمیل نامعتبر است</string>
+    <string name="str_invoice">فاکتور</string>
+    <string name="str_invoice_address">آدرس فاکتور</string>
+    <string name="str_invoice_already_cancelled">فاکتور لغو شد</string>
+    <string name="str_invoice_amount_account">به حساب مبلغ فاکتور</string>
+    <string name="str_invoice_average_expiry">انقضای میانگین فاکتور</string>
+    <string name="str_invoice_cancel_flag">C</string>
+    <string name="str_invoice_cancelled">فاکتور لغو شد</string>
+    <string name="str_invoice_detail_entry">ورود جزئیات فاکتور</string>
+    <string name="str_invoice_details">جزئیات فاکتور</string>
+    <string name="str_invoice_entry">ورود فاکتور</string>
+    <string name="str_invoice_fiche_not_cancel_einvoice">عملیات لغو «صورت‌حساب الکترونیکی» و «آرشیو الکترونیکی
+        صورت‌حساب‌ّ‌ها» را باید از طریق «ERP» انجام دهید.
+    </string>
+    <string name="str_invoice_print_preview">پیش‌نمایش چاپ فاکتور</string>
+    <string name="str_invoice_receipt_cannot_edit">این تراکنش با مبالغ پرداختی بسته نشده است. نمی‌توانید ویرایش کنید.
+    </string>
+    <string name="str_invoice_risk_control">کنترل ریسک فاکتور</string>
+    <string name="str_invoice_totals">صدور فاکتور جمع کل سفارش</string>
+    <string name="str_invoices">فاکتورها</string>
+    <string name="str_item">مواد آموزشی</string>
+    <string name="str_item_details">جزئیات مورد</string>
+    <string name="str_item_language_en">انگلیسی</string>
+    <string name="str_item_language_fr">فرانسوی</string>
+    <string name="str_item_language_gr">آلمانی</string>
+    <string name="str_item_language_ru">روسی</string>
+    <string name="str_item_language_tr">ترکی استانبولی</string>
+    <string name="str_item_units">واحدهای آیتم</string>
+    <string name="str_keyboard">کیبورد</string>
+    <string name="str_language">زبان</string>
+    <string name="str_language_change_error">خطای انتخاب زبان</string>
+    <string name="str_last_preprinted_paper_number">آخرین شمارهٔ کاغذ از پیش چاپ‌شده</string>
+    <string name="str_last_purchase_date">تاریخ آخرین خرید</string>
+    <string name="str_last_purchase_price">آخرین قیمت خرید</string>
+    <string name="str_last_used_material">آخرین جنس استفاده‌شده:</string>
+    <string name="str_latitude">عرض جغرافیایی°</string>
+    <string name="str_lc_balance_abbrv">LC Bal.</string>
+    <string name="str_legal_warning">کپی‌برداری غیرمجاز از تمام یا بخشی از این برنامه ممنوع است و، طبق قانون حاکم، تحت
+        شدیدترین پیگردهای قانونی قرار خواهد گرفت.
+    </string>
+    <string name="str_legal_warning_header">رفع مسئولیت</string>
+    <string name="str_length">طول</string>
+    <string name="str_licence_info">اطلاعات لایسنس</string>
+    <string name="str_license_user_count">تعداد مجوزها:</string>
+    <string name="str_limit">حد</string>
+    <string name="str_line_added">خط اضافه‌شده</string>
+    <string name="str_line_discount">تخفیف برای محصول خاص</string>
+    <string name="str_line_info">اطلاعات خط اجناس</string>
+    <string name="str_line_quantity">تعداد خط</string>
+    <string name="str_line_type">نوع خط</string>
+    <string name="str_lines_with_zero_quantity_will_be_deleted">خطوط بدون کمیت حذف می شوند. حتما ادامه می دهید؟</string>
+    <string name="str_link_my_card">پیوند دادن</string>
+    <string name="str_link_your_card_with_masterpass">شما یک حساب MasterPass دارید که در سیستم ثبت شده است. برای تکمیل
+        پرداخت خود با استفاده از MasterPass ، باید کارت خود را با تاجر مرتبط کنید.
+    </string>
+    <string name="str_list_price_abbr">فهرست قیمت</string>
+    <string name="str_loading_risk_control">کنترل ریسک بارگیری</string>
+    <string name="str_location_access">دسترسی به موقعیت مکانی</string>
+    <string name="str_location_info_updated">اطلاعات مکان شما به روز شده است</string>
+    <string name="str_location_permission_denied">این نمونه، برای فعال‌شدن لایهٔ \'my location\' به مجوز مکان نیاز دارد.
+        لطفاً دوباره سعی کنید و مجوز استفاده از محل را بدهید. اگر مجوز را به صورت دائمی رد کرده‌اید، می‌توانید از
+        تنظیمات سیستم &gt; اپلیکیشن‌ها&gt; «دموهای API گوگل مپز» فعالش کنید.
+    </string>
+    <string name="str_location_permission_for_customer_on_map">برای دیدن مشتری روی نقشه ، باید اجازه مکان دهید.</string>
+    <string name="str_location_permission_for_nearby_devices">برای یافتن دستگاههای اطراف مجوز مکان لازم است.</string>
+    <string name="str_location_permission_for_see_on_map">برای دیدن موقعیت مکانی خود بر روی نقشه ، مجوز مکان لازم است.
+    </string>
+    <string name="str_login">ورود</string>
+    <string name="str_login_demo_usage">دورهٔ آزمایشی‌تان منقضی شده است.</string>
+    <string name="str_login_username_password_null">نام کاربری یا رمز عبور نباید خالی باشد.</string>
+    <string name="str_logo_parameters">پارامترهای لوگو</string>
+    <string name="str_longitude">طول جغرافیایی°</string>
+    <string name="str_lot_amount_reamount_high_error">تعداد نباید بیشتر از تعداد باقیمانده باشد.</string>
+    <string name="str_lot_no_exp_date">سری ساخت/ تاریخ انقضا</string>
+    <string name="str_lot_number">سری ساخت</string>
+    <string name="str_lot_size_insufficient">اندازهٔ سری ساخت کافی نیست</string>
+    <string name="str_lots">سری‌های ساخت</string>
+    <string name="str_made_collections">وصول‌ها</string>
+    <string name="str_made_survey_lists">فهرست نظرسنجی</string>
+    <string name="str_make_survey">نظرسنجی کن</string>
+    <string name="str_market_message_information">اطلاعات پیام بازار</string>
+    <string name="str_marketing_message">پیام‌های بازاریابی</string>
+    <string name="str_marketing_messages">پیام‌های بازاریابی</string>
+    <string name="str_master_pass_purchase_complete">پرداخت با موفقیت انجام شد</string>
+    <string name="str_masterpass">Masterpass</string>
+    <string name="str_masterpass_account_not_suitable">حساب MasterPass شما برای استفاده مناسب نیست</string>
+    <string name="str_masterpass_info_not_found">اطلاعات دسترسی Masterpass یافت نشد</string>
+    <string name="str_material">مواد آموزشی</string>
+    <string name="str_material_description">توضیحات مواد</string>
+    <string name="str_material_info">اطلاعات اجناس</string>
+    <string name="str_material_names">در حال دریافت نام زبان آیتم</string>
+    <string name="str_material_picture">تصویر کالا</string>
+    <string name="str_materials">مواد آموزشی</string>
+    <string name="str_materials_cards">مواد آموزشی</string>
+    <string name="str_materials_completed">اجناس تکمیل شد</string>
+    <string name="str_materials_dispatch">اجناس موجود در گزارش</string>
+    <string name="str_materials_invoice">اجناس موجود در فاکتور</string>
+    <string name="str_materials_order">اجناس موجود در سفارش</string>
+    <string name="str_materials_saving">در حال ذخیره‌کردن اجناس…</string>
+    <string name="str_materials_transferring">در حال انتقال اجناس…</string>
+    <string name="str_matter_first_value_enter">لطفا ابتدا داده‌ی شروع را وارد کنید.</string>
+    <string name="str_matter_first_value_less">شماره شروع باید از شماره‌ی پایان کوچک‌تر باشد.</string>
+    <string name="str_matter_input_last_value_title">آخرین شماره‌ی سند چاپی قبلاً استفاده شده است. شماره‌ی پایان سند
+        چاپی را وارد کنید.
+    </string>
+    <string name="str_matter_last_value_less">شماره‌ی پایان باید از شماره‌ی شروع بزرگتر باشد.</string>
+    <string name="str_message">پیام</string>
+    <string name="str_message_info">اطلاعات پیام</string>
+    <string name="str_message_info_sent">اطلاعات پیام ارسال شد</string>
+    <string name="str_message_sending">در حال ارسال پیام‌ها…</string>
+    <string name="str_message_sent">پیام فرستاده شد</string>
+    <string name="str_messages">پیام‌ها</string>
+    <string name="str_million">میلیون</string>
+    <string name="str_mobile_sales_notification_channel">محل</string>
+    <string name="str_model">مدل</string>
+    <string name="str_monday">دوشنبه</string>
+    <string name="str_my_messages">پیام‌های من</string>
+    <string name="str_my_tasks">وظایف من</string>
+    <string name="str_name">نام</string>
+    <string name="str_net_sum">جمع کل خالص</string>
+    <string name="str_net_total">جمع کل خالص</string>
+    <string name="str_net_volume">حجم خالص</string>
+    <string name="str_net_weight">وزن خالصt</string>
+    <string name="str_netsis_demo_username_password">برای دمو \nUsername: Demo\nPassword: 1</string>
+    <string name="str_never_shipped">هرگز ارسال نشده است</string>
+    <string name="str_new">جدید</string>
+    <string name="str_new_customer">مشتری جدید</string>
+    <string name="str_new_customer_saved">مشتری جدید ذخیره شد.</string>
+    <string name="str_new_customer_saving">در حال ذخیرهٔ مشتری جدید…</string>
+    <string name="str_new_customer_saving_please_wait">مشتری جدید در حال ذخیره‌شدن است. لطفاً صبر کنید.</string>
+    <string name="str_new_expiry1">سررسید ۱</string>
+    <string name="str_new_expiry10">سررسید ۱۰</string>
+    <string name="str_new_expiry2">سررسید ۲</string>
+    <string name="str_new_expiry3">سررسید ۳</string>
+    <string name="str_new_expiry4">سررسید ۴</string>
+    <string name="str_new_expiry5">سررسید ۵</string>
+    <string name="str_new_expiry6">سررسید ۶</string>
+    <string name="str_new_expiry7">سررسید ۷</string>
+    <string name="str_new_expiry8">سررسید ۸</string>
+    <string name="str_new_expiry9">سررسید ۹</string>
+    <string name="str_new_invoice">فاکتور جدید</string>
+    <string name="str_new_order">سفارش جدید</string>
+    <string name="str_new_sms_send">پیام کوتاه جدید ارسال شد</string>
+    <string name="str_next_page">صفحهٔ بعدی</string>
+    <string name="str_no">خیر</string>
+    <string name="str_no_accessible_printer_found">چاپگر قابل دسترسی از طریق سرویس یافت نشد</string>
+    <string name="str_no_application_found_to_open_pdf">هیچ برنامه ای پیدا نشد که بتواند فایل PDF را باز کند</string>
+    <string name="str_no_campaign">حق اعمال کمپین را ندارید</string>
+    <string name="str_no_condition">حق شرط فروش وجود ندارد</string>
+    <string name="str_no_condition_for_product">شرطی برای محصول یافت نشد</string>
+    <string name="str_no_directory_selected">هیچ مسیری انتخاب نشده است.</string>
+    <string name="str_no_entry">بدون رکورد</string>
+    <string name="str_no_information_transferred">هیچ اطلاعاتی منتقل نخواهد شد</string>
+    <string name="str_no_note_found">یادداشتی یافت نشد</string>
+    <string name="str_no_paired_device_found">دستگاهی جفت نشده است</string>
+    <string name="str_no_photo_found">عکسی یافت نشد</string>
+    <string name="str_no_proceeding">هیچ عملی نیست</string>
+    <string name="str_no_sales_manager_with_email">مدیر فروش با آدرس ایمیل یافت نشد</string>
+    <string name="str_no_write_access">قادر به نوشتن در این پوشه نیستید (فقط خواندنی است).</string>
+    <string name="str_none">هیچ یک</string>
+    <string name="str_not_add_fiche_detail">جژئیات فیش هنوز اضافه نشده است</string>
+    <string name="str_not_add_product_line">خط اطلاعات هنوز اضافه نشده است</string>
+    <string name="str_not_connect_device">دستگاه متصل نیست</string>
+    <string name="str_not_edit_fiche">مجوز ویرایش فیش را ندارید</string>
+    <string name="str_not_enter_amount_higher_distribution_ordinance">نمی‌توانید از تعداد دستور توزیع بالاتر بروید.
+    </string>
+    <string name="str_not_enter_form">مجوز ورود فرم را ندارید.</string>
+    <string name="str_not_found_any_email_form_design">طراحی فرم ایمیل یافت نشد</string>
+    <string name="str_not_found_bank">بانکی تعریف نشده است.</string>
+    <string name="str_not_found_bank_account">حساب بانکی تعریف نشده است.</string>
+    <string name="str_not_found_bank_agreement">توافقنامه‌ای تعریف نشده است.</string>
+    <string name="str_not_found_barcode_reader">اپلیکیشن بارکدخوان یافت نشد</string>
+    <string name="str_not_found_case">موردی تعریف نشده است.</string>
+    <string name="str_not_found_customer_risk">اطلاعات ریسک مشتری یافت نشد</string>
+    <string name="str_not_found_defination_field">فیلد Def یافت نشد</string>
+    <string name="str_not_found_definition_form">فرمی تعریف نشده است.</string>
+    <string name="str_not_found_distribution_ordinance">دستور توزیع یافت نشد</string>
+    <string name="str_not_found_distruted_transferred_row">ردیف «در دستور توزیعی که بناست منتقل شود» یافت نشد</string>
+    <string name="str_not_found_email_address">آدرس ایمیل یافت نشد</string>
+    <string name="str_not_found_order_transferred_row">ردیف «در سفارشی که بناست منتقل شود» یافت نشد</string>
+    <string name="str_not_found_penetration_form">فرم نفوذ تعیین‌شده یافت نشد.</string>
+    <string name="str_not_found_serial_number">شمارهٔ سریال/ سری ساخت یافت نشد</string>
+    <string name="str_not_found_task">وظیفه‌ای برای ارسال یافت نشد.</string>
+    <string name="str_not_found_version_information">اطلاعات نسخه یافت نشد!</string>
+    <string name="str_not_internet_connection_price_get_local">اتصال‌تان به اینترنت قطع است. قیمت‌ها از پایگاه دادهٔ
+        محلی دریافت خواهد شد.
+    </string>
+    <string name="str_not_printed">چاپ‌نشده</string>
+    <string name="str_not_retrieval_process_information">فرآیند بازیابی اطلاعات هنوز انتقال نیافته است. نمی‌توانید به
+        پردازش ادامه بدهید!
+    </string>
+    <string name="str_not_save_new_customer">مشتری جدید ذخیره نشد…</string>
+    <string name="str_not_select_penetration_form">فرم نفوذ انتخاب نکرده‌اید.</string>
+    <string name="str_not_selected_any_campaigns">شما هیچ مبارزاتی را انتخاب نکرده اید</string>
+    <string name="str_not_sell_complete_task">نمی‌توانید بفروشید، وظیفهٔ من انجام شد، بله، حساب جاری</string>
+    <string name="str_not_show_survey_again">نظرسنجی را دیگر نشان ندهید</string>
+    <string name="str_not_use_demo">در دمو استفاده نشود</string>
+    <string name="str_not_use_out_working_hours">نمی‌توانید از ساعات استفاده کنید</string>
+    <string name="str_not_use_turkish_character">از کاراکترهای ترکی استفاده نشود</string>
+    <string name="str_note">توجه</string>
+    <string name="str_notification_create">اطلاعیه جدید</string>
+    <string name="str_notification_detail">جزئیات اعلان</string>
+    <string name="str_notification_list">اطلاعیه</string>
+    <string name="str_notification_message">پیام</string>
+    <string name="str_notification_message_cannotBeEmpty">محتوای پیام نمی تواند خالی باشد</string>
+    <string name="str_notification_not_available_toDelete">وضعیت اعلان برای حذف مناسب نیست</string>
+    <string name="str_notification_payAttentionToWorkTime">ساعت کار را در نظر بگیرید</string>
+    <string name="str_notification_senDate_cannotBeBeforeToday">تاریخ ارسال نباید زودتر از امروز باشد</string>
+    <string name="str_notification_senDate_cannotBeEmpty">تاریخ ارسال نمی تواند خالی باشد</string>
+    <string name="str_notification_sendDate">تاریخ ارسال</string>
+    <string name="str_notification_sendDateTime">ارسال تاریخ - زمان</string>
+    <string name="str_notification_status_created">ایجاد شده</string>
+    <string name="str_notification_status_deleted">حذف شده</string>
+    <string name="str_notification_status_delivered">تحویل داده شده</string>
+    <string name="str_notification_status_read">خواندن</string>
+    <string name="str_notification_title">عنوان</string>
+    <string name="str_notification_title_cannotBeEmpty">عنوان نمی تواند خالی باشد</string>
+    <string name="str_notification_to">Kime</string>
+    <string name="str_notification_users_mustBeSelected">گیرنده ها باید انتخاب شوند</string>
+    <string name="str_notifications">اطلاعیه</string>
+    <string name="str_ok">تأیید</string>
+    <string name="str_okey">باشه</string>
+    <string name="str_one_thousand">یک‌صد</string>
+    <string name="str_one_to_one_change">تغییر یک به یک</string>
+    <string name="str_online_params">گزارش‌های آنلاین</string>
+    <string name="str_only_changes">فقط تغییرات</string>
+    <string name="str_open_account">افتتاح حساب</string>
+    <string name="str_opening_slip">برگهٔ افتتاح</string>
+    <string name="str_options">گزینه‌ها</string>
+    <string name="str_order">ترتیب</string>
+    <string name="str_order_approval">تأیید سفارش</string>
+    <string name="str_order_available_amount_high_error">تعداد واردشده نباید بیشتر از تعداد قابل‌تحویل باشد</string>
+    <string name="str_order_detail_entry">ورود جزئیات سفارش</string>
+    <string name="str_order_details">جزئیات سفارش</string>
+    <string name="str_order_details_transferring">در حال انتقال جزئیات سفارش…</string>
+    <string name="str_order_entry">ورود سفارش</string>
+    <string name="str_order_form_details">جزئیات فرم سفارش</string>
+    <string name="str_order_form_information">اطلاعات فرم سفارش</string>
+    <string name="str_order_info_attachment">اطلاعات سفارش ضمیمه شده است.</string>
+    <string name="str_order_min_limit_validation_error">مقدار سفارش ایجاد شده کمتر از حد تعیین شده است</string>
+    <string name="str_order_not_found">سفارش یافت نشد</string>
+    <string name="str_order_number">سفارش شمارهٔ</string>
+    <string name="str_order_print_preview">پیش‌نمایش چاپ سفارش</string>
+    <string name="str_order_proposal">سفارش (طرح پیشنهادی)</string>
+    <string name="str_order_referable">سفارش (قابل‌ارجاع)</string>
+    <string name="str_order_rejected">سفارش رد شد</string>
+    <string name="str_order_report">گزارش سفارش</string>
+    <string name="str_order_risk_control">کنترل ریسک سفارش</string>
+    <string name="str_order_status_offer_error">وضعیت قبض سفارش تغییر یافته است.</string>
+    <string name="str_order_totals">جمع کل سفارش</string>
+    <string name="str_order_totals_report">گزارش جمع کل سفارش‌ها</string>
+    <string name="str_orders">سفارش‌ها</string>
+    <string name="str_orders_transferring">در حال انتقال سفارش‌ها…</string>
+    <string name="str_orders_updated">سفارش‌ها به‌روز هستند.</string>
+    <string name="str_orders_updating">در حال به‌روزرسانی سفارش‌ها…</string>
+    <string name="str_organizational_unit">واحد سازمان</string>
+    <string name="str_other_currency_sum">کل موجودی به ارزهای دیگر</string>
+    <string name="str_other_devices">سایر دستگاه‌های موجود</string>
+    <string name="str_other_forms">- دیگران -</string>
+    <string name="str_other_info">سایر اطلاعات</string>
+    <string name="str_other_process">سایر موارد</string>
+    <string name="str_other_reports">گزارش های دیگر</string>
+    <string name="str_other_settings">سایر تنظیمات</string>
+    <string name="str_others">دیگران</string>
+    <string name="str_oto_transfer">انتقال خودکار</string>
+    <string name="str_our_check_deed">چک/ سند خودمان</string>
+    <string name="str_outgoing_messages">پیام‌های خروجی</string>
+    <string name="str_overdue_check">شما چک تاریخ گذشته را وارد می کنید</string>
+    <string name="str_page">صفحه:</string>
+    <string name="str_pair">جفت‌سازی</string>
+    <string name="str_pair_bluetooth_device">جفت‌سازی</string>
+    <string name="str_paired_devices">دستگاه‌های جفت‌شده</string>
+    <string name="str_paper_invoice_type_for_erp">Paper Invoice</string>
+    <string name="str_password">رمز عبور</string>
+    <string name="str_password_required">رمز عبور را وارد کنید</string>
+    <string name="str_pay_and_save">پرداخت و پس انداز</string>
+    <string name="str_pay_plan">برنامهٔ پرداخت</string>
+    <string name="str_payment">مبالغ پرداختی</string>
+    <string name="str_payment_order">سفارش پیش‌پرداخت</string>
+    <string name="str_payment_place">محل</string>
+    <string name="str_payment_plan_not_change">برنامهٔ پرداخت قابل‌تغییر نیست</string>
+    <string name="str_payment_plan_not_found">برنامهٔ پرداخت تعریف‌شده یافت نشد.</string>
+    <string name="str_payment_plans">مبالغ پرداختی</string>
+    <string name="str_payment_type">نوع پرداخت</string>
+    <string name="str_payments">مبالغ پرداختی</string>
+    <string name="str_payroll_date">تاریخ</string>
+    <string name="str_payroll_note_collection">حوالهٔ لیست حقوق</string>
+    <string name="str_payroll_note_collections">سفته</string>
+    <string name="str_payroll_note_entry">ورود سفته</string>
+    <string name="str_payroll_note_print_preview">پیش‌نمایش چاپ سفته</string>
+    <string name="str_pdf_report_saved">PDF ذخیره شد</string>
+    <string name="str_pdf_save_path_cleared">مسیر ذخیره شما پاک شده است می توانید مسیر ذخیره جدید را در طی فرآیند ذخیره
+        بعدی انتخاب کنید.
+    </string>
+    <string name="str_penetration">نفوذ</string>
+    <string name="str_penetration_date">تاریخ نفوذ</string>
+    <string name="str_penetration_detail_information">جزئیات اطلاعات نفوذ</string>
+    <string name="str_penetration_list">فهرست نفوذ</string>
+    <string name="str_penetration_send_failed">ارسال برگهٔ نفوذ امکان‌پذیر نیست</string>
+    <string name="str_penetration_send_success">برگهٔ نفوذ با موفقیت ارسال شد</string>
+    <string name="str_period_end">پایان دوره</string>
+    <string name="str_periodic_notification_channel_desc">اطلاعیه های دوره ای</string>
+    <string name="str_periodic_notification_channel_name">اطلاعیه های دوره ای</string>
+    <string name="str_permission_are_required">مجوزها لازم است.</string>
+    <string name="str_permission_deny">اجازه داده نشد.</string>
+    <string name="str_permission_never_ask">درخواست اجازه، دیگر پرسیده نخواهد شد.</string>
+    <string name="str_permission_required_toast">برای این نسخه‌ی نمایشی، مجوز مکان مورد نیاز است.</string>
+    <string name="str_permissions_denied">اجازه داده نشد.</string>
+    <string name="str_permissions_need">اجازهٔ شما لازم است</string>
+    <string name="str_personal_company">شرکت شخصی</string>
+    <string name="str_phone_access">دسترسی تلفنی</string>
+    <string name="str_phone_must_be_selected_for_online_payment">شماره تلفن برای پرداخت آنلاین باید انتخاب شود</string>
+    <string name="str_phone_number">شمارهٔ تلفن</string>
+    <string name="str_phone_number1">شمارهٔ تلفن ۱</string>
+    <string name="str_phone_number2">شمارهٔ تلفن ۲</string>
+    <string name="str_photo">عکس</string>
+    <string name="str_physical_stock">فیزیکی:</string>
+    <string name="str_plate">پلاک</string>
+    <string name="str_plate_nr">شماره پلاک</string>
+    <string name="str_please_enter_price">لطفاً قیمت را وارد کنید</string>
+    <string name="str_please_enter_required_fields">لطفاً اطلاعات %1s را وارد کنید</string>
+    <string name="str_please_select_device_pair">برای انتخاب دستگاه، باید دستگاه‌ها را جفت کنید. لطفاً روی دکمهٔ
+        جفت‌سازی کلیک کنید.
+    </string>
+    <string name="str_please_select_lot_item">لطفاً ابتدا انتخاب کنید</string>
+    <string name="str_please_select_ship_account">لطفاً ابتدا حساب محموله را انتخاب کنید.</string>
+    <string name="str_please_select_warehouse">لطفاً،‌ انباری را انتخاب کنید</string>
+    <string name="str_please_wait">لطفاً صبر کنید…</string>
+    <string name="str_please_wait_check_doc_no">در حال چک‌کردن شمارهٔ سند…لطفاً صبر کنید…</string>
+    <string name="str_please_wait_due_date_control">در حال بررسی تاریخ تحویل؛ لطفا منتظر بمانید.</string>
+    <string name="str_please_wait_get_matter_no">در حال بازیابی شمارهٔ سند چاپ‌شده…لطفاً صبر کنید…</string>
+    <string name="str_please_wait_pairing">در حال جفت‌سازی دستگاه‌ها…لطفاً صبر کنید…</string>
+    <string name="str_please_wait_search_device">در حال جستجوی دستگاه‌ها…لطفاً صبر کنید…</string>
+    <string name="str_point">امتیاز</string>
+    <string name="str_postal_code">کدپستی</string>
+    <string name="str_preparing">در حال آماده‌سازی…</string>
+    <string name="str_prepayment">پیش‌پرداخت</string>
+    <string name="str_prepayment_order">سفارش پیش‌پرداخت</string>
+    <string name="str_preprinted_paper_number_with_star">شمارهٔ کاغذ از پیش چاپ‌شده (*)</string>
+    <string name="str_preprinted_paper_registration">شمارهٔ کاغذ از پیش چاپ‌شده</string>
+    <string name="str_preprinted_paper_settings">تنظیمات کاغذ از پیش چاپ‌شده</string>
+    <string name="str_previous_page">صفحهٔ قبلی</string>
+    <string name="str_price">قیمت</string>
+    <string name="str_price_not_found">قیمت یافت نشد</string>
+    <string name="str_price_query">پرس‌وجو در قیمت</string>
+    <string name="str_price_selection">انتخاب قیمت</string>
+    <string name="str_price_short">قیمت:</string>
+    <string name="str_price_with_currency">قیمت ارز</string>
+    <string name="str_prices">قیمت‌ها</string>
+    <string name="str_prices_completed">قیمت‌ها انجام شد</string>
+    <string name="str_prices_saving">در حال ذخیرهٔ قیمت‌ها...</string>
+    <string name="str_prices_transferring">در حال انتقال قیمت‌ها...</string>
+    <string name="str_print">چاپ</string>
+    <string name="str_print_all">چاپ همه</string>
+    <string name="str_print_completed">چاپ انجام شد</string>
+    <string name="str_print_design_file_not_found">فایل طراحی تعریف‌شده یافت نشد.</string>
+    <string name="str_print_design_files">در حال دریافت فایل‌های طراحی چاپ</string>
+    <string name="str_print_export">برون‌بری فایل انجام شد</string>
+    <string name="str_print_page">چاپ صفحه</string>
+    <string name="str_print_preview">پیش‌نمایش چاپ</string>
+    <string name="str_print_preview_with_star">پیش‌نمایش چاپ (*)</string>
+    <string name="str_print_settings">تنظیمات چاپ</string>
+    <string name="str_print_update_matter_no_please_wait">در حال به‌روزرسانی شمارهٔ سند چاپ‌شده...لطفاً صبر کنید...
+    </string>
+    <string name="str_print_with_star">چاپ (*)</string>
+    <string name="str_printed">چاپ‌شده</string>
+    <string name="str_printer1">چاپگر ۱</string>
+    <string name="str_printer2">چاپگر ۲</string>
+    <string name="str_printer_and_design_must_be_selected">چاپگر و طرح باید برای چاپ انتخاب شود</string>
+    <string name="str_printer_choice">چاپگری انتخاب کنید</string>
+    <string name="str_printer_service_address_must_be_entered">برای دسترسی به لیست چاپگر، آدرس سرویس چاپگر باید وارد
+        شود.
+    </string>
+    <string name="str_printer_service_could_not_be_accessed">دسترسی به سرویس چاپگر امکان پذیر نیست. تنظیمات را بررسی
+        کنید و سرویس در حال اجرا باشد
+    </string>
+    <string name="str_printer_service_must_be_entered_for_print">برای ادامه فرآیند باید آدرس سرویس چاپگر وارد شود.
+    </string>
+    <string name="str_printer_settings_not_done">چاپگر یافت نشد</string>
+    <string name="str_priority">اولویت</string>
+    <string name="str_privacy_policy">سیاست حفظ حریم خصوصی</string>
+    <string name="str_process_cancel">عملیات را لغو کردید.</string>
+    <string name="str_process_completed_successfully">روند با موفقیت انجام شد</string>
+    <string name="str_processing">در حال پردازش</string>
+    <string name="str_product_barcode_search_please_wait">در حال جستجوی بارکد...لطفاً صبر کنید...</string>
+    <string name="str_product_class">طبقهٔ محصول</string>
+    <string name="str_product_detail_cost_title">اطلاعات قیمت</string>
+    <string name="str_product_detail_info_title">فروش محصولات (کد کالا)</string>
+    <string name="str_product_detail_stock_title">انبار:</string>
+    <string name="str_product_detail_stok_title">اطلاعات موجودی</string>
+    <string name="str_product_detail_unit_title">اطلاعات واحد</string>
+    <string name="str_product_enter_form">فرم را انتخاب کنید</string>
+    <string name="str_product_groups">گروه محصولات را انتخاب کنید</string>
+    <string name="str_product_information">اطلاعات محصول</string>
+    <string name="str_product_price_not_found">قیمت(ها)یی که برای این محصول تعریف شده است یافت نشد.</string>
+    <string name="str_product_select">محصولی انتخاب کنید</string>
+    <string name="str_product_select_barcode">بارکد</string>
+    <string name="str_product_stock">موجودی:</string>
+    <string name="str_product_summary_top_ten_customer">۱۰ مشتری برتر</string>
+    <string name="str_product_unit_not_found">زیرواحد(های) محصول یافت نشد.</string>
+    <string name="str_product_variant_not_found">گونه (یا گونه‌های) محصول یافت نشد.</string>
+    <string name="str_project_code">کد پروژه</string>
+    <string name="str_project_code_not_found">کد پروژهٔ تعریف‌شده یافت نشد.</string>
+    <string name="str_promissory_note_issued">سفته صادر شد (AR/AP)</string>
+    <string name="str_promotion">ترفیع</string>
+    <string name="str_province">شهر</string>
+    <string name="str_purchase_date">تاریخ خرید</string>
+    <string name="str_purchase_information">اطلاعات خرید</string>
+    <string name="str_purchase_price">قیمت خرید</string>
+    <string name="str_purchase_price_difference_invoice">فاکتور تفاوت سررسید (دریافتی)</string>
+    <string name="str_purchase_pro_forma_invoice">پیش‌فاکتور خرید</string>
+    <string name="str_quantity">تعداد</string>
+    <string name="str_quantity_unit">تعداد/ واحد</string>
+    <string name="str_quest_close_barcode">می‌خواهید به عقب بازگردید؟</string>
+    <string name="str_question_apply_sales_condition_again">آیا شرط فروش مجدداً اعمال می‌شود؟</string>
+    <string name="str_question_cancel_fiche">آیا می‌خواهید برگه را لغو کنید؟</string>
+    <string name="str_question_change_delivery_dates">آیا تغییر باید در تاریخ‌های تحویل خط محصول اعمال شود؟</string>
+    <string name="str_question_change_detail_warehouse">تغییر اطلاعات انبار در ردیف ها؟</string>
+    <string name="str_question_delete_old_entry_add">آیا مایلید رکورد قدیمی را حذف و رکورد جدیدی اضافه کنید؟</string>
+    <string name="str_question_distribution_ordinance_into_fiche">دستور توزیع به فیش منتقل می‌شود؛ مطمئنید؟</string>
+    <string name="str_question_enter_amount">لطفاً مبلغ را وارد کنید</string>
+    <string name="str_question_enter_definition">لطفاً اطلاعات تعریف را وارد کنید</string>
+    <string name="str_question_enter_lot_number">لطفاً سری ساخت را وارد کنید</string>
+    <string name="str_question_enter_plate_info">لطفاً اطلاعات پلاک را وارد کنید</string>
+    <string name="str_question_enter_preprinted_paper_number">لطفاً شمارهٔ کاغذ از پیش چاپ‌شده را وارد کنید</string>
+    <string name="str_question_enter_quantity">لطفاً تعداد را وارد کنید</string>
+    <string name="str_question_enter_serial_number">لطفاً شماره سریال را وارد کنید</string>
+    <string name="str_question_make_choice">انتخاب کنید</string>
+    <string name="str_question_not_enter_higher_quantity">نمی‌توانید از تعداد سفارش‌ داده‌شده بالاتر بروید.</string>
+    <string name="str_question_overwrite_gps_location">مختصات جی‌پی‌اس این محل موجود است. بازنویسی شود؟</string>
+    <string name="str_question_retrieval_process_information">فرآیند بازیابی اطلاعات هنوز انتقال نیافته است. می‌خواهید
+        ادامه بدهید؟
+    </string>
+    <string name="str_question_save_fiche">آیا می‌خواهید برگه را ذخیره کنید؟</string>
+    <string name="str_question_select_account">لطفاً حسابی را انتخاب کنید</string>
+    <string name="str_question_select_bank">لطفاً بانکی را انتخاب کنید</string>
+    <string name="str_question_select_detail">لطفاً جزئیات را انتخاب کنید</string>
+    <string name="str_question_select_fiche">لطفاً رکوردی انتخاب کنید</string>
+    <string name="str_question_select_material">لطفاً اجناس مدنظرتان را انتخاب کنید</string>
+    <string name="str_question_select_recipient">لطفاً گیرنده‌ای را انتخاب کنید</string>
+    <string name="str_question_select_safe">لطفاً صندوق امانات را انتخاب کنید</string>
+    <string name="str_question_select_shipment_address">لطفاً آدرس حمل را انتخاب کنید</string>
+    <string name="str_question_select_survey">لطفاً نظرسنجی را انتخاب کنید</string>
+    <string name="str_question_select_unit">لطفاً واحدی را انتخاب کنید</string>
+    <string name="str_question_select_variant">لطفاً گونه‌ای را انتخاب کنید</string>
+    <string name="str_question_select_visit">لطفاً ویزیتی را انتخاب کنید</string>
+    <string name="str_question_transfer_daily_currency_information">آیا می خواهید اطلاعات ارزی روزانه را منتقل کنید؟
+    </string>
+    <string name="str_question_transfer_order_into_fiche">سفارش به فیش منتقل می‌شود؛ آیا مطمئنید؟</string>
+    <string name="str_question_view_customer_task">وظیفه‌ای برای این مشتری وجود دارد. آیا می‌خواهید مشاهده‌اش کنید؟
+    </string>
+    <string name="str_question_want_cancel">آیا از لغو مطمئنید؟</string>
+    <string name="str_question_want_cancel_transfer_process">آیا می‌خواهید فرآیند انتقال را لغو کنید؟</string>
+    <string name="str_question_want_close">آیا از لغو مطمئنید؟</string>
+    <string name="str_question_want_delete">آیا از حذف مطمئنید؟</string>
+    <string name="str_question_want_exit">آیا از خروج‌تان مطمئنید؟</string>
+    <string name="str_question_want_print">آیا می‌خواهید چاپ کنید؟</string>
+    <string name="str_question_want_transfer">آیا از انتقال مطمئنید؟</string>
+    <string name="str_ranking">رتبه‌بندی</string>
+    <string name="str_ratio">نرخ</string>
+    <string name="str_rc_balance_abbrv">RC Bal.</string>
+    <string name="str_read">خواندم و فهمیدم</string>
+    <string name="str_read_disk_permission_for_save_picture">برای ذخیره تصاویر ، باید به دیسک اجازه نوشتن دهید.</string>
+    <string name="str_read_message">خواندن پیام</string>
+    <string name="str_read_phone_state_permission">برای دسترسی برنامه به ویژگیهای تلفن موجود در دستگاه ، به اجازه شما
+        نیاز داریم
+    </string>
+    <string name="str_real">واقعی</string>
+    <string name="str_real_stock">موجودی واقعی:</string>
+    <string name="str_reasons">دلایل</string>
+    <string name="str_receipt">مجموعه</string>
+    <string name="str_receipt_fiche_transferred">فیش رسید منتقل شد</string>
+    <string name="str_receipt_number">شمارهٔ رسید</string>
+    <string name="str_receive">دریافت</string>
+    <string name="str_received_new_message">پیام جدیدی دریافت شد</string>
+    <string name="str_received_reason">دلیل دریافتی</string>
+    <string name="str_received_self_employment_receipt">رسید خوداشتغالی دریافت شد</string>
+    <string name="str_receiving_is_running_on_service">عملیات دریافت در حال اجرا بر روی سرویس است.</string>
+    <string name="str_receiving_setup_types">در حال بازیابی انواع ستاپ…</string>
+    <string name="str_recipients">دریافت‌کنندگان</string>
+    <string name="str_reference_code">کد مرجع</string>
+    <string name="str_refresh">تازه‌سازی</string>
+    <string name="str_refund_invoices">استرداد فاکتورها</string>
+    <string name="str_related_person">فرد مرتبط</string>
+    <string name="str_related_person_error">پر کردن قسمت «معرف» در بخش اطلاعات تماس الزامی است.</string>
+    <string name="str_remainder">باقی مانده</string>
+    <string name="str_remaining_amount">مقدار باقی مانده</string>
+    <string name="str_remember">به یاد داشته باش</string>
+    <string name="str_remittance">مبلغ ارسالی</string>
+    <string name="str_remittance_operation">عملیات ارسال وجه</string>
+    <string name="str_remove_all">حذف همه</string>
+    <string name="str_remove_at_detail_list">جزئیات از لیست حذف شده است</string>
+    <string name="str_remove_at_product_list">محصول از فهرست حذف شده است!</string>
+    <string name="str_remove_photo">آیا می‌خواهید این عکس را حذف کنید؟</string>
+    <string name="str_remove_printer">چاپگر را حذف کنید</string>
+    <string name="str_remove_selected">حذف موارد انتخاب‌شده</string>
+    <string name="str_remove_selection">انتخاب را حذف کنید</string>
+    <string name="str_report_currency_unit_local">واحد پول محلی</string>
+    <string name="str_report_currency_unit_report">گزارش‌دهی</string>
+    <string name="str_report_currency_unit_transaction">واحد ارزی تراکنش</string>
+    <string name="str_report_designs">طراحی گزارش</string>
+    <string name="str_report_extract_transfer">مدار</string>
+    <string name="str_report_must_be_designed">برای انجام این کار باید حداقل یک گزارش طراحی شده باشد.</string>
+    <string name="str_report_params">پارامترهای گزارش</string>
+    <string name="str_reporting_currency">ارز گزارشگیری</string>
+    <string name="str_reports">گزارش‌ها</string>
+    <string name="str_reports_preparing">گزارش در حال آماده‌سازی است. لطفاً صبر کنید</string>
+    <string name="str_reports_update_please_wait">در حال به‌روزرسانی گزارش‌ها…لطفاً صبر کنید…</string>
+    <string name="str_required_fields">فیلدهای لازم</string>
+    <string name="str_required_info">اطلاعات لازم</string>
+    <string name="str_required_internet_connection">اتصال به اینترنت لازم است</string>
+    <string name="str_resend">دوباره بفرست</string>
+    <string name="str_resend_sms_desc">لطفاً برای دریافت پیامک های جدید دوباره دکمه ارسال مجدد را کلیک کنید.</string>
+    <string name="str_reset_all_settings_confirm">همهٔ تنظیمات ریست شود؟</string>
+    <string name="str_retail_sales_invoice">فاکتور فروش خرد</string>
+    <string name="str_retail_sales_return_invoice">فاکتور مرجوعی فروش خرد</string>
+    <string name="str_retrieving_logo_parameters">در حال بازیابی لوگوی پارامترها…</string>
+    <string name="str_return">مرجوعی</string>
+    <string name="str_return_back_question">آیا خواندن متن بارکد انجام شد؟</string>
+    <string name="str_return_customer_fiche_question">اگر به عقب بازگردید، فرایند ایجاد مشتری لغو خواهد شد. آیا
+        می‌خواهید لغو کنید؟
+    </string>
+    <string name="str_return_dispatch">گزارش مرجوعی</string>
+    <string name="str_return_edit_fiche_question">اگر به عقب برگردید ، اطلاعات خود را از دست خواهید داد. می خواهید ادامه
+        دهید؟
+    </string>
+    <string name="str_return_invoice">فاکتور مرجوعی</string>
+    <string name="str_return_penetration_fiche_question">اگر به عقب بازگردید، نفوذ لغو خواهد شد. آیا می‌خواهید لغو
+        کنید؟
+    </string>
+    <string name="str_return_sales_fiche_question">اگر به عقب بازگردید، برگه لغو خواهد شد. آیا می‌خواهید لغو کنید؟
+    </string>
+    <string name="str_return_vat_rate">نرخ مالیات بر ارزش افزودهٔ مرجوعی</string>
+    <string name="str_return_visit_fiche_question">اگر به عقب بازگردید، ویزیت لغو خواهد شد. آیا می‌خواهید لغو کنید؟
+    </string>
+    <string name="str_return_ware_house">انبار برگشت</string>
+    <string name="str_risk_criteria">معیارهای ریسک</string>
+    <string name="str_risk_information">اطلاعات ریسک</string>
+    <string name="str_risk_limit">حد ریسک</string>
+    <string name="str_risk_over_title">از حد ریسک عبور کرده‌اید</string>
+    <string name="str_risk_total">جمع کل ریسک</string>
+    <string name="str_route">مسیر</string>
+    <string name="str_routes">مسیرها</string>
+    <string name="str_safe_deposit">صندوق امانات</string>
+    <string name="str_sales">فروش</string>
+    <string name="str_sales_activity">فعالیت فروش</string>
+    <string name="str_sales_condition_apply">شرط فروش اعمال شد.</string>
+    <string name="str_sales_demand">تقاضا</string>
+    <string name="str_sales_discount_total">تخفیف:</string>
+    <string name="str_sales_dispatch">گزارش</string>
+    <string name="str_sales_doc_tracking_no">D.N:</string>
+    <string name="str_sales_fiche_gross_total">مجموع ناخالص :</string>
+    <string name="str_sales_fiche_show_campaign_please_wait">در حال اعمال کمپین…لطفاً صبر کنید…</string>
+    <string name="str_sales_fiche_total">جمع کل:</string>
+    <string name="str_sales_invoice">فاکتور</string>
+    <string name="str_sales_line_count">تعداد خط:</string>
+    <string name="str_sales_line_sku">شناسه‌ی SKU (واحد نگهداری موجودی):</string>
+    <string name="str_sales_line_unitTotals">کل واحد ها</string>
+    <string name="str_sales_net_total">خالص:</string>
+    <string name="str_sales_note">توجه:</string>
+    <string name="str_sales_one_to_one_change">تغییر یک به یک</string>
+    <string name="str_sales_order">ترتیب</string>
+    <string name="str_sales_order_state">وضعیت</string>
+    <string name="str_sales_pay_plan">P.P:</string>
+    <string name="str_sales_price_difference_invoice">فاکتور تفاوت سررسید (صادره)</string>
+    <string name="str_sales_report">گزارش فروش</string>
+    <string name="str_sales_report_invoice">گزارش فروش (فاکتور)</string>
+    <string name="str_sales_report_order">گزارش فروش (سفارش)</string>
+    <string name="str_sales_reports">گزارش های فروش</string>
+    <string name="str_sales_retail_invoice">فاکتور خرده‌فروشی</string>
+    <string name="str_sales_retail_return_invoice">فاکتور مرجوعی فروش خرد</string>
+    <string name="str_sales_return_dispatch">گزارش مرجوعی</string>
+    <string name="str_sales_return_invoice">فاکتور مرجوعی</string>
+    <string name="str_sales_save_detail_error_message_title">خطای خط‌های برگه</string>
+    <string name="str_sales_save_header_error_message_title">خطای عنوان برگه</string>
+    <string name="str_sales_slsdefinition">S.P:</string>
+    <string name="str_sales_specode">S.C:</string>
+    <string name="str_sales_status">وضعیت</string>
+    <string name="str_sales_summary_report">گزارش جمع‌بندی فروش</string>
+    <string name="str_sales_target_report">گزارش هدف فروش</string>
+    <string name="str_sales_total">مقدار:</string>
+    <string name="str_sales_trading_group">گروه تجاری:</string>
+    <string name="str_sales_transfer">انتقال</string>
+    <string name="str_sales_vat_rate">نرخ مالیات بر ارزش افزودهٔ فروش</string>
+    <string name="str_sales_vat_total">مالیات بر ارزش افزوده:</string>
+    <string name="str_salesman">فروشنده</string>
+    <string name="str_salesman_code">کد فروشنده</string>
+    <string name="str_saturday">شنبه</string>
+    <string name="str_save">ذخیره‌سازی</string>
+    <string name="str_saving_logo_parameters">پارامترهای لوگو در فایل ثبت گزارش ثبت می‌شود…</string>
+    <string name="str_saving_setup_types">انواع ستاپ در فایل ثبت گزارش ثبت می‌شود…</string>
+    <string name="str_scan_devices">اسکن دستگاه‌ها</string>
+    <string name="str_scanning_devices">در حال اسکن دستگاه‌ها…</string>
+    <string name="str_search">جستجو</string>
+    <string name="str_secondDriverInfo">اطلاعات راننده - 2</string>
+    <string name="str_section">بخش</string>
+    <string name="str_select_additional_invoice_type">نوع فاکتور اضافی را انتخاب کنید</string>
+    <string name="str_select_all">انتخاب همه</string>
+    <string name="str_select_barcode_scan_type">انتخاب نوع اسکن بارکد</string>
+    <string name="str_select_bluetooth_device">انتخاب دستگاه</string>
+    <string name="str_select_card">کارت را انتخاب کنید</string>
+    <string name="str_select_condition">لطفا شرط را انتخاب کنید</string>
+    <string name="str_select_contract_code">کد قرارداد را انتخاب کنید</string>
+    <string name="str_select_data_transfer_type">نوع انتقال داده را انتخاب کنید</string>
+    <string name="str_select_device">دستگاهی برای متصل‌شدن انتخاب کنید</string>
+    <string name="str_select_discount_card">کارت تخفیف را انتخاب کنید</string>
+    <string name="str_select_document_type">نوع سند را انتخاب کنید</string>
+    <string name="str_select_form">فرم را انتخاب کنید</string>
+    <string name="str_select_material_information">برای انتخاب اجناس، کلیک کنید</string>
+    <string name="str_select_pay_plan">برنامهٔ پرداخت را انتخاب کنید</string>
+    <string name="str_select_penetration_form_title">فرم نفوذ را انتخاب کنید.</string>
+    <string name="str_select_project_code">کد پروژه را انتخاب کنید</string>
+    <string name="str_select_salesManager">لطفاً مدیر فروش را انتخاب کنید</string>
+    <string name="str_select_text">انتخاب کنید</string>
+    <string name="str_select_trade_group">گروه تجاری را انتخاب کنید</string>
+    <string name="str_select_user">انتخاب کاربر</string>
+    <string name="str_selected_folder">پوشه‌ی انتخاب‌شده:</string>
+    <string name="str_selected_price_type">نوع قیمت</string>
+    <string name="str_selected_products_quantity_total">مجموع محصول انتخابی باید X باشد.</string>
+    <string name="str_selected_quantity">تعداد انتخابی</string>
+    <string name="str_selected_record_count">تعداد رکوردهای انتخابی:</string>
+    <string name="str_send">ارسال کردن</string>
+    <string name="str_send_data_object_rest_error">در حین ارسال برگه، خطایی رخ داد!</string>
+    <string name="str_send_email_failed">ایمیل ارسال نشد.</string>
+    <string name="str_send_email_success">ایمیل با موفقیت ارسال شد.</string>
+    <string name="str_send_info">ارسال اطلاعات</string>
+    <string name="str_send_info_description">می‌توانید داده‌های فعالیت شروع، مانند سفارش‌ها، فاکتورها و فیش نقدی، را
+        ارسال کنید
+    </string>
+    <string name="str_send_message">ارسال پیام</string>
+    <string name="str_sender">ارسال‌کننده</string>
+    <string name="str_sending_email">در حال ارسال ایمیل…</string>
+    <string name="str_sending_visit_info">در حال ارسال اطلاعات ویزیت…</string>
+    <string name="str_sending_visit_info_failed">در حین ارسال اطلاعات ویزیت، خطایی رخ داد!</string>
+    <string name="str_sending_visit_info_success">اطلاعات ویزیت با موفقیت ارسال شد</string>
+    <string name="str_sending_work_info">در حال ارسال اطلاعات کار…</string>
+    <string name="str_sent">ارسال شد</string>
+    <string name="str_sent_remittance">حوالهٔ پولی (صادره)</string>
+    <string name="str_sent_work_info">اطلاعات کار ارسال شد.</string>
+    <string name="str_sent_work_information">اطلاعات کار ارسال شد</string>
+    <string name="str_serial">سریال</string>
+    <string name="str_serial_end_number">عدد پایانی شمارهٔ سریال</string>
+    <string name="str_serial_group">گروه سریال</string>
+    <string name="str_serial_lot_list">فهرست شماره سریال/ سری ساخت</string>
+    <string name="str_serial_no_1">سریال 1</string>
+    <string name="str_serial_no_2">سریال 2</string>
+    <string name="str_serial_not_found">هیچ سریال مشخصی پیدا نشد</string>
+    <string name="str_serial_number">شماره سریال</string>
+    <string name="str_serial_number_used_previously">%1s-سری‌های کدشده قبلاً استفاده است</string>
+    <string name="str_serial_range_select_min_product_amount_error">برای انجام انتخاب ردیفی، باید حداقل ۳ کالای دارای
+        شمارهٔ سریال داشته باشید!
+    </string>
+    <string name="str_serial_report">اطلاعات سریال</string>
+    <string name="str_serial_start_number">عدد آغازین شمارهٔ سریال</string>
+    <string name="str_series">سری‌ها</string>
+    <string name="str_service">خدمت</string>
+    <string name="str_service_purchase_return_invoice">فاکتور مرجوعی خرید خدمات</string>
+    <string name="str_service_units">واحدهای خدماتی</string>
+    <string name="str_services">خدمات</string>
+    <string name="str_session_time_out">جلسه‌تان پایان یافته است، زیرا برای مدتی طولانی فعالیتی نکرده‌اید. لطفاً دوباره
+        وارد شوید.
+    </string>
+    <string name="str_setting_empty_string_error">زبان شرکت باید مشخص باشد. لطفاً دوباره وارد کنید.</string>
+    <string name="str_setting_export_failed">خطا حین ذخیره‌ی تنظمیات</string>
+    <string name="str_setting_export_success">تنظیمات با نام « %1s ذخیره شد.</string>
+    <string name="str_setting_firm_language">زبان شرکت را وارد کنید</string>
+    <string name="str_setting_firm_language_sum">اطلاعات زبان شرکت. TRTR برای ترکی است.</string>
+    <string name="str_setting_firm_no_error">فرمت شمارهٔ شرکت اشتباه است. لطفاً دوباره وارد کنید.</string>
+    <string name="str_settings">تنظیمات</string>
+    <string name="str_settings_address_error">آدرس باید مشخص شود. لطفاً اطلاعات آدرس‌تان را وارد کنید.</string>
+    <string name="str_settings_delete_user">کاربران موجود را حذف کنید</string>
+    <string name="str_settings_error">لطفاً تنظیمات‌تان را چک کنید.</string>
+    <string name="str_settings_non_underline">تنظیمات</string>
+    <string name="str_setup_types">انواع ستاپ</string>
+    <string name="str_sgk_einvoice_informations">اطلاعات صورت‌حساب الکترونیکی مرکز بیمه‌ی تأمین اجتماعی</string>
+    <string name="str_share_settings">اشتراک‌گذاری تنظیمات</string>
+    <string name="str_shipAgent">شرکت حمل‌ونقل</string>
+    <string name="str_shipType">نوع تحویل</string>
+    <string name="str_ship_account">حساب محموله</string>
+    <string name="str_ship_address">آدرس حمل</string>
+    <string name="str_ship_addresses">آدرس‌های حمل</string>
+    <string name="str_ship_agent">کارگزاران تحویل</string>
+    <string name="str_ship_to">حمل به</string>
+    <string name="str_ship_type">انواع تحویل</string>
+    <string name="str_ship_types">انواع حمل</string>
+    <string name="str_shipment_address">آدرس‌های حمل</string>
+    <string name="str_shipment_address_details">جزئیات آدرس حمل</string>
+    <string name="str_shipment_dispatch">بارنامه</string>
+    <string name="str_shipment_firm">کارگزار حمل</string>
+    <string name="str_shipment_firms">کارگزاران حمل</string>
+    <string name="str_shipment_risk_control">کنترل ریسک حمل</string>
+    <string name="str_shipped">ارسال شد</string>
+    <string name="str_shipped_amount">مبلغ حمل و نقل</string>
+    <string name="str_shippent_address">آدرس حمل</string>
+    <string name="str_shippent_address_info">اطلاعات آدرس حمل</string>
+    <string name="str_should_collections_save_before_leave_the_fiche">پیش از خروج از این صفحه، مبالغ وصولی مرتبط با
+        رسیدها باید ذخیره شوند
+    </string>
+    <string name="str_show_all_rp">همهٔ مشتریان نمایش داده شوند</string>
+    <string name="str_show_deleted">حذف شده</string>
+    <string name="str_show_group">نمایش گروه</string>
+    <string name="str_show_header_all_page">اطلاعات اصلی را در همهٔ صفحات نمایش بده</string>
+    <string name="str_show_hidden_colon">ستون‌های مخفی را نمایش بده</string>
+    <string name="str_show_near_rp_gps">فقط مشتریانی را نمایش بده که به من نزدیک‌اند</string>
+    <string name="str_signing_in">در حال ورود...</string>
+    <string name="str_slip_amount">مبلغ برگه</string>
+    <string name="str_slip_detail_informations">در حال دریافت جزئیات برگه</string>
+    <string name="str_slip_entry">واردکردن برگهٔ سفارش</string>
+    <string name="str_slip_header_informations">در حال دریافت عنوان برگه</string>
+    <string name="str_source_ware_house">انبار منبع</string>
+    <string name="str_spe_code">کد کمکی</string>
+    <string name="str_special_code">کد کمکی</string>
+    <string name="str_special_code1">کد کمکی ۱</string>
+    <string name="str_special_code2">کد کمکی ۲</string>
+    <string name="str_special_code3">کد کمکی ۳</string>
+    <string name="str_special_code4">کد کمکی ۴</string>
+    <string name="str_special_code5">کد کمکی ۵</string>
+    <string name="str_special_operation">عملیات خاص</string>
+    <string name="str_specode">کد کمکی</string>
+    <string name="str_specode_not_found">کد کمکی تعریف‌شده یافت نشد.</string>
+    <string name="str_speed">سرعت (کیلومتر در ساعت)</string>
+    <string name="str_stamp_value">ارزش تمبر</string>
+    <string name="str_standby_time">زمان آماده‌به‌کار</string>
+    <string name="str_start">شروع</string>
+    <string name="str_start_and_end_date">تاریخ شروع و پایان</string>
+    <string name="str_start_codes">کدهای شروع</string>
+    <string name="str_start_date_should_be_less_than_end_date">تاریخ شروع باید زودتر از تاریخ پایان باشد</string>
+    <string name="str_start_end_km_error">کیلومتر شروع نباید بیشتر از کیلومتر پایان باشد.</string>
+    <string name="str_start_km">شروع KM</string>
+    <string name="str_start_serial_number">عدد آغازین شمارهٔ‌ سریال</string>
+    <string name="str_start_visit">شروع کنید</string>
+    <string name="str_statement_cash_collection">صورتحساب (نقدی)</string>
+    <string name="str_statement_check_collection">صورتحساب (چک)</string>
+    <string name="str_statement_credit_card_fiche">صورتحساب (فیش کارت اعتباری)</string>
+    <string name="str_statement_payroll_note">صورتحساب (سند لیست حقوق)</string>
+    <string name="str_statement_safe_deposit">صورتحساب (صندوق امانات)</string>
+    <string name="str_status">وضعیت</string>
+    <string name="str_stock">موجودی</string>
+    <string name="str_stock_completed">موجودی تکمیل شد</string>
+    <string name="str_stock_in">موجود</string>
+    <string name="str_stock_in_out">موجود/ ناموجود</string>
+    <string name="str_stock_location_not_suitable">دریافت اطلاعات تعداد کالای موجود میسر نیست، زیرا اتصال به اینترنت
+        برقرار نیست.
+    </string>
+    <string name="str_stock_name">نام سهام</string>
+    <string name="str_stock_out">ناموجود</string>
+    <string name="str_stock_query">پرس‌وجو در موجودی</string>
+    <string name="str_stock_reports">گزارشات سهام</string>
+    <string name="str_stock_saving">در حال ذخیرهٔ موجودی…</string>
+    <string name="str_stocks">موجودی‌ها</string>
+    <string name="str_stocks_transferring">در حال انتقال موجودی…</string>
+    <string name="str_suggestion">پیشنهادها</string>
+    <string name="str_sunday">یک‌شنبه</string>
+    <string name="str_surname">نام خانوادگی</string>
+    <string name="str_surplusAmount_exceeds_entered_amount">مقدار مازاد نمی تواند از مقدار وارد شده بیشتر باشد</string>
+    <string name="str_surplus_amount">مازاد</string>
+    <string name="str_surplus_amount_abbr">مازاد</string>
+    <string name="str_surplus_discount">تخفیف مازاد</string>
+    <string name="str_surplus_product">محصول مازاد</string>
+    <string name="str_survey">نظرسنجی</string>
+    <string name="str_survey_answers">پاسخ‌های نظرسنجی</string>
+    <string name="str_survey_information">اطلاعات نظرسنجی</string>
+    <string name="str_survey_list">فهرست نظرسنجی</string>
+    <string name="str_survey_questions">سؤالات نظرسنجی</string>
+    <string name="str_survey_transferred">نظرسنجی منتقل نشد</string>
+    <string name="str_switch_erp">برنامهٔ ERP لوگو را انتخاب کنید</string>
+    <string name="str_switch_erp_summary">لطفاً اپلیکیشن لوگویی را که استفاده می‌کنید انتخاب کنید. تایگرگو/ جی-پلتفرم
+    </string>
+    <string name="str_tab_communication">مخاطب</string>
+    <string name="str_tab_content">محتوا</string>
+    <string name="str_tab_detail">جزئیات</string>
+    <string name="str_tab_general">عمومی</string>
+    <string name="str_tab_logistics">لجستیک</string>
+    <string name="str_tab_payment">پرداخت</string>
+    <string name="str_tab_process">عملیات</string>
+    <string name="str_tab_risk">ریسک</string>
+    <string name="str_tab_summary">جمع‌بندی</string>
+    <string name="str_tab_title">عنوان</string>
+    <string name="str_take_photo">عکس گرفتن</string>
+    <string name="str_tap_to_open_app">برای باز کردن برنامه ضربه بزنید</string>
+    <string name="str_task">وظیفه</string>
+    <string name="str_task_details">جزئیات وظیفه</string>
+    <string name="str_task_info_sent">اطلاعات وظیفه ارسال شد</string>
+    <string name="str_task_informations">اطلاعات وظیفه</string>
+    <string name="str_task_result_info">اطلاعات نتیجهٔ وظیفه</string>
+    <string name="str_task_sending">در حال ارسال وظایف…</string>
+    <string name="str_tasks">وظایف</string>
+    <string name="str_tax_number">شمارهٔ مالیاتی</string>
+    <string name="str_tax_office">ادارهٔ مالیات</string>
+    <string name="str_taxpayer_code">کد مالیات‌دهنده</string>
+    <string name="str_taxpayer_name">نام مالیات‌دهنده</string>
+    <string name="str_tc_balance_abbrv">TC Bal.</string>
+    <string name="str_tc_credit_abbrv">TC Cred.</string>
+    <string name="str_tc_currency_abbrv">TC</string>
+    <string name="str_tc_debit_abbrv">TC Deb.</string>
+    <string name="str_telephone">تلفن</string>
+    <string name="str_terms_of_use">شرایط استفاده</string>
+    <string name="str_thirdDriverInfo">اطلاعات راننده - 3</string>
+    <string name="str_thousand">هزار</string>
+    <string name="str_thursday">پنج‌شنبه</string>
+    <string name="str_tiger_wcf_service_address_summary">لطفاً آدرس آی‌پی را وارد کنید. برای مثال، ۱۹۲.۱۶۸.۱.۱</string>
+    <string name="str_title">عنوان</string>
+    <string name="str_title_devices">دستگاه‌ها</string>
+    <string name="str_title_info">اطلاعات عنوان</string>
+    <string name="str_tmp_0">0</string>
+    <string name="str_tmp_0_float">0.00</string>
+    <string name="str_todo">وظایف</string>
+    <string name="str_todo_beg_date">تاریخ شروع وظیفه:</string>
+    <string name="str_todo_complete_time">زمان انجام:</string>
+    <string name="str_todo_description">تعریف وظیفه:</string>
+    <string name="str_todo_detail">جزئیات وظیفه:</string>
+    <string name="str_todo_end_date">تاریخ پایان وظیفه:</string>
+    <string name="str_todo_info">اطلاعات وظیفه:</string>
+    <string name="str_todo_info_body">اطلاعات وظیفه پیوست شده است.</string>
+    <string name="str_todo_priority_high">فوری</string>
+    <string name="str_todo_priority_low">پایین</string>
+    <string name="str_todo_priority_normal">نرمال</string>
+    <string name="str_todo_read_time">زمان خواندن:</string>
+    <string name="str_todo_send_failed">در حین ارسال اطلاعات وظیفه، خطایی رخ داد!</string>
+    <string name="str_todo_send_success">اطلاعات وظیفه ارسال شد.</string>
+    <string name="str_todo_sending">در حال ارسال اطلاعات وظایف…</string>
+    <string name="str_todo_status">وضعیت:</string>
+    <string name="str_todo_user">کاربر:</string>
+    <string name="str_todo_user_note">یادداشت کاربر:</string>
+    <string name="str_total">جمع کل</string>
+    <string name="str_total_discount">مجموع تخفیف</string>
+    <string name="str_total_general_discount">تخفیف عمومی</string>
+    <string name="str_total_gross_volume">حجم کل ناخالص</string>
+    <string name="str_total_gross_weight">وزن کل ناخالص</string>
+    <string name="str_total_km">کیلومتر کل</string>
+    <string name="str_total_line_discount">تخفیف برای محصول خاص</string>
+    <string name="str_total_net">خالص:</string>
+    <string name="str_total_net_volume">حجم کل خالص</string>
+    <string name="str_total_net_weight">وزن کل خالص</string>
+    <string name="str_total_quantity">جمع کل</string>
+    <string name="str_total_vat">مجموع مالیات بر ارزش‌افزوده</string>
+    <string name="str_town">شهرک</string>
+    <string name="str_town_not_found">منطقه تعریف شده یافت نشد</string>
+    <string name="str_tr_keyboard">کیبورد ترکی</string>
+    <string name="str_trade_group">گروه تجاری</string>
+    <string name="str_trade_group_not_found">گروه تجاری تعریف‌شده یافت نشد.</string>
+    <string name="str_trading_group">گروه تجاری</string>
+    <string name="str_trading_operation_groups">گروه‌های تجاری</string>
+    <string name="str_trading_process">عملیات تجاری</string>
+    <string name="str_trailerPlates">Trailer Plates</string>
+    <string name="str_trailer_plate_no">پلاک تریلر شماره</string>
+    <string name="str_transaction">روند</string>
+    <string name="str_transaction_date">تاریخ معامله</string>
+    <string name="str_transfer_failed">انتقال انجام نشد</string>
+    <string name="str_transfer_get_end">انتقال داده انجام شد.</string>
+    <string name="str_transfer_get_start">شروع انتقال</string>
+    <string name="str_transfer_get_starting">شروع انتقال داده</string>
+    <string name="str_transfer_information">اطلاعات انتقال</string>
+    <string name="str_transfer_list">انتقال فهرست</string>
+    <string name="str_transfer_part_size">تعداد رکوردهایی که بناست یک‌دفعه منتقل شود:</string>
+    <string name="str_transferred_number_one_time">تعداد رکوردهای که بناست یک‌دفعه منتقل شود</string>
+    <string name="str_transportation_type">نوع حمل</string>
+    <string name="str_trillion">تریلیون</string>
+    <string name="str_truck_number">کامیون شماره</string>
+    <string name="str_tuesday">سه‌شنبه</string>
+    <string name="str_turkish_lira_provision">تأمین T.L</string>
+    <string name="str_type">نوع</string>
+    <string name="str_unable_get_gps_info">کسب اطلاعات جی‌پی‌اس امکان‌پذیر نیست</string>
+    <string name="str_unable_gps_location_information">بازیابی اطلاعات محل جی‌پی‌اس امکان‌پذیر نیست</string>
+    <string name="str_unable_to_ship">قادر به ارسال نیست</string>
+    <string name="str_understand">متوجه‌ام</string>
+    <string name="str_undo">آندو</string>
+    <string name="str_unit">واحد</string>
+    <string name="str_unit2">واحد 2:</string>
+    <string name="str_unit_barcode">بارکد واحد</string>
+    <string name="str_unit_price">قیمت واحد</string>
+    <string name="str_unit_variant">گونهٔ واحد</string>
+    <string name="str_units">واحدها</string>
+    <string name="str_units_completed">واحدها تکمیل شد</string>
+    <string name="str_units_saving">در حال ذخیرهٔ واحدها…</string>
+    <string name="str_units_transferring">در حال انتقال واحدها…</string>
+    <string name="str_unknown">ناشناخته</string>
+    <string name="str_unknown_error_on_check_user_count">هنگام بررسی تعداد کاربر خطایی رخ داد</string>
+    <string name="str_unpair">دستگاه جفت‌شده را حذف کن</string>
+    <string name="str_untransferred_balance">ماندهٔ تخصیص‌نیافته</string>
+    <string name="str_up">بالا</string>
+    <string name="str_update_balance">به‌روزرسانی مانده (*)</string>
+    <string name="str_update_order_status">به روز رسانی وضعیت سفارش</string>
+    <string name="str_update_price_information">به‌روزرسانی قیمت (*)</string>
+    <string name="str_update_stock_information">به‌روزرسانی موجودی (*)</string>
+    <string name="str_updated_matter_no_failed">به‌روزرسانی شمارهٔ سند چاپ‌شده امکان‌پذیر نیست!</string>
+    <string name="str_updated_matter_no_success">شمارهٔ سند چاپ‌شده به‌روزرسانی شد!</string>
+    <string name="str_updated_price_information">قیمت به‌روزرسانی شد</string>
+    <string name="str_updated_status_order_dispatchable">وضعیت‌های سفارش به وضعیت قابل‌تحویل به‌روزرسانی شده است
+    </string>
+    <string name="str_updated_status_order_undispatchable">وضعیت‌های سفارش به وضعیت غیرقابل‌تحویل به‌روزرسانی شده است
+    </string>
+    <string name="str_updated_stock_information">موجودی به‌روزرسانی شد</string>
+    <string name="str_use3d">از 3D استفاده کنید</string>
+    <string name="str_use_app_permission">برای استفاده از نرم‌افزار، اجازهٔ شما لازم است. آیا اجازه می‌دهید؟</string>
+    <string name="str_use_automatic_transfer">استفاده از انتقال خودکار</string>
+    <string name="str_use_demo">استفاده از دمو</string>
+    <string name="str_use_gps_permission">برای استفاده از GPS، اجازهٔ شما لازم است. آیا اجازه می‌دهید؟</string>
+    <string name="str_use_preprinted_paper_number">استفاده از شمارهٔ کاغذ از پیش چاپ‌شده</string>
+    <string name="str_user">کاربران</string>
+    <string name="str_user_amount">ورود تعداد</string>
+    <string name="str_user_info">اطلاعات کاربر</string>
+    <string name="str_user_info_get">در حال دریافت پارامترهای کاربر</string>
+    <string name="str_user_info_get_failed">در حین دریافت پارامترهای کاربر، خطایی رخ داد!</string>
+    <string name="str_user_info_get_success">پارامترهای کاربر دریافت شد</string>
+    <string name="str_user_name">نام کاربری</string>
+    <string name="str_user_not_found">کاربر یافت نشد</string>
+    <string name="str_user_parameters">پارامترهای کاربر</string>
+    <string name="str_user_password">رمز عبور</string>
+    <string name="str_username">کاربر</string>
+    <string name="str_username_required">نام کاربری را وارد کنید</string>
+    <string name="str_using_new_version">در حال ارسال، زیرا از نسخه برای بازیابی نسخهٔ قدیمی استفاده نکرده‌اید</string>
+    <string name="str_variant">گونه</string>
+    <string name="str_variant_barcodes_completed">بارکدهای گونه تکمیل شد</string>
+    <string name="str_variant_barcodes_saving">ذخیرهٔ بارکدهای گونه</string>
+    <string name="str_variant_barcodes_transferring">در حال انتقال بارکدهای گونه…</string>
+    <string name="str_variant_colon">گونه:</string>
+    <string name="str_variant_completed">گونه‌ها تکمیل شد</string>
+    <string name="str_variant_not_entered_error">خط‌های گونهٔ انتخاب‌نشده</string>
+    <string name="str_variant_saving">در حال ذخیرهٔ گونه‌ها…</string>
+    <string name="str_variant_transferring">در حال انتقال گونه‌ها…</string>
+    <string name="str_variants">گونه‌ها</string>
+    <string name="str_vat">مالیات بر ارزش افزوده</string>
+    <string name="str_vat_rate">نسبت مالیات بر ارزش افزوده</string>
+    <string name="str_vat_ratio">میزان مالیات بر ارزش افزوده:</string>
+    <string name="str_vat_total">جمع کل مالیات بر ارزش افزوده</string>
+    <string name="str_vehicle_code">کد خودرو</string>
+    <string name="str_vehicle_info">اطلاعات خودرو</string>
+    <string name="str_vehicle_stock_status">وضعیت موجودی خودرو</string>
+    <string name="str_verification_code">کد تایید</string>
+    <string name="str_version">نسخه</string>
+    <string name="str_visit">ویزیت</string>
+    <string name="str_visit_date">تاریخ ویزیت</string>
+    <string name="str_visit_error_message_title">خطاهای ویزیت</string>
+    <string name="str_visit_info">اطلاعات ویزیت</string>
+    <string name="str_visit_info_sent">اطلاعات ویزیت ارسال شد</string>
+    <string name="str_visit_note">توضیح ویزیت</string>
+    <string name="str_visit_reason">دلیل</string>
+    <string name="str_visit_transferred">ویزیت منتقل شد</string>
+    <string name="str_visit_user_title">اطلاعات عنوان</string>
+    <string name="str_visit_will_complete">%1s برای مشتری با عنوان، بازدید تکمیل خواهد شد.</string>
+    <string name="str_visit_will_start">%1s بازدید از مشتری با عنوان آغاز خواهد شد.</string>
+    <string name="str_waiting">در حال انتظار…</string>
+    <string name="str_waiting_for_approval">منتظر پذیرفته شدن</string>
+    <string name="str_ware_house">انبار</string>
+    <string name="str_warehouse">انبار</string>
+    <string name="str_warehouse_not_found">انبار یافت نشد</string>
+    <string name="str_warehouse_status">وضعیت انبار</string>
+    <string name="str_warehouse_status_in_out">وضعیت انبار: ورود و خروج</string>
+    <string name="str_warehouse_stock">جمع کل انبار</string>
+    <string name="str_warehouses">انبارها</string>
+    <string name="str_warning">هشدار</string>
+    <string name="str_warranty_code">کد مجوز دسترسی</string>
+    <string name="str_wcf_address">آدرس WCF</string>
+    <string name="str_wcf_security_code">کد امنیتی WCF</string>
+    <string name="str_web_service_address">آدرس وب سرویس</string>
+    <string name="str_wednesday">چهارشنبه</string>
+    <string name="str_wholesale_sales_invoice">فاکتور فروش عمده</string>
+    <string name="str_wholesale_sales_return_invoice">فاکتور مرجوعی فروش عمده</string>
+    <string name="str_width">عرض</string>
+    <string name="str_wor_user_count">تعداد کاربران تعریف شده:</string>
+    <string name="str_wor_user_count_exceeds_license_user_count">تعاریف کاربری بیشتر از تعداد مجوزها شناسایی شده است،
+        برای ورود به برنامه باید به تعداد مجوزها تعاریف کاربر وجود داشته باشد.
+    </string>
+    <string name="str_work_info">اطلاعات کار</string>
+    <string name="str_work_time_control">ساعات کار در حال کنترل است. لطفاً صبر کنید…</string>
+    <string name="str_yes">بله</string>
+    <string name="str_you_cant_create_invoice_for_einvoice_customers">شما نمی توانید فاکتور را برای مشتریان فاکتور
+        الکترونیکی ایجاد کنید
+    </string>
+    <string name="str_you_dont_have_masterpass_account">شما حساب MasterPass ندارید</string>
+    <string name="str_you_have_new_notifications">You have %1d new message</string>
+    <string name="str_your_ip">مثال آدرس آی‌پی‌تان : 192.168.0.1</string>
+    <string name="summary_collapsed_preference_list">%1s، %2s</string>
+    <string name="type_delete_customer_image">در حال پاک کردن تصویر مشتری</string>
+    <string name="type_getFirm">دریافت اطلاعات محکم</string>
+    <string name="type_get_accounting_ref_codes">در حال دریافت کد مرجع حساب</string>
+    <string name="type_get_add_taxes">در حال دریافت اطلاعات مالیات اضافی</string>
+    <string name="type_get_bank">در حال دریافت بانک‌ها</string>
+    <string name="type_get_bank_account">در حال دریافت حساب‌های بانکی</string>
+    <string name="type_get_barcode">در حال دریافت بارکدها</string>
+    <string name="type_get_branch">در حال دریافت بخش‌ها</string>
+    <string name="type_get_clcard">در حال دریافت کارت‌های AR/AP</string>
+    <string name="type_get_clcard_last_transfer">در حال دریافت اطلاعات تراکنش کارت‌های AR/AP</string>
+    <string name="type_get_clcard_low_level_code">در حال دریافت اطلاعات مشتری</string>
+    <string name="type_get_credit_aggrs">در حال بازیابی اطلاعات قرارداد</string>
+    <string name="type_get_curr_rate">در حال دریافت مقادیر نرخ ارز</string>
+    <string name="type_get_curr_type">در حال دریافت انواع نرخ ارز</string>
+    <string name="type_get_customer_campaign_point">در حال دریافت امتیازات کمپین AR/AP</string>
+    <string name="type_get_customer_gps_location">در حال دریافت محل‌های مشتریان</string>
+    <string name="type_get_customer_images">در حال دریافت تصاویر کنونی</string>
+    <string name="type_get_customer_salesman_relation">در حال دریافت مشتریان: روابط فروشنده</string>
+    <string name="type_get_def_order">در حال دریافت فرم‌ها</string>
+    <string name="type_get_def_order_detail">در حال دریافت جزئیات فرم</string>
+    <string name="type_get_design_file">در حال دریافت فایل‌های طراحی</string>
+    <string name="type_get_design_file_json">در حال دریافت محتوای فایل طراحی</string>
+    <string name="type_get_design_file_settings">در حال دریافت محتوای فایل طراحی</string>
+    <string name="type_get_design_file_str">در حال دریافت نام‌های فایل طراحی</string>
+    <string name="type_get_discount">در حال دریافت تخفیف‌ها</string>
+    <string name="type_get_division">در حال دریافت دپارتمان‌ها</string>
+    <string name="type_get_edoc_serials">دریافت اطلاعات سریال</string>
+    <string name="type_get_email_param">در حال دریافت تنظیمات ایمیل</string>
+    <string name="type_get_email_templates">در حال دریافت الگوهای ایمیل</string>
+    <string name="type_get_factory">در حال دریافت کارخانه‌ها</string>
+    <string name="type_get_image">در حال آپلود تصویر</string>
+    <string name="type_get_item">در حال دریافت اطلاعات</string>
+    <string name="type_get_item_group_codes">دریافت کد گروه محصولات</string>
+    <string name="type_get_item_image">در حال دریافت تصاویر محصولات</string>
+    <string name="type_get_item_last_transfer">در حال دریافت اطلاعات آخرین معاملهٔ اجناس</string>
+    <string name="type_get_item_unit">در حال دریافت واحدهای اجناس</string>
+    <string name="type_get_licence_info">در حال دریافت اطلاعات لایسنس</string>
+    <string name="type_get_logo_trade_param">در حال دریافت پارامترهای لوگو</string>
+    <string name="type_get_marketing_message">در حال دریافت پیام‌های بازاریابی</string>
+    <string name="type_get_online_price">در حال بازیابی قیمت‌های آنلاین محصول</string>
+    <string name="type_get_order_status">در حال چک‌کردن وضعیت تأیید سفارش</string>
+    <string name="type_get_payment">در حال دریافت پرداخت‌ها</string>
+    <string name="type_get_payment_lines">در حال دریافت جزئیات برنامه‌ی پرداخت</string>
+    <string name="type_get_penetration">در حال دریافت نفوذها</string>
+    <string name="type_get_penetration_detail">در حال دریافت جزئیات نفوذ</string>
+    <string name="type_get_price">در حال دریافت قیمت‌ها</string>
+    <string name="type_get_project">در حال دریافت پروژه‌ها</string>
+    <string name="type_get_reports">در حال دریافت گزارش‌ها</string>
+    <string name="type_get_route">در حال دریافت مسیرها</string>
+    <string name="type_get_routes">در حال دریافت مسیرها</string>
+    <string name="type_get_sales_order">در حال دریافت سفارش‌ها</string>
+    <string name="type_get_sales_order_detail">در حال دریافت جزئیات سفارش</string>
+    <string name="type_get_service">در حال دریافت خدمات</string>
+    <string name="type_get_service_unit">در حال بازیابی واحدهای خدماتی</string>
+    <string name="type_get_ship_address">در حال دریافت آدرس‌های حمل</string>
+    <string name="type_get_ship_agent">در حال دریافت کارگزاران حمل</string>
+    <string name="type_get_ship_type">در حال دریافت انواع حمل</string>
+    <string name="type_get_specode">در حال دریافت کدهای کمکی</string>
+    <string name="type_get_st_compln">در حال دریافت موارد مختلط</string>
+    <string name="type_get_stock">در حال دریافت موجودی</string>
+    <string name="type_get_todo">در حال دریافت وظایف</string>
+    <string name="type_get_trading_group">در حال دریافت گروه‌های تجاری</string>
+    <string name="type_get_unit">در حال بازیابی واحدها</string>
+    <string name="type_get_user_case">در حال دریافت موردهای کاربر</string>
+    <string name="type_get_user_device">در حال چک‌کردن دستگاه</string>
+    <string name="type_get_user_info">در حال دریافت کاربران فروش سیار</string>
+    <string name="type_get_user_param">در حال دریافت پارامترهای کاربر</string>
+    <string name="type_get_variant">در حال دریافت گونه‌های مختلف</string>
+    <string name="type_get_variant_stock">گرفتن سهام انواع</string>
+    <string name="type_get_variant_unit">در حال دریافت واحدهای گونه</string>
+    <string name="type_get_visit_reason">در حال دریافت دلایل ویزیت</string>
+    <string name="type_get_warehouse">در حال دریافت انبارها</string>
+    <string name="type_insert_customer_image">در حال ارسال تصویر مشتری</string>
+    <string name="type_insert_penetration">در حال ارسال فیش نفوذ</string>
+    <string name="type_insert_todo_wor_proc">در حال ارسال رکوردهای اطلاعات وظیفه</string>
+    <string name="type_insert_visit">در حال ارسال برگهٔ ویزیت</string>
+    <string name="type_login">در حال ورود…لطفاً صبر کنید.</string>
+    <string name="type_save_device_id">در حال ذخیره‌کردن دستگاه</string>
+    <string name="type_send_auto_visits">سوابق بازدید خودکار ارسال می شود.</string>
+    <string name="type_send_gps_info">در حال ارسال اطلاعات جی‌پی‌اس</string>
+    <string name="type_send_start_info">در حال ارسال اطلاعات کار</string>
+    <string name="type_update_matter_area">در حال به‌روزرسانی شمارهٔ سند چاپ‌شده</string>
+    <string name="type_update_sales_order">در حال به‌روزرسانی وضعیت سفارش</string>
+    <string name="type_update_todo_info">در حال به‌روزرسانی وظیفه</string>
+    <string name="v7_preference_off">خاموش</string>
+    <string name="v7_preference_on">روشن</string>
+</resources>

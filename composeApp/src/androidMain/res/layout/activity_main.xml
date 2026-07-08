@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:id="@+id/content_frame" android:layout_width="match_parent"
+                                                     android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent"
+                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="match_parent" android:weightSum="1" tools:ignore="UselessParent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/lnMenuContainer"
+                          android:background="@color/white" android:layout_width="match_parent"
+                          android:layout_height="0dp" android:weightSum="1" android:layout_weight="0.535">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lyMainFirst"
+                              android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="1"
+                              android:layout_weight="0.33" tools:ignore="NestedWeights">
+                    <TextView android:id="@+id/txtOrder" android:text="@string/activity_title_order"
+                              style="@style/MainActivityTextStyle"
+                              app:drawableTopCompat="@drawable/ic_clipboard_check_grey600_36dp"/>
+                  <TextView android:id="@+id/txtRequest" android:text="@string/activity_title_request"
+                            style="@style/MainActivityTextStyle"
+                            app:drawableTopCompat="@drawable/ic_cart_plus_grey600_36dp"/>
+                  <TextView android:id="@+id/txtDistribution" android:text="@string/activity_title_distribution"
+                            style="@style/MainActivityTextStyle"
+                            app:drawableTopCompat="@drawable/ic_truck_grey600_36dp"/>
+                  <TextView android:id="@+id/txtCustomer" android:text="@string/activity_title_customer"
+                            style="@style/MainActivityTextStyle"
+                            app:drawableTopCompat="@drawable/ic_account_circle_grey600_36dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lyMainSecond"
+                              android:layout_width="match_parent" android:layout_height="0dp"
+                              android:layout_weight="0.33">
+                    <TextView android:id="@+id/txtProduct" android:text="@string/activity_title_product"
+                              style="@style/MainActivityTextStyle"
+                              app:drawableTopCompat="@drawable/ic_barcode_scan_grey600_36dp"/>
+                    <TextView android:id="@+id/txtUtil" android:text="@string/activity_title_util"
+                              style="@style/MainActivityTextStyle"
+                              app:drawableTopCompat="@drawable/ic_wrench_grey600_36dp"/>
+                    <TextView android:id="@+id/txtReport" android:text="@string/activity_title_report"
+                              style="@style/MainActivityTextStyle"
+                              app:drawableTopCompat="@drawable/ic_file_chart_grey600_36dp"/>
+                    <TextView android:id="@+id/txtTransfer" android:text="@string/activity_title_transfer"
+                              style="@style/MainActivityTextStyle"
+                              app:drawableTopCompat="@drawable/ic_cached_grey600_36dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lyMainThird"
+                              android:layout_width="match_parent" android:layout_height="0dp"
+                              android:layout_weight="0.33">
+                  <TextView android:id="@+id/txtWhTransfer" android:text="@string/str_activity_title_vehicle_transfer"
+                            style="@style/MainActivityTextStyle"
+                            app:drawableTopCompat="@drawable/ic_baseline_import_export_36"
+                            android:gravity="bottom|center"/>
+                    <TextView style="@style/MainActivityTextStyle" tools:ignore="SpeakableTextPresentCheck"/>
+                    <TextView style="@style/MainActivityTextStyle" tools:ignore="SpeakableTextPresentCheck"/>
+                    <TextView style="@style/MainActivityTextStyle" tools:ignore="SpeakableTextPresentCheck"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llTodoMesaj"
+                          android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="1"
+                          android:layout_weight="0.465">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_to_do" android:scrollbars="vertical"
+                                                           android:layout_width="match_parent"
+                                                           android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:background="@android:color/transparent" android:clickable="false"
+              android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linearMaterial2"
+                  android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/chkBoxReportAvg" android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_marginRight="4dp" android:layout_weight="1.5"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:id="@+id/txtViewDate"
+                                                     android:layout_width="0dp" android:layout_height="wrap_content"
+                                                     android:layout_marginRight="4dp" android:text="31.12.2015"
+                                                     android:singleLine="true" android:layout_weight="3.3"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="start"
+                                                     android:id="@+id/txtViewFischeNumber" android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="@string/str_tmp_0" android:singleLine="false"
+                                                     android:layout_weight="4" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="start"
+                                                     android:id="@+id/txtViewAmount" android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="@string/str_tmp_0_float" android:singleLine="true"
+                                                     android:layout_weight="2" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="start"
+                                                     android:id="@+id/txtViewDiscount" android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="@string/str_tmp_0_float" android:singleLine="true"
+                                                     android:layout_weight="2" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="start"
+                                                     android:id="@+id/txtViewNetAmount" android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+                                                     android:text="@string/str_tmp_0_float" android:singleLine="true"
+                                                     android:layout_weight="2" android:layout_marginStart="4dp"
+                                                     android:layout_marginEnd="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="end"
+                                                     android:id="@+id/txtViewExplanation" android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_marginLeft="2dp" android:text="Aciklama"
+                                                     android:singleLine="true" android:layout_weight="2"
+                                                     android:layout_marginStart="2dp"/>
+    </LinearLayout>
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1sp"/>
+</LinearLayout>

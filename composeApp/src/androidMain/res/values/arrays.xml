@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<array name="add_photo_select_values">
+		<item>@string/str_choose_from_library</item>
+		<item>@string/str_take_photo</item>
+	</array>
+	<array name="additional_invoice_type_values">
+		<item>@string/array_str_choose</item>
+		<item>@string/array_str_pharmacy</item>
+		<item>@string/array_str_hospital</item>
+		<item>@string/array_str_optic</item>
+		<item>@string/array_str_medical</item>
+		<item>@string/array_str_subscription</item>
+		<item>@string/array_str_goods_and_services</item>
+		<item>@string/array_str_other</item>
+	</array>
+	<array name="array_average_expiry_type">
+		<item>@string/array_str_all_invoices</item>
+		<item>@string/array_str_invoices_in_date_range</item>
+	</array>
+	<array name="array_cabin_received_reason">
+		<item>@string/str_defective</item>
+		<item>@string/str_period_end</item>
+	</array>
+	<array name="array_customer_tab">
+		<item>@string/str_tab_general</item>
+		<item>@string/str_tab_communication</item>
+		<item>@string/str_tab_process</item>
+		<item>@string/str_tab_summary</item>
+		<item>@string/str_tab_risk</item>
+	</array>
+	<array name="array_demo_values">
+		<item>@string/str_yes</item>
+		<item>@string/str_no</item>
+	</array>
+	<array name="array_erp">
+		<item>Tiger/Go</item>
+		<item>J-Platform</item>
+	</array>
+	<array name="array_erp_values">
+		<item>0</item>
+		<item>1</item>
+	</array>
+	<array name="array_fiche_netsis_paytype">
+		<item>@string/pref_print_screen_cash_title</item>
+		<item>@string/str_remittance</item>
+		<item>@string/pref_print_screen_cheque_title</item>
+	</array>
+	<array name="array_fiche_tab">
+		<item>@string/str_tab_title</item>
+		<item>@string/str_tab_detail</item>
+	</array>
+	<array name="array_global_line_type">
+		<item>@string/str_global_line_type</item>
+		<item>@string/str_global_general_type</item>
+	</array>
+	<array name="array_global_line_values">
+		<item>0</item>
+		<item>1</item>
+	</array>
+	<array name="array_lang_entries">
+		<item>@string/str_languageNameTr</item>
+		<item>@string/str_languageNameEn</item>
+		<item>@string/str_languageNameRu</item>
+		<item>@string/str_languageNameAz</item>
+		<item>@string/str_languageNameFa</item>
+	</array>
+	<array name="array_lang_values">
+		<item>tr</item>
+		<item>en</item>
+		<item>ru</item>
+		<item>az</item>
+		<item>fa</item>
+	</array>
+	<array name="array_report_currency_unit">
+		<item>@string/str_report_currency_unit_local</item>
+		<item>@string/str_report_currency_unit_report</item>
+		<item>@string/str_report_currency_unit_transaction</item>
+	</array>
+	<array name="array_report_currency_unit_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</array>
+	<array name="array_sales_tab">
+		<item>@string/str_tab_title</item>
+		<item>@string/str_tab_content</item>
+		<item>@string/str_tab_logistics</item>
+		<item>@string/str_tab_payment</item>
+	</array>
+	<array name="array_sales_transfer_tab">
+		<item>@string/str_tab_title</item>
+		<item>@string/str_tab_content</item>
+	</array>
+	<array name="array_unsentfiche_type_def">
+		<item>@string/str_sales_order</item>
+		<item>@string/str_sales_invoice</item>
+		<item>@string/str_sales_return_invoice</item>
+		<item>@string/str_sales_dispatch</item>
+		<item>@string/str_sales_return_dispatch</item>
+		<item>@string/str_sales_one_to_one_change</item>
+		<item>@string/str_cash_receipt</item>
+		<item>@string/str_credit_cart_receipt</item>
+		<item>@string/str_case_receipt</item>
+		<item>@string/str_cheque_receipt</item>
+		<item>@string/str_bill_receipt</item>
+		<item>@string/str_customer_visit</item>
+		<item>@string/str_customer_penetration</item>
+		<item>@string/str_sales_retail_invoice</item>
+		<item>@string/str_sales_retail_return_invoice</item>
+	</array>
+	<array name="array_use_webservice_wcf">
+		<item>@string/array_str_use_web_service</item>
+		<item>@string/array_str_use_wcf</item>
+		<item>@string/array_str_use_rest</item>
+	</array>
+	<array name="array_use_webservice_wcf_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</array>
+	<array name="barcode_select_type_values">
+		<item>@string/array_str_single</item>
+		<item>@string/array_str_multiple</item>
+	</array>
+	<array name="color_codes">
+		<item>@color/red500</item>
+		<item>@color/lightBlue700</item>
+		<item>@color/teal500</item>
+		<item>@color/lightGreen700</item>
+		<item>@color/yellow700</item>
+		<item>@color/orange500</item>
+		<item>@color/brown500</item>
+		<item>@color/blueGrey500</item>
+	</array>
+	<array name="customer_risk_name_values_for_netsis">
+		<item>@string/array_str_risk_guarantee</item>
+		<item>@string/array_str_pnote_principal_risk</item>
+		<item>@string/array_str_pnote_endorsement_risk</item>
+		<item>@string/array_str_check_principal_risk</item>
+		<item>@string/array_str_check_endorsement_risk</item>
+		<item>@string/array_str_order_risk</item>
+		<item>@string/array_str_shipment_risk</item>
+		<item>@string/array_str_loading_risk</item>
+		<item>@string/array_str_dispatch_note_risk</item>
+	</array>
+	<array name="customer_risk_name_values_for_tiger">
+		<item>@string/array_str_open_account</item>
+		<item>@string/array_str_our_own_checks_pnotes</item>
+		<item>@string/array_str_customer_checks_pnotes</item>
+		<item>@string/array_str_endorsement_checks_pnotes</item>
+		<item>@string/array_str_dispatch_note</item>
+		<item>@string/array_str_dispatch_suggestion</item>
+		<item>@string/array_str_order_can_be_shipped</item>
+		<item>@string/array_str_order</item>
+	</array>
+	<array name="customer_sort_type">
+		<item>@string/menu_sort_name</item>
+		<item>@string/menu_sort_name2</item>
+		<item>@string/menu_sorting_debit</item>
+		<item>@string/menu_sort_code</item>
+	</array>
+	<array name="customer_sort_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</array>
+	<array name="marketing_message_titles">
+		<item>@string/array_str_starting_date</item>
+		<item>@string/array_str_end_date</item>
+		<item>@string/array_str_explanation</item>
+		<item>@string/array_str_note</item>
+	</array>
+	<array name="menu">
+		<item>@string/array_str_customer_information</item>
+		<item>@string/array_str_gps_location_information</item>
+	</array>
+	<array name="menu_demand_list">
+		<item>@string/array_str_review</item>
+	</array>
+	<array name="menu_dispatch_list">
+		<item>@string/array_str_dispatch_total</item>
+		<item>@string/array_str_review</item>
+		<item>@string/array_str_apply_campaign</item>
+		<item>@string/array_str_apply_terms_of_sales</item>
+	</array>
+	<array name="menu_invoice_list">
+		<item>@string/array_str_invoice_total</item>
+		<item>@string/array_str_review</item>
+		<item>@string/array_str_apply_campaign</item>
+		<item>@string/array_str_apply_terms_of_sales</item>
+		<item>@string/array_str_invoice_cancel</item>
+	</array>
+	<array name="menu_material_information">
+		<item>@string/array_str_material_information</item>
+		<item>@string/array_str_material_picture</item>
+		<item>@string/array_str_defined_reports</item>
+		<item>@string/array_str_mixed_box_detail</item>
+	</array>
+	<array name="menu_message_list">
+		<item>@string/array_str_delete</item>
+	</array>
+	<array name="menu_order_list">
+		<item>@string/array_str_order_total</item>
+		<item>@string/array_str_review</item>
+		<item>@string/array_str_apply_campaign</item>
+		<item>@string/array_str_apply_terms_of_sales</item>
+	</array>
+	<array name="menu_penetration">
+		<item>@string/array_str_transfer</item>
+	</array>
+	<array name="mission_status">
+		<item>@string/array_str_not_started_yet</item>
+		<item>@string/array_str_continues</item>
+		<item>@string/array_str_completed</item>
+		<item>@string/array_str_rejected</item>
+	</array>
+	<array name="mission_status_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</array>
+	<array name="pref_communication_rest_entries">
+		<item>REST</item>
+	</array>
+	<array name="pref_communication_rest_values">
+		<item>1</item>
+	</array>
+	<array name="pref_communication_wcf_entries">
+		<item>WCF</item>
+	</array>
+	<array name="pref_communication_wcf_values">
+		<item>0</item>
+	</array>
+	<array name="pref_erp_type_entries">
+		<item>TIGER/GO</item>
+		<item>NETSIS</item>
+	</array>
+	<array name="pref_erp_type_values">
+		<item>0</item>
+		<item>2</item>
+	</array>
+	<array name="pref_language_entries">
+		<item>@string/str_languageNameTr</item>
+		<item>@string/str_languageNameEn</item>
+		<item>@string/str_languageNameRu</item>
+		<item>@string/str_languageNameAr</item>
+		<item>@string/str_languageNameAz</item>
+		<item>@string/str_languageNameFa</item>
+	</array>
+	<array name="pref_language_values">
+		<item>tr</item>
+		<item>en</item>
+		<item>ru</item>
+		<item>ar</item>
+		<item>az</item>
+		<item>fa</item>
+	</array>
+	<array name="pref_netsis_branch_code_entries">
+		<item>@string/array_str_central_office</item>
+	</array>
+	<array name="pref_netsis_branch_code_values">
+		<item>32767</item>
+	</array>
+	<array name="pref_netsis_db_type_entries">
+		<item>MSSQL</item>
+		<item>ORACLE</item>
+	</array>
+	<array name="pref_netsis_db_type_values">
+		<item>0</item>
+		<item>1</item>
+	</array>
+	<array name="pref_pplz_encoding_entries">
+		<item>UTF-8</item>
+		<item>UTF-16</item>
+	</array>
+	<array name="pref_pplz_encoding_values">
+		<item>CI28</item>
+		<item>CI29</item>
+	</array>
+	<array name="pref_pplz_font_id_entries">
+		<item>0 ( 12 X 15 )</item>
+		<item>A ( 5 x 9 )</item>
+		<item>B ( 7 x 11 )</item>
+		<item>C ( 10 x 18 )</item>
+		<item>D ( 10 x 18 )</item>
+		<item>E ( 15 x 28 )</item>
+		<item>F ( 13 x 26 )</item>
+		<item>G ( 40 X 60 )</item>
+		<item>H ( 13 X 21 )</item>
+		<item>GS ( 24 X 24 )</item>
+	</array>
+	<array name="pref_pplz_font_id_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+	</array>
+	<array name="pref_pplz_font_ids">
+		<item>0</item>
+		<item>A</item>
+		<item>B</item>
+		<item>C</item>
+		<item>D</item>
+		<item>E</item>
+		<item>F</item>
+		<item>G</item>
+		<item>H</item>
+		<item>GS</item>
+	</array>
+	<array name="pref_pplz_font_values">
+		<item>12,15,15</item>
+		<item>5,9,9</item>
+		<item>7,11,11</item>
+		<item>10,18,18</item>
+		<item>10,18,18</item>
+		<item>15,28,28</item>
+		<item>13,26,26</item>
+		<item>40,60,60</item>
+		<item>13,21,21</item>
+		<item>24,24,24</item>
+	</array>
+	<array name="pref_print_destination_entries">
+		<item>@string/array_str_to_printer</item>
+		<item>@string/array_str_to_file</item>
+	</array>
+	<array name="pref_print_destination_values">
+		<item>PRINTER</item>
+		<item>FILE</item>
+	</array>
+	<array name="pref_print_image_entries">
+		<item>@string/str_none</item>
+		<item>00</item>
+		<item>01</item>
+		<item>02</item>
+		<item>03</item>
+		<item>04</item>
+		<item>05</item>
+		<item>06</item>
+		<item>07</item>
+		<item>08</item>
+		<item>09</item>
+	</array>
+	<array name="pref_print_image_values">
+		<item>None</item>
+		<item>00</item>
+		<item>01</item>
+		<item>02</item>
+		<item>03</item>
+		<item>04</item>
+		<item>05</item>
+		<item>06</item>
+		<item>07</item>
+		<item>08</item>
+		<item>09</item>
+	</array>
+	<array name="pref_print_language_entries">
+		<item>Standart Baskı</item>
+		<item>ZPL</item>
+		<item>PPLZ</item>
+		<item>TSPL</item>
+	</array>
+	<array name="pref_print_language_values">
+		<item>STANDARD</item>
+		<item>ZPL</item>
+		<item>PPLZ</item>
+		<item>TSPL</item>
+	</array>
+	<array name="pref_print_screen_general_list_options_entries">
+		<item>@string/array_str_leave_as_is</item>
+		<item>@string/array_str_dont_use_turkish_characters</item>
+		<item>@string/array_str_convert_to_turkish_characters</item>
+	</array>
+	<array name="pref_print_screen_general_list_options_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</array>
+	<array name="pref_print_screen_list_printed_matter_entries">
+		<item>@string/array_str_submit_receipt_no_field</item>
+		<item>@string/array_str_submit_document_no_field</item>
+	</array>
+	<array name="pref_print_screen_list_printed_matter_entries_netsis">
+		<item>@string/array_str_submit_receipt_no_field</item>
+	</array>
+	<array name="pref_print_screen_list_printed_matter_values">
+		<item>1</item>
+		<item>0</item>
+	</array>
+	<array name="pref_print_screen_list_printed_matter_values_netsis">
+		<item>1</item>
+	</array>
+	<array name="pref_print_screen_list_printer_entries">
+		<item>@string/pref_printer_one_title</item>
+		<item>@string/pref_printer_two_title</item>
+	</array>
+	<array name="pref_print_screen_list_printer_values">
+		<item>0</item>
+		<item>1</item>
+	</array>
+	<array name="pref_print_type_entries">
+		<item>@string/array_str_text</item>
+		<item>@string/array_str_image</item>
+	</array>
+	<array name="pref_print_type_values">
+		<item>TEXT</item>
+		<item>IMAGE</item>
+	</array>
+	<array name="pref_printer_service_list_entries">
+		<item>@string/array_str_no_printer</item>
+	</array>
+	<array name="pref_printer_service_list_values">
+		<item>0</item>
+	</array>
+	<array name="pref_transfer_type_values">
+		<item>@string/str_delete_and_transfer</item>
+		<item>@string/str_changed_transfer</item>
+	</array>
+	<array name="sort_by_debt">
+		<item>@string/str_all</item>
+		<item>@string/array_str_debtor</item>
+		<item>@string/array_str_creditor</item>
+	</array>
+	<array name="sort_by_debt_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</array>
+	<array name="visit_user_title_values">
+		<item>@string/array_str_other</item>
+		<item>@string/array_str_purchasing_specialist</item>
+		<item>@string/array_str_finance_specialist</item>
+		<item>@string/array_str_accounting_specialist</item>
+		<item>@string/array_str_purchasing_manager</item>
+		<item>@string/array_str_finance_manager</item>
+		<item>@string/array_str_accounting_manager</item>
+		<item>@string/array_str_store_manager</item>
+		<item>@string/array_str_general_manager</item>
+		<item>@string/array_str_business_owner</item>
+	</array>
+</resources>

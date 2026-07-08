@@ -1,0 +1,22 @@
+package com.google.android.gms.common.images;
+
+import android.net.Uri;
+import androidx.annotation.Nullable;
+import com.google.android.gms.common.internal.Objects;
+
+/* compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+record zad(Uri zaa) {
+    public boolean equals(@Nullable Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof zad)) {
+            return false;
+        }
+        return Objects.equal(((zad) obj).zaa, this.zaa);
+    }
+
+    public int hashCode() {
+        return Objects.hashCode(this.zaa);
+    }
+}

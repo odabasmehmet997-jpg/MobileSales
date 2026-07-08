@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_cart_plus_white_24dp" android:id="@+id/menu_product_information"
+          android:menuCategory="secondary" android:title="@string/menu_product_information"
+          app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_cart_plus_white_24dp" android:id="@+id/menu_product_delete"
+          android:menuCategory="secondary" android:title="@string/menu_product_delete"
+          app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_cart_plus_white_24dp" android:id="@+id/menu_product_cancel"
+          android:menuCategory="secondary" android:title="@string/menu_product_cancel"
+          app:showAsAction="collapseActionView"/>
+</menu>

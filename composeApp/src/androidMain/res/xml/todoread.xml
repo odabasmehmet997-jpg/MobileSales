@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="psGorevBilgi">
+	<PreferenceCategory android:title="@string/str_task_informations">
+		<Preference
+				android:title="@string/str_start_and_end_date"
+				android:key="pTarih"
+				android:summary=""/>
+		<Preference
+				android:title="@string/str_from_who"
+				android:key="pKimden"
+				android:summary=""/>
+		<Preference
+				android:title="@string/str_priority"
+				android:key="pDurum"
+				android:summary=""/>
+		<Preference
+				android:title="@string/str_explanation"
+				android:key="pAciklama"
+				android:summary=""/>
+		<Preference
+				android:title="@string/str_task_details"
+				android:key="pDetay"
+				android:summary=""/>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/str_task_result_info">
+		<ListPreference
+				android:entries="@array/mission_status"
+				android:title="@string/str_status"
+				android:key="lpGorevDurumu"
+				android:summary=""
+				android:defaultValue="0"
+				android:entryValues="@array/mission_status_values"/>
+		<com.proje.mobilesales.core.preferences.EditTextPref
+				android:name="EditText Preference"
+				android:title="@string/str_note"
+				android:key="etNot"
+				android:defaultValue=""/>
+	</PreferenceCategory>
+</PreferenceScreen>

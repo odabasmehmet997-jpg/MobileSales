@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:layout_margin="16dp">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+            <ImageView android:gravity="start" android:layout_gravity="start" android:id="@+id/clearButton"
+                       android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="8dp"
+                       android:layout_marginBottom="8dp" android:src="@drawable/ic_eraser_black_24dp"
+                       android:contentDescription="@string/str_remove_selection" android:layout_alignParentStart="true"
+                       app:tint="@color/grey600" style="?android:attr/dialogIcon"/>
+            <ImageView android:gravity="end" android:layout_gravity="end" android:id="@+id/closeButton"
+                       android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="8dp"
+                       android:layout_marginBottom="8dp" android:src="@drawable/ic_close_grey600_24dp"
+                       android:contentDescription="@string/str_close" android:layout_alignParentEnd="true"
+                       style="?android:attr/dialogIcon"/>
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                     android:textStyle="bold" android:gravity="center"
+                                                     android:layout_gravity="center" android:id="@+id/txtDialogTitle"
+                                                     android:padding="8dp" android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content" android:singleLine="false"/>
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/edtSearch" android:padding="8dp"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content" android:maxLines="1"
+                                                     android:drawableEnd="@android:drawable/ic_menu_search"
+                                                     app:drawableTint="@color/black"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:name="com.proje.mobilesales.features.fragment.MasterPassCardFragment" android:id="@+id/list"
+                android:paddingTop="@dimen/list_item_spacing_half" android:paddingBottom="@dimen/list_item_spacing_half"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+                app:layoutManager="LinearLayoutManager"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent" android:layout_height="wrap_content"
+                                   style="@style/AppCardView">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ln_riskContainer"
+                  android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+        <TextView android:layout_gravity="center" android:id="@+id/txt_riskName" android:singleLine="false"
+                  android:layout_weight="0.3" style="@style/textCustomerGeneralStyle"/>
+        <CheckBox android:gravity="center_vertical" android:id="@+id/chk_risk" android:clickable="false"
+                  android:layout_width="wrap_content" android:layout_height="match_parent"
+                  android:layout_weight="0.01"/>
+        <TextView android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/txt_riskLimit"
+                  android:layout_weight="0.23" style="@style/textCustomerGeneralStyle"/>
+        <TextView android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/txt_riskClosed"
+                  android:layout_weight="0.23" style="@style/textCustomerGeneralStyle"/>
+        <TextView android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/txt_riskTotal"
+                  android:layout_weight="0.23" style="@style/textCustomerGeneralStyle"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

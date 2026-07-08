@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/rlt_container" android:padding="@dimen/padding_custom_view"
+                    android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <TextView android:id="@+id/txt_productName" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:text="Bizim Sanayag 250 Gram"
+                          style="@style/textSubtitleStyle"/>
+                <TextView android:textSize="@dimen/text_size_xl_small" android:id="@+id/txt_productCode"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_margin="@dimen/padding_one" android:maxLines="1"
+                          style="@style/textSubtitleStyle"/>
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                               android:layout_height="wrap_content"
+                                                               android:weightSum="1">
+                <Switch android:gravity="center_vertical" android:layout_gravity="center_vertical"
+                        android:id="@+id/mProductSwitch" android:padding="@dimen/padding" android:layout_width="55dp"
+                        android:layout_height="46dp" android:textOn="@string/str_stock_in"
+                        android:textOff="@string/str_stock_out" android:text="" android:layout_centerVertical="true"
+                        app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0"
+                        app:layout_constraintTop_toTopOf="0" tools:ignore="TouchTargetSizeCheck"/>
+                <androidx.appcompat.widget.AppCompatEditText android:textColorHint="@color/grey500"
+                                                             android:id="@+id/et_productPrice"
+                                                             android:layout_width="107dp" android:layout_height="48dp"
+                                                             android:hint="@string/str_price" android:lines="1"
+                                                             android:singleLine="true" android:inputType="numberDecimal"
+                                                             app:layout_constraintBottom_toBottomOf="0"
+                                                             app:layout_constraintLeft_toRightOf="@+id/mProductSwitch"
+                                                             app:layout_constraintTop_toTopOf="0"
+                                                             app:layout_goneMarginEnd="@dimen/margin"
+                                                             style="@style/textProductSubStyle"/>
+                <RelativeLayout android:layout_gravity="center" android:id="@+id/rlt_productOperationAmount"
+                                android:layout_width="155dp"
+                                android:layout_height="41dp"
+                                android:layout_marginLeft="@dimen/margin"
+                                app:layout_constraintBottom_toBottomOf="0"
+                                app:layout_constraintLeft_toRightOf="@+id/et_productPrice"
+                                app:layout_constraintRight_toLeftOf="@+id/imgBtn_penetration_not"
+                                app:layout_constraintTop_toTopOf="0">
+                    <ImageButton android:id="@+id/imgBtn_product_plus"
+                                 android:layout_centerVertical="true"
+                                 android:background="?attr/selectableItemBackground"
+                                 android:layout_width="43dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_marginTop="5dp"
+                                 android:src="@drawable/ic_plus_circle_outline_grey600_24dp"
+                                 android:layout_toRightOf="@+id/edt_product_amount"
+                                 android:layout_toEndOf="@+id/edt_product_amount"
+                                 android:contentDescription=""
+                                 android:layout_marginLeft="10dp" android:layout_marginStart="10dp"
+                                 tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"/>
+                    <EditText android:autofillHints="" android:gravity="end" android:id="@+id/edt_product_amount"
+                              android:paddingRight="2dp" android:layout_width="58dp"
+                              android:layout_height="wrap_content"
+                              android:maxWidth="48dp"
+                              android:minWidth="48dp" android:text="0"
+                              android:singleLine="true" android:selectAllOnFocus="true"
+                              android:maxLength="7" android:layout_toRightOf="@+id/imgBtn_product_minus"
+                              android:layout_alignParentTop="true" android:inputType="number"
+                              android:paddingEnd="2dp" android:layout_toEndOf="@+id/imgBtn_product_minus"
+                              style="@style/textProductSubStyle" android:layout_marginLeft="0dp"
+                              android:layout_marginStart="0dp" tools:ignore="TouchTargetSizeCheck"
+                              android:layout_marginTop="4dp"/>
+                    <ImageButton android:id="@+id/imgBtn_product_minus"
+                                 android:background="?attr/selectableItemBackground"
+                                 android:layout_width="44dp"
+                                 android:layout_height="40dp"
+                                 android:src="@drawable/ic_minus_circle_outline_grey600_24dp"
+                                 android:layout_alignTop="@+id/imgBtn_product_plus"
+                                 android:layout_alignParentLeft="true"
+                                 android:layout_alignParentStart="true" android:layout_marginLeft="3dp"
+                                 android:layout_marginStart="3dp" android:layout_marginTop="-5dp"
+                                 android:contentDescription=""
+                                 tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"/>
+                </RelativeLayout>
+                <ImageButton android:layout_gravity="center_vertical"
+                             android:id="@+id/imgBtn_penetration_not"
+                             android:background="?attr/selectableItemBackground"
+                             android:layout_width="48dp"
+                             android:layout_height="48dp"
+                             android:src="@drawable/ic_note_grey600_24dp"
+                             android:layout_centerVertical="true"
+                             app:layout_constraintBottom_toBottomOf="0"
+                             app:layout_constraintRight_toLeftOf="@+id/imgBtn_penetration_cam"
+                             app:layout_constraintTop_toTopOf="0"
+                             android:contentDescription="" tools:ignore="SpeakableTextPresentCheck"/>
+                <ImageButton android:layout_gravity="end" android:id="@+id/imgBtn_penetration_cam"
+                             android:background="?attr/selectableItemBackground"
+                             android:layout_width="48dp"
+                             android:layout_height="48dp"
+                             android:src="@drawable/ic_camera_black_24dp"
+                             android:layout_centerVertical="true"
+                             app:layout_constraintBottom_toBottomOf="0"
+                             app:layout_constraintEnd_toEndOf="0"
+                             app:layout_constraintTop_toTopOf="0"
+                             android:contentDescription="" tools:ignore="SpeakableTextPresentCheck"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

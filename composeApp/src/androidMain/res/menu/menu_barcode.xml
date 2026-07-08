@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_check_all_white_24dp" android:id="@+id/menu_ok" android:menuCategory="secondary"
+          android:title="@string/str_okey" app:showAsAction="always"/>
+    <item android:icon="@drawable/laser_barcode_white" android:id="@+id/menu_fast_read" android:menuCategory="secondary"
+          android:title="@string/str_fast_barcode_read" app:showAsAction="always"/>
+</menu>

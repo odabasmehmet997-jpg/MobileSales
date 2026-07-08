@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="8dp"
+              android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/testid" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceMedium"
+                                                         android:textStyle="bold" android:gravity="start"
+                                                         android:layout_gravity="center"
+                                                         android:id="@+id/txtDialogTitle" android:padding="8dp"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content"
+                                                         android:singleLine="false"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall"
+                                                         android:gravity="start" android:layout_gravity="center"
+                                                         android:id="@+id/txtDialogDescription" android:padding="16dp"
+                                                         android:scrollbars="vertical"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content"
+                                                         android:singleLine="false"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lnButtonList"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:baselineAligned="false"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

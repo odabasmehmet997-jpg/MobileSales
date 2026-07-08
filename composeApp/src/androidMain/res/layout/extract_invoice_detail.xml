@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:ignore="VisualLintBounds">
+    <LinearLayout android:orientation="vertical" android:padding="8dp" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                      android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:paddingRight="2dp"
+                                                         android:clickable="false" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_material" android:singleLine="true"
+                                                         android:layout_weight="8" android:paddingEnd="2dp"
+                                                         tools:ignore="RtlSymmetry,TextSizeCheck"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="end"
+                                                         android:paddingLeft="2dp" android:paddingRight="2dp"
+                                                         android:clickable="false" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_quantity" android:singleLine="true"
+                                                         android:layout_weight="4" android:paddingStart="2dp"
+                                                         android:paddingEnd="2dp" tools:ignore="TextSizeCheck"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="end"
+                                                         android:paddingLeft="2dp" android:paddingRight="2dp"
+                                                         android:clickable="false" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_price" android:singleLine="true"
+                                                         android:layout_weight="4" android:paddingStart="2dp"
+                                                         android:paddingEnd="2dp" tools:ignore="TextSizeCheck"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="end"
+                                                         android:paddingLeft="2dp" android:paddingRight="2dp"
+                                                         android:clickable="false" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_currency_price"
+                                                         android:singleLine="true" android:layout_weight="4"
+                                                         android:paddingStart="2dp" android:paddingEnd="2dp"
+                                                         tools:ignore="TextSizeCheck"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="end"
+                                                         android:paddingLeft="2dp" android:paddingRight="2dp"
+                                                         android:clickable="false" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_vat_rate" android:singleLine="true"
+                                                         android:layout_weight="4" android:paddingStart="2dp"
+                                                         android:paddingEnd="2dp" tools:ignore="TextSizeCheck"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="end"
+                                                         android:paddingLeft="2dp" android:paddingRight="2dp"
+                                                         android:clickable="false" android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:text="@string/str_vat_total" android:singleLine="true"
+                                                         android:layout_weight="4" android:paddingStart="2dp"
+                                                         android:paddingEnd="2dp" tools:ignore="TextSizeCheck"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:gravity="end"
+                                                         android:paddingLeft="2dp" android:clickable="false"
+                                                         android:layout_width="0dp" android:layout_height="wrap_content"
+                                                         android:text="@string/str_total" android:singleLine="true"
+                                                         android:layout_weight="4" android:paddingStart="2dp"
+                                                         tools:ignore="RtlSymmetry,TextSizeCheck"/>
+        </LinearLayout>
+        <ListView android:id="@+id/lvList" android:scrollbars="none" android:layout_width="match_parent"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

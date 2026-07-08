@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_send_white_24dp" android:id="@+id/menu_save"
+          android:title="@string/menu_save_settings" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_information_white_24dp" android:id="@+id/menu_how_to_use"
+          android:title="@string/menu_filter_debit" app:showAsAction="ifRoom"/>
+</menu>

@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:scrollbarStyle="outsideOverlay" android:scrollbars="vertical"
+                                           android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/ln_salesCustomer" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_customer" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent"
+                                android:layout_weight="0.55">
+                    <TextView android:textStyle="bold" android:id="@+id/txt_salesCustomer"
+                              android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:singleLine="false" android:layout_toLeftOf="@+id/img_salesCustomerClear"
+                              android:layout_alignParentLeft="true"
+                              android:layout_toStartOf="@+id/img_salesCustomerClear"
+                              android:layout_alignParentStart="true" style="@style/textCustomerSalesHeaderStyle"/>
+                    <ImageView android:id="@+id/img_salesCustomerClear" android:visibility="visible"
+                               android:clickable="true" android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" android:src="@drawable/ic_close_circle_grey600_24dp"
+                               android:layout_alignParentRight="true" android:layout_centerHorizontal="true"
+                               android:layout_centerVertical="true" android:layout_alignParentEnd="true"
+                               style="@style/textCustomerSalesHeaderStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:id="@+id/customerDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesBranch" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:id="@+id/txtBranchHeader" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:text="@string/str_branch"
+                          android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesBranch" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesDivision" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:id="@+id/txtSalesDivisionHeader" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:text="@string/str_department"
+                          android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesDivision" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesFactory" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:id="@+id/txtSalesFactoryHeader" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:text="@string/str_factory"
+                          android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesFactory" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesWareHouse" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:id="@+id/txtSalesWarehouseHeader" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:text="@string/str_ware_house"
+                          android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesWareHouse" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesReturnWareHouse" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:id="@+id/txtSalesReturnWarehouse" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:text="@string/str_return_ware_house"
+                          android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesReturnWareHouse" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesSourceWareHouse" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:id="@+id/txtSalesSourceWarehouseHeader" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:text="@string/str_source_ware_house"
+                          android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesSourceWareHouse" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesErpInoviceType" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:id="@+id/txtErpInvoiceTypeHeader" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:text="@string/str_erp_invoice_type"
+                          android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_erp_invoice_type" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/dvdErpInvoiceType" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_insteadOfEDespatch" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:id="@+id/txtInsteadOfEDespatch" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:text="@string/str_instead_of_edespatch"
+                          android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <CheckBox android:textStyle="bold" android:id="@+id/chk_insteadOfEDespatch" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/insteadOfEDespatchDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_eDespatch" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_eDespatch" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <CheckBox android:textStyle="bold" android:id="@+id/chk_eDespatch" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/eDespatchDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_shipAgent" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_shipAgent" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesShipAgent" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/dvdShipAgent" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_Serial" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_serial" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_Serial" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/dvdSerial" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesSpeCode" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_spe_code" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesSpeCode" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/dvdspeCode" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesSpeCode1" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_customer_specode_1" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesSpeCode1" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/dvdspeCode1" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesSpeCode2" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_customer_specode_2" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesSpeCode2" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/dvdspeCode2" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesWarrantyCode" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_warranty_code" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesWarrantyCode" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesCabin" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_cabin" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesCabin" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/cabinDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesDocumentNo" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_document_no" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_salesDocumentNo" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesDocumentTrackingNo" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_document_tracking_no" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_salesDocumentTrackingNo"
+                          android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesCustomerOrderNo" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_customer_order_no" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_salesCustomerOrderNo" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/salesCustomerOrderNoDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesDeliveryDate" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_delivery_date" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_salesDeliveryDate" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/salesDeliveryDateDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesDoReserve" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_do_reserve" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <CheckBox android:textStyle="bold" android:id="@+id/chk_salesDoReserve" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/salesDoReserveDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesDetailVatInclude" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_include_vat" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <CheckBox android:textStyle="bold" android:id="@+id/chk_salesDetailVatInclude"
+                          android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/salesDetailVatIncludeDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesPaymentOrder" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_payment_order" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <CheckBox android:textStyle="bold" android:id="@+id/chk_salesPaymentOrder" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/salesPaymentOrderDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesConsignee" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_consignee" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <CheckBox android:textStyle="bold" android:id="@+id/chk_salesConsignee" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:layout_weight="0.55"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/ln_sgk_efatura_bilgileri" android:visibility="gone"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:weightSum="1">
+                <TextView android:textStyle="bold"
+                          android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:text="@string/str_sgk_einvoice_informations" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/ln_sgk_einvoice_information_divider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_additional_invoice_type" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_additional_invoice_type" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_additional_invoice_type"
+                          android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/lnAdditionalInvoiceTypeDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_taxpayer_code" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_taxpayer_code" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_taxpayer_code" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/lnTaxPayerCodeDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_taxpayer_name" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_taxpayer_name" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_taxpayer_name" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/lnTaxPayerNameDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_document_no" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_file_number" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_document_no" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/lnDocumentNoDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_starting_date" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_begin_date" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_starting_date" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/lnStartingDateDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_end_date" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_end_date" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <TextView android:textStyle="bold" android:id="@+id/txt_end_date" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.55"
+                          android:imeOptions="actionDone" style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:id="@+id/lnEndDateDivider" android:background="@color/colorDivider2"
+                  android:layout_width="match_parent" android:layout_height="3dp"/>
+            <LinearLayout android:id="@+id/ln_salesExplanation1" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_explanation" android:layout_weight="0.45" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_salesExplanation1" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesExplanation2" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_explanation_1" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_salesExplanation2" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesExplanation3" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_explanation_2" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_salesExplanation3" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesExplanation4" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_explanation_3" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_salesExplanation4" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesExplanation5" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_explanation_4" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_salesExplanation5" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesExplanation6" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_explanation_5" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_salesExplanation6" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesExplanation7" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_explanation_6" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_salesExplanation7" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesExplanation8" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_explanation_7" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_salesExplanation8" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesExplanation9" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_explanation_8" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_salesExplanation9" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+            <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/ln_salesExplanation10" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="0dp" android:layout_height="match_parent"
+                          android:text="@string/str_explanation_9" android:layout_weight="0.45"
+                          android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"/>
+                <EditText android:textStyle="bold" android:id="@+id/edt_salesExplanation10" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:singleLine="true" android:maxLength="50"
+                          android:layout_weight="0.55" android:imeOptions="actionDone"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

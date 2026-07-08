@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent" android:layout_height="wrap_content"
+                                   style="@style/AppCardView">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/rlt_customer_container" android:padding="3dp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlt_customer_header" android:layout_width="match_parent"
+                        android:layout_height="48dp" android:layout_marginBottom="@dimen/cardview_vertical_margin">
+            <TextView android:id="@+id/txt_customerName" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="@string/loading_text"
+                      android:singleLine="false" style="@style/textTitleStyle"/>
+            <TextView android:id="@+id/txt_customerCode" android:layout_width="wrap_content"
+                      android:layout_height="48dp" android:text="@string/loading_text"
+                      android:layout_below="@id/txt_customerName" style="@style/textSubtitleStyle"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlt_shipAddress" android:layout_width="match_parent"
+                        android:layout_height="48dp" android:layout_below="@id/rlt_customer_header">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                          android:id="@+id/ln_ship_address_layout" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                <TextView android:id="@+id/txt_shipAddress" android:text="@string/loading_text"
+                          android:singleLine="true" style="@style/textCustomerSubtitleWeightStyle"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlt_customer_detail" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_below="@id/rlt_shipAddress">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                          android:id="@+id/ln_city_towm_layout" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                <TextView android:id="@+id/txt_customer_city" android:text="@string/loading_text"
+                          android:singleLine="true" style="@style/textCustomerSubtitleWeightStyle"/>
+                <TextView android:gravity="left|center_vertical|center_horizontal|center|start"
+                          android:id="@+id/txt_customer_town" android:focusable="true" android:layout_height="48dp"
+                          android:clickable="true" android:text="@string/loading_text"
+                          style="@style/textCustomerSubtitleWeightStyle"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

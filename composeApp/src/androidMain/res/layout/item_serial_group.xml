@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent" android:layout_height="wrap_content"
+                                   style="@style/AppCardView">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:weightSum="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="0.9">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="match_parent" android:weightSum="1">
+                <TextView android:text="@string/str_serial_start_number" android:layout_weight="0.29"
+                          style="@style/textSerialGroupHeaderStyle"/>
+                <TextView android:text="@string/str_serial_end_number" android:layout_weight="0.28"
+                          style="@style/textSerialGroupHeaderStyle"/>
+                <TextView android:text="@string/str_quantity" android:layout_weight="0.23"
+                          style="@style/textSerialGroupHeaderStyle"/>
+                <TextView android:padding="@dimen/activity_half_vertical_margin" android:text="@string/str_unit"
+                          android:layout_weight="0.2" style="@style/textSerialGroupHeaderStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="match_parent" android:weightSum="1">
+                <TextView android:id="@+id/txt_SBegNoVal" android:singleLine="true" android:layout_weight="0.29"
+                          style="@style/textSerialGroupGeneralStyle"/>
+                <TextView android:id="@+id/txt_SEndNoVal" android:singleLine="true" android:layout_weight="0.28"
+                          style="@style/textSerialGroupGeneralStyle"/>
+                <TextView android:id="@+id/txt_AmountVal" android:singleLine="true" android:layout_weight="0.23"
+                          style="@style/textSerialGroupGeneralStyle"/>
+                <TextView android:id="@+id/txt_UnitVal" android:singleLine="true" android:layout_weight="0.2"
+                          style="@style/textSerialGroupGeneralStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="match_parent" android:weightSum="1">
+                <TextView android:text="@string/str_expiration_date" android:layout_weight="0.29"
+                          style="@style/textSerialGroupHeaderStyle"/>
+                <TextView android:text="@string/str_start_serial_number" android:layout_weight="0.48"
+                          style="@style/textSerialGroupHeaderStyle"/>
+                <TextView android:text="@string/str_quantity" android:layout_weight="0.23"
+                          style="@style/textSerialGroupHeaderStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="match_parent" android:weightSum="1">
+                <TextView android:id="@+id/dedt_Exp_Date" android:layout_weight="0.29"
+                          style="@style/textSerialGroupGeneralStyle"/>
+                <EditText android:textSize="14dp" android:id="@+id/edt_SBegNo" android:hint="..."
+                          android:layout_weight="0.48" android:inputType="text"
+                          style="@style/textSerialGroupGeneralStyle"/>
+                <EditText android:textSize="14dp" android:gravity="end" android:id="@+id/edt_Amount"
+                          android:hint="@string/str_tmp_0_float" android:layout_weight="0.23"
+                          android:inputType="numberDecimal" style="@style/textSerialGroupGeneralStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.1">
+            <CheckBox android:id="@+id/chk_SeriGrup" android:layout_width="match_parent"
+                      android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

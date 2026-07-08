@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ln_city" android:paddingLeft="@dimen/half_padding" android:paddingTop="@dimen/half_padding" android:paddingRight="@dimen/half_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/half_padding" android:paddingStart="@dimen/half_padding" android:paddingEnd="@dimen/half_padding"
+                  tools:ignore="MissingConstraints">
+        <TextView android:textStyle="bold" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/str_city" android:layout_weight="0.3"/>
+        <EditText android:id="@+id/edtCity" android:layout_width="0dp" android:layout_height="wrap_content"
+                  android:layout_weight="0.7" android:minHeight="48dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ln_town" android:paddingLeft="@dimen/half_padding" android:paddingTop="@dimen/half_padding" android:paddingRight="@dimen/half_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/half_padding" android:paddingStart="@dimen/half_padding" android:paddingEnd="@dimen/half_padding" app:layout_constraintTop_toBottomOf="@+id/ln_city">
+        <TextView android:textStyle="bold" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/str_town" android:layout_weight="0.3"/>
+        <EditText android:id="@+id/edtTown" android:layout_width="0dp" android:layout_height="wrap_content"
+                  android:layout_weight="0.7" android:minHeight="48dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

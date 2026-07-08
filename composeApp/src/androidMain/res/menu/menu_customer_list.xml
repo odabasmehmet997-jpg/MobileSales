@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_account_plus_white_24dp" android:id="@+id/menu_new_customer"
+          android:orderInCategory="200" android:title="@string/menu_new_customer" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_barcode_scan_white_24dp" android:id="@+id/menu_barcode"
+          android:orderInCategory="100" android:title="@string/menu_barcode" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_filter_debit"
+          android:menuCategory="secondary" android:title="@string/menu_filter_debit"
+          app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_filter_city_town"
+          android:menuCategory="secondary" android:title="@string/menu_filter_city_town"
+          app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_filter_specode"
+          android:menuCategory="secondary" android:title="@string/menu_filter_specode"
+          app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_filter_day" android:visible="false"
+          android:menuCategory="secondary" android:title="@string/menu_filter_day"
+          app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_filter_route" android:visible="false"
+          android:menuCategory="secondary" android:title="@string/menu_filter_route"
+          app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_near_rp" android:visible="false"
+          android:menuCategory="secondary" android:title="@string/menu_show_all_customer"
+          app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_sort" android:menuCategory="secondary"
+          android:title="@string/menu_sort" app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_selected_route" android:visible="false"
+          android:menuCategory="secondary" android:title="@string/menu_filter_route"
+          app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_selected_allroute" android:visible="false"
+          android:menuCategory="secondary" android:title="@string/menu_all" app:showAsAction="collapseActionView"/>
+    <item android:icon="@drawable/ic_filter_white_24dp" android:id="@+id/menu_follow_route" android:visible="false"
+          android:menuCategory="secondary" android:title="@string/menu_follow_route"
+          app:showAsAction="collapseActionView"/>
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_cart_white_24dp" android:id="@+id/menu_dispatchable"
+          android:title="@string/menu_dispatchable_selected" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_cart_off_white_24dp" android:id="@+id/menu_undispatchable"
+          android:title="@string/menu_undispatchable_selected" app:showAsAction="never"/>
+</menu>

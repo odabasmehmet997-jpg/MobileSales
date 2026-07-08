@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/lnDate" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" android:src="@drawable/ic_calendar_grey600_36dp"/>
+            <androidx.appcompat.widget.AppCompatTextView android:id="@+id/twAverageDate"
+                                                         style="@style/DrawerTextStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/lnAmount" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" android:src="@drawable/ic_coin_grey600_36dp"/>
+            <androidx.appcompat.widget.AppCompatTextView android:id="@+id/twAmount" style="@style/DrawerTextStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

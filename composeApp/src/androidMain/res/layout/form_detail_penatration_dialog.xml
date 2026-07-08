@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:id="@+id/form_detail_penetration_dialog" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/radioButtonFormPenetExist"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="@string/str_stock_in"/>
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/radioButtonFormPenetNotExist"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="@string/str_stock_out"/>
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="wrap_content"
+                                                           android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/editTextAmount"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="48dp"
+                                                     android:hint="@string/str_quantity" android:lines="1"
+                                                     android:width="270dp" android:singleLine="true"
+                                                     android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="wrap_content"
+                                                           android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/editTextPrice" android:layout_width="match_parent"
+                                                     android:layout_height="48dp"
+                                                     android:hint="@string/str_price" android:lines="1"
+                                                     android:width="270dp" android:singleLine="true"
+                                                     android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/textViewSpinnerCurr"
+                                                 android:layout_width="wrap_content"
+                                                 android:layout_height="48dp"
+                                                 android:text="@string/str_exchange_rate_types"
+                                                 tools:ignore="SpeakableTextPresentCheck"/>
+    <androidx.appcompat.widget.AppCompatSpinner android:id="@+id/spinnerCurr" android:layout_width="match_parent"
+                                                android:layout_height="48dp"
+                                                tools:ignore="SpeakableTextPresentCheck"/>
+</LinearLayout>

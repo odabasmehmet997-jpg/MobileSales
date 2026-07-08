@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                                      android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.proje.mobilesales.features.settings.preferences.DevicePreference android:title="@string/pref_printer_one_title"
+                                                                          android:key="@string/pref_printer_one_key"
+                                                                          android:summary="@string/pref_printer_one_summary"
+                                                                          android:defaultValue="@string/empty"
+                                                                          app:deviceAddress="" app:deviceName=""/>
+    <com.proje.mobilesales.features.settings.preferences.DevicePreference android:title="@string/pref_printer_two_title"
+                                                                          android:key="@string/pref_printer_two_key"
+                                                                          android:summary="@string/pref_printer_two_summary"
+                                                                          android:defaultValue="@string/empty"
+                                                                          app:deviceAddress="" app:deviceName=""/>
+    <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_printer_always_connect_title"
+                                                android:key="@string/pref_printer_always_connect"
+                                                android:summary="@string/pref_printer_always_connect_summary"
+                                                android:defaultValue="true"/>
+</androidx.preference.PreferenceScreen>

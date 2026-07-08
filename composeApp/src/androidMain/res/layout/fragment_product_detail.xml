@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+                android:background="@color/white" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <com.proje.mobilesales.core.widget.AppBarSwipeRefreshLayout android:id="@+id/swipe_layout"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:scrollbarStyle="insideOverlay" android:scrollbars="vertical"
+                                               android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:orientation="vertical" android:id="@+id/content_frame"
+                            android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/ln_customerBalanceTable"
+                              android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:gravity="center_horizontal" android:id="@+id/txt_product_code"
+                              android:padding="@dimen/activity_quad_vertical_margin" android:layout_width="match_parent"
+                              android:layout_height="wrap_content" android:text="@string/str_product_detail_info_title"
+                              android:layout_centerHorizontal="true" style="@style/textTitleStyle"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ln_customerTotalRow"
+                                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:weightSum="1">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="@string/str_customer_specode_1" android:layout_weight="0.5"
+                                  style="@style/textCustomerGeneralStyle"/>
+                        <TextView android:textStyle="bold" android:gravity="end" android:id="@+id/txt_spec_code_one"
+                                  android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:layout_weight="0.5" style="@style/textCustomerGeneralStyle"/>
+                    </LinearLayout>
+                    <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                          android:layout_height="1dp" android:layout_marginStart="@dimen/activity_vertical_margin"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ln_customerInvoiceRow"
+                                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:weightSum="1">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="@string/str_customer_specode_2" android:layout_weight="0.5"
+                                  style="@style/textCustomerGeneralStyle"/>
+                        <TextView android:textStyle="bold" android:gravity="end" android:id="@+id/txt_spec_code_two"
+                                  android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:layout_weight="0.5" style="@style/textCustomerGeneralStyle"/>
+                    </LinearLayout>
+                    <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                          android:layout_height="1dp" android:layout_marginStart="@dimen/activity_vertical_margin"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ln_customerOrderRow"
+                                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:weightSum="1">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="@string/str_customer_specode_3" android:layout_weight="0.5"
+                                  style="@style/textCustomerGeneralStyle"/>
+                        <TextView android:textStyle="bold" android:gravity="end" android:id="@+id/txt_spec_code_three"
+                                  android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:layout_weight="0.5" style="@style/textCustomerGeneralStyle"/>
+                    </LinearLayout>
+                    <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                          android:layout_height="1dp" android:layout_marginStart="@dimen/activity_vertical_margin"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" android:weightSum="1">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="@string/str_customer_specode_4" android:layout_weight="0.5"
+                                  style="@style/textCustomerGeneralStyle"/>
+                        <TextView android:textStyle="bold" android:gravity="end" android:id="@+id/txt_spec_code_four"
+                                  android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:layout_weight="0.5" style="@style/textCustomerGeneralStyle"/>
+                    </LinearLayout>
+                    <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                          android:layout_height="1dp" android:layout_marginStart="@dimen/activity_vertical_margin"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" android:weightSum="1">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="@string/str_customer_specode_5" android:layout_weight="0.5"
+                                  style="@style/textCustomerGeneralStyle"/>
+                        <TextView android:textStyle="bold" android:gravity="end" android:id="@+id/txt_spec_code_five"
+                                  android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:layout_weight="0.5" style="@style/textCustomerGeneralStyle"/>
+                    </LinearLayout>
+                    <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                          android:layout_height="1dp" android:layout_marginStart="@dimen/activity_vertical_margin"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" android:weightSum="1">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="@string/str_group_code" android:layout_weight="0.5"
+                                  style="@style/textCustomerGeneralStyle"/>
+                        <TextView android:textStyle="bold" android:gravity="end" android:id="@+id/txt_group_code"
+                                  android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:layout_weight="0.5" style="@style/textCustomerGeneralStyle"/>
+                    </LinearLayout>
+                    <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                          android:layout_height="1dp" android:layout_marginStart="@dimen/activity_vertical_margin"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" android:weightSum="1">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="@string/str_brand" android:layout_weight="0.5"
+                                  style="@style/textCustomerGeneralStyle"/>
+                        <TextView android:textStyle="bold" android:gravity="end" android:id="@+id/txt_brand"
+                                  android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:layout_weight="0.5" style="@style/textCustomerGeneralStyle"/>
+                    </LinearLayout>
+                    <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                          android:layout_height="1dp" android:layout_marginStart="@dimen/activity_vertical_margin"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" android:weightSum="1">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="@string/str_payment_type" android:layout_weight="0.5"
+                                  style="@style/textCustomerGeneralStyle"/>
+                        <TextView android:textStyle="bold" android:gravity="end" android:id="@+id/txt_payment_type"
+                                  android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:layout_weight="0.5" style="@style/textCustomerGeneralStyle"/>
+                    </LinearLayout>
+                    <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                          android:layout_height="1dp" android:layout_marginStart="@dimen/activity_vertical_margin"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" android:weightSum="1">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="@string/str_sales_vat_rate" android:layout_weight="0.5"
+                                  style="@style/textCustomerGeneralStyle"/>
+                        <TextView android:textStyle="bold" android:gravity="end" android:id="@+id/txt_sales_kdv_rate"
+                                  android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:layout_weight="0.5" style="@style/textCustomerGeneralStyle"/>
+                    </LinearLayout>
+                    <View android:background="@color/colorDivider2" android:layout_width="match_parent"
+                          android:layout_height="1dp" android:layout_marginStart="@dimen/activity_vertical_margin"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" android:weightSum="1">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="@string/str_return_vat_rate" android:layout_weight="0.5"
+                                  style="@style/textCustomerGeneralStyle"/>
+                        <TextView android:textStyle="bold" android:gravity="end" android:id="@+id/txt_payback_kdv_rate"
+                                  android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:layout_weight="0.5" style="@style/textCustomerGeneralStyle"/>
+                    </LinearLayout>
+                    <TextView android:gravity="center_horizontal" android:id="@+id/stock_text"
+                              android:padding="@dimen/activity_quad_vertical_margin" android:layout_width="match_parent"
+                              android:layout_height="wrap_content" android:text="@string/str_product_detail_stok_title"
+                              android:layout_centerHorizontal="true" style="@style/textTitleStyle"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/stock_layout"
+                                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:paddingStart="16dp" android:paddingEnd="16dp"/>
+                    <TextView android:gravity="center_horizontal" android:id="@+id/unit_text"
+                              android:padding="@dimen/activity_quad_vertical_margin" android:layout_width="match_parent"
+                              android:layout_height="wrap_content" android:text="@string/str_product_detail_unit_title"
+                              android:layout_centerHorizontal="true" style="@style/textTitleStyle"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/unit_layout"
+                                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:paddingStart="16dp" android:paddingEnd="16dp"/>
+                    <TextView android:gravity="center_horizontal" android:id="@+id/price_text"
+                              android:padding="@dimen/activity_quad_vertical_margin" android:layout_width="match_parent"
+                              android:layout_height="wrap_content" android:text="@string/str_product_detail_cost_title"
+                              android:layout_centerHorizontal="true" style="@style/textTitleStyle"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/price_layout"
+                                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:paddingStart="16dp" android:paddingEnd="16dp"/>
+                    <TextView android:gravity="center_horizontal" android:id="@+id/purchase_text"
+                              android:padding="@dimen/activity_quad_vertical_margin" android:layout_width="match_parent"
+                              android:layout_height="wrap_content" android:text="@string/str_purchase_information"
+                              android:layout_centerHorizontal="true" style="@style/textTitleStyle"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/purchase_layout"
+                                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:paddingStart="16dp" android:paddingEnd="16dp"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/rlt_chart_content_frame" android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ln_customerBalanceTable">
+                    <RelativeLayout android:id="@+id/rlt_customerTop10Product" android:visibility="visible"
+                                    android:layout_width="match_parent" android:layout_height="match_parent">
+                        <View android:id="@+id/rlt_customerTop10ProductView" android:background="@color/colorDivider2"
+                              android:layout_width="match_parent" android:layout_height="1dp"
+                              android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+                        <TextView android:gravity="center_horizontal" android:id="@+id/txt_customerTop10Product"
+                                  android:padding="@dimen/activity_quad_vertical_margin"
+                                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:text="@string/str_product_summary_top_ten_customer"
+                                  android:layout_below="@+id/rlt_customerTop10ProductView"
+                                  android:layout_centerHorizontal="true" style="@style/textTitleStyle"/>
+                        <FrameLayout android:id="@+id/chartFrame" android:layout_width="match_parent"
+                                     android:layout_height="500dp"
+                                     android:layout_below="@+id/txt_customerTop10Product"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rlt_monthlySales" android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/rlt_customerTop10Product">
+                        <FrameLayout android:id="@+id/chartFrame2" android:layout_width="match_parent"
+                                     android:layout_height="500dp" android:layout_below="@+id/txt_monthly_salary"/>
+                        <TextView android:gravity="center_horizontal" android:id="@+id/txt_monthly_salary"
+                                  android:padding="@dimen/activity_quad_vertical_margin"
+                                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:text="@string/str_customer_summary_monthly_sales"
+                                  android:layout_centerHorizontal="true" style="@style/textTitleStyle"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.proje.mobilesales.core.widget.AppBarSwipeRefreshLayout>
+</RelativeLayout>

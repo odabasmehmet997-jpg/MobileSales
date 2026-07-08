@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                                      android:key="@string/pref_print_screen_root_key">
+    <androidx.preference.PreferenceScreen android:title="@string/pref_print_screen_general_title"
+                                          android:key="@string/pref_print_screen_general_key">
+        <androidx.preference.ListPreference android:entries="@array/pref_print_screen_general_list_options_entries"
+                                            android:title="@string/pref_print_screen_general_turkish_options_title"
+                                            android:key="@string/pref_print_screen_general_list_turkish_options_key"
+                                            android:defaultValue="0"
+                                            android:entryValues="@array/pref_print_screen_general_list_options_values"/>
+        <com.proje.mobilesales.core.preferences.SeekBarPreference android:title="@string/pref_printer_font_size_title"
+                                                                  android:key="@string/pref_printer_font_size"
+                                                                  android:defaultValue="@string/pref_printer_font_size_default"
+                                                                  app:maxFontValue="40" app:minFontValue="6"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_general_show_preview_title"
+                                                    android:key="@string/pref_print_screen_general_show_preview_key"
+                                                    android:defaultValue="false"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_remove_blank_lines_title"
+                                                    android:key="@string/pref_print_remove_blank_lines_key"
+                                                    android:defaultValue="false"/>
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref
+                android:title="@string/pref_print_screen_general_wait_time_title"
+                android:key="@string/pref_print_screen_general_wait_time_key"
+                android:defaultValue="@string/pref_print_screen_general_wait_time_key_default"
+                android:dialogTitle="@string/pref_print_screen_general_wait_time_title" android:inputType="number"
+                app:maxIntValue="100" app:minIntValue="1"/>
+        <androidx.preference.EditTextPreference android:title="@string/pref_print_screen_general_start_code_title"
+                                                android:key="@string/pref_print_screen_general_start_code_key"/>
+        <androidx.preference.EditTextPreference android:title="@string/pref_print_screen_general_end_code_title"
+                                                android:key="@string/pref_print_screen_general_end_code_key"/>
+        <androidx.preference.ListPreference android:entries="@array/pref_print_language_entries"
+                                            android:title="@string/pref_print_language_title"
+                                            android:key="@string/pref_print_language_key"
+                                            android:defaultValue="STANDARD"
+                                            android:entryValues="@array/pref_print_language_values"/>
+        <androidx.preference.ListPreference android:entries="@array/pref_print_type_entries"
+                                            android:title="@string/pref_print_type_title"
+                                            android:key="@string/pref_print_type_key" android:defaultValue="TEXT"
+                                            android:entryValues="@array/pref_print_type_values"/>
+        <androidx.preference.ListPreference android:entries="@array/pref_print_destination_entries"
+                                            android:title="@string/pref_print_destination_title"
+                                            android:key="@string/pref_print_destination_key"
+                                            android:defaultValue="PRINTER"
+                                            android:entryValues="@array/pref_print_destination_values"/>
+        <androidx.preference.Preference android:title="@string/pref_print_file_export_path_title"
+                                        android:key="@string/pref_print_file_export_path_key"
+                                        android:summary="@string/pref_print_file_export_path_summary"/>
+        <androidx.preference.ListPreference android:entries="@array/pref_pplz_font_id_entries"
+                                            android:title="@string/pref_pplz_font_id_title"
+                                            android:key="@string/pref_pplz_font_id_key" android:defaultValue="0"
+                                            android:entryValues="@array/pref_pplz_font_id_values"/>
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref android:title="@string/pref_pplz_font_width_title"
+                                                                    android:key="@string/pref_pplz_font_width_key"
+                                                                    android:defaultValue="@string/pref_pplz_font_width_default"
+                                                                    android:dialogTitle="@string/pref_pplz_font_width_title"
+                                                                    android:inputType="number" app:maxIntValue="50"
+                                                                    app:minIntValue="1"/>
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref android:title="@string/pref_pplz_font_height_title"
+                                                                    android:key="@string/pref_pplz_font_height_key"
+                                                                    android:defaultValue="@string/pref_pplz_font_height_default"
+                                                                    android:dialogTitle="@string/pref_pplz_font_height_title"
+                                                                    android:inputType="number" app:maxIntValue="50"
+                                                                    app:minIntValue="1"/>
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref android:title="@string/pref_pplz_font_space_title"
+                                                                    android:key="@string/pref_pplz_font_space_key"
+                                                                    android:defaultValue="@string/pref_pplz_font_space_default"
+                                                                    android:dialogTitle="@string/pref_pplz_font_space_title"
+                                                                    android:inputType="number" app:maxIntValue="100"
+                                                                    app:minIntValue="1"/>
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref android:title="@string/pref_pplz_font_margin_title"
+                                                                    android:key="@string/pref_pplz_font_margin_key"
+                                                                    android:defaultValue="@string/pref_pplz_font_margin_default"
+                                                                    android:dialogTitle="@string/pref_pplz_font_margin_title"
+                                                                    android:inputType="number" app:maxIntValue="100"
+                                                                    app:minIntValue="0"/>
+    </androidx.preference.PreferenceScreen>
+    <androidx.preference.PreferenceScreen android:title="@string/pref_print_screen_order_title"
+                                          android:key="@string/pref_print_screen_order_key">
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref
+                android:title="@string/pref_print_screen_detail_line_size_title"
+                android:key="@string/pref_print_screen_order_detail_line_size_key"
+                android:defaultValue="@string/pref_print_screen_detail_line_size_default"
+                android:dialogTitle="@string/pref_print_screen_detail_line_size_title" android:inputType="number"
+                app:maxIntValue="100" app:minIntValue="1"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_header_title"
+                                                    android:key="@string/pref_print_screen_order_show_header_key"
+                                                    android:summary="@string/pref_print_screen_show_header_summary"
+                                                    android:defaultValue="false"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_page_footer_title"
+                                                    android:key="@string/pref_print_screen_order_show_page_footer_key"
+                                                    android:summary="@string/pref_print_screen_show_page_footer_summary"
+                                                    android:defaultValue="false"/>
+        <com.proje.mobilesales.core.preferences.SimpleSpinnerPreference
+                android:title="@string/pref_print_screen_list_printer_title"
+                android:key="@string/pref_print_screen_order_list_printer_key" android:defaultValue="0"
+                app:entries="@array/pref_print_screen_list_printer_entries"
+                app:entryValues="@array/pref_print_screen_list_printer_values"/>
+        <androidx.preference.ListPreference android:title="@string/pref_start_image_title"
+                                            android:key="@string/pref_order_start_image_key"
+                                            android:summary="@string/pref_start_image_summary"
+                                            android:defaultValue="@string/pref_print_image_default"
+                                            app:entries="@array/pref_print_image_entries"
+                                            app:entryValues="@array/pref_print_image_values"/>
+        <androidx.preference.ListPreference android:title="@string/pref_end_image_title"
+                                            android:key="@string/pref_order_end_image_key"
+                                            android:summary="@string/pref_end_image_summary"
+                                            android:defaultValue="@string/pref_print_image_default"
+                                            app:entries="@array/pref_print_image_entries"
+                                            app:entryValues="@array/pref_print_image_values"/>
+        <androidx.preference.PreferenceCategory android:title="@string/pref_print_screen_printed_matter_category_title">
+            <androidx.preference.SwitchPreferenceCompat
+                    android:title="@string/pref_print_screen_use_printed_matter_title"
+                    android:key="@string/pref_print_screen_order_use_printed_matter_key" android:defaultValue="false"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_first_printed_matter_title"
+                    android:key="@string/pref_print_screen_order_first_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_order_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_order_last_printed_matter_key" app:first="true"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_last_printed_matter_title"
+                    android:key="@string/pref_print_screen_order_last_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_order_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_order_first_printed_matter_key" app:first="false"/>
+            <androidx.preference.ListPreference android:entries="@array/pref_print_screen_list_printed_matter_entries"
+                                                android:title="@string/pref_print_screen_list_printed_matter_title"
+                                                android:key="@string/pref_print_screen_order_list_printed_matter_key"
+                                                android:dependency="@string/pref_print_screen_order_use_printed_matter_key"
+                                                android:defaultValue="0"
+                                                android:entryValues="@array/pref_print_screen_list_printed_matter_values"/>
+        </androidx.preference.PreferenceCategory>
+    </androidx.preference.PreferenceScreen>
+    <androidx.preference.PreferenceScreen android:title="@string/pref_print_screen_invoice_title"
+                                          android:key="@string/pref_print_screen_invoice_key">
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref
+                android:title="@string/pref_print_screen_detail_line_size_title"
+                android:key="@string/pref_print_screen_invoice_detail_line_size_key"
+                android:defaultValue="@string/pref_print_screen_detail_line_size_default"
+                android:dialogTitle="@string/pref_print_screen_detail_line_size_title" android:inputType="number"
+                app:maxIntValue="100" app:minIntValue="1"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_header_title"
+                                                    android:key="@string/pref_print_screen_invoice_show_header_key"
+                                                    android:summary="@string/pref_print_screen_show_header_summary"
+                                                    android:defaultValue="false"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_page_footer_title"
+                                                    android:key="@string/pref_print_screen_invoice_show_page_footer_key"
+                                                    android:summary="@string/pref_print_screen_show_page_footer_summary"
+                                                    android:defaultValue="false"/>
+        <com.proje.mobilesales.core.preferences.SimpleSpinnerPreference
+                android:title="@string/pref_print_screen_list_printer_title"
+                android:key="@string/pref_print_screen_invoice_list_printer_key" android:defaultValue="0"
+                app:entries="@array/pref_print_screen_list_printer_entries"
+                app:entryValues="@array/pref_print_screen_list_printer_values"/>
+        <androidx.preference.ListPreference android:title="@string/pref_start_image_title"
+                                            android:key="@string/pref_invoice_start_image_key"
+                                            android:summary="@string/pref_start_image_summary"
+                                            android:defaultValue="@string/pref_print_image_default"
+                                            app:entries="@array/pref_print_image_entries"
+                                            app:entryValues="@array/pref_print_image_values"/>
+        <androidx.preference.ListPreference android:title="@string/pref_end_image_title"
+                                            android:key="@string/pref_invoice_end_image_key"
+                                            android:summary="@string/pref_end_image_summary"
+                                            android:defaultValue="@string/pref_print_image_default"
+                                            app:entries="@array/pref_print_image_entries"
+                                            app:entryValues="@array/pref_print_image_values"/>
+        <androidx.preference.PreferenceCategory android:title="@string/pref_print_screen_printed_matter_category_title">
+            <androidx.preference.SwitchPreferenceCompat
+                    android:title="@string/pref_print_screen_use_printed_matter_title"
+                    android:key="@string/pref_print_screen_invoice_use_printed_matter_key"
+                    android:defaultValue="false"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_first_printed_matter_title"
+                    android:key="@string/pref_print_screen_invoice_first_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_invoice_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_invoice_last_printed_matter_key" app:first="true"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_last_printed_matter_title"
+                    android:key="@string/pref_print_screen_invoice_last_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_invoice_use_printed_matter_key"
+                    android:defaultValue="" app:comparePref="pref_print_screen_invoice_first_printed_matter_key"
+                    app:first="false"/>
+            <androidx.preference.ListPreference android:entries="@array/pref_print_screen_list_printed_matter_entries"
+                                                android:title="@string/pref_print_screen_list_printed_matter_title"
+                                                android:key="@string/pref_print_screen_invoice_list_printed_matter_key"
+                                                android:dependency="@string/pref_print_screen_invoice_use_printed_matter_key"
+                                                android:defaultValue="0"
+                                                android:entryValues="@array/pref_print_screen_list_printed_matter_values"/>
+        </androidx.preference.PreferenceCategory>
+    </androidx.preference.PreferenceScreen>
+    <androidx.preference.PreferenceScreen android:title="@string/pref_print_screen_retail_invoice_title"
+                                          android:key="@string/pref_print_screen_retailinvoice_key">
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref
+                android:title="@string/pref_print_screen_detail_line_size_title"
+                android:key="@string/pref_print_screen_retailinvoice_detail_line_size_key"
+                android:defaultValue="@string/pref_print_screen_detail_line_size_default"
+                android:dialogTitle="@string/pref_print_screen_detail_line_size_title" android:inputType="number"
+                app:maxIntValue="100" app:minIntValue="1"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_header_title"
+                                                    android:key="@string/pref_print_screen_retailinvoice_show_header_key"
+                                                    android:summary="@string/pref_print_screen_show_header_summary"
+                                                    android:defaultValue="false"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_page_footer_title"
+                                                    android:key="@string/pref_print_screen_retailinvoice_show_page_footer_key"
+                                                    android:summary="@string/pref_print_screen_show_page_footer_summary"
+                                                    android:defaultValue="false"/>
+        <com.proje.mobilesales.core.preferences.SimpleSpinnerPreference
+                android:title="@string/pref_print_screen_list_printer_title"
+                android:key="@string/pref_print_screen_retailinvoice_list_printer_key" android:defaultValue="0"
+                app:entries="@array/pref_print_screen_list_printer_entries"
+                app:entryValues="@array/pref_print_screen_list_printer_values"/>
+        <androidx.preference.ListPreference android:title="@string/pref_start_image_title"
+                                            android:key="@string/pref_retail_invoice_start_image_key"
+                                            android:summary="@string/pref_start_image_summary"
+                                            android:defaultValue="@string/pref_print_image_default"
+                                            app:entries="@array/pref_print_image_entries"
+                                            app:entryValues="@array/pref_print_image_values"/>
+        <androidx.preference.ListPreference android:title="@string/pref_end_image_title"
+                                            android:key="@string/pref_retail_invoice_end_image_key"
+                                            android:summary="@string/pref_end_image_summary"
+                                            android:defaultValue="@string/pref_print_image_default"
+                                            app:entries="@array/pref_print_image_entries"
+                                            app:entryValues="@array/pref_print_image_values"/>
+        <androidx.preference.PreferenceCategory android:title="@string/pref_print_screen_printed_matter_category_title">
+            <androidx.preference.SwitchPreferenceCompat
+                    android:title="@string/pref_print_screen_use_printed_matter_title"
+                    android:key="@string/pref_print_screen_retailinvoice_use_printed_matter_key"
+                    android:defaultValue="false"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_first_printed_matter_title"
+                    android:key="@string/pref_print_screen_retailinvoice_first_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_retailinvoice_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_retailinvoice_last_printed_matter_key" app:first="true"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_last_printed_matter_title"
+                    android:key="@string/pref_print_screen_retailinvoice_last_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_retailinvoice_use_printed_matter_key"
+                    android:defaultValue="" app:comparePref="pref_print_screen_retailinvoice_first_printed_matter_key"
+                    app:first="false"/>
+            <androidx.preference.ListPreference android:entries="@array/pref_print_screen_list_printed_matter_entries"
+                                                android:title="@string/pref_print_screen_list_printed_matter_title"
+                                                android:key="@string/pref_print_screen_retailinvoice_list_printed_matter_key"
+                                                android:dependency="@string/pref_print_screen_retailinvoice_use_printed_matter_key"
+                                                android:defaultValue="0"
+                                                android:entryValues="@array/pref_print_screen_list_printed_matter_values"/>
+        </androidx.preference.PreferenceCategory>
+    </androidx.preference.PreferenceScreen>
+    <androidx.preference.PreferenceScreen android:title="@string/pref_print_screen_dispatch_title"
+                                          android:key="@string/pref_print_screen_dispatch_key">
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref
+                android:title="@string/pref_print_screen_detail_line_size_title"
+                android:key="@string/pref_print_screen_dispatch_detail_line_size_key"
+                android:defaultValue="@string/pref_print_screen_detail_line_size_default"
+                android:dialogTitle="@string/pref_print_screen_detail_line_size_title" android:inputType="number"
+                app:maxIntValue="100" app:minIntValue="1"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_header_title"
+                                                    android:key="@string/pref_print_screen_dispatch_show_header_key"
+                                                    android:summary="@string/pref_print_screen_show_header_summary"
+                                                    android:defaultValue="false"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_page_footer_title"
+                                                    android:key="@string/pref_print_screen_dispatch_show_page_footer_key"
+                                                    android:summary="@string/pref_print_screen_show_page_footer_summary"
+                                                    android:defaultValue="false"/>
+        <com.proje.mobilesales.core.preferences.SimpleSpinnerPreference
+                android:title="@string/pref_print_screen_list_printer_title"
+                android:key="@string/pref_print_screen_dispatch_list_printer_key" android:defaultValue="0"
+                app:entries="@array/pref_print_screen_list_printer_entries"
+                app:entryValues="@array/pref_print_screen_list_printer_values"/>
+        <androidx.preference.ListPreference android:title="@string/pref_start_image_title"
+                                            android:key="@string/pref_despatch_start_image_key"
+                                            android:summary="@string/pref_start_image_summary"
+                                            android:defaultValue="@string/pref_print_image_default"
+                                            app:entries="@array/pref_print_image_entries"
+                                            app:entryValues="@array/pref_print_image_values"/>
+        <androidx.preference.ListPreference android:title="@string/pref_end_image_title"
+                                            android:key="@string/pref_despatch_end_image_key"
+                                            android:summary="@string/pref_end_image_summary"
+                                            android:defaultValue="@string/pref_print_image_default"
+                                            app:entries="@array/pref_print_image_entries"
+                                            app:entryValues="@array/pref_print_image_values"/>
+        <androidx.preference.PreferenceCategory android:title="@string/pref_print_screen_printed_matter_category_title">
+            <androidx.preference.SwitchPreferenceCompat
+                    android:title="@string/pref_print_screen_use_printed_matter_title"
+                    android:key="@string/pref_print_screen_dispatch_use_printed_matter_key"
+                    android:defaultValue="false"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_first_printed_matter_title"
+                    android:key="@string/pref_print_screen_dispatch_first_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_dispatch_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_dispatch_last_printed_matter_key" app:first="true"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference android:name="EditText Preference"
+                                                                                  android:title="@string/pref_print_screen_last_printed_matter_title"
+                                                                                  android:key="@string/pref_print_screen_dispatch_last_printed_matter_key"
+                                                                                  android:dependency="@string/pref_print_screen_dispatch_use_printed_matter_key"
+                                                                                  android:defaultValue=""
+                                                                                  app:comparePref="pref_print_screen_dispatch_first_printed_matter_key"
+                                                                                  app:first="false"/>
+            <androidx.preference.ListPreference android:entries="@array/pref_print_screen_list_printed_matter_entries"
+                                                android:title="@string/pref_print_screen_list_printed_matter_title"
+                                                android:key="@string/pref_print_screen_dispatch_list_printed_matter_key"
+                                                android:dependency="@string/pref_print_screen_dispatch_use_printed_matter_key"
+                                                android:defaultValue="0"
+                                                android:entryValues="@array/pref_print_screen_list_printed_matter_values"/>
+        </androidx.preference.PreferenceCategory>
+    </androidx.preference.PreferenceScreen>
+    <androidx.preference.PreferenceScreen android:title="@string/pref_print_screen_cash_title"
+                                          android:key="@string/pref_print_screen_cash_key">
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref
+                android:title="@string/pref_print_screen_detail_line_size_title"
+                android:key="@string/pref_print_screen_cash_detail_line_size_key"
+                android:defaultValue="@string/pref_print_screen_detail_line_size_default"
+                android:dialogTitle="@string/pref_print_screen_detail_line_size_title" android:inputType="number"
+                app:maxIntValue="100" app:minIntValue="1"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_header_title"
+                                                    android:key="@string/pref_print_screen_cash_show_header_key"
+                                                    android:summary="@string/pref_print_screen_show_header_summary"
+                                                    android:defaultValue="false"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_page_footer_title"
+                                                    android:key="@string/pref_print_screen_cash_show_page_footer_key"
+                                                    android:summary="@string/pref_print_screen_show_page_footer_summary"
+                                                    android:defaultValue="false"/>
+        <com.proje.mobilesales.core.preferences.SimpleSpinnerPreference
+                android:title="@string/pref_print_screen_list_printer_title"
+                android:key="@string/pref_print_screen_cash_list_printer_key" android:defaultValue="0"
+                app:entries="@array/pref_print_screen_list_printer_entries"
+                app:entryValues="@array/pref_print_screen_list_printer_values"/>
+        <androidx.preference.PreferenceCategory android:title="@string/pref_print_screen_printed_matter_category_title">
+            <androidx.preference.SwitchPreferenceCompat
+                    android:title="@string/pref_print_screen_use_printed_matter_title"
+                    android:key="@string/pref_print_screen_cash_use_printed_matter_key" android:defaultValue="false"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_first_printed_matter_title"
+                    android:key="@string/pref_print_screen_cash_first_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_cash_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_cash_last_printed_matter_key" app:first="true"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_last_printed_matter_title"
+                    android:key="@string/pref_print_screen_cash_last_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_cash_use_printed_matter_key" android:defaultValue=""
+                    app:comparePref="pref_print_screen_cash_first_printed_matter_key" app:first="false"/>
+        </androidx.preference.PreferenceCategory>
+    </androidx.preference.PreferenceScreen>
+    <androidx.preference.PreferenceScreen android:title="@string/pref_print_screen_credit_card_title"
+                                          android:key="@string/pref_print_screen_credit_card_key">
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref
+                android:title="@string/pref_print_screen_detail_line_size_title"
+                android:key="@string/pref_print_screen_credit_card_detail_line_size_key"
+                android:defaultValue="@string/pref_print_screen_detail_line_size_default"
+                android:dialogTitle="@string/pref_print_screen_detail_line_size_title" android:inputType="number"
+                app:maxIntValue="100" app:minIntValue="1"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_header_title"
+                                                    android:key="@string/pref_print_screen_credit_card_show_header_key"
+                                                    android:summary="@string/pref_print_screen_show_header_summary"
+                                                    android:defaultValue="false"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_page_footer_title"
+                                                    android:key="@string/pref_print_screen_credit_card_show_page_footer_key"
+                                                    android:summary="@string/pref_print_screen_show_page_footer_summary"
+                                                    android:defaultValue="false"/>
+        <com.proje.mobilesales.core.preferences.SimpleSpinnerPreference
+                android:title="@string/pref_print_screen_list_printer_title"
+                android:key="@string/pref_print_screen_credit_card_list_printer_key" android:defaultValue="0"
+                app:entries="@array/pref_print_screen_list_printer_entries"
+                app:entryValues="@array/pref_print_screen_list_printer_values"/>
+        <androidx.preference.PreferenceCategory android:title="@string/pref_print_screen_printed_matter_category_title">
+            <androidx.preference.SwitchPreferenceCompat
+                    android:title="@string/pref_print_screen_use_printed_matter_title"
+                    android:key="@string/pref_print_screen_credit_card_use_printed_matter_key"
+                    android:defaultValue="false"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_first_printed_matter_title"
+                    android:key="@string/pref_print_screen_credit_card_first_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_credit_card_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_credit_card_last_printed_matter_key" app:first="true"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_last_printed_matter_title"
+                    android:key="@string/pref_print_screen_credit_card_last_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_credit_card_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_credit_card_first_printed_matter_key" app:first="false"/>
+        </androidx.preference.PreferenceCategory>
+    </androidx.preference.PreferenceScreen>
+    <androidx.preference.PreferenceScreen android:title="@string/pref_print_screen_cheque_title"
+                                          android:key="@string/pref_print_screen_cheque_key">
+        <androidx.preference.EditTextPreference android:title="@string/pref_print_screen_detail_line_size_title"
+                                                android:key="@string/pref_print_screen_cheque_detail_line_size_key"
+                                                android:defaultValue="@string/pref_print_screen_detail_line_size_default"
+                                                android:dialogTitle="@string/pref_print_screen_detail_line_size_title"
+                                                android:inputType="number" app:maxIntValue="100" app:minIntValue="1"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_header_title"
+                                                    android:key="@string/pref_print_screen_cheque_show_header_key"
+                                                    android:summary="@string/pref_print_screen_show_header_summary"
+                                                    android:defaultValue="false"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_page_footer_title"
+                                                    android:key="@string/pref_print_screen_cheque_show_page_footer_key"
+                                                    android:summary="@string/pref_print_screen_show_page_footer_summary"
+                                                    android:defaultValue="false"/>
+        <com.proje.mobilesales.core.preferences.SimpleSpinnerPreference
+                android:title="@string/pref_print_screen_list_printer_title"
+                android:key="@string/pref_print_screen_cheque_list_printer_key" android:defaultValue="0"
+                app:entries="@array/pref_print_screen_list_printer_entries"
+                app:entryValues="@array/pref_print_screen_list_printer_values"/>
+        <androidx.preference.PreferenceCategory android:title="@string/pref_print_screen_printed_matter_category_title">
+            <androidx.preference.SwitchPreferenceCompat
+                    android:title="@string/pref_print_screen_use_printed_matter_title"
+                    android:key="@string/pref_print_screen_cheque_use_printed_matter_key" android:defaultValue="false"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_first_printed_matter_title"
+                    android:key="@string/pref_print_screen_cheque_first_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_cheque_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_cheque_last_printed_matter_key" app:first="true"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_last_printed_matter_title"
+                    android:key="@string/pref_print_screen_cheque_last_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_cheque_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_cheque_first_printed_matter_key" app:first="false"/>
+        </androidx.preference.PreferenceCategory>
+    </androidx.preference.PreferenceScreen>
+    <androidx.preference.PreferenceScreen android:title="@string/pref_print_screen_deed_title"
+                                          android:key="@string/pref_print_screen_deed_key">
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref
+                android:title="@string/pref_print_screen_detail_line_size_title"
+                android:key="@string/pref_print_screen_deed_detail_line_size_key"
+                android:defaultValue="@string/pref_print_screen_detail_line_size_default"
+                android:dialogTitle="@string/pref_print_screen_detail_line_size_title" android:inputType="number"
+                app:maxIntValue="100" app:minIntValue="1"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_header_title"
+                                                    android:key="@string/pref_print_screen_deed_show_header_key"
+                                                    android:summary="@string/pref_print_screen_show_header_summary"
+                                                    android:defaultValue="false"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_page_footer_title"
+                                                    android:key="@string/pref_print_screen_deed_show_page_footer_key"
+                                                    android:summary="@string/pref_print_screen_show_page_footer_summary"
+                                                    android:defaultValue="false"/>
+        <com.proje.mobilesales.core.preferences.SimpleSpinnerPreference
+                android:title="@string/pref_print_screen_list_printer_title"
+                android:key="@string/pref_print_screen_deed_list_printer_key" android:defaultValue="0"
+                app:entries="@array/pref_print_screen_list_printer_entries"
+                app:entryValues="@array/pref_print_screen_list_printer_values"/>
+        <androidx.preference.PreferenceCategory android:title="@string/pref_print_screen_printed_matter_category_title">
+            <androidx.preference.SwitchPreferenceCompat
+                    android:title="@string/pref_print_screen_use_printed_matter_title"
+                    android:key="@string/pref_print_screen_deed_use_printed_matter_key" android:defaultValue="false"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_first_printed_matter_title"
+                    android:key="@string/pref_print_screen_deed_first_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_deed_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_deed_last_printed_matter_key" app:first="true"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_last_printed_matter_title"
+                    android:key="@string/pref_print_screen_deed_last_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_deed_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_deed_first_printed_matter_key" app:first="false"/>
+        </androidx.preference.PreferenceCategory>
+    </androidx.preference.PreferenceScreen>
+    <androidx.preference.PreferenceScreen android:title="@string/pref_print_screen_case_title"
+                                          android:key="@string/pref_print_screen_case_key">
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref
+                android:title="@string/pref_print_screen_detail_line_size_title"
+                android:key="@string/pref_print_screen_case_detail_line_size_key"
+                android:defaultValue="@string/pref_print_screen_detail_line_size_default"
+                android:dialogTitle="@string/pref_print_screen_detail_line_size_title" android:inputType="number"
+                app:maxIntValue="100" app:minIntValue="1"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_header_title"
+                                                    android:key="@string/pref_print_screen_case_show_header_key"
+                                                    android:summary="@string/pref_print_screen_show_header_summary"
+                                                    android:defaultValue="false"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_page_footer_title"
+                                                    android:key="@string/pref_print_screen_case_show_page_footer_key"
+                                                    android:summary="@string/pref_print_screen_show_page_footer_summary"
+                                                    android:defaultValue="false"/>
+        <com.proje.mobilesales.core.preferences.SimpleSpinnerPreference
+                android:title="@string/pref_print_screen_list_printer_title"
+                android:key="@string/pref_print_screen_case_list_printer_key" android:defaultValue="0"
+                app:entries="@array/pref_print_screen_list_printer_entries"
+                app:entryValues="@array/pref_print_screen_list_printer_values"/>
+        <androidx.preference.PreferenceCategory android:title="@string/pref_print_screen_printed_matter_category_title">
+            <androidx.preference.SwitchPreferenceCompat
+                    android:title="@string/pref_print_screen_use_printed_matter_title"
+                    android:key="@string/pref_print_screen_case_use_printed_matter_key" android:defaultValue="false"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_first_printed_matter_title"
+                    android:key="@string/pref_print_screen_case_first_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_case_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_case_last_printed_matter_key" app:first="true"/>
+            <com.proje.mobilesales.features.settings.preferences.MatterPreference
+                    android:title="@string/pref_print_screen_last_printed_matter_title"
+                    android:key="@string/pref_print_screen_case_last_printed_matter_key"
+                    android:dependency="@string/pref_print_screen_case_use_printed_matter_key"
+                    app:comparePref="pref_print_screen_case_first_printed_matter_key" app:first="false"/>
+        </androidx.preference.PreferenceCategory>
+    </androidx.preference.PreferenceScreen>
+    <androidx.preference.PreferenceScreen android:title="@string/pref_print_screen_delivery_note_title"
+                                          android:key="@string/pref_print_screen_delivery_note_key">
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref
+                android:title="@string/pref_print_screen_detail_line_size_title"
+                android:key="@string/pref_print_screen_delivery_note_detail_line_size_key"
+                android:defaultValue="@string/pref_print_screen_detail_line_size_default"
+                android:dialogTitle="@string/pref_print_screen_detail_line_size_title" android:inputType="number"
+                app:maxIntValue="100" app:minIntValue="1"/>
+    </androidx.preference.PreferenceScreen>
+    <androidx.preference.PreferenceScreen android:title="@string/str_sales_transfer"
+                                          android:key="@string/pref_print_screen_whTransfer_key">
+        <com.proje.mobilesales.core.preferences.EditTextIntegerPref
+                android:title="@string/pref_print_screen_detail_line_size_title"
+                android:key="@string/pref_print_screen_whTransfer_detail_line_size_key"
+                android:defaultValue="@string/pref_print_screen_detail_line_size_default"
+                android:dialogTitle="@string/pref_print_screen_detail_line_size_title" android:inputType="number"
+                app:maxIntValue="100" app:minIntValue="1"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_header_title"
+                                                    android:key="@string/pref_print_screen_whTransfer_show_header_key"
+                                                    android:summary="@string/pref_print_screen_show_header_summary"
+                                                    android:defaultValue="false"/>
+        <androidx.preference.SwitchPreferenceCompat android:title="@string/pref_print_screen_show_page_footer_title"
+                                                    android:key="@string/pref_print_screen_whTransfer_show_page_footer_key"
+                                                    android:summary="@string/pref_print_screen_show_page_footer_summary"
+                                                    android:defaultValue="false"/>
+        <com.proje.mobilesales.core.preferences.SimpleSpinnerPreference
+                android:title="@string/pref_print_screen_list_printer_title"
+                android:key="@string/pref_print_screen_whTransfer_list_printer_key" android:defaultValue="0"
+                app:entries="@array/pref_print_screen_list_printer_entries"
+                app:entryValues="@array/pref_print_screen_list_printer_values"/>
+    </androidx.preference.PreferenceScreen>
+</androidx.preference.PreferenceScreen>

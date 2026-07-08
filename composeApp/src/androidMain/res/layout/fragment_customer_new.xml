@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:scrollbarStyle="insideOverlay" android:scrollbars="vertical"
+                                           android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ln_customer_header"
+                          android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.proje.mobilesales.core.widget.FichePropertyTextView android:id="@+id/fch_code"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         app:title="@string/str_code"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_name"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         app:title="@string/str_definition"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_spe_code"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_special_code"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_spe_code2"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_special_code2"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_spe_code3"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_special_code3"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_spe_code4"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_special_code4"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_spe_code5"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_special_code5"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_group_code"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_group_code"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_warranty_code"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_warranty_code"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_related_person"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         app:title="@string/str_incharge"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_tax_office"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         app:title="@string/str_tax_office"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_tax_no"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_tax_number"/>
+                <com.proje.mobilesales.core.widget.FichePropertyTextView android:id="@+id/fch_country"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_country"/>
+                <com.proje.mobilesales.core.widget.FichePropertyTextView android:id="@+id/fch_province"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_city"/>
+                <com.proje.mobilesales.core.widget.FichePropertyTextView android:id="@+id/fch_district"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_town"/>
+                <View android:id="@+id/personalCompanyDivider" android:background="@color/colorDivider2"
+                      android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:id="@+id/ln_personal_company" android:layout_width="match_parent"
+                              android:layout_height="wrap_content" android:weightSum="1">
+                    <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                              android:layout_width="0dp" android:layout_height="match_parent"
+                              android:text="@string/str_personal_company" android:layout_weight="0.45"
+                              android:textAllCaps="true" style="@style/textCustomerSalesHeaderStyle"
+                              tools:ignore="TextSizeCheck"/>
+                    <CheckBox android:textStyle="bold" android:id="@+id/fch_personal_company" android:layout_width="0dp"
+                              android:layout_height="match_parent" android:layout_weight="0.55"
+                              style="@style/textCustomerSalesHeaderStyle"/>
+                </LinearLayout>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_id_no"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_customer_tc_no"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_customer_name"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_name"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_customer_surname"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_surname"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_email"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_email_address"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_email2"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_email_address2"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_phone1"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_phone_number1"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_phone2"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_phone_number2"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_fax"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_fax_number"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_address1"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         app:title="@string/str_address1"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_address2"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         app:title="@string/str_address2"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_zip_code"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_postal_code"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_expiry"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_expiry"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_discount"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_discount_rate"/>
+                <com.proje.mobilesales.core.widget.FichePropertyTextView android:id="@+id/fch_pay_plan"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_payment"/>
+                <com.proje.mobilesales.core.widget.FichePropertyTextView android:id="@+id/fch_pay_type"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_payment_type"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ln_customer_incharge_header"
+                          android:visibility="gone" android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:gravity="center_vertical"
+                          android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/str_contact_information" android:textAllCaps="true"
+                          style="@style/textCustomerSalesHeaderStyle"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_incharge_name"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         app:title="@string/str_related_person"/>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_incharge_definition"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         app:title="@string/str_definition"/>
+                <LinearLayout android:id="@+id/ln_fiche_property" android:layout_width="match_parent"
+                              android:layout_height="wrap_content" android:weightSum="1">
+                    <TextView android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+                              android:id="@+id/txt_fch_incharge_tel" android:layout_width="0dp"
+                              android:layout_height="match_parent" android:text="@string/str_phone_number"
+                              android:layout_weight="0.45" android:textAllCaps="true"
+                              style="@style/textCustomerSalesHeaderStyle"/>
+                    <EditText android:textStyle="bold" android:textColorHint="@color/black"
+                              android:id="@+id/edt_fch_incharge_tel_code" android:scrollbars="vertical"
+                              android:layout_width="0dp" android:layout_height="match_parent"
+                              android:hint="@string/str_area_code" android:minLines="1" android:singleLine="true"
+                              android:maxLength="4" android:layout_weight="0.15"
+                              style="@style/textCustomerSalesHeaderStyle"/>
+                    <TextView android:textStyle="bold" android:gravity="center_vertical"
+                              android:layout_gravity="center_vertical" android:layout_width="wrap_content"
+                              android:layout_height="match_parent" android:text="-"/>
+                    <EditText android:textStyle="bold" android:textColorHint="@color/black"
+                              android:id="@+id/edt_fch_incharge_tel_num" android:scrollbars="vertical"
+                              android:layout_width="0dp" android:layout_height="match_parent"
+                              android:hint="@string/str_telephone" android:maxLines="10" android:lines="10"
+                              android:minLines="1" android:singleLine="true" android:layout_weight="0.4"
+                              style="@style/textCustomerSalesHeaderStyle"/>
+                </LinearLayout>
+                <com.proje.mobilesales.core.widget.FichePropertyEditView android:id="@+id/fch_incharge_email"
+                                                                         android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         android:singleLine="true"
+                                                                         app:title="@string/str_email_address"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/img_customer" android:padding="@dimen/half_padding"
+                       android:layout_width="match_parent" android:layout_height="256dp" android:scaleType="fitCenter"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

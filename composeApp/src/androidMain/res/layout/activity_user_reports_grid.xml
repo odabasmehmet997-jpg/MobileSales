@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <com.proje.mobilesales.core.view.CustomHorizontalScrollView android:id="@+id/reportHeaderHCW"
+                                                                android:scrollbars="none"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content">
+        <TableRow android:orientation="horizontal" android:id="@+id/userReportHeaderRow"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content" android:stretchColumns="*"/>
+    </com.proje.mobilesales.core.view.CustomHorizontalScrollView>
+    <View android:layout_gravity="center_vertical" android:background="@color/line_color" android:paddingBottom="1dp"
+          android:layout_width="match_parent" android:layout_height="0.1sp"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="100">
+        <com.proje.mobilesales.core.view.CustomHorizontalScrollView android:id="@+id/reportBodyHCW"
+                                                                    android:scrollbars="none"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/userReportRecyclerView"
+                                                       android:layout_width="wrap_content"
+                                                       android:layout_height="wrap_content"/>
+        </com.proje.mobilesales.core.view.CustomHorizontalScrollView>
+    </ScrollView>
+    <View android:layout_gravity="center_vertical" android:background="@color/line_color" android:paddingBottom="1dp"
+          android:layout_width="match_parent" android:layout_height="0.1sp"/>
+    <com.proje.mobilesales.core.view.CustomHorizontalScrollView android:id="@+id/reportFooterHCW"
+                                                                android:scrollbars="none"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content">
+        <TableRow android:id="@+id/userReportFooterRow" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+    </com.proje.mobilesales.core.view.CustomHorizontalScrollView>
+    <com.proje.mobilesales.core.view.CustomHorizontalScrollView android:id="@+id/reportFooterDataHCW"
+                                                                android:scrollbars="none"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content">
+        <TableRow android:id="@+id/userReportFooterDataRow" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+    </com.proje.mobilesales.core.view.CustomHorizontalScrollView>
+</LinearLayout>

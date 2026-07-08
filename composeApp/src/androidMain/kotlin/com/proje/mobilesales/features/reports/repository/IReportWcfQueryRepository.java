@@ -1,0 +1,50 @@
+package com.proje.mobilesales.features.reports.repository;
+
+import com.proje.mobilesales.core.base.IBaseRepository;
+import com.proje.mobilesales.core.enums.InvoiceType;
+import com.proje.mobilesales.core.enums.OrderStatus;
+import com.proje.mobilesales.core.enums.ProcessType;
+import com.proje.mobilesales.core.tigerwcf.SelectResult;
+import com.proje.mobilesales.features.reports.model.ReportListParameter;
+import com.proje.mobilesales.features.reports.model.enums.ReportCurrencyUnit;
+import com.proje.mobilesales.features.reports.model.enums.ReportDebitFilterType;
+import com.proje.mobilesales.features.reports.model.enums.ReportSortType;
+import java.util.ArrayList;
+
+public interface IReportWcfQueryRepository extends IBaseRepository {
+    SelectResult getAverageTotalList(int i2, String str, String str2);
+    SelectResult getCashCase(int i2, String str, String str2, int i3, ProcessType processType, int i4);
+    SelectResult getCashCredit(int i2, String str, String str2, int i3, ProcessType processType, int i4);
+    SelectResult getChequeDeed(int i2, String str, String str2, int i3, ProcessType processType, int i4);
+    SelectResult getCollectionsListQuery(int i2, String str, String str2, ReportDebitFilterType reportDebitFilterType);
+    SelectResult getCustomerDebitTracking(int i2);
+    SelectResult getExtractCaseCashDetail(int i2, int i3);
+    SelectResult getExtractCashCreditDetail(int i2, int i3, int i4);
+    SelectResult getExtractCashCreditHeader(int i2);
+    SelectResult getExtractCashCreditHeaderDueDate(int i2);
+    SelectResult getExtractChequeDeedDetail(int i2, int i3);
+    SelectResult getExtractChequeDeedHeader(int i2);
+    SelectResult getExtractInvoiceDetail(int i2);
+    SelectResult getExtractInvoiceHeader(int i2);
+    SelectResult getExtractList(int i2, String str, String str2, ReportCurrencyUnit reportCurrencyUnit, int i3);
+    SelectResult getExtractMoneyOrderHeader(int i2);
+    SelectResult getExtractOrderDetail(int i2);
+    SelectResult getExtractOrderHeader(int i2);
+    SelectResult getInvoiceAvgLinePayPlan(ArrayList<Integer> arrayList);
+    SelectResult getNotPaymentInvoice(int i2, String str, String str2);
+    SelectResult getNotPaymentInvoice(int i2, String str, String str2, ReportDebitFilterType reportDebitFilterType);
+    SelectResult getOrderInvoice(int i2, String str, String str2, int i3, ProcessType processType, int i4);
+    SelectResult getOrderReportQuery(int i2, int i3, String str, String str2, int i4, int i5);
+    SelectResult getSalesInv(ReportListParameter reportListParameter, int i2, ProcessType processType, InvoiceType invoiceType, int i3);
+    SelectResult getSalesOrd(ReportListParameter reportListParameter, int i2, ProcessType processType, OrderStatus orderStatus, boolean z, int i3);
+    SelectResult getSalesSummary(String str, String str2, int i2, ProcessType processType, int i3);
+    String getSalesSummaryCashCase();
+    String getSalesSummaryCashCredit(int i2);
+    String getSalesSummaryChequeDeed(int i2);
+    String getSalesSummaryInvoice(int i2);
+    String getSalesSummaryOrder();
+    SelectResult getSalesmans(String str, int i2, String[] strArr);
+    String getSalesmansInSql(int i2);
+    SelectResult getTotalCreditDebit(int i2, String str, String str2);
+    SelectResult getVehicleStatus(int i2, ProcessType processType, int i3, ReportSortType reportSortType);
+}
