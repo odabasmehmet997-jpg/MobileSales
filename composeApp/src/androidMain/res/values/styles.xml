@@ -58,4 +58,16 @@
 
     <style name="textCustomerOperationStyle" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="textSubtitleStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="textCustomerSubtitleWeightStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="textCustomerSubtitleStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="textCustomerSubtitleNumberStyle" parent="Theme.AppCompat.Light">
+    </style>
 </resources>
