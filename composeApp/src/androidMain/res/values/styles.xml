@@ -43,4 +43,19 @@
 
     <style name="DrawerPrefenceTextStyle" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="FabTextStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="DrawerTextStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="TransferGetTextStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="AppCardView" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="textCustomerOperationStyle" parent="Theme.AppCompat.Light">
+    </style>
 </resources>

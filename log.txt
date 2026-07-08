@@ -2,21 +2,20 @@
 Execution failed for task ':composeApp:processDebugResources'.
 > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
    > Android resource linking failed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:19: error: attribute iconStart (aka com.proje.mobilesales:iconStart) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:19: error: resource style/DrawerPrefenceTextStyle (aka com.proje.mobilesales:style/DrawerPrefenceTextStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:23: error: resource color/blackT12 (aka com.proje.mobilesales:color/blackT12) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:23: error: resource dimen/divider (aka com.proje.mobilesales:dimen/divider) not found.
-27 actionable tasks: 27 executed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:28: error: attribute iconStart (aka com.proje.mobilesales:iconStart) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:28: error: resource style/DrawerPrefenceTextStyle (aka com.proje.mobilesales:style/DrawerPrefenceTextStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:32: error: resource color/blackT12 (aka com.proje.mobilesales:color/blackT12) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:32: error: resource dimen/divider (aka com.proje.mobilesales:dimen/divider) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:37: error: attribute iconStart (aka com.proje.mobilesales:iconStart) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:37: error: resource style/DrawerPrefenceTextStyle (aka com.proje.mobilesales:style/DrawerPrefenceTextStyle) not found.
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
-		at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_transfer_get.xml:15: error: resource style/FabTextStyle (aka com.proje.mobilesales:style/FabTextStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/adapter_average_calc.xml:11: error: resource style/DrawerTextStyle (aka com.proje.mobilesales:style/DrawerTextStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/adapter_average_calc.xml:17: error: resource style/DrawerTextStyle (aka com.proje.mobilesales:style/DrawerTextStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/adapter_transfer_get.xml:14: error: resource style/TransferGetTextStyle (aka com.proje.mobilesales:style/TransferGetTextStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/adapter_transfer_row.xml:4: error: resource style/AppCardView (aka com.proje.mobilesales:style/AppCardView) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/adapter_transfer_row.xml:6: error: resource style/textCustomerOperationStyle (aka com.proje.mobilesales:style/textCustomerOperationStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/campaign_info.xml:11: error: resource color/subMenu1 (aka com.proje.mobilesales:color/subMenu1) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/campaign_info.xml:15: error: resource color/subMenu1 (aka com.proje.mobilesales:color/subMenu1) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/campaign_info.xml:24: error: resource color/subMenu1 (aka com.proje.mobilesales:color/subMenu1) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/campaign_info.xml:28: error: resource color/subMenu1 (aka com.proje.mobilesales:color/subMenu1) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/campaign_info.xml:37: error: resource color/subMenu1 (aka com.proje.mobilesales:color/subMenu1) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/campaign_info.xml:41: error: resource color/subMenu1 (aka com.proje.mobilesales:color/subMenu1) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/campaign_info.xml:50: error: resource color/subMenu1 (aka com.proje.mobilesales:color/subMenu1) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/campaign_info.xml:54: error: resource color/subMenu1 (aka com.proje.mobilesales:color/subMenu1) not found.
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
 		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
@@ -46,5 +45,5 @@ Execution failed for task ':composeApp:processDebugResources'.
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
-BUILD FAILED in 2m 37s
+BUILD FAILED in 1m 32s
 Error: Process completed with exit code 1.
