@@ -82,4 +82,10 @@
 
     <style name="ReportRowTextView" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="textCustomerComTintStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="textCustomerGeneralStyle" parent="Theme.AppCompat.Light">
+    </style>
 </resources>
