@@ -112,4 +112,10 @@
 
     <style name="ReportTitleTextView" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="textCustomerSubtitleNumberStyle2" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="textCustomerSubtitleVerticalWeightStyle" parent="Theme.AppCompat.Light">
+    </style>
 </resources>

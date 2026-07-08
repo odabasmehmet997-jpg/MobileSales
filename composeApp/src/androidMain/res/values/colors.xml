@@ -31,4 +31,7 @@
     <color name="subMenu3">#FF546E7A</color>
     <color name="subMenu5">#FF78909C</color>
     <color name="subMenu6">#FF90A4AE</color>
+    <color name="subMenu4">#FF90A4AE</color>
+    <color name="red800">#FFC62828</color>
+    <color name="grey200">#FFEEEEEE</color>
 </resources>
