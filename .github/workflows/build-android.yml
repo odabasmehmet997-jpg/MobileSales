@@ -18,5 +18,10 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: 17
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          api-level: 36
+          build-tools: 36.1.0
       - name: Android debug build
         run: ./gradlew assembleDebug --stacktrace
