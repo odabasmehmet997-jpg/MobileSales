@@ -2,21 +2,20 @@
 Execution failed for task ':composeApp:processDebugResources'.
 > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
    > Android resource linking failed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_main.xml:61: error: resource color/colorDivider (aka com.proje.mobilesales:color/colorDivider) not found.
-32 actionable tasks: 32 executed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:10: error: '0' is incompatible with attribute layout_constraintTop_toTopOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:13: error: '0' is incompatible with attribute layout_constraintStart_toStartOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:13: error: '0' is incompatible with attribute layout_constraintEnd_toEndOf (attr) reference|enum [parent=0].
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:13: error: '0' is incompatible with attribute layout_constraintBottom_toBottomOf (attr) reference|enum [parent=0].
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:1060)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.access$invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:886)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction.run(LinkApplicationAndroidResourcesTask.kt:463)
-		at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
-		at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
-		at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:35: error: resource color/grey600 (aka com.proje.mobilesales:color/grey600) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:43: error: resource dimen/margin (aka com.proje.mobilesales:dimen/margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:50: error: resource dimen/margin (aka com.proje.mobilesales:dimen/margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:59: error: resource dimen/margin (aka com.proje.mobilesales:dimen/margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:66: error: resource dimen/margin (aka com.proje.mobilesales:dimen/margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:75: error: resource dimen/margin (aka com.proje.mobilesales:dimen/margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:82: error: resource dimen/margin (aka com.proje.mobilesales:dimen/margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:90: error: resource dimen/margin (aka com.proje.mobilesales:dimen/margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:101: error: resource color/grey600 (aka com.proje.mobilesales:color/grey600) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:101: error: resource dimen/margin (aka com.proje.mobilesales:dimen/margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:101: error: resource dimen/margin (aka com.proje.mobilesales:dimen/margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:110: error: resource dimen/margin (aka com.proje.mobilesales:dimen/margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:110: error: resource dimen/margin (aka com.proje.mobilesales:dimen/margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_notification_create.xml:121: error: resource color/grey600 (aka com.proje.mobilesales:color/grey600) not found.
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
 		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
@@ -46,5 +45,6 @@ Execution failed for task ':composeApp:processDebugResources'.
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
-BUILD FAILED in 2m 42s
+BUILD FAILED in 1m 29s
+25 actionable tasks: 25 executed
 Error: Process completed with exit code 1.
