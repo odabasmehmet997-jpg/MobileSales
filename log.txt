@@ -1,21 +1,166 @@
+Run ./gradlew assembleDebug --stacktrace
+Downloading https://services.gradle.org/distributions/gradle-8.14.5-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%..............70%.............80%.............90%.............100%
+
+Welcome to Gradle 8.14.5!
+
+Here are the highlights of this release:
+ - Java 24 support
+ - GraalVM Native Image toolchain selection
+ - Enhancements to test reporting
+ - Build Authoring improvements
+
+For more details see https://docs.gradle.org/8.14.5/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+Type-safe project accessors is an incubating feature.
+
+> Configure project :composeApp
+
+Please wait while Kotlin/Native compiler 2.3.21 is being installed.
+Download kotlin-native-prebuilt-linux-x86_64-2.3.21.tar.gz finished, took 974 ms
+Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.3.21
+Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.3.21 finished, took 5 s 810 ms
+
+> Task :composeApp:preBuild UP-TO-DATE
+> Task :composeApp:preDebugBuild UP-TO-DATE
+> Task :composeApp:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :composeApp:kmpPartiallyResolvedDependenciesChecker
+> Task :composeApp:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :composeApp:generateDebugResValues
+> Task :composeApp:dataBindingMergeDependencyArtifactsDebug
+> Task :composeApp:generateDebugResources
+
+> Task :composeApp:mergeDebugResources
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values/strings.xml:743:1: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:158:1: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
+/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values-ar/values-ar.xml:22:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:288:1: Multiple substitutions specified in non-positional format of string resource string/exp_item_has_negative_balance. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:294:1: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_defined_purchase_price. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:295:1: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_last_purchase_price. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:458:1: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:477:1: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:158:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:225:4: Multiple substitutions specified in non-positional format of string resource string/exp_30_wcf_select_result_error. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:246:4: Multiple substitutions specified in non-positional format of string resource string/exp_41_sales_header_not_select. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:248:4: Multiple substitutions specified in non-positional format of string resource string/exp_43_risk_over_error. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:255:4: Multiple substitutions specified in non-positional format of string resource string/exp_50_due_date_over_error. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:354:4: Multiple substitutions specified in non-positional format of string resource string/exp_item_has_negative_balance. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:369:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_defined_purchase_price. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:372:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_last_purchase_price. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:540:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:562:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
+/home/runner/.gradle/caches/8.14.5/transforms/f58cc641bc3758604bfcde55731bbf6d/transformed/ui/res/values-ru/values-ru.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/summary_collapsed_preference_list. Did you mean to add the formatted="false" attribute?
+
+> Task :composeApp:packageDebugResources
+> Task :composeApp:processDebugNavigationResources
+> Task :composeApp:dataBindingTriggerDebug
+> Task :composeApp:generateResourceAccessorsForAndroidMain SKIPPED
+> Task :composeApp:generateResourceAccessorsForCommonMain SKIPPED
+> Task :composeApp:generateActualResourceCollectorsForAndroidMain SKIPPED
+> Task :composeApp:generateComposeResClass SKIPPED
+> Task :composeApp:generateExpectResourceCollectorsForCommonMain SKIPPED
+> Task :composeApp:generateResourceAccessorsForAndroidDebug SKIPPED
+> Task :composeApp:checkDebugAarMetadata
+> Task :composeApp:parseDebugLocalResources
+> Task :composeApp:compileDebugNavigationResources
+> Task :composeApp:dataBindingGenBaseClassesDebug
+> Task :composeApp:mapDebugSourceSetPaths
+> Task :composeApp:createDebugCompatibleScreenManifests
+> Task :composeApp:extractDeepLinksDebug
+
+> Task :composeApp:processDebugMainManifest
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/AndroidManifest.xml:5:2-41 Warning:
+	uses-sdk:minSdkVersion value (29) specified in the manifest file is ignored. It is overridden by the value declared in the DSL or the variant API, or 1 if not declared/present. Current value is (26).
+
+> Task :composeApp:processDebugManifest
+> Task :composeApp:javaPreCompileDebug
+> Task :composeApp:mergeDebugShaders
+> Task :composeApp:compileDebugShaders NO-SOURCE
+> Task :composeApp:processDebugManifestForPackage
+> Task :composeApp:debugAssetsCopyForAGP NO-SOURCE
+> Task :composeApp:generateDebugAssets UP-TO-DATE
+> Task :composeApp:mergeDebugAssets
+> Task :composeApp:compressDebugAssets
+> Task :composeApp:processDebugResources
+> Task :composeApp:checkDebugDuplicateClasses
+> Task :composeApp:desugarDebugFileDependencies
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:28:16 Redeclaration:
+> Task :composeApp:compileDebugKotlinAndroid
+class FlowableFlatMapMergeSubscriber<T, U> : AtomicInteger, FlowableSubscriber<T?>, Subscription
+class FlowableFlatMapMergeSubscriber<T : Any!, U : Any!> : Any
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:126:37 Argument type mismatch: actual type is 'Subscriber<CapturedType(in Nothing)>', but 'Subscriber<in CapturedType(*)!>!' was expected.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:139:47 Assignment type mismatch: actual type is 'Array<FlowableFlatMapInnerSubscriber<*, *>>?', but 'Array<FlowableFlatMapInnerSubscriber<*, *>?>' was expected.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:141:48 Unresolved reference 'dispose'.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:147:58 Argument type mismatch: actual type is 'Subscriber<CapturedType(out Any?)>?', but 'FlowableFlatMapInnerSubscriber<*, *>?' was expected.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:148:19 Unresolved reference 'LifecycleKtExternalSyntheticBackportWithForwarding0'.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:161:47 Assignment type mismatch: actual type is 'Array<FlowableFlatMapInnerSubscriber<*, *>>?', but 'Array<FlowableFlatMapInnerSubscriber<*, *>?>' was expected.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:194:19 Unresolved reference 'LifecycleKtExternalSyntheticBackportWithForwarding0'.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:261:46 Assignment type mismatch: actual type is 'SpscArrayQueue<*>', but 'SimpleQueue<U? (of class FlowableFlatMapMergeSubscriber<T, U>)>!' was expected.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:262:16 Return type mismatch: expected 'SimpleQueue<U? (of class FlowableFlatMapMergeSubscriber<T, U>)>', actual 'SpscArrayQueue<*>'.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:291:54 Assignment type mismatch: actual type is 'SpscArrayQueue<Any?>', but 'SimpleQueue<U? (of class FlowableFlatMapMergeSubscriber<T, U>)>!' was expected.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:293:30 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'SimpleQueue<*>?'.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:293:37 Argument type mismatch: actual type is 'U? (of class FlowableFlatMapMergeSubscriber<T, U>)', but 'CapturedType(*)!' was expected.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:312:83 Argument type mismatch: actual type is 'Array<FlowableFlatMapInnerSubscriber<*, *>?>', but 'Array<FlowableFlatMapInnerSubscriber<*, *>>?' was expected.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:347:9 Variable 'simplePlainQueue' must be initialized.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:402:59 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'Array<FlowableFlatMapInnerSubscriber<*, *>>?'.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:420:37 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'Array<FlowableFlatMapInnerSubscriber<*, *>>?'.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:425:43 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'Array<FlowableFlatMapInnerSubscriber<*, *>>?'.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:433:35 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'Array<FlowableFlatMapInnerSubscriber<*, *>>?'.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:446:96 Initializer type mismatch: expected 'FlowableFlatMapInnerSubscriber<T? (of class FlowableFlatMapMergeSubscriber<T, U>), U? (of class FlowableFlatMapMergeSubscriber<T, U>)>', actual 'FlowableFlatMapInnerSubscriber<*, *>'.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:447:25 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'Array<FlowableFlatMapInnerSubscriber<*, *>>?'.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:563:17 Argument type mismatch: actual type is 'Array<FlowableFlatMapInnerSubscriber<*, *>?>', but 'Array<FlowableFlatMapInnerSubscriber<*, *>>?' was expected.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:568:48 Variable 'andSet' must be initialized.
+e: file:///home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/kotlin/io/reactivex/internal/operators/flowable/FlowableFlatMapMergeSubscriber.kt:583:84 Argument type mismatch: actual type is 'Array<FlowableFlatMapInnerSubscriber<*, *>?>', but 'Array<FlowableFlatMapInnerSubscriber<*, *>>?' was expected.
+
+> Task :composeApp:mergeExtDexDebug
+> Task :composeApp:compileDebugKotlinAndroid FAILED
+
+FAILURE: Build failed with an exception.
+28 actionable tasks: 28 executed
+
 * What went wrong:
-Execution failed for task ':composeApp:processDebugResources'.
-> A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
-   > Android resource linking failed
-     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_printer_settings.xml:9: error: attribute deviceName (aka com.proje.mobilesales:deviceName) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_printer_settings.xml:9: error: attribute deviceAddress (aka com.proje.mobilesales:deviceAddress) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_printer_settings.xml:14: error: attribute deviceName (aka com.proje.mobilesales:deviceName) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_printer_settings.xml:14: error: attribute deviceAddress (aka com.proje.mobilesales:deviceAddress) not found.
-     error: failed linking file resources.
+Execution failed for task ':composeApp:compileDebugKotlinAndroid'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork
+   > Compilation error. See log for more details
+
 * Try:
 > Run with --info or --debug option to get more log output.
 > Run with --scan to get full insights.
 > Get more help at https://help.gradle.org.
+
 * Exception is:
-org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':composeApp:processDebugResources'.
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':composeApp:compileDebugKotlinAndroid'.
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
 	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.jetbrains.kotlin.gradle.tasks.TasksUtilsKt.throwExceptionIfCompilationFailed(tasksUtils.kt:21)
+	at org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork.execute(BuildToolsApiCompilationWork.kt:295)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:194)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)
 	at org.gradle.internal.Factories$1.create(Factories.java:31)
 	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
 	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
@@ -23,55 +168,7 @@ org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compose
 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
 	... 2 more
-	Suppressed: java.util.NoSuchElementException: Unable to get absolute path from com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_printer_settings.xml
-                       because com.proje.mobilesales.composeApp-androidMain-91 is not key in sourceSetPathMap.
-		at com.android.ide.common.resources.RelativeResourceUtils$relativeResourcePathToAbsolutePath$1.invoke(RelativeResourceUtils.kt:91)
-		at com.android.ide.common.resources.RelativeResourceUtils$relativeResourcePathToAbsolutePath$1.invoke(RelativeResourceUtils.kt:68)
-		at com.android.ide.common.resources.RelativeResourceUtils.relativeResourcePathToAbsolutePath(RelativeResourceUtils.kt:61)
-		at com.android.ide.common.blame.parser.aapt.Aapt2ErrorParser$MessageParser.parse(Aapt2ErrorParser.kt:124)
-		at com.android.ide.common.blame.parser.aapt.Aapt2ErrorParser.parse(Aapt2ErrorParser.kt:99)
-		at com.android.ide.common.blame.parser.aapt.Aapt2OutputParser.parse(Aapt2OutputParser.java:56)
-		at com.android.ide.common.blame.parser.ToolOutputParser.parseToolOutput(ToolOutputParser.java:84)
-		at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteException(Aapt2ErrorUtils.kt:219)
-		at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteLinkException(Aapt2ErrorUtils.kt:133)
-		at com.android.build.gradle.internal.res.Aapt2ProcessResourcesRunnableKt.processResources(Aapt2ProcessResourcesRunnable.kt:76)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:1060)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.access$invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:886)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction.run(LinkApplicationAndroidResourcesTask.kt:463)
-		at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
-		at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
-		at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
-		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
-		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-		at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-		at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
-		at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:194)
-		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)
-		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)
-		at org.gradle.internal.Factories$1.create(Factories.java:31)
-		at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
-		at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
-		at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
-		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
-		at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
-		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-		at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-		at java.base/java.lang.Thread.run(Thread.java:840)
-BUILD FAILED in 1m 37s
+
+
+BUILD FAILED in 3m 9s
 Error: Process completed with exit code 1.
