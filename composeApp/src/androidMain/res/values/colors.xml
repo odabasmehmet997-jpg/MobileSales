@@ -24,4 +24,5 @@
     <color name="colorDivider2">#FFE0E0E0</color>
     <color name="blackT12">#1F000000</color>
     <color name="subMenu1">#FF37474F</color>
+    <color name="android_bright_blue">#FF00DDFF</color>
 </resources>

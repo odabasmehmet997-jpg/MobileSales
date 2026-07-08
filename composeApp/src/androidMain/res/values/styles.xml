@@ -70,4 +70,10 @@
 
     <style name="textCustomerSubtitleNumberStyle" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="textItemSurplusDiscountHeader" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="textSerialGroupGeneralStyle" parent="Theme.AppCompat.Light">
+    </style>
 </resources>

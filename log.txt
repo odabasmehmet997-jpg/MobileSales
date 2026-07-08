@@ -2,28 +2,21 @@
 Execution failed for task ':composeApp:processDebugResources'.
 > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
    > Android resource linking failed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/customer_route_item.xml:8: error: resource dimen/cardview_vertical_margin (aka com.proje.mobilesales:dimen/cardview_vertical_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/customer_route_item.xml:14: error: resource style/textSubtitleStyle (aka com.proje.mobilesales:style/textSubtitleStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/customer_route_item.xml:22: error: resource style/textCustomerSubtitleWeightStyle (aka com.proje.mobilesales:style/textCustomerSubtitleWeightStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/customer_route_item.xml:31: error: resource style/textCustomerSubtitleWeightStyle (aka com.proje.mobilesales:style/textCustomerSubtitleWeightStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/customer_route_item.xml:35: error: resource style/textCustomerSubtitleWeightStyle (aka com.proje.mobilesales:style/textCustomerSubtitleWeightStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/customer_view.xml:20: error: resource style/textSubtitleStyle (aka com.proje.mobilesales:style/textSubtitleStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/customer_view.xml:28: error: resource style/textCustomerSubtitleStyle (aka com.proje.mobilesales:style/textCustomerSubtitleStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/customer_view.xml:30: error: resource style/textCustomerSubtitleNumberStyle (aka com.proje.mobilesales:style/textCustomerSubtitleNumberStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/customer_view.xml:33: error: resource style/textCustomerSubtitleStyle (aka com.proje.mobilesales:style/textCustomerSubtitleStyle) not found.
-		at com.android.ide.common.blame.parser.ToolOutputParser.parseToolOutput(ToolOutputParser.java:84)
-		at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteException(Aapt2ErrorUtils.kt:219)
-		at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteLinkException(Aapt2ErrorUtils.kt:133)
-		at com.android.build.gradle.internal.res.Aapt2ProcessResourcesRunnableKt.processResources(Aapt2ProcessResourcesRunnable.kt:76)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:1060)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.access$invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:886)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction.run(LinkApplicationAndroidResourcesTask.kt:463)
-		at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
-		at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
-		at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+25 actionable tasks: 25 executed
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/dialog_alternative_promotion.xml:14: error: resource style/textItemSurplusDiscountHeader (aka com.proje.mobilesales:style/textItemSurplusDiscountHeader) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/dialog_alternative_promotion.xml:16: error: resource style/textItemSurplusDiscountHeader (aka com.proje.mobilesales:style/textItemSurplusDiscountHeader) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/dialog_alternative_promotion.xml:18: error: resource style/textItemSurplusDiscountHeader (aka com.proje.mobilesales:style/textItemSurplusDiscountHeader) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/dialog_alternative_promotion.xml:20: error: resource style/textItemSurplusDiscountHeader (aka com.proje.mobilesales:style/textItemSurplusDiscountHeader) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/dialog_alternative_promotion.xml:32: error: resource style/textItemSurplusDiscountHeader (aka com.proje.mobilesales:style/textItemSurplusDiscountHeader) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/dialog_alternative_promotion.xml:34: error: resource style/textItemSurplusDiscountHeader (aka com.proje.mobilesales:style/textItemSurplusDiscountHeader) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/dialog_alternative_promotion.xml:36: error: resource style/textItemSurplusDiscountHeader (aka com.proje.mobilesales:style/textItemSurplusDiscountHeader) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/dialog_alternative_promotion.xml:38: error: resource style/textItemSurplusDiscountHeader (aka com.proje.mobilesales:style/textItemSurplusDiscountHeader) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/directory_chooser.xml:25: error: resource color/android_bright_blue (aka com.proje.mobilesales:color/android_bright_blue) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/distribution_list_item.xml:16: error: resource style/textSerialGroupGeneralStyle (aka com.proje.mobilesales:style/textSerialGroupGeneralStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/distribution_list_item.xml:19: error: resource style/textSerialGroupGeneralStyle (aka com.proje.mobilesales:style/textSerialGroupGeneralStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/distribution_list_item.xml:25: error: resource style/textSerialGroupGeneralStyle (aka com.proje.mobilesales:style/textSerialGroupGeneralStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/distribution_list_item.xml:28: error: resource style/textSerialGroupGeneralStyle (aka com.proje.mobilesales:style/textSerialGroupGeneralStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/distribution_list_item.xml:35: error: resource style/textSerialGroupGeneralStyle (aka com.proje.mobilesales:style/textSerialGroupGeneralStyle) not found.
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
 		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
@@ -53,5 +46,5 @@ Execution failed for task ':composeApp:processDebugResources'.
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
-BUILD FAILED in 2m 46s
+BUILD FAILED in 1m 29s
 Error: Process completed with exit code 1.
