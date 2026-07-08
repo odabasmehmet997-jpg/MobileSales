@@ -109,4 +109,7 @@
 
     <style name="textItemSurplusDiscount" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="ReportTitleTextView" parent="Theme.AppCompat.Light">
+    </style>
 </resources>
