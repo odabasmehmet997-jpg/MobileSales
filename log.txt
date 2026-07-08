@@ -1,18 +1,18 @@
 * What went wrong:
-32 actionable tasks: 32 executed
 Execution failed for task ':composeApp:processDebugResources'.
 > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
    > Android resource linking failed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_print_preferences.xml:13: error: resource style/textCustomerSalesHeaderStyle (aka com.proje.mobilesales:style/textCustomerSalesHeaderStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_print_preferences.xml:18: error: resource style/textCustomerComStyle (aka com.proje.mobilesales:style/textCustomerComStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_print_preferences.xml:21: error: resource color/colorDivider2 (aka com.proje.mobilesales:color/colorDivider2) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_print_preferences.xml:28: error: resource style/textCustomerComStyle (aka com.proje.mobilesales:style/textCustomerComStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_print_preferences.xml:34: error: resource style/textCustomerComStyle (aka com.proje.mobilesales:style/textCustomerComStyle) not found.
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:1060)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.access$invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:886)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction.run(LinkApplicationAndroidResourcesTask.kt:463)
-		at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
-		at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:19: error: attribute iconStart (aka com.proje.mobilesales:iconStart) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:19: error: resource style/DrawerPrefenceTextStyle (aka com.proje.mobilesales:style/DrawerPrefenceTextStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:23: error: resource color/blackT12 (aka com.proje.mobilesales:color/blackT12) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:23: error: resource dimen/divider (aka com.proje.mobilesales:dimen/divider) not found.
+27 actionable tasks: 27 executed
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:28: error: attribute iconStart (aka com.proje.mobilesales:iconStart) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:28: error: resource style/DrawerPrefenceTextStyle (aka com.proje.mobilesales:style/DrawerPrefenceTextStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:32: error: resource color/blackT12 (aka com.proje.mobilesales:color/blackT12) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:32: error: resource dimen/divider (aka com.proje.mobilesales:dimen/divider) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:37: error: attribute iconStart (aka com.proje.mobilesales:iconStart) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/activity_settings.xml:37: error: resource style/DrawerPrefenceTextStyle (aka com.proje.mobilesales:style/DrawerPrefenceTextStyle) not found.
 		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
 		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
 		at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
@@ -46,5 +46,5 @@ Execution failed for task ':composeApp:processDebugResources'.
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
-BUILD FAILED in 2m 40s
+BUILD FAILED in 2m 37s
 Error: Process completed with exit code 1.

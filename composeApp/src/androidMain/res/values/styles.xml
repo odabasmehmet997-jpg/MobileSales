@@ -40,4 +40,7 @@
 
     <style name="textCustomerComStyle" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="DrawerPrefenceTextStyle" parent="Theme.AppCompat.Light">
+    </style>
 </resources>
