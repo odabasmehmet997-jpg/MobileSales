@@ -25,4 +25,6 @@
     <color name="blackT12">#1F000000</color>
     <color name="subMenu1">#FF37474F</color>
     <color name="android_bright_blue">#FF00DDFF</color>
+    <color name="line_composite">#FFE0E0E0</color>
+    <color name="grey800">#FF424242</color>
 </resources>

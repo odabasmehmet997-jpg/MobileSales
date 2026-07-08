@@ -76,4 +76,10 @@
 
     <style name="textSerialGroupGeneralStyle" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="textEmptyStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="ReportRowTextView" parent="Theme.AppCompat.Light">
+    </style>
 </resources>
