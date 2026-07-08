@@ -97,4 +97,7 @@
 
     <style name="TextAppearance.App.Subtitle" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="textCustomerGeneralValueStyle" parent="Theme.AppCompat.Light">
+    </style>
 </resources>

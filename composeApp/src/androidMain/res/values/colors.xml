@@ -28,4 +28,6 @@
     <color name="line_composite">#FFE0E0E0</color>
     <color name="grey800">#FF424242</color>
     <color name="orange300">#FFFFB74D</color>
+    <color name="subMenu3">#FF546E7A</color>
+    <color name="subMenu5">#FF78909C</color>
 </resources>

@@ -1,23 +1,22 @@
- What went wrong:
-> Task :composeApp:checkDebugDuplicateClasses
+* What went wrong:
 Execution failed for task ':composeApp:processDebugResources'.
 > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
-   > Android resource linking failed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_product_list.xml:29: error: resource dimen/list_item_spacing (aka com.proje.mobilesales:dimen/list_item_spacing) not found.
 25 actionable tasks: 25 executed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_variant_list_dialog.xml:85: error: resource color/orange300 (aka com.proje.mobilesales:color/orange300) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_visit.xml:12: error: resource style/TintableTitleStyle (aka com.proje.mobilesales:style/TintableTitleStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_visit.xml:41: error: resource style/TintableTitleStyle (aka com.proje.mobilesales:style/TintableTitleStyle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_barcode_product.xml:174: error: resource dimen/activity_half_two_vertical_margin (aka com.proje.mobilesales:dimen/activity_half_two_vertical_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_barcode_product.xml:174: error: resource dimen/activity_half_two_vertical_margin (aka com.proje.mobilesales:dimen/activity_half_two_vertical_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_barcode_product.xml:255: error: resource dimen/text_size_x_medium (aka com.proje.mobilesales:dimen/text_size_x_medium) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_barcode_product.xml:271: error: resource dimen/text_size_x_medium (aka com.proje.mobilesales:dimen/text_size_x_medium) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_barcode_product.xml:335: error: resource dimen/expand_height (aka com.proje.mobilesales:dimen/expand_height) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_cabin.xml:25: error: resource style/TextAppearance.App.Subtitle (aka com.proje.mobilesales:style/TextAppearance.App.Subtitle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_cabin.xml:35: error: resource style/TextAppearance.App.Subtitle (aka com.proje.mobilesales:style/TextAppearance.App.Subtitle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_cabin.xml:44: error: resource style/TextAppearance.App.Subtitle (aka com.proje.mobilesales:style/TextAppearance.App.Subtitle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_cabin.xml:54: error: resource style/TextAppearance.App.Subtitle (aka com.proje.mobilesales:style/TextAppearance.App.Subtitle) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_cabin.xml:71: error: resource style/TextAppearance.App.Subtitle (aka com.proje.mobilesales:style/TextAppearance.App.Subtitle) not found.
+   > Android resource linking failed
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_customer_general.xml:10: error: resource style/textCustomerGeneralValueStyle (aka com.proje.mobilesales:style/textCustomerGeneralValueStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_customer_inchargel.xml:12: error: resource style/textCustomerGeneralValueStyle (aka com.proje.mobilesales:style/textCustomerGeneralValueStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_customer_inchargel.xml:19: error: resource style/textCustomerGeneralValueStyle (aka com.proje.mobilesales:style/textCustomerGeneralValueStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_customer_inchargel.xml:26: error: resource style/textCustomerGeneralValueStyle (aka com.proje.mobilesales:style/textCustomerGeneralValueStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_customer_inchargel.xml:33: error: resource style/textCustomerGeneralValueStyle (aka com.proje.mobilesales:style/textCustomerGeneralValueStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_order_list.xml:67: error: resource color/subMenu3 (aka com.proje.mobilesales:color/subMenu3) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_order_list.xml:75: error: resource color/subMenu3 (aka com.proje.mobilesales:color/subMenu3) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_order_list.xml:82: error: resource color/subMenu3 (aka com.proje.mobilesales:color/subMenu3) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_order_list.xml:91: error: resource color/subMenu5 (aka com.proje.mobilesales:color/subMenu5) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_order_list.xml:98: error: resource color/subMenu5 (aka com.proje.mobilesales:color/subMenu5) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_order_list.xml:105: error: resource color/subMenu5 (aka com.proje.mobilesales:color/subMenu5) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_penetration_list.xml:4: error: resource dimen/padding_custom_view (aka com.proje.mobilesales:dimen/padding_custom_view) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_penetration_list.xml:15: error: resource dimen/padding_one (aka com.proje.mobilesales:dimen/padding_one) not found.
+		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
 		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
@@ -47,5 +46,5 @@ Execution failed for task ':composeApp:processDebugResources'.
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
-BUILD FAILED in 1m 36s
+BUILD FAILED in 1m 48s
 Error: Process completed with exit code 1.
