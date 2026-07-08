@@ -100,4 +100,13 @@
 
     <style name="textCustomerGeneralValueStyle" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="textProductSubStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="textSerialGroupHeaderStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="textItemSurplusDiscount" parent="Theme.AppCompat.Light">
+    </style>
 </resources>

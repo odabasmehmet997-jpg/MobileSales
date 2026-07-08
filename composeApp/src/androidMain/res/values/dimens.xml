@@ -23,4 +23,5 @@
     <dimen name="expand_height">48dp</dimen>
     <dimen name="padding_custom_view">8dp</dimen>
     <dimen name="padding_one">1dp</dimen>
+    <dimen name="text_size_xl_small">12sp</dimen>
 </resources>
