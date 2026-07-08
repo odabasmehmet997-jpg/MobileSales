@@ -9,4 +9,6 @@
     <attr name="maxFontValue" format="integer" />
     <attr name="minIntValue" format="integer" />
     <attr name="maxIntValue" format="integer" />
+    <attr name="first" format="string" />
+    <attr name="comparePref" format="string" />
 </resources>
