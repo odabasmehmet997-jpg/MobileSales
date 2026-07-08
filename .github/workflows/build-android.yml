@@ -20,8 +20,12 @@ jobs:
           java-version: 17
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
-        with:
-          api-level: 36
-          build-tools: 36.1.0
+      - name: Install SDK platforms
+        run: |
+          ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager "platforms;android-36" "build-tools;36.1.0"
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+      - name: Create local.properties
+        run: echo "sdk.dir=$ANDROID_HOME" > local.properties
       - name: Android debug build
         run: ./gradlew assembleDebug --stacktrace
