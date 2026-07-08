@@ -25,4 +25,10 @@
 
     <style name="CustomTabLayoutStyle" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="AppNavigationDrawer" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="textTitleStyle" parent="Theme.AppCompat.Light">
+    </style>
 </resources>
