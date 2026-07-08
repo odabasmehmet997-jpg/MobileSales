@@ -1,22 +1,23 @@
-* What went wrong:
+ What went wrong:
+> Task :composeApp:checkDebugDuplicateClasses
 Execution failed for task ':composeApp:processDebugResources'.
 > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
    > Android resource linking failed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:10: error: resource dimen/bottom_sheet_margin (aka com.proje.mobilesales:dimen/bottom_sheet_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:10: error: resource dimen/bottom_sheet_margin (aka com.proje.mobilesales:dimen/bottom_sheet_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:16: error: resource dimen/text_size_medium (aka com.proje.mobilesales:dimen/text_size_medium) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:22: error: resource dimen/bottom_sheet_margin (aka com.proje.mobilesales:dimen/bottom_sheet_margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_product_list.xml:29: error: resource dimen/list_item_spacing (aka com.proje.mobilesales:dimen/list_item_spacing) not found.
 25 actionable tasks: 25 executed
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:22: error: resource dimen/bottom_sheet_margin (aka com.proje.mobilesales:dimen/bottom_sheet_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:27: error: resource dimen/text_size_medium (aka com.proje.mobilesales:dimen/text_size_medium) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:33: error: resource dimen/bottom_sheet_margin (aka com.proje.mobilesales:dimen/bottom_sheet_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:33: error: resource dimen/bottom_sheet_margin (aka com.proje.mobilesales:dimen/bottom_sheet_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:39: error: resource dimen/text_size_medium (aka com.proje.mobilesales:dimen/text_size_medium) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:45: error: resource dimen/bottom_sheet_margin (aka com.proje.mobilesales:dimen/bottom_sheet_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:45: error: resource dimen/bottom_sheet_margin (aka com.proje.mobilesales:dimen/bottom_sheet_margin) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pdf_bottom_sheet_dialog.xml:51: error: resource dimen/text_size_medium (aka com.proje.mobilesales:dimen/text_size_medium) not found.
-     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_pin_sms.xml:29: error: attribute type (aka com.proje.mobilesales:type) not found.
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_variant_list_dialog.xml:85: error: resource color/orange300 (aka com.proje.mobilesales:color/orange300) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_visit.xml:12: error: resource style/TintableTitleStyle (aka com.proje.mobilesales:style/TintableTitleStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/fragment_visit.xml:41: error: resource style/TintableTitleStyle (aka com.proje.mobilesales:style/TintableTitleStyle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_barcode_product.xml:174: error: resource dimen/activity_half_two_vertical_margin (aka com.proje.mobilesales:dimen/activity_half_two_vertical_margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_barcode_product.xml:174: error: resource dimen/activity_half_two_vertical_margin (aka com.proje.mobilesales:dimen/activity_half_two_vertical_margin) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_barcode_product.xml:255: error: resource dimen/text_size_x_medium (aka com.proje.mobilesales:dimen/text_size_x_medium) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_barcode_product.xml:271: error: resource dimen/text_size_x_medium (aka com.proje.mobilesales:dimen/text_size_x_medium) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_barcode_product.xml:335: error: resource dimen/expand_height (aka com.proje.mobilesales:dimen/expand_height) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_cabin.xml:25: error: resource style/TextAppearance.App.Subtitle (aka com.proje.mobilesales:style/TextAppearance.App.Subtitle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_cabin.xml:35: error: resource style/TextAppearance.App.Subtitle (aka com.proje.mobilesales:style/TextAppearance.App.Subtitle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_cabin.xml:44: error: resource style/TextAppearance.App.Subtitle (aka com.proje.mobilesales:style/TextAppearance.App.Subtitle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_cabin.xml:54: error: resource style/TextAppearance.App.Subtitle (aka com.proje.mobilesales:style/TextAppearance.App.Subtitle) not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-88:/layout/item_cabin.xml:71: error: resource style/TextAppearance.App.Subtitle (aka com.proje.mobilesales:style/TextAppearance.App.Subtitle) not found.
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
 		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
@@ -46,5 +47,5 @@ Execution failed for task ':composeApp:processDebugResources'.
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
-BUILD FAILED in 1m 32s
+BUILD FAILED in 1m 36s
 Error: Process completed with exit code 1.

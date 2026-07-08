@@ -27,4 +27,5 @@
     <color name="android_bright_blue">#FF00DDFF</color>
     <color name="line_composite">#FFE0E0E0</color>
     <color name="grey800">#FF424242</color>
+    <color name="orange300">#FFFFB74D</color>
 </resources>

@@ -91,4 +91,10 @@
 
     <style name="TextAppearance.App.Title" parent="Theme.AppCompat.Light">
     </style>
+
+    <style name="TintableTitleStyle" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="TextAppearance.App.Subtitle" parent="Theme.AppCompat.Light">
+    </style>
 </resources>
