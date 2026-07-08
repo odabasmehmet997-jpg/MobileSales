@@ -11,4 +11,6 @@
     <attr name="maxIntValue" format="integer" />
     <attr name="first" format="string" />
     <attr name="comparePref" format="string" />
+    <attr name="deviceName" format="string" />
+    <attr name="deviceAddress" format="string" />
 </resources>

@@ -2,13 +2,40 @@
 Execution failed for task ':composeApp:processDebugResources'.
 > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
    > Android resource linking failed
-     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_print_settings_new.xml:119: error: attribute first (aka com.proje.mobilesales:first) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_print_settings_new.xml:119: error: attribute comparePref (aka com.proje.mobilesales:comparePref) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_print_settings_new.xml:124: error: attribute first (aka com.proje.mobilesales:first) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_print_settings_new.xml:124: error: attribute comparePref (aka com.proje.mobilesales:comparePref) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_print_settings_new.xml:175: error: attribute first (aka com.proje.mobilesales:first) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_print_settings_new.xml:175: error: attribute comparePref (aka com.proje.mobilesales:comparePref) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_print_settings_new.xml:181: error: attribute first (aka com.proje.mobilesales:first) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_printer_settings.xml:9: error: attribute deviceName (aka com.proje.mobilesales:deviceName) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_printer_settings.xml:9: error: attribute deviceAddress (aka com.proje.mobilesales:deviceAddress) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_printer_settings.xml:14: error: attribute deviceName (aka com.proje.mobilesales:deviceName) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_printer_settings.xml:14: error: attribute deviceAddress (aka com.proje.mobilesales:deviceAddress) not found.
+     error: failed linking file resources.
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':composeApp:processDebugResources'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
+	... 2 more
+	Suppressed: java.util.NoSuchElementException: Unable to get absolute path from com.proje.mobilesales.composeApp-androidMain-91:/xml/preference_printer_settings.xml
+                       because com.proje.mobilesales.composeApp-androidMain-91 is not key in sourceSetPathMap.
+		at com.android.ide.common.resources.RelativeResourceUtils$relativeResourcePathToAbsolutePath$1.invoke(RelativeResourceUtils.kt:91)
+		at com.android.ide.common.resources.RelativeResourceUtils$relativeResourcePathToAbsolutePath$1.invoke(RelativeResourceUtils.kt:68)
+		at com.android.ide.common.resources.RelativeResourceUtils.relativeResourcePathToAbsolutePath(RelativeResourceUtils.kt:61)
+		at com.android.ide.common.blame.parser.aapt.Aapt2ErrorParser$MessageParser.parse(Aapt2ErrorParser.kt:124)
+		at com.android.ide.common.blame.parser.aapt.Aapt2ErrorParser.parse(Aapt2ErrorParser.kt:99)
+		at com.android.ide.common.blame.parser.aapt.Aapt2OutputParser.parse(Aapt2OutputParser.java:56)
+		at com.android.ide.common.blame.parser.ToolOutputParser.parseToolOutput(ToolOutputParser.java:84)
+		at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteException(Aapt2ErrorUtils.kt:219)
+		at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteLinkException(Aapt2ErrorUtils.kt:133)
+		at com.android.build.gradle.internal.res.Aapt2ProcessResourcesRunnableKt.processResources(Aapt2ProcessResourcesRunnable.kt:76)
+		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:1060)
 		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.access$invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:886)
 		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction.run(LinkApplicationAndroidResourcesTask.kt:463)
 		at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
@@ -46,5 +73,5 @@ Execution failed for task ':composeApp:processDebugResources'.
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
-BUILD FAILED in 2m 44s
+BUILD FAILED in 1m 37s
 Error: Process completed with exit code 1.
