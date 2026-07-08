@@ -2,17 +2,17 @@
 Execution failed for task ':composeApp:processDebugResources'.
 > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
    > Android resource linking failed
-     com.proje.mobilesales.composeApp-androidMain-91:/anim/item_animation_fall_down.xml:2: error: resource integer/anim_duration_medium (aka com.proje.mobilesales:integer/anim_duration_medium) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/drawable/avd_hide_password.xml:2: error: resource drawable/_avd_hide_password__0_res_0x7f080001 (aka com.proje.mobilesales:drawable/_avd_hide_password__0_res_0x7f080001) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/drawable/avd_hide_password.xml:5: error: resource drawable/_avd_hide_password__1_res_0x7f080002 (aka com.proje.mobilesales:drawable/_avd_hide_password__1_res_0x7f080002) not found.
-27 actionable tasks: 27 executed
-     com.proje.mobilesales.composeApp-androidMain-91:/drawable/avd_hide_password.xml:8: error: resource drawable/_avd_hide_password__2_res_0x7f080003 (aka com.proje.mobilesales:drawable/_avd_hide_password__2_res_0x7f080003) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/drawable/avd_show_password.xml:2: error: resource drawable/res_0x7f080004_avd_show_password__0 (aka com.proje.mobilesales:drawable/res_0x7f080004_avd_show_password__0) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/drawable/avd_show_password.xml:3: error: resource drawable/res_0x7f080005_avd_show_password__1 (aka com.proje.mobilesales:drawable/res_0x7f080005_avd_show_password__1) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/drawable/avd_show_password.xml:4: error: resource drawable/res_0x7f080006_avd_show_password__2 (aka com.proje.mobilesales:drawable/res_0x7f080006_avd_show_password__2) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/drawable/border_outline.xml:7: error: resource color/white (aka com.proje.mobilesales:color/white) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/drawable/border_outline.xml:9: error: resource color/grey500 (aka com.proje.mobilesales:color/grey500) not found.
-     com.proje.mobilesales.composeApp-androidMain-91:/drawable/button_rect.xml:3: error: resource color/colorPrimary (aka com.proje.mobilesales:color/colorPrimary) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/drawable/divider_item.xml:4: error: resource dimen/padding (aka com.proje.mobilesales:dimen/padding) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/drawable/divider_item.xml:4: error: resource dimen/padding (aka com.proje.mobilesales:dimen/padding) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/drawable/fab_border_rectangle.xml:3: error: resource color/subMenu9 (aka com.proje.mobilesales:color/subMenu9) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/drawable/fab_border_rectangle.xml:6: error: resource color/subMenu9 (aka com.proje.mobilesales:color/subMenu9) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/drawable/header_card.xml:3: error: resource color/colorPrimaryLight (aka com.proje.mobilesales:color/colorPrimaryLight) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/drawable/header_card.xml:6: error: resource color/colorDisabled (aka com.proje.mobilesales:color/colorDisabled) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/drawable/header_card_dark.xml:3: error: resource color/colorHighlightInverse (aka com.proje.mobilesales:color/colorHighlightInverse) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/drawable/header_card_dark.xml:6: error: resource color/colorDisabled (aka com.proje.mobilesales:color/colorDisabled) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/drawable/progress.xml:5: error: resource color/colorDisabled (aka com.proje.mobilesales:color/colorDisabled) not found.
+     com.proje.mobilesales.composeApp-androidMain-91:/drawable-hdpi/linear_back.xml:10: error: resource color/black (aka com.proje.mobilesales:color/black) not found.
+		at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
 		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
 		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
 		at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
@@ -46,5 +46,5 @@ Execution failed for task ':composeApp:processDebugResources'.
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
-BUILD FAILED in 2m 35s
+BUILD FAILED in 2m 39s
 Error: Process completed with exit code 1.

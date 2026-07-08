@@ -12,4 +12,9 @@
     <color name="colorPrimary">#FF3F51B5</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey500">#FF9E9E9E</color>
+    <color name="black">#FF000000</color>
+    <color name="subMenu9">#FF37474F</color>
+    <color name="colorPrimaryLight">#FF7986CB</color>
+    <color name="colorDisabled">#FFBDBDBD</color>
+    <color name="colorHighlightInverse">#FFE8EAF6</color>
 </resources>
