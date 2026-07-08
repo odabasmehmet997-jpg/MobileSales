@@ -1,4 +1,5 @@
-1m 34s
+Android Debug Build
+
 Run ./gradlew assembleDebug --stacktrace
 Downloading https://services.gradle.org/distributions/gradle-8.14.5-bin.zip
 .............10%.............20%.............30%.............40%.............50%.............60%..............70%.............80%.............90%.............100%
@@ -19,17 +20,17 @@ Type-safe project accessors is an incubating feature.
 > Configure project :composeApp
 
 Please wait while Kotlin/Native compiler 2.3.21 is being installed.
-Download kotlin-native-prebuilt-linux-x86_64-2.3.21.tar.gz finished, took 1 s 421 ms
+Download kotlin-native-prebuilt-linux-x86_64-2.3.21.tar.gz finished, took 2 s 546 ms
 Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.3.21
-Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.3.21 finished, took 5 s 677 ms
+Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.3.21 finished, took 5 s 809 ms
 
 > Task :composeApp:preBuild UP-TO-DATE
 > Task :composeApp:preDebugBuild UP-TO-DATE
 > Task :composeApp:mergeDebugNativeDebugMetadata NO-SOURCE
 > Task :composeApp:kmpPartiallyResolvedDependenciesChecker
 > Task :composeApp:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :composeApp:generateDebugResValues
 > Task :composeApp:dataBindingMergeDependencyArtifactsDebug
+> Task :composeApp:generateDebugResValues
 > Task :composeApp:generateDebugResources
 
 > Task :composeApp:mergeDebugResources
@@ -42,76 +43,23 @@ Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linu
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:458:1: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ar/strings.xml:477:1: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
 /home/runner/.gradle/caches/8.14.5/transforms/f58cc641bc3758604bfcde55731bbf6d/transformed/ui/res/values-ar/values-ar.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/summary_collapsed_preference_list. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:42:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:43:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:105:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:124:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
+/home/runner/.gradle/caches/8.14.5/transforms/f58cc641bc3758604bfcde55731bbf6d/transformed/ui/res/values-tr/values-tr.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/summary_collapsed_preference_list. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:158:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:159:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:219:4: Multiple substitutions specified in non-positional format of string resource string/exp_30_wcf_select_result_error. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:239:4: Multiple substitutions specified in non-positional format of string resource string/exp_41_sales_header_not_select. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:241:4: Multiple substitutions specified in non-positional format of string resource string/exp_43_risk_over_error. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:42:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:43:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:248:4: Multiple substitutions specified in non-positional format of string resource string/exp_50_due_date_over_error. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:343:4: Multiple substitutions specified in non-positional format of string resource string/exp_item_has_negative_balance. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:105:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-tr/strings.xml:124:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:355:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_defined_purchase_price. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:358:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_last_purchase_price. Did you mean to add the formatted="false" attribute?
-/home/runner/.gradle/caches/8.14.5/transforms/f58cc641bc3758604bfcde55731bbf6d/transformed/ui/res/values-tr/values-tr.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/summary_collapsed_preference_list. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:526:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
 /home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-az/strings.xml:548:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
 /home/runner/.gradle/caches/8.14.5/transforms/f58cc641bc3758604bfcde55731bbf6d/transformed/ui/res/values-az/values-az.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/summary_collapsed_preference_list. Did you mean to add the formatted="false" attribute?
-/home/runner/.gradle/caches/8.14.5/transforms/a83bd6c9293681d8c5dfedbb182cc2fd/transformed/appcompat-1.7.1/res/values/values.xml:1710:4: Duplicate value for resource 'attr/navigationMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2799: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:11265:4: Duplicate value for resource 'attr/layout_scrollFlags' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2380: .
-/home/runner/.gradle/caches/8.14.5/transforms/a83bd6c9293681d8c5dfedbb182cc2fd/transformed/appcompat-1.7.1/res/values/values.xml:1827:4: Duplicate value for resource 'attr/tintMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:3700: .
-/home/runner/.gradle/caches/8.14.5/transforms/a83bd6c9293681d8c5dfedbb182cc2fd/transformed/appcompat-1.7.1/res/values/values.xml:1856:4: Duplicate value for resource 'attr/tickMarkTintMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:3684: .
-/home/runner/.gradle/caches/8.14.5/transforms/a83bd6c9293681d8c5dfedbb182cc2fd/transformed/appcompat-1.7.1/res/values/values.xml:1892:4: Duplicate value for resource 'attr/autoSizeTextType' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:625: .
-/home/runner/.gradle/caches/8.14.5/transforms/a83bd6c9293681d8c5dfedbb182cc2fd/transformed/appcompat-1.7.1/res/values/values.xml:1956:4: Duplicate value for resource 'attr/actionBarSize' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:459: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:11312:4: Duplicate value for resource 'attr/badgeGravity' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:666: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:11386:4: Duplicate value for resource 'attr/trackCornerRadius' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:3793: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:11455:4: Duplicate value for resource 'attr/fabAlignmentMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:1672: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:11524:4: Duplicate value for resource 'attr/behavior_peekHeight' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:734: .
-/home/runner/work/MobileSales/MobileSales/composeApp/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values/values.xml:21685: Duplicate value for resource 'attr/carousel_touchUpMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:904: .
-/home/runner/.gradle/caches/8.14.5/transforms/a83bd6c9293681d8c5dfedbb182cc2fd/transformed/appcompat-1.7.1/res/values/values.xml:2323:4: Duplicate value for resource 'attr/checkMarkTintMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:922: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:11729:4: Duplicate value for resource 'attr/indicatorDirectionCircular' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2013: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:11773:4: Duplicate value for resource 'attr/titleTextEllipsize' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:3738: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:11904:4: Duplicate value for resource 'attr/layout_collapseMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2179: .
-/home/runner/.gradle/caches/8.14.5/transforms/a83bd6c9293681d8c5dfedbb182cc2fd/transformed/appcompat-1.7.1/res/values/values.xml:2351:4: Duplicate value for resource 'attr/buttonTintMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:844: .
-/home/runner/.gradle/caches/8.14.5/transforms/1423b04700c69632cff4e9648ec1ab79/transformed/constraintlayout-2.2.1/res/values/values.xml:834:4: Duplicate value for resource 'attr/constraintRotate' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:1228: .
-/home/runner/.gradle/caches/8.14.5/transforms/00d31d1787fa1f4a0b5d2b3358e6fac6/transformed/coordinatorlayout-1.3.0/res/values/values.xml:12:4: Duplicate value for resource 'attr/layout_anchorGravity' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2161: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:11926:4: Duplicate value for resource 'attr/extendStrategy' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:1652: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:11955:4: Duplicate value for resource 'attr/fabSize' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:1694: .
-/home/runner/.gradle/caches/8.14.5/transforms/1dc388277c32491fec110072740f65e1/transformed/core-1.18.0/res/values/values.xml:126:4: Duplicate value for resource 'attr/fontProviderFetchStrategy' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:1831: .
-/home/runner/.gradle/caches/8.14.5/transforms/1dc388277c32491fec110072740f65e1/transformed/core-1.18.0/res/values/values.xml:161:4: Duplicate value for resource 'attr/fontStyle' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:1844: .
-/home/runner/.gradle/caches/8.14.5/transforms/1423b04700c69632cff4e9648ec1ab79/transformed/constraintlayout-2.2.1/res/values/values.xml:993:4: Duplicate value for resource 'attr/grid_orientation' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:1874: .
-/home/runner/.gradle/caches/8.14.5/transforms/1423b04700c69632cff4e9648ec1ab79/transformed/constraintlayout-2.2.1/res/values/values.xml:1082:4: Duplicate value for resource 'attr/keyPositionType' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2107: .
-/home/runner/.gradle/caches/8.14.5/transforms/a83bd6c9293681d8c5dfedbb182cc2fd/transformed/appcompat-1.7.1/res/values/values.xml:2397:4: Duplicate value for resource 'attr/showDividers' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:3155: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:12059:4: Duplicate value for resource 'attr/indeterminateAnimationType' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2005: .
-/home/runner/.gradle/caches/8.14.5/transforms/34e06fc0835013d8a039bb898337bc70/transformed/play-services-base-18.9.0/res/values/values.xml:33:0: Duplicate value for resource 'attr/imageAspectRatioAdjust' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:1990: .
-/home/runner/.gradle/caches/8.14.5/transforms/6191a3225454203b738eed501f27ed93/transformed/play-services-maps-20.0.0/res/values/values.xml:4:0: Duplicate value for resource 'attr/mapType' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2479: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:12160:4: Duplicate value for resource 'attr/iconGravity' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:1952: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:12336:4: Duplicate value for resource 'attr/checkedIconGravity' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:940: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:12374:4: Duplicate value for resource 'attr/buttonIconTintMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:823: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:12461:4: Duplicate value for resource 'attr/thumbIconTintMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:3644: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:12532:4: Duplicate value for resource 'attr/logoScaleType' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2462: .
-/home/runner/.gradle/caches/8.14.5/transforms/a83bd6c9293681d8c5dfedbb182cc2fd/transformed/appcompat-1.7.1/res/values/values.xml:2454:4: Duplicate value for resource 'attr/alphabeticModifiers' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:558: .
-/home/runner/.gradle/caches/8.14.5/transforms/1423b04700c69632cff4e9648ec1ab79/transformed/constraintlayout-2.2.1/res/values/values.xml:1261:4: Duplicate value for resource 'attr/motionEffect_move' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2739: .
-/home/runner/.gradle/caches/8.14.5/transforms/1423b04700c69632cff4e9648ec1ab79/transformed/constraintlayout-2.2.1/res/values/values.xml:1281:4: Duplicate value for resource 'attr/textureEffect' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:3618: .
-/home/runner/.gradle/caches/8.14.5/transforms/1423b04700c69632cff4e9648ec1ab79/transformed/constraintlayout-2.2.1/res/values/values.xml:1311:4: Duplicate value for resource 'attr/motionDebug' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2673: .
-/home/runner/.gradle/caches/8.14.5/transforms/1423b04700c69632cff4e9648ec1ab79/transformed/constraintlayout-2.2.1/res/values/values.xml:1328:4: Duplicate value for resource 'attr/telltales_velocityMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:3473: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:12602:4: Duplicate value for resource 'attr/labelVisibilityMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2128: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:12679:4: Duplicate value for resource 'attr/menuGravity' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2634: .
-/home/runner/.gradle/caches/8.14.5/transforms/1423b04700c69632cff4e9648ec1ab79/transformed/constraintlayout-2.2.1/res/values/values.xml:1338:4: Duplicate value for resource 'attr/clickAction' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:1023: .
-/home/runner/.gradle/caches/8.14.5/transforms/1423b04700c69632cff4e9648ec1ab79/transformed/constraintlayout-2.2.1/res/values/values.xml:1348:4: Duplicate value for resource 'attr/autoCompleteMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:609: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:12896:4: Duplicate value for resource 'attr/cornerFamily' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:1303: .
-/home/runner/.gradle/caches/8.14.5/transforms/34e06fc0835013d8a039bb898337bc70/transformed/play-services-base-18.9.0/res/values/values.xml:46:0: Duplicate value for resource 'attr/buttonSize' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:833: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:12970:4: Duplicate value for resource 'attr/labelBehavior' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:2119: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:13079:4: Duplicate value for resource 'attr/animationMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:588: .
-/home/runner/.gradle/caches/8.14.5/transforms/a83bd6c9293681d8c5dfedbb182cc2fd/transformed/appcompat-1.7.1/res/values/values.xml:2661:4: Duplicate value for resource 'attr/thumbTintMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:3662: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:13119:4: Duplicate value for resource 'attr/tabIndicatorGravity' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:3421: .
-/home/runner/.gradle/caches/8.14.5/transforms/3b51ab2463e3e4cec82be30a02ae35a2/transformed/material-1.14.0/res/values/values.xml:13216:4: Duplicate value for resource 'attr/errorIconTintMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:1605: .
-/home/runner/.gradle/caches/8.14.5/transforms/a83bd6c9293681d8c5dfedbb182cc2fd/transformed/appcompat-1.7.1/res/values/values.xml:2747:4: Duplicate value for resource 'attr/buttonGravity' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:812: .
-/home/runner/.gradle/caches/8.14.5/transforms/1423b04700c69632cff4e9648ec1ab79/transformed/constraintlayout-2.2.1/res/values/values.xml:1464:4: Duplicate value for resource 'attr/autoTransition' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:629: .
-/home/runner/.gradle/caches/8.14.5/transforms/a83bd6c9293681d8c5dfedbb182cc2fd/transformed/appcompat-1.7.1/res/values/values.xml:2814:4: Duplicate value for resource 'attr/backgroundTintMode' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:658: .
-/home/runner/.gradle/caches/8.14.5/transforms/8dc6b364673f1b3b381a7c75f329ea46/transformed/zxing-android-embedded-4.3.0/res/values/values.xml:38:4: Duplicate value for resource 'attr/zxing_preview_scaling_strategy' with config 'DEFAULT' and product ''. Resource was previously defined here: com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:3969: .
 
 > Task :composeApp:convertXmlValueResourcesForAndroidDebug NO-SOURCE
 > Task :composeApp:copyNonXmlValueResourcesForAndroidDebug NO-SOURCE
@@ -123,15 +71,62 @@ Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linu
 > Task :composeApp:copyNonXmlValueResourcesForCommonMain NO-SOURCE
 > Task :composeApp:prepareComposeResourcesTaskForCommonMain NO-SOURCE
 > Task :composeApp:copyDebugComposeResourcesToAndroidAssets
-> Task :composeApp:mergeDebugResources FAILED
+
+> Task :composeApp:mergeDebugResources
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:158:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:158:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:225:4: Multiple substitutions specified in non-positional format of string resource string/exp_30_wcf_select_result_error. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:246:4: Multiple substitutions specified in non-positional format of string resource string/exp_41_sales_header_not_select. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:248:4: Multiple substitutions specified in non-positional format of string resource string/exp_43_risk_over_error. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:255:4: Multiple substitutions specified in non-positional format of string resource string/exp_50_due_date_over_error. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:354:4: Multiple substitutions specified in non-positional format of string resource string/exp_item_has_negative_balance. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:369:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_defined_purchase_price. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:372:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_last_purchase_price. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:540:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-ru/strings.xml:562:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
+/home/runner/.gradle/caches/8.14.5/transforms/f58cc641bc3758604bfcde55731bbf6d/transformed/ui/res/values-ru/values-ru.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/summary_collapsed_preference_list. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:147:4: Multiple substitutions specified in non-positional format of string resource string/exp_30_wcf_select_result_error. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:165:4: Multiple substitutions specified in non-positional format of string resource string/exp_41_sales_header_not_select. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:167:4: Multiple substitutions specified in non-positional format of string resource string/exp_43_risk_over_error. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:176:4: Multiple substitutions specified in non-positional format of string resource string/exp_50_due_date_over_error. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:266:4: Multiple substitutions specified in non-positional format of string resource string/exp_item_has_negative_balance. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:277:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_defined_purchase_price. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-en/strings.xml:278:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_last_purchase_price. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:158:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_content_description. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:159:4: Multiple substitutions specified in non-positional format of string resource string/character_counter_overflowed_content_description. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:205:4: Multiple substitutions specified in non-positional format of string resource string/exp_30_wcf_select_result_error. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:217:4: Multiple substitutions specified in non-positional format of string resource string/exp_41_sales_header_not_select. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:219:4: Multiple substitutions specified in non-positional format of string resource string/exp_43_risk_over_error. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:297:4: Multiple substitutions specified in non-positional format of string resource string/exp_item_has_negative_balance. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:303:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_defined_purchase_price. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:304:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_last_purchase_price. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:470:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
+/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:489:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
+/home/runner/.gradle/caches/8.14.5/transforms/f58cc641bc3758604bfcde55731bbf6d/transformed/ui/res/values-fa/values-fa.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/summary_collapsed_preference_list. Did you mean to add the formatted="false" attribute?
 
 > Task :composeApp:packageDebugResources
+> Task :composeApp:processDebugNavigationResources
+> Task :composeApp:dataBindingTriggerDebug
+> Task :composeApp:generateResourceAccessorsForAndroidMain SKIPPED
+> Task :composeApp:generateResourceAccessorsForCommonMain SKIPPED
+> Task :composeApp:generateActualResourceCollectorsForAndroidMain SKIPPED
+> Task :composeApp:generateComposeResClass SKIPPED
+> Task :composeApp:generateExpectResourceCollectorsForCommonMain SKIPPED
+> Task :composeApp:generateResourceAccessorsForAndroidDebug SKIPPED
+> Task :composeApp:checkDebugAarMetadata
+> Task :composeApp:parseDebugLocalResources
+> Task :composeApp:compileDebugNavigationResources
+> Task :composeApp:dataBindingGenBaseClassesDebug FAILED
+
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':composeApp:mergeDebugResources'.
-> A failure occurred while executing com.android.build.gradle.internal.res.ResourceCompilerRunnable
-   > Resource compilation failed (Failed to compile values resource file /home/runner/work/MobileSales/MobileSales/composeApp/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values/values.xml. Cause: java.lang.IllegalStateException: Can not add resource (com.android.aaptcompiler.ParsedResource@29769f52) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@74594b7a) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@540ccbbc) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@42b0ba77) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5fa1217c) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@611db369) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@537ed5dd) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@145aaec7) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@42a6d7f1) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@4e2cb237) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@6bd94612) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@2ab4e138) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5e59b2c0) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@754f0e36) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@54872f5b) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5937a9d2) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@4a6bcf86) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@47d84643) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@2ac85414) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@4ed511a6) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5ad6f005) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5f394f42) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@3739d845) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5187a725) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@3c3c33c8) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@29ea2852) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@50e836da) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@3cba0d6d) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@61c5cb41) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1995d793) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@8da7c9d) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@6467d98e) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@2bb79980) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1ca9ea2a) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@47cc53b6) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1dbd4968) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@ad1a8c6) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@59faeb0c) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@7c0e4266) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@b0fb286) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@c1facb9) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@2b384bd) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@ca0ebff) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@7acdf36f) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@b46f2eb) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@154e0952) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1ebaf717) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@b793924) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@3794430a) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5275d833) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1b3e8f25) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@594c357f) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@4c55a14f) to table.). Check logs for more details.
+Execution failed for task ':composeApp:dataBindingGenBaseClassesDebug'.
+> Found data binding error(s):
+  
+  ERROR: <ImageView id='@id/image'> conflicts with another tag that has the same ID file://composeApp/src/androidMain/res/layout/abc_activity_chooser_view.xml Line:20
+  ERROR: <ImageView id='@id/image'> conflicts with another tag that has the same ID file://composeApp/src/androidMain/res/layout/abc_activity_chooser_view.xml Line:40
+
 
 * Try:
 > Run with --info or --debug option to get more log output.
@@ -139,7 +134,7 @@ Execution failed for task ':composeApp:mergeDebugResources'.
 > Get more help at https://help.gradle.org.
 
 * Exception is:
-org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':composeApp:mergeDebugResources'.
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':composeApp:dataBindingGenBaseClassesDebug'.
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
 	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
@@ -172,18 +167,27 @@ org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compose
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing com.android.build.gradle.internal.res.ResourceCompilerRunnable
-	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:287)
-	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
-	at org.gradle.internal.Factories$1.create(Factories.java:31)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:335)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:318)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLock(DefaultWorkerLeaseService.java:323)
-	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:126)
-	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:92)
-	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForAll(DefaultAsyncWorkTracker.java:78)
-	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForCompletion(DefaultAsyncWorkTracker.java:66)
-	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:252)
+Caused by: android.databinding.tool.util.LoggedErrorException: Found data binding error(s):
+
+ERROR: <ImageView id='@id/image'> conflicts with another tag that has the same ID file://composeApp/src/androidMain/res/layout/abc_activity_chooser_view.xml Line:20
+ERROR: <ImageView id='@id/image'> conflicts with another tag that has the same ID file://composeApp/src/androidMain/res/layout/abc_activity_chooser_view.xml Line:40
+
+	at android.databinding.tool.processing.Scope.assertNoError(Scope.java:114)
+	at android.databinding.tool.BaseDataBinder.generateAll(BaseDataBinder.kt:101)
+	at com.android.build.gradle.internal.tasks.databinding.DataBindingGenBaseClassesTask$CodeGenerator.run(DataBindingGenBaseClassesTask.kt:325)
+	at com.android.build.gradle.internal.tasks.databinding.DataBindingGenBaseClassesTask.doTaskAction(DataBindingGenBaseClassesTask.kt:152)
+	at com.android.build.gradle.internal.tasks.NewIncrementalTask$taskAction$$inlined$recordTaskAction$1.invoke(BaseTask.kt:82)
+	at com.android.build.gradle.internal.tasks.Blocks.recordSpan(Blocks.java:51)
+	at com.android.build.gradle.internal.tasks.NewIncrementalTask.taskAction(NewIncrementalTask.kt:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:45)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
+	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.execute(IncrementalTaskAction.java:26)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:244)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
@@ -211,6 +215,7 @@ Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionExcept
 	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
 	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
 	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+13 actionable tasks: 13 executed
 	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
 	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
 	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
@@ -297,52 +302,41 @@ Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionExcept
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-Caused by: com.android.aaptcompiler.ResourceCompilationException: Resource compilation failed (Failed to compile values resource file /home/runner/work/MobileSales/MobileSales/composeApp/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values/values.xml. Cause: java.lang.IllegalStateException: Can not add resource (com.android.aaptcompiler.ParsedResource@29769f52) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@74594b7a) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@540ccbbc) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@42b0ba77) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5fa1217c) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@611db369) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@537ed5dd) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@145aaec7) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@42a6d7f1) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@4e2cb237) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@6bd94612) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@2ab4e138) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5e59b2c0) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@754f0e36) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@54872f5b) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5937a9d2) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@4a6bcf86) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@47d84643) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@2ac85414) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@4ed511a6) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5ad6f005) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5f394f42) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@3739d845) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5187a725) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@3c3c33c8) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@29ea2852) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@50e836da) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@3cba0d6d) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@61c5cb41) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1995d793) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@8da7c9d) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@6467d98e) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@2bb79980) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1ca9ea2a) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@47cc53b6) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1dbd4968) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@ad1a8c6) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@59faeb0c) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@7c0e4266) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@b0fb286) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@c1facb9) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@2b384bd) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@ca0ebff) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@7acdf36f) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@b46f2eb) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@154e0952) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1ebaf717) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@b793924) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@3794430a) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5275d833) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1b3e8f25) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@594c357f) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@4c55a14f) to table.). Check logs for more details.
-	at com.android.aaptcompiler.ResourceCompiler.compileResource(ResourceCompiler.kt:129)
-	at com.android.build.gradle.internal.res.ResourceCompilerRunnable$Companion.compileSingleResource(ResourceCompilerRunnable.kt:34)
-	at com.android.build.gradle.internal.res.ResourceCompilerRunnable.run(ResourceCompilerRunnable.kt:15)
-	at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
-	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
-	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
-	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
-	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
-	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
-	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
-	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
-	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
-	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:194)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)
-	at org.gradle.internal.Factories$1.create(Factories.java:31)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
-	... 2 more
-Caused by: com.android.aaptcompiler.ResourceCompilationException: Failed to compile values resource file /home/runner/work/MobileSales/MobileSales/composeApp/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values/values.xml
-	at com.android.aaptcompiler.ResourceCompiler.compileTable(ResourceCompiler.kt:192)
-	at com.android.aaptcompiler.ResourceCompiler.access$compileTable(ResourceCompiler.kt:1)
-	at com.android.aaptcompiler.ResourceCompiler$getCompileMethod$1.invoke(ResourceCompiler.kt:138)
-	at com.android.aaptcompiler.ResourceCompiler$getCompileMethod$1.invoke(ResourceCompiler.kt:138)
-	at com.android.aaptcompiler.ResourceCompiler.compileResource(ResourceCompiler.kt:123)
-	... 31 more
-Caused by: java.lang.IllegalStateException: Can not add resource (com.android.aaptcompiler.ParsedResource@29769f52) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@74594b7a) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@540ccbbc) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@42b0ba77) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5fa1217c) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@611db369) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@537ed5dd) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@145aaec7) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@42a6d7f1) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@4e2cb237) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@6bd94612) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@2ab4e138) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5e59b2c0) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@754f0e36) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@54872f5b) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5937a9d2) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@4a6bcf86) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@47d84643) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@2ac85414) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@4ed511a6) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5ad6f005) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5f394f42) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@3739d845) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5187a725) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@3c3c33c8) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@29ea2852) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@50e836da) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@3cba0d6d) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@61c5cb41) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1995d793) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@8da7c9d) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@6467d98e) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@2bb79980) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1ca9ea2a) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@47cc53b6) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1dbd4968) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@ad1a8c6) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@59faeb0c) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@7c0e4266) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@b0fb286) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@c1facb9) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@2b384bd) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@ca0ebff) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@7acdf36f) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@b46f2eb) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@154e0952) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1ebaf717) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@b793924) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@3794430a) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@5275d833) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@1b3e8f25) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@594c357f) to table.,Can not add resource (com.android.aaptcompiler.ParsedResource@4c55a14f) to table.
-	at com.android.aaptcompiler.TableExtractor.extractResourceValues(TableExtractor.kt:270)
-	at com.android.aaptcompiler.TableExtractor.extract(TableExtractor.kt:181)
-	at com.android.aaptcompiler.ResourceCompiler.compileTable(ResourceCompiler.kt:188)
-	... 35 more
 
 
-BUILD FAILED in 1m 32s
-7 actionable tasks: 7 executed
+BUILD FAILED in 1m 52s
 Error: Process completed with exit code 1.
+
+ 
+
+Post Set up JDK 17
+
+Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Post job cleanup.
+(node:2834) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Post Chek out Code
+
+Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Post job cleanup.
+/usr/bin/git version
+git version 2.54.0
+Temporarily overriding HOME='/home/runner/work/_temp/54d6ef61-da06-48fe-8652-71576504c1b6' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/MobileSales/MobileSales
+/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+http.https://github.com/.extraheader
+/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+
+
+Complete Job
+
+Cleaning up orphan processes
+Terminate orphan process: pid (2675) (java)
+Warning: Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, android-actions/setup-android@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
