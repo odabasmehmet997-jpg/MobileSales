@@ -1,147 +1,23 @@
-Configure project :composeApp
-
-Please wait while Kotlin/Native compiler 2.3.21 is being installed.
-Download kotlin-native-prebuilt-linux-x86_64-2.3.21.tar.gz finished, took 1 s 151 ms
-Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.3.21
-Unpack Kotlin/Native compiler to /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.3.21 finished, took 5 s 712 ms
-
-> Task :composeApp:preBuild UP-TO-DATE
-> Task :composeApp:preDebugBuild UP-TO-DATE
-> Task :composeApp:mergeDebugNativeDebugMetadata NO-SOURCE
-> Task :composeApp:kmpPartiallyResolvedDependenciesChecker
-> Task :composeApp:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :composeApp:generateDebugResValues
-> Task :composeApp:dataBindingMergeDependencyArtifactsDebug
-> Task :composeApp:generateDebugResources
-> Task :composeApp:convertXmlValueResourcesForAndroidDebug NO-SOURCE
-> Task :composeApp:copyNonXmlValueResourcesForAndroidDebug NO-SOURCE
-> Task :composeApp:prepareComposeResourcesTaskForAndroidDebug NO-SOURCE
-> Task :composeApp:convertXmlValueResourcesForAndroidMain NO-SOURCE
-> Task :composeApp:copyNonXmlValueResourcesForAndroidMain NO-SOURCE
-> Task :composeApp:prepareComposeResourcesTaskForAndroidMain NO-SOURCE
-> Task :composeApp:convertXmlValueResourcesForCommonMain NO-SOURCE
-> Task :composeApp:copyNonXmlValueResourcesForCommonMain NO-SOURCE
-> Task :composeApp:prepareComposeResourcesTaskForCommonMain NO-SOURCE
-> Task :composeApp:copyDebugComposeResourcesToAndroidAssets
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:217:4: Multiple substitutions specified in non-positional format of string resource string/exp_41_sales_header_not_select. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:219:4: Multiple substitutions specified in non-positional format of string resource string/exp_43_risk_over_error. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:297:4: Multiple substitutions specified in non-positional format of string resource string/exp_item_has_negative_balance. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:303:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_defined_purchase_price. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:304:4: Multiple substitutions specified in non-positional format of string resource string/exp_price_below_last_purchase_price. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:470:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_announce_current_range_selection. Did you mean to add the formatted="false" attribute?
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/res/values-fa/strings.xml:489:4: Multiple substitutions specified in non-positional format of string resource string/mtrl_picker_range_header_selected. Did you mean to add the formatted="false" attribute?
-/home/runner/.gradle/caches/8.14.5/transforms/f58cc641bc3758604bfcde55731bbf6d/transformed/ui/res/values-fa/values-fa.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/summary_collapsed_preference_list. Did you mean to add the formatted="false" attribute?
-
-> Task :composeApp:packageDebugResources
-> Task :composeApp:processDebugNavigationResources
-> Task :composeApp:dataBindingTriggerDebug
-> Task :composeApp:generateResourceAccessorsForAndroidMain SKIPPED
-> Task :composeApp:generateResourceAccessorsForCommonMain SKIPPED
-> Task :composeApp:generateActualResourceCollectorsForAndroidMain SKIPPED
-> Task :composeApp:generateComposeResClass SKIPPED
-> Task :composeApp:generateExpectResourceCollectorsForCommonMain SKIPPED
-> Task :composeApp:generateResourceAccessorsForAndroidDebug SKIPPED
-> Task :composeApp:checkDebugAarMetadata
-> Task :composeApp:parseDebugLocalResources
-> Task :composeApp:compileDebugNavigationResources
-> Task :composeApp:dataBindingGenBaseClassesDebug
-> Task :composeApp:mapDebugSourceSetPaths
-> Task :composeApp:createDebugCompatibleScreenManifests
-> Task :composeApp:extractDeepLinksDebug
-
-> Task :composeApp:processDebugMainManifest
-/home/runner/work/MobileSales/MobileSales/composeApp/src/androidMain/AndroidManifest.xml:5:2-41 Warning:
-	uses-sdk:minSdkVersion value (29) specified in the manifest file is ignored. It is overridden by the value declared in the DSL or the variant API, or 1 if not declared/present. Current value is (26).
-
-> Task :composeApp:processDebugManifest
-> Task :composeApp:processDebugManifestForPackage
-> Task :composeApp:javaPreCompileDebug
-> Task :composeApp:mergeDebugShaders
-> Task :composeApp:compileDebugShaders NO-SOURCE
-> Task :composeApp:debugAssetsCopyForAGP NO-SOURCE
-> Task :composeApp:generateDebugAssets UP-TO-DATE
-> Task :composeApp:mergeDebugAssets
-> Task :composeApp:compressDebugAssets
-> Task :composeApp:processDebugResources FAILED
-> Task :composeApp:checkDebugDuplicateClasses
-
 FAILURE: Build failed with an exception.
-
 * What went wrong:
-
-
-25 actionable tasks: 25 executed
 Execution failed for task ':composeApp:processDebugResources'.
+27 actionable tasks: 27 executed
 > A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
    > Android resource linking failed
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:4: error: resource android:color/car_grey_300 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:5: error: resource android:color/car_grey_50 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:9: error: resource android:color/car_green_100 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:10: error: resource android:color/car_grey_400 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:11: error: resource android:color/car_grey_500 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:16: error: resource android:color/car_green_300 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:17: error: resource android:color/car_grey_1000 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:22: error: resource android:color/car_cyan_50 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:37: error: resource android:color/car_blue_700 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:38: error: resource android:color/car_body4 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:39: error: resource android:color/car_body4_light is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:40: error: resource android:color/car_green_300 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:41: error: resource android:color/car_cyan_50 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:42: error: resource android:color/car_green_200 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:43: error: resource android:color/car_blue_800 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:44: error: resource android:color/car_body4_dark is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:45: error: resource android:color/car_borderless_button_text_color is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:46: error: resource android:color/car_action1_light is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:47: error: resource android:color/car_action1 is private.
-     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values-v34/values-v34.xml:48: error: resource android:color/car_blue_300 is private.
-
-
-* Try:
-> Run with --info or --debug option to get more log output.
-> Run with --scan to get full insights.
-> Get more help at https://help.gradle.org.
-
-* Exception is:
-org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':composeApp:processDebugResources'.
-	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
-	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
-	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
-	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
-	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
-	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
-	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
-	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
-	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
-	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
-	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
-	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
-	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
-	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
-		at com.android.ide.common.resources.RelativeResourceUtils.relativeResourcePathToAbsolutePath(RelativeResourceUtils.kt:61)
-		at com.android.ide.common.blame.parser.aapt.Aapt2ErrorParser$MessageParser.parse(Aapt2ErrorParser.kt:124)
-		at com.android.ide.common.blame.parser.aapt.Aapt2ErrorParser.parse(Aapt2ErrorParser.kt:99)
-		at com.android.ide.common.blame.parser.aapt.Aapt2OutputParser.parse(Aapt2OutputParser.java:56)
-		at com.android.ide.common.blame.parser.ToolOutputParser.parseToolOutput(ToolOutputParser.java:84)
-		at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteException(Aapt2ErrorUtils.kt:219)
-		at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteLinkException(Aapt2ErrorUtils.kt:133)
-		at com.android.build.gradle.internal.res.Aapt2ProcessResourcesRunnableKt.processResources(Aapt2ProcessResourcesRunnable.kt:76)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:1060)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.access$invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:886)
-		at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction.run(LinkApplicationAndroidResourcesTask.kt:463)
-		at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
-		at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
-		at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
-		at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:6967: error: expected dimension enum but got (raw string) -1.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:6979: error: style attribute 'attr/preferenceHelpStyle (aka com.proje.mobilesales:attr/preferenceHelpStyle)' not found.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:7033: error: expected enum but got (raw string) 3.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:7041: error: expected dimension enum but got (raw string) -1.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:7042: error: expected dimension enum but got (raw string) -2.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:7047: error: expected enum but got (raw string) 3.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:7048: error: expected dimension enum but got (raw string) -2.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:7049: error: expected dimension enum but got (raw string) -2.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:7159: error: expected flags but got (raw string) 0x1.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:7168: error: expected flags but got (raw string) 0x1.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:7176: error: expected flags but got (raw string) 0x1.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:7184: error: expected flags but got (raw string) 0x1.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:9763: error: expected flags but got (raw string) 0x20.
+     com.proje.mobilesales.composeApp-mergeDebugResources-87:/values/values.xml:9908: error: expected flags but got (raw string) 0x20.
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
 		at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
 		at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
@@ -171,6 +47,4 @@ org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compose
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 		at java.base/java.lang.Thread.run(Thread.java:840)
-
-
-BUILD FAILED in 1m 34s
+BUILD FAILED in 2m 38s
